@@ -48,3 +48,38 @@ vscode를 사용중이라면 .vscode/settings.json에 아래 내용을 추가해
 
 prettier를 사용할 수 없도록 막아뒀습니다.
 .prettierignore를 참고해주세요.
+
+
+## font
+
+```css
+/* 중후한 헤딩 */
+.font-serif {
+    font-family: Chronicle Text G1 Roman,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+}
+/* 고딕한 내용 */
+.font-sans {
+    font-family: Halis GR Regular,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+/* body 폰트 */
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+```
+
+## color 
+```css
+/* main background */
+    main {
+      background-color: rgb(253, 251, 247);
+    }
+/* footer background */
+    footer {
+      backgound-color: rgb(51, 51, 51)
+    }
+/* blue bottle color */
+    .bluebottle {
+      rgb(0, 169, 224)
+    }
+```
