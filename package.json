@@ -6,11 +6,15 @@
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.17.2",
     "@html-eslint/parser": "^0.17.1",
+    "@parcel/transformer-sass": "^2.8.3",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "parcel": "^2.8.3"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "parcel index.html"
+  },
   "type": "module",
   "author": "peacepiece7",
   "license": "ISC",

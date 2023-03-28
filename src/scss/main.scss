@@ -1,16 +1,49 @@
 @import 'config';
 
-.test  {
-  background-color: blue;
-  height: 500px;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
+  box-sizing: border-box;
+  background-color: $color-cream;
+  height: 200vh;
+  margin : 0;
+}
+p {
+  margin : 0;
 }
 svg {
   stroke-width:1.5;
   stroke:#fff
 }
 svg rect {
-  /* fill:rgb(0,0,255); */
   stroke-width:1.5;
   stroke:#fff;
   color : white;
+}
+
+header {
+  position: relative;
+  width : 100%;
+  height: 300px;
+  background-color: violet;
+  .banner {
+    width : inherit;
+    height: 32px;
+    position : absolute;
+    text-align: center;
+    font-family: $font-serif;
+    background-color: $color-cream;
+    
+    z-index: 2;
+    a {
+      color : $font-black;
+    }
+  }
+  .gnb-wrap {
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top : 0;
+    width: inherit;
+    height: 100px;
+    background-color: blue;
+  }
 }

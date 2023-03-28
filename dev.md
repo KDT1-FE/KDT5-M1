@@ -70,7 +70,6 @@ prettier를 사용할 수 없도록 막아뒀습니다.
 /* body 폰트 */
 body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-
 }
 ```
 
