@@ -15,6 +15,3 @@ window.addEventListener("scroll", () => {
     headerEl.classList.remove("hovered");
   }
 });
-// headerEl.addEventListener("mouseover", () => {
-//   headerEl.style.backgroundColor = "#fff";
-// });

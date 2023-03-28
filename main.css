@@ -135,20 +135,21 @@ header .menu .menu__li .menu__submenu a:hover {
   background-color: #143f6c;
 }
 
-.video {
+/* video section */
+.video .video__ratio {
   aspect-ratio: 16/9;
   position: relative;
 }
 
-.youtube {
-  width: 100%;
-  height: 100%;
-}
-
-.video__cover {
+.video .video__ratio .video__cover {
   width: 100%;
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+}
+
+.video .video__ratio .video__youtube {
+  width: 100%;
+  height: 100%;
 }

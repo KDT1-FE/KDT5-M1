@@ -44,6 +44,12 @@
 1. 서브 폴더 이름(Save to subfolder) 명시
 1. 다운로드!
 
+올바른 치료를 진행합니다.
+공지 이벤트(swiper)
+SNS
+Footer
+floatings
+
 - favicon 추가
 - google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
 - search 기능x, form태그 사용하지 않고 input으로만 구성
