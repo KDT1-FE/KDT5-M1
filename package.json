@@ -1,0 +1,29 @@
+{
+  "name": "blue-bottle-layout",
+  "version": "1.0.0",
+  "description": "블루보틀 메인 페이지 레이아웃 클론",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.17.2",
+    "@html-eslint/parser": "^0.17.1",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development && nodemon \"./src\""
+  },
+  "type": "module",
+  "author": "peacepiece7",
+  "license": "ISC"
+}
