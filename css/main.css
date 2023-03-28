@@ -1,0 +1,161 @@
+/* COMMON */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+header > .inner {
+  height: 80px;
+}
+
+header ul.nav-items {
+  width: 100%;
+  display: flex;
+}
+
+header ul.nav-items > li {
+  height: 80px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header ul.nav-items > li a {
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+header ul.nav-items li.logo {
+  flex-grow: 1;
+}
+header ul.nav-items li.logo a {
+  height: 80px;
+}
+header ul.nav-items li.logo a img {
+  width: 116px;
+  height: 20px;
+}
+
+/* nav */
+header ul.nav-items li.nav-item,
+header ul.nav-items li.nav-btn {
+  padding: 0 10px;
+  margin: 0 10px;
+  min-width: 80px;
+}
+
+header ul.nav-items li.nav-item:hover {
+  border-bottom: 2px solid #000;
+}
+
+header ul.nav-items li.nav-item > a {
+  height: 80px;
+}
+
+header ul.nav-items li a.nav-title {
+  font-size: 15px;
+  color: #000;
+}
+
+header ul.nav-items li.nav-item a.nav-title:hover {
+  text-decoration: underline;
+}
+
+/* 서류제출하기 */
+header ul.nav-items li.nav-btn {
+  display: flex;
+  align-items: center;
+}
+
+header ul.nav-items li.nav-btn > a {
+  padding: 0 20px;
+  border-radius: 22px;
+  background-color: #fede22;
+  font-size: 14px;
+  color: #000;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+/* lang */
+header ul.nav-items li.nav-icon .material-icons {
+  color: #000;
+  font-size: 20px;
+  margin: 30px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+header ul.nav-items li.nav-icon:hover .material-icons {
+  opacity: 0.5;
+}
+
+/* sub-menu */
+header li.nav-item .nav-item__contents {
+  position: fixed;
+  left: 0;
+  top: 81px;
+  width: 100%;
+  padding: 60px 0 36px;
+  background-color: #fff;
+  display: none;
+}
+/* nav hover */
+header .nav-item:hover .nav-item__contents {
+  display: block;
+}
+
+header .contents__menu > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header .contents__menu > ul > li {
+  display: flex;
+  justify-content: center;
+}
+
+header .contents__menu > ul > li ul li {
+  text-align: center;
+}
+
+header .contents__menu > ul > li ul li a {
+  color: #444;
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+header .contents__menu > ul > li ul li a:hover {
+  text-decoration: underline;
+}
+
+header .contents__menu > ul > li ul li:first-child a {
+  color: #000;
+  font-size: 17px;
+}
+
+header .contents__menu > ul > li ul li:last-child a {
+  margin-bottom: 0;
+}
