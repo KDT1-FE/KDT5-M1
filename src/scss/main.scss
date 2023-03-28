@@ -1,5 +1,8 @@
-body  {
-  background-color: black;
+@import 'config';
+
+.test  {
+  background-color: blue;
+  height: 500px;
 }
 svg {
   stroke-width:1.5;
