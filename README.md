@@ -46,4 +46,5 @@
 
 - favicon 추가
 - google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
+- search 기능x, form태그 사용하지 않고 input으로만 구성
 -
