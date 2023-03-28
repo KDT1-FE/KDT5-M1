@@ -5,3 +5,16 @@ searchIcon.addEventListener("click", () => {
   searchInput.classList.toggle("active");
   searchIcon.innerText = searchIcon.innerText === "search" ? "close" : "search";
 });
+
+const headerEl = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 0) {
+    headerEl.classList.add("hovered");
+  } else {
+    headerEl.classList.remove("hovered");
+  }
+});
+// headerEl.addEventListener("mouseover", () => {
+//   headerEl.style.backgroundColor = "#fff";
+// });
