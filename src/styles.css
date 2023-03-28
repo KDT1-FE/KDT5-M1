@@ -1,0 +1,13 @@
+body  {
+  background-color: black;
+}
+svg {
+  stroke-width:1.5;
+  stroke:#fff
+}
+svg rect {
+  /* fill:rgb(0,0,255); */
+  stroke-width:1.5;
+  stroke:#fff;
+  color : white;
+}
