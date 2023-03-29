@@ -13,52 +13,49 @@ body {
   font-weight: 400;
   line-height: 1.4;
 }
-
 img {
   display: block;
 }
-
 a {
   text-decoration: none;
 }
 
 
-/* HEADER 헤더 > Main-menu 메인메뉴 */
+/* HEADER 헤더 */
 header {
-  background-color: ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
-
 header .inner {
   width: 1100px;
   height: 60px;
   margin: 0 auto;
   position: relative;
 }
+header .logo {
 
-header .logo {}
-
+}
 header .inner a img {
   height: 60px;
   position: absolute;
-  top: 0;
+  top: 0px;
   margin: auto;
 }
-
 header .main-menu {
   display: flex;
 }
-
 header .main-menu ul.menu {
   position: absolute;
   top: 10px;
   right: 0;
   display: flex;
 }
-
 header .main-menu ul.menu li {
   display: relative;
 }
-
 header .main-menu ul.menu li::before {
   content: "";
   /* display: block; */
@@ -70,15 +67,12 @@ header .main-menu ul.menu li::before {
   bottom: 0;
   margin: auto;
 }
-
 header .main-menu ul.menu li:not(.lastmenu):before {
   display: none;
 }
-
 header .main-menu ul.menu li.language {
   margin-left: 40px;
 }
-
 header .main-menu ul.menu li a {
   font-size: 15px;
   padding: 10px 16px;
@@ -87,10 +81,126 @@ header .main-menu ul.menu li a {
   color: #4E5967;
   /* 원본은 currentcolor */
 }
-
 header .main-menu ul.menu li a:hover {
   width: auto;
   height: 20px;
   border-radius: 5px;
   background-color: #f2f4f6;
+}
+
+
+/* MAIN */
+
+/* SECTION 1 */
+main .inner {
+  position: relative;
+  height: 1500px;
+}
+main .inner .new-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+main .inner .new-main > img {
+  width: 100%;
+  position: relative;
+  top: 60px;
+}
+main .inner .new-main .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+}
+main .inner .new-main .text {
+  display: block;
+  position: absolute;
+  top: 170px;
+  text-align: center;
+}
+main .inner .new-main .text h2 {
+  display: inline;
+  font-size: 65px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+main .inner .appstore {
+  display: flex;
+  position: absolute;
+  top: 410px;
+}
+main .inner .appstore .apple,
+main .inner .appstore .android {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 3px 25px;
+  border: 1px solid #000c1e;
+  border-radius: 8px;
+  background-color: #000c1e;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;
+}
+main .inner .appstore .apple:hover,
+main .inner .appstore .android:hover {
+  background-color: #4e5968;
+   border: 1px solid #4e5968;
+}
+main .inner .appstore .apple img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding-right: 5px;
+}
+main .inner .appstore .apple span,
+main .inner .appstore .android span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 
+}
+main .inner .appstore .android {
+  margin-left: 5px;
+}
+main .inner .appstore .android img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding-right: 5px;
+}
+
+/* SECTION 2 */
+main .inner .new-main-bottom {
+  position: absolute;
+  background-color: #f9fafb;
+  width: 100%;
+  height: 600px;
+}
+main .inner .new-main-bottom p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
 }
