@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Google" />
+    <meta property="og:title" content="Google Korea" />
+    <meta property="og:description" content="Google 검색 메인 홈페이지 입니다." />
+    <meta property="og:image" content="./images/googlelogo_color_272x92dp" />
+    <meta property="og:url" content="https://www.google.com" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Google Korea" />
+    <meta property="twitter:site" content="Google" />
+    <meta property="twitter:image" content="./images/googlelogo_color_272x92dp" />
+    <meta property="twitter:url" content="https://www.google.com" />
+    <meta property="twitter:description" content="oogle 검색 메인 홈페이지 입니다." />
+    <link rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/2e802f42d3.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+   <header>
+
+    <div class="container-menu">
+        <div class="left-menu">
+            <a href="https://about.google">Google 정보</a>
+            <a href="https://store.google.com/">스토어</a>
+        </div>
+
+        <div class="right-menu">
+            <a href="https://mail.google.com/">Gamil</a>
+            <a href="https://www.google.co.kr/imghp?hl=ko&ogbl">이미지</a>
+            <div class="apps-menu">
+                <button class="apps-button">
+                    <span class="material-icons">apps</span>
+                </button>
+                <div class="apps-dropdown">
+                    <a href="https://mail.google.com/">Gmail</a>
+                    <a href="https://calendar.google.com/calendar/">Calendar</a>
+                    <a href="https://drive.google.com/">Drive</a>
+                    <a href="https://photos.google.com/">Photos</a>
+                    <a href="https://www.google.com/maps">Maps</a>
+                    <a href="https://www.youtube.com/">YouTube</a>
+                    <a href="https://translate.google.com/">Translate</a>
+                  </div>
+                <button class="logIn">로그인</button>
+             </div>
+        </div>
+
+    </div>
+
+   </header>
+
+   <!-- Google-Logo -->
+   <section class="logo-container">
+
+    <div class="img-box">
+        <img src="images/googlelogo_color_272x92dp.png" alt="">
+    </div>
+
+   </section>
+
+   <!-- Search-Bar -->
+   <section class="search-container">
+
+    <form action="https://www.google.com/search" role="search" method="get">
+        <div class="search-room">
+            <div class="search-box">
+                <div class="icon-box">
+                    <div class="search-icons">
+                        <i class="fa-solid fa-magnifying-glass searchI"></i>
+                    </div>
+                    <div class="search-bar box">
+                        <input name="q" type="text" class="search-bar">
+                    </div>
+                    <div class="search-right">
+                        <div class="key-bd"><i class="fa-regular fa-keyboard"></i></div>
+                        <div class="mic"><i class="fa-solid fa-microphone-lines"></i> </div>
+                        <div class="camera"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <center>
+                    <input type="submit" value="Google 검색" class="btn submit" />
+                    <input type="button" value="I’m Feeling Lucky" class="btn doodle"/>
+                </center>
+            </div>
+        </div>
+    </form>
+
+   </section>
+
+   <!-- blank Space -->
+   <div class="blank"></div>
+
+   <!-- Footer -->
+   <footer class="footer-container">
+    <div class="footer-box">
+        <div class="footer-item-1">
+            대한민국
+        </div>
+        <div class="footer-item-2">
+            <div class="left-item">
+                <a href="https://ads.google.com/intl/ko_kr/home/">광고</a>
+                <a href="https://www.google.com/intl/ko_kr/business/">비즈니스</a>
+                <a href="https://www.google.com/search/howsearchworks/">검색의 원리</a>
+            </div>
+            <div class="right-item">
+                <a href="https://policies.google.com/privacy">개인정보처리방침</a>
+                <a href="https://policies.google.com/terms">약관</a>
+                <span id="option">
+                    <div class="option-item">
+                        설정
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="https://www.google.com/preferences">검색 설정</a>
+                        <a href="https://www.google.com/advanced_search">고급검색</a>
+                        <a href="https://myaccount.google.com/yourdata/search">Google 검색에 표시되는 데이터</a>
+                        <a href="https://myactivity.google.com/product/search">검색 기록</a>
+                        <a href="https://support.google.com/websearch">검색 도움말</a>
+                        <a href="#">의견 보내기</a>
+                        <div>
+                            <input type="button" value="어두운 테마: 사용 안함" id="change">
+                         </div>
+                      </div>
+                </span>
+            </div>
+        </div>
+    </div>
+   </footer>
+</body>
+</html>
