@@ -1,0 +1,70 @@
+@mixin title ($color){
+  color: $color;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -1;
+  margin-top: 2px;
+}
+@mixin subTitle ($color){
+  color: $color;
+  // opacity: 0.6;
+  text-align: left;
+  margin-top: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+@mixin titleCenter ($color){
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -1;
+  margin-top: 2px;
+}
+@mixin subTitleCenter ($color){
+  color: $color;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@mixin subTitleLeft ($color){
+  color: $color;
+  text-align: center;
+  margin-top: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.5;
+}
+@mixin button ($color){
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+@mixin titleMideum ($color){
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 800;
+}

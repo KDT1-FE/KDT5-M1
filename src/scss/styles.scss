@@ -1,0 +1,491 @@
+@import "_variables";
+@import "_mixins";
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  background-color: $black;
+  top:0;
+  left:0;
+  nav {
+    background-color: $white;
+    position: fixed;
+    width: 100vw;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    height: $navheight;
+    padding: 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    a {
+      text-decoration: none;
+      color: $black;
+      margin-top: 5px;
+    }
+    .logo {
+      font-size: 1.3em;
+      font-weight: 400;
+    }
+    .lang {
+      font-size: 0.9em;
+      font-weight: 400;
+      padding-left: 70%;
+      span {
+        margin: 0 5px;
+        &:hover {
+          border-bottom: 1px solid $black;
+        }
+      }
+    }
+    .hamburger {
+      margin-right: 30px;
+      transform : scaleX(4);
+    }
+  }
+  .bigbanner {
+    height: 100vh;
+    width: 100vw;
+    // position: relative;
+    background-color: red;
+    padding-top: 210px;
+    background-image: url('https://hkd-microbiome.com/ko/wp-content/uploads/sites/3/2021/12/main-visual-02.jpg');
+    background-size: 0.7;
+    transition: background-size 3s linear;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    .mainTitle { 
+      font-size: 2.6rem;
+      font-weight: 700;
+      width: 20vw;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-weight: 300;
+      width: 30vw;
+      line-height: 1.7;
+      letter-spacing: 1.1;
+      margin-bottom: 200px;
+    }
+    .dots {
+      display: flex;
+      width: 120px;
+      justify-content: space-between;
+      align-items: center;
+      .dot {
+        margin: 0 2px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: $white;
+        border-radius: 30px;
+        border: none;
+        transition: width .3s, height .3s, opacity .4s;
+        &:hover {
+          // transform: scaleX(2.4) scaleY(2.4);
+          width: 0.8rem;
+          height: 0.8rem;
+          background-color: transparent;
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+  .center_intro {
+    position: absolute;
+    background-color: $white;
+    padding: 160px 0 160px 35px;
+    height: $centerheight;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    .center_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .center_main, .arrow {
+        @include title($black);
+      }  
+      .arrow {
+        transform: translate(20px, 5px);
+        transition: all 1s;
+        &:hover {
+          transform: translate(30px, 5px);
+        }
+      }
+      .center_sub { 
+        @include subTitle ($black);
+      }
+    }
+    .center_image {
+      position: relative;
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      .image {
+        position: relative;
+        display: flex;
+        margin-right: 40px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        &:nth-child(odd){
+          img {
+            background-color: rgb(5, 138, 255);
+            width: 330px;
+            height: 100%;
+            object-fit: cover;
+            &:hover {
+              background-color: $blackOpacity;
+            }
+          }
+          .image_name{
+            margin-top: 20px;
+          }
+        }
+        &:nth-child(even){
+          img {
+            width: 450px;
+            object-fit: cover;
+          }
+          .image_name{
+            position: relative;
+            top : -185px;
+          }
+        }
+      }
+    }
+  }
+  .vrTour {
+    position: absolute;
+    background-color: $lightGrey;
+    margin-top: $centerheight;
+    height: 100vh;
+    padding: 160px 35px 160px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    .vrTour_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .vrTour_main {
+        @include titleCenter($black);
+      }
+      .vrTour_sub {
+        @include subTitleCenter($blackOpacity);
+        margin-bottom: 30px;
+      }
+      .vr_button {
+        margin: 0 auto 0;
+        height: 58px;
+        width: 220px;
+        @include button ($black);
+        background-color: transparent;
+        border: 1px solid $black;
+        transition: .5s;
+        &:hover {
+          background-color: $black;
+          @include button ($white);
+        }
+      }
+    }
+  }
+  .nature { 
+    margin-top: 240vh;
+    padding: 190px 35px;
+    height: 240vh;
+    width: 100vw;
+    background-image: url('https://hkd-microbiome.com/ko/wp-content/themes/lghmc/images/main/main-rnd-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .nature_main {
+      font-family: 'Noto Sans KR', sans-serif;
+      text-align: center;
+      color: $white;
+      font-size: 2rem;;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 40vh;
+    }
+    // .nature_main:ntn-child(2) {
+    //   position: relative; 
+    //   top: -10vh;
+    // }
+    .map_icon {
+      transform: scale(.6, .6);
+      position: relative;
+      top: -40vh;
+    }
+    .ingredient_icon {
+      transform: scale(.9,.9);
+        padding-right: 15px;
+        position: relative;
+        top: -35vh;
+    }
+  }
+  .research {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url('https://i.postimg.cc/kX0SXFyY/researchimg0128.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      padding-left:  35px;
+      height: 100%;
+      width: 50%;
+      left: 0;
+      @include subTitleLeft($white);
+      .research_title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+    .right {
+      background-color: $beige;
+      order: 1;
+      height: 100%;
+      width: 50%;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin-bottom: 20px;
+      }
+      .research_info {
+        @include titleMideum ($black);
+      }
+      .reserach_text {
+        @include subTitleCenter($black);
+        margin-bottom: 30px;
+        width: 50%;
+      }
+      .reserach_button {
+        margin: 0 auto 0;
+        height: 58px;
+        width: 150px;
+        @include button ($black);
+        background-color: transparent;
+        border: 1px solid $black;
+        transition: .5s;
+        &:hover {
+          background-color: $black;
+          @include button ($white);
+        }
+      }
+    }
+  }
+  .ingredients {
+    height: 100vh;
+    width: 100vw;
+    background-color:$white;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .in_title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $black;
+      text-align: center;
+    }
+    .in_images {
+      margin: 30px auto;
+      padding: 0 60px;
+      width: 90%;
+      height: 50%;
+      box-sizing: content-box;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      img {
+        width: 90px;
+        height: 280px;
+        object-fit: cover;
+        filter: brightness(50%);
+        &:hover {
+          filter: brightness(100%)
+        }
+      }
+    }
+    .in_button {
+      margin: 0 auto 0;
+      height: 58px;
+      width: 150px;
+      @include button ($black);
+      background-color: transparent;
+      border: 1px solid $black;
+      transition: .5s;
+      &:hover {
+        background-color: $black;
+        @include button ($white);
+      }
+    }
+  }
+  .product {
+    position: absolute;
+    background-color: $lightGrey;
+    padding: 160px 35px;
+    height: 200vh;
+    width: 100vw;
+    box-sizing: border-box;
+    .product_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .product_main, .arrow {
+        @include title($black);
+      }  
+      .arrow {
+        transform: translate(20px, 5px);
+        transition: all 1s;
+        &:hover {
+          transform: translate(30px, 5px);
+        }
+      }
+      .product_sub { 
+        @include subTitle ($black);
+        width: 20%;
+      }
+    }
+    .product_two {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .product_mission {
+        width: 40%;
+        height: 100%;
+        margin-top: 300px;
+        overflow: hidden;
+        .product_img {
+          margin-bottom: 40px;
+          width: 100%;
+          height: 600px;
+          background-image: url('https://hkd-microbiome.com/ko/wp-content/uploads/sites/3/2021/12/main-product-mission-y.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: 2s;
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+        }
+        .product_name {
+          @include titleMideum ($black);
+        }
+        .product_text {
+          @include subTitleCenter($black);
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        .product_button {
+          margin: 0 auto 0;
+          height: 58px;
+          width: 150px;
+          @include button ($black);
+          background-color: transparent;
+          border: 1px solid $black;
+          transition: .5s;
+          &:hover {
+            background-color: $black;
+            @include button ($white);
+          }
+        }
+      }
+      .product_sum {
+        width: 40%;
+        height: 100%;
+        margin-top: -100px;
+        overflow: hidden;
+        .product_img {
+          margin-bottom: 40px;
+          width: 100%;
+          height: 600px;
+          background-image: url('https://hkd-microbiome.com/ko/wp-content/uploads/sites/3/2021/12/main-product-sum.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: 2s;
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+        }
+        .product_name {
+          @include titleMideum ($black);
+        }
+        .product_text {
+          @include subTitleCenter($black);
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        .product_button {
+          margin: 0 auto 0;
+          height: 58px;
+          width: 150px;
+          @include button ($black);
+          background-color: transparent;
+          border: 1px solid $black;
+          transition: .5s;
+          &:hover {
+            background-color: $black;
+            @include button ($white);
+          }
+        }
+      }
+
+    }
+  }
+  .footer {
+    margin-top: 200vh;
+    padding: 160px 35px;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #2C2A29;
+    h2 {
+      color: $white;
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+    }
+    div {
+      margin-top: 30px;
+      a {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        width: 40%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: .5px solid $white;
+        line-height: 4;
+        text-decoration: none;
+      }
+    }
+  }
+}
