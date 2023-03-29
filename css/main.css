@@ -1,8 +1,17 @@
 /* COMMON */
+/* CSS 변수 선언 */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-background: #fafafa;
+  --color-main: #fede22;
+  --header-height: 80px;
+}
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  background-color: #fafafa;
+  background-color: var(--color-background);
   height: 3000px;
 }
 
@@ -23,6 +32,10 @@ a:hover {
 }
 
 /* Product */
+.product-container {
+  background-color: var(--color-white);
+}
+
 .product {
   width: 100%;
   height: 750px;
@@ -43,7 +56,7 @@ a:hover {
 }
 
 .product .product__infos h3.title {
-  color: #000;
+  color: var(--color-black);
   font-weight: 600;
   font-size: 40px;
   line-height: 1.2;
@@ -58,8 +71,8 @@ a:hover {
 
 .product .btn {
   background-color: #f6f6f6;
-  color: #000;
-  font-size: 15px;
+  color: var(--color-black);
+  font-size: 16px;
   height: 56px;
   width: 258px;
   border-radius: 6px;
@@ -81,14 +94,14 @@ a:hover {
 header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: var(--color-white);
   position: sticky;
   top: 0;
   z-index: 9;
 }
 
 header > .inner {
-  height: 80px;
+  height: var(--header-height);
 }
 
 header ul.nav-items {
@@ -97,7 +110,7 @@ header ul.nav-items {
 }
 
 header ul.nav-items > li {
-  height: 80px;
+  height: var(--header-height);
   box-sizing: border-box;
   position: relative;
 }
@@ -112,7 +125,7 @@ header ul.nav-items li.logo {
   flex-grow: 1;
 }
 header ul.nav-items li.logo a {
-  height: 80px;
+  height: var(--header-height);
 }
 header ul.nav-items li.logo a img {
   width: 116px;
@@ -128,16 +141,16 @@ header ul.nav-items li.nav-btn {
 }
 
 header ul.nav-items li.nav-item:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--color-black);
 }
 
 header ul.nav-items li.nav-item > a {
-  height: 80px;
+  height: var(--header-height);
 }
 
 header ul.nav-items li a.nav-title {
   font-size: 15px;
-  color: #000;
+  color: var(--color-black);
 }
 
 /* 서류제출하기 */
@@ -149,9 +162,9 @@ header ul.nav-items li.nav-btn {
 header ul.nav-items li.nav-btn > a {
   padding: 0 20px;
   border-radius: 22px;
-  background-color: #fede22;
+  background-color: var(--color-main);
   font-size: 14px;
-  color: #000;
+  color: var(--color-black);
   line-height: 44px;
   cursor: pointer;
 }
@@ -162,7 +175,7 @@ header ul.nav-items li.nav-btn > a:hover {
 
 /* lang */
 header ul.nav-items li.nav-icon .material-icons {
-  color: #000;
+  color: var(--color-black);
   font-size: 20px;
   margin: 30px 20px;
   transition: 0.5s;
@@ -180,7 +193,7 @@ header li.nav-item .nav-item__contents {
   top: 81px;
   width: 100%;
   padding: 60px 0 36px;
-  background-color: #fff;
+  background-color: var(--color-white);
   display: none;
 }
 /* nav hover */
@@ -215,7 +228,7 @@ header .contents__menu > ul > li ul li a:hover {
 }
 
 header .contents__menu > ul > li ul li:first-child a {
-  color: #000;
+  color: var(--color-black);
   font-size: 17px;
 }
 
@@ -228,7 +241,7 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 100%;
   height: 884px;
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .hero .background-box {
@@ -258,7 +271,7 @@ header .contents__menu > ul > li ul li:last-child a {
   position: absolute;
   top: 135px;
   left: 90px;
-  color: #000;
+  color: var(--color-black);
   font-size: 49px;
   font-weight: 700;
   line-height: 1.4;
@@ -289,12 +302,12 @@ header .contents__menu > ul > li ul li:last-child a {
 }
 
 .hero .store-buttons a.store-btn {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 12px;
   width: 178px;
   height: 56px;
   line-height: 56px;
-  color: #000;
+  color: var(--color-black);
   font-size: 16px;
   box-sizing: border-box;
   font-weight: 500;
@@ -319,20 +332,12 @@ header .contents__menu > ul > li ul li:last-child a {
 }
 
 /* Account */
-.account {
-  background-color: #fff;
-}
-
 .account .product__image {
   width: 473px;
   height: 678px;
 }
 
 /* Savings */
-.savings {
-  background-color: #fff;
-}
-
 .savings .product__image {
   width: 409px;
   height: 722px;
@@ -351,4 +356,10 @@ header .contents__menu > ul > li ul li:last-child a {
 
 .savings .btn-group .btn {
   width: 158px;
+}
+
+/* Group-Account */
+.group-account .product__image {
+  width: 459px;
+  height: 607px;
 }
