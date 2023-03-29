@@ -12,7 +12,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   background-color: var(--color-background);
-  height: 3000px;
+  padding-bottom: 500px;
 }
 
 a {
@@ -43,6 +43,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+  padding: 10px 0 0 10px; /* 전체적으로 우측으로 쏠림 */
+  box-sizing: border-box;
 }
 
 .product .product__infos {
@@ -95,7 +97,7 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9;
 }
@@ -362,4 +364,11 @@ header .contents__menu > ul > li ul li:last-child a {
 .group-account .product__image {
   width: 459px;
   height: 607px;
+}
+
+/* Challenge */
+.challenge .product__image {
+  width: 492px;
+  height: 408px;
+  margin-left: 120px;
 }
