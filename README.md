@@ -3,10 +3,7 @@
 [SNC동물메디컬센터](http://www.sncamc.co.kr/)
 </br></br>
 
-## CI/CD
-
-[클론코딩](https://kdt-5-m1-lsil.vercel.app/)
-</br></br>
+## 결과물
 
 ## todo
 
