@@ -1,3 +1,4 @@
+/* COMMON */
 html {
     height: 100%;
 }
@@ -31,7 +32,7 @@ body {
 }
 
 
-
+/* HEADER */
 header{
     position: relative;;
 }
@@ -102,6 +103,7 @@ header .right-menu .logIn:hover {
     background: #1a73e8;
 }
 
+/* Google-Logo */
 .logo-container {
     flex-shrink: 0;
     box-sizing: border-box;
@@ -130,6 +132,8 @@ header .right-menu .logIn:hover {
     width: auto;
 }
 
+
+/* Search-Bar */
 .search-container {
     padding: 20px;
     max-height: 160px;
@@ -243,6 +247,7 @@ header .right-menu .logIn:hover {
     user-select: none;
 }
 
+/* blank Space */
 .blank {
     flex-shrink: 0;
     box-sizing: border-box;
@@ -251,6 +256,7 @@ header .right-menu .logIn:hover {
     max-height: 352px;
 }
 
+/* Footer */
 .footer-container {
     background: #f2f2f2;
     flex-shrink: 0;
@@ -305,7 +311,9 @@ header .right-menu .logIn:hover {
     cursor: pointer;
   }
   
-  .container-menu .right-menu .apps-menu .apps-dropdown {
+
+/* Drop down */
+.container-menu .right-menu .apps-menu .apps-dropdown {
     position: absolute;
     top: 40px;
     right: 90px;
@@ -324,17 +332,17 @@ header .right-menu .logIn:hover {
   }
 
   
-  .container-menu .right-menu .apps-menu .apps-dropdown a:hover {
+.container-menu .right-menu .apps-menu .apps-dropdown a:hover {
     background-color: #f1f1f1;
-  }
+}
   
-  .dropdown {
+.dropdown {
     top: 200px;
     position: relative;
     display: inline-block;
   }
 
-  .footer-container .footer-item-2 .right-item .dropdown-content {
+.footer-container .footer-item-2 .right-item .dropdown-content {
     position: absolute;
     bottom: 48px;
     right: 0;
@@ -346,17 +354,18 @@ header .right-menu .logIn:hover {
     line-height: 23px;
     padding: 0 16px;
     width: 228px;
-  }
-  .footer-container .footer-item-2 .right-item .dropdown-content a {
+}
+.footer-container .footer-item-2 .right-item .dropdown-content a {
     color: black;
     width: 238px;
     height: 23px;
-  }
-  .footer-container .footer-item-2 .right-item .dropdown-content a:hover {
+}
+.footer-container .footer-item-2 .right-item .dropdown-content a:hover {
     background-color: rgba(0,0,0,0.1);
     text-decoration: none;
-  }
-  .dropdown-content #change {
+}
+
+.dropdown-content #change {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -364,11 +373,13 @@ header .right-menu .logIn:hover {
     padding: 15px;
     white-space: nowrap;
     color: black;
-  }
-  .footer-container .footer-item-2 .right-item .dropdown-content div:hover {
+}
+.footer-container .footer-item-2 .right-item .dropdown-content div:hover {
     background-color: rgba(0,0,0,0.1)
-  }
+}
 
+
+/* Dark Mode */
 .body-night {
     background-color: rgba(32,33,36,1);
 }
@@ -381,6 +392,18 @@ header .right-menu .logIn:hover {
 .header-night .container-menu .right-menu .apps-menu .apps-button span {
     background-color: rgba(32,33,36,1);
     color: white;
+}
+.header-night .container-menu .right-menu .apps-dropdown {
+    background-color: rgba(32,33,36,1);
+    border: 1px solid rgba(66, 66, 68, 0.603);
+    box-shadow: 0 2px 6px rgba(116, 114, 114, 0.8);
+}
+.header-night .container-menu .right-menu .apps-dropdown a {
+    color: #999da2;
+    background-color: rgba(32,33,36,1);
+}
+.header-night .container-menu .right-menu .apps-dropdown a:hover {
+    background-color: #303134;
 }
 .header-night .container-menu .left-menu a {
     color: #bdc1c6;
