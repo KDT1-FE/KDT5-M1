@@ -2,7 +2,7 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #fafafa;
   height: 3000px;
 }
 
@@ -20,6 +20,61 @@ a:hover {
   width: 1080px;
   margin: 0 auto;
   position: relative;
+}
+
+/* Product */
+.product {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.product .product__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product .product__infos.product__infos-right {
+  margin-left: 90px;
+}
+
+.product .product__infos h3.title {
+  color: #000;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.product .product__infos p.description {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 24px 0 30px;
+}
+
+.product .btn {
+  background-color: #f6f6f6;
+  color: #000;
+  font-size: 15px;
+  height: 56px;
+  width: 258px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .btn::after {
+  content: '';
+  margin-left: 5px;
+  width: 6px;
+  height: 9px;
+  background-image: url(../images/ico_arrow.png);
+  background-size: 100%;
 }
 
 /* HEADER */
@@ -173,6 +228,7 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 100%;
   height: 884px;
   position: relative;
+  background-color: #fff;
 }
 
 .hero .background-box {
@@ -260,4 +316,39 @@ header .contents__menu > ul > li ul li:last-child a {
 
 .hero .appstore > .icon {
   background-position: -371px -292px;
+}
+
+/* Account */
+.account {
+  background-color: #fff;
+}
+
+.account .product__image {
+  width: 473px;
+  height: 678px;
+}
+
+/* Savings */
+.savings {
+  background-color: #fff;
+}
+
+.savings .product__image {
+  width: 409px;
+  height: 722px;
+  margin-left: 40px;
+}
+
+.savings .product__infos .sub-image {
+  margin-top: 62px;
+  width: 440px;
+}
+
+.savings .btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+.savings .btn-group .btn {
+  width: 158px;
 }
