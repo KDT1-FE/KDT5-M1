@@ -57,12 +57,11 @@
 # 수정사항
 
 - 검색input요소 외부 클릭시 닫히기.
-- 검색 input요소가  
+- 검색 input요소가 active한 경우 header의 bgc가 흰색으로 유지
   </br></br>
 
 # 원본페이지와 차이점
 
-- SEO추가
 - favicon 추가
 - google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
 - search 기능x, form태그 사용하지 않고 input으로만 구성
