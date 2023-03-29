@@ -1,11 +1,11 @@
 ## 실제 사이트 페이지
 
-<a href="http://www.sncamc.co.kr" target="_blank">SNC동물메디컬센터</a>
+[SNC동물메디컬센터](http://www.sncamc.co.kr/)
 </br></br>
 
 ## CI/CD
 
-<a href="https://kdt-5-m1-lsil.vercel.app" target="_blank">클론코딩</a>
+[클론코딩](https://kdt-5-m1-lsil.vercel.app/)
 </br></br>
 
 ## todo
