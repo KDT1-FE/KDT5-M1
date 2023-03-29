@@ -11,7 +11,7 @@ module.exports = {
       parser: '@html-eslint/parser',
       extends: ['plugin:@html-eslint/recommended'],
       rules: {
-        '@html-eslint/indent': ['error', 2], // html indent는 default : 4라서 따로 적어줘야합니다.
+        '@html-eslint/indent': ['error', 2],
       },
     },
   ],
@@ -25,5 +25,6 @@ module.exports = {
     semi: ['error', 'never'], // semicolon 제거합니다.
     'no-underscore-dangle': ['warn', { allowAfterThis: true }], // this._bar()는 가능하고 그 외는 warning이 나타납니다.
     'max-len': ['warn', { code: 120, tabWidth: 2 }],
+    'spaced-comment': 'off', // 주석 스타일 강제 취소 (html, css 파일에서 주석을 달면 에러가 남, 주석을 알아서 이쁘게 쓸 것!)
   },
 }
