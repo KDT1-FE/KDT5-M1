@@ -43,14 +43,27 @@
 1. 다운로드 원하는 이미지 선택
 1. 서브 폴더 이름(Save to subfolder) 명시
 1. 다운로드!
+   </br></br>
 
-올바른 치료를 진행합니다.
-공지 이벤트(swiper)
-SNS
-Footer
-floatings
+# todo
 
+- 올바른 치료를 진행합니다. 섹션
+- 공지 이벤트(swiper)
+- SNS
+- Footer
+- floatings
+  </br></br>
+
+# 수정사항
+
+- 검색input요소 외부 클릭시 닫히기.
+- 검색 input요소가  
+  </br></br>
+
+# 원본페이지와 차이점
+
+- SEO추가
 - favicon 추가
 - google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
 - search 기능x, form태그 사용하지 않고 input으로만 구성
-- 원래 홈페이지에서는 동영상이 header로 인해 밀려나 아랫부분이 잘림. 16:9의 영상을 온전히 - 보여주기 위해 header의 배경화면을 transparent로 수정. 마우스 hover 시, 스크롤 내릴시 배경화면 #fff으로 변화
+- 원래 홈페이지에서는 동영상이 header로 인해 밀려나 아랫부분이 잘림. 16:9의 영상을 온전히 보여주기 위해 header의 배경화면을 transparent로 수정. 마우스 hover 시, 스크롤 내릴시 배경화면 #fff으로 변화
