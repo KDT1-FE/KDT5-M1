@@ -2,13 +2,18 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  background-color: #f5f5f5;
+  background-color: #fff;
+  height: 3000px;
 }
 
 a {
   text-decoration: none;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .inner {
@@ -22,6 +27,9 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 header > .inner {
@@ -77,10 +85,6 @@ header ul.nav-items li a.nav-title {
   color: #000;
 }
 
-header ul.nav-items li.nav-item a.nav-title:hover {
-  text-decoration: underline;
-}
-
 /* 서류제출하기 */
 header ul.nav-items li.nav-btn {
   display: flex;
@@ -95,6 +99,10 @@ header ul.nav-items li.nav-btn > a {
   color: #000;
   line-height: 44px;
   cursor: pointer;
+}
+
+header ul.nav-items li.nav-btn > a:hover {
+  text-decoration: none;
 }
 
 /* lang */
@@ -158,4 +166,98 @@ header .contents__menu > ul > li ul li:first-child a {
 
 header .contents__menu > ul > li ul li:last-child a {
   margin-bottom: 0;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 884px;
+  position: relative;
+}
+
+.hero .background-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+  background-color: #ffef6b;
+}
+
+.hero > .inner {
+  width: 1200px;
+  height: 884px;
+}
+
+.hero .hero-background {
+  max-width: 1200px;
+  height: 884px;
+  background-image: url('https://www.kakaobank.com/static/images/web/renewal/main-bg3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 135px;
+  left: 90px;
+  color: #000;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 90px;
+  line-height: 1.9;
+}
+
+.hero p.description1 {
+  top: 290px;
+}
+
+.hero p.description2 {
+  top: 365px;
+}
+
+.hero .store-buttons {
+  position: absolute;
+  top: 480px;
+  left: 90px;
+  display: flex;
+  gap: 12px;
+}
+
+.hero .store-buttons a.store-btn {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 178px;
+  height: 56px;
+  line-height: 56px;
+  color: #000;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero .store-buttons .icon {
+  background-image: url('../images/sprite-icons.png');
+  width: 24px;
+  height: 24px;
+}
+
+.hero .playstore > .icon {
+  background-position: -341px -292px;
+}
+
+.hero .appstore > .icon {
+  background-position: -371px -292px;
 }
