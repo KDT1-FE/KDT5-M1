@@ -23,13 +23,6 @@ body {
     min-width: 400px;
     height:100%;
 }
-.userImage {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 32px;
-    height: 32px;
-    display: block;
-}
 
 
 /* HEADER */
@@ -71,19 +64,26 @@ header .right-menu {
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 header .right-menu a {
-    margin-left: 20px;
     color:#202124;
     font-family: Apple SD Gothic Neo,arial,sans-serif;;
     font-size: 13px;
+    padding: 20px;
 }
+
 header .right-menu span {
-    margin-left: 20px;
     color: #5f6368;
+    position: absolute; 
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    margin: auto;
 }
 header .right-menu .logIn {
-    margin-left: 20px;
+    margin-left: 40px;
     top: 0;
     bottom: 0;
     cursor: pointer;
@@ -310,6 +310,7 @@ header .right-menu .logIn:hover {
     border: none;
     cursor: pointer;
   }
+
   
 
 /* Drop down */
@@ -322,7 +323,8 @@ header .right-menu .logIn:hover {
     padding: 10px;
     box-shadow: 0 2px 6px rgba(116, 114, 114, 0.8);
     overflow: auto;
-    height: 150px;
+    height: 144px;
+    display: none;
   }
   ::-webkit-scrollbar {
     width: 5px;
