@@ -13,6 +13,12 @@ img {
 a {
   text-decoration: none;
 }
+/* html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+} */
 
 /* HEADER */
 header {
@@ -136,20 +142,29 @@ header .menu .menu__li .menu__submenu a:hover {
 }
 
 /* video section */
-.video .video__ratio {
-  aspect-ratio: 16/9;
+section.video {
+  height: 100vh;
   position: relative;
 }
 
-.video .video__ratio .video__cover {
+.video .video__cover {
+  /* display: none; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
 }
 
-.video .video__ratio .video__youtube {
+.video .video__youtube {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* ABOUT SECTION */
+section.about {
+  height: 100vh;
+  background: linear-gradient(60deg, #143f6c, #000);
 }

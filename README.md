@@ -66,3 +66,8 @@
 - google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
 - search 기능x, form태그 사용하지 않고 input으로만 구성
 - 원래 홈페이지에서는 동영상이 header로 인해 밀려나 아랫부분이 잘림. 16:9의 영상을 온전히 보여주기 위해 header의 배경화면을 transparent로 수정. 마우스 hover 시, 스크롤 내릴시 배경화면 #fff으로 변화
+  </br></br>
+
+# 질문
+
+- video ratio
