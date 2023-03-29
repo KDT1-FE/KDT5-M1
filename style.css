@@ -320,9 +320,20 @@ header .right-menu .logIn:hover {
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
-    display: none;
+    box-shadow: 0 2px 6px rgba(116, 114, 114, 0.8);
+    overflow: auto;
+    height: 150px;
   }
-  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgb(88, 175, 233);
+  }
 .container-menu .right-menu .apps-menu .apps-dropdown a {
     display: block;
     color: #444;
@@ -330,12 +341,10 @@ header .right-menu .logIn:hover {
     padding: 5px 0;
     margin-left: 0;
   }
+  .container-menu .right-menu .apps-dropdown a:hover {
+    background-color: #b3caee;
+  }
 
-  
-.container-menu .right-menu .apps-menu .apps-dropdown a:hover {
-    background-color: #f1f1f1;
-}
-  
 .dropdown {
     top: 200px;
     position: relative;
@@ -364,7 +373,8 @@ header .right-menu .logIn:hover {
     text-decoration: none;
 }
 
-.dropdown-content #change {
+.footer-container .footer-item-2 .right-item .dropdown-content .dark-mode #change {
+    margin-left: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -372,6 +382,27 @@ header .right-menu .logIn:hover {
     padding: 15px;
     white-space: nowrap;
     color: black;
+    opacity: 1;
+}
+.dropdown-content .dark-mode {
+    position: relative;
+}
+.dropdown-content .dark-mode .sun {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    color: #70757a;
+}
+.dropdown-content .dark-mode:hover .sun {
+    opacity: 1;
+    margin-left: 35px;
+    align-items: center;
+}
+.dropdown-content #change {
+    opacity: 1;
 }
 .footer-container .footer-item-2 .right-item .dropdown-content div:hover {
     background-color: rgba(0,0,0,0.1)
@@ -397,6 +428,16 @@ header .right-menu .logIn:hover {
     border: 1px solid rgba(66, 66, 68, 0.603);
     box-shadow: 0 2px 6px rgba(116, 114, 114, 0.8);
 }
+.header-night .container-menu .right-menu .apps-dropdown::-webkit-scrollbar {
+    width: 5px;
+  }
+.header-night .container-menu .right-menu .apps-dropdown::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+.header-night .container-menu .right-menu .apps-dropdown::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #ffffff93;
+  }
 .header-night .container-menu .right-menu .apps-dropdown a {
     color: #999da2;
     background-color: rgba(32,33,36,1);
@@ -404,6 +445,7 @@ header .right-menu .logIn:hover {
 .header-night .container-menu .right-menu .apps-dropdown a:hover {
     background-color: #303134;
 }
+
 .header-night .container-menu .left-menu a {
     color: #bdc1c6;
 }
@@ -416,7 +458,7 @@ header .right-menu .logIn:hover {
 }
 .footer-night.footer-container .footer-box .footer-item-2 a,
 .footer-night.footer-container .footer-box .footer-item-2 .option-item,
-.footer-night.footer-container #change {
+.footer-night.footer-container .footer-item-2 .right-item .dropdown-content .dark-mode #change {
     color: #999da2;
 }
 .footer-night.footer-container .footer-box .footer-item-2 .dropdown-content {

@@ -31,8 +31,9 @@ drop.addEventListener("click", function() {
 
 const change = document.querySelector("#change");
 const body = document.querySelector("body");
-const footer = document.querySelector("footer")
-const header = document.querySelector("header")
+const footer = document.querySelector("footer");
+const header = document.querySelector("header");
+const sun = document.querySelector(".sun");
 
 change.addEventListener("click", function () {
     if(change.value === "어두운 테마: 사용 안함") {
@@ -40,10 +41,12 @@ change.addEventListener("click", function () {
         footer.classList.add("footer-night")
         header.classList.add("header-night");
         change.value = "어두운 테마: 사용";
+        document.querySelector('.material-icons.sun').textContent = 'dark_mode';
     } else {
         body.classList.remove("body-night");
         footer.classList.remove("footer-night");
         header.classList.remove("header-night");
         change.value = "어두운 테마: 사용 안함";
+        document.querySelector('.material-icons.sun').textContent = 'light_mode';
     }
 });
