@@ -326,13 +326,13 @@ header .right-menu .logIn:hover {
     height: 144px;
     display: none;
   }
-  ::-webkit-scrollbar {
+  .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar {
     width: 5px;
   }
-  ::-webkit-scrollbar-track {
+  .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  ::-webkit-scrollbar-thumb {
+  .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background-color: rgb(88, 175, 233);
   }
