@@ -1,0 +1,13 @@
+.subscription {
+  background-color: red;
+  width : 100%;
+  height: inherit;
+  .subscription__fir_article {
+    width : 100%;
+    height: 801px;
+    background-image: url('/public/images/subscription_DSK_M3.jpg');
+    background-size: cover;
+  }
+  .subscription__sec_article {
+  }
+}

@@ -2,12 +2,13 @@
 @import 'header';
 @import 'left-categories';
 @import 'main-view';
+@import 'card-category';
+@import 'subscription';
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   box-sizing: border-box;
   background-color: $color-cream;
-  height: 300vh;
   margin : 0;
 }
 p {
@@ -30,6 +31,13 @@ ul, li {
   list-style: none;
   padding : 0;
   margin : 0;
+}
+
+// ! 임시 footer 공간
+.space {
+  width : 100%;
+  height: 1000px;
+  background-color: antiquewhite;
 }
 
 .a11y {

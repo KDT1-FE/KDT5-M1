@@ -13,12 +13,13 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build" : "parcel build index.html"
+    "build": "parcel build index.html"
   },
   "type": "module",
   "author": "peacepiece7",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "swiper": "^9.1.1"
   }
 }
