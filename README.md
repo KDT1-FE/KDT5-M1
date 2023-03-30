@@ -7,10 +7,12 @@
 
 ## todo
 
-- ~~올바른 치료를 진행합니다. 섹션~~
-- 공지 이벤트(swiper)
-- SNS
-- Footer
+- ~~header~~
+- ~~video 섹션~~
+- ~~about 섹션~~
+- ~~소통 (swiper) 섹션~~
+- SNS 섹션
+- footer
 - floatings
   </br></br>
 
@@ -18,6 +20,7 @@
 
 - 검색input요소 외부 클릭시 닫히기.
 - 검색 input요소가 active한 경우 header의 bgc가 흰색으로 유지
+- swiper
   </br></br>
 
 ## 원본페이지와 차이점
