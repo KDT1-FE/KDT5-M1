@@ -12,10 +12,11 @@
     height: 768px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position : center;
     transition : opacity 0.5s ease-in-out;
+
   }
   figure div:first-child {
-    background-position : center;
     background-image: url("/public/images/main_bg_1.jpg");
   }
   figure div:nth-child(2) {
