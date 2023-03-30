@@ -263,7 +263,7 @@ section.communication {
   background-image: url("./images/communication_bg.png");
   background-repeat: no-repeat;
   background-position: 98% 5%;
-  padding: 280px 70px;
+  padding: 280px 70px 100px 10.5%;
   box-sizing: border-box;
 }
 section.communication .contents {
@@ -337,7 +337,7 @@ section.communication .contents .swiper .swiper__wrapper .arrow-icon.next {
 /* SNS */
 section.sns {
   height: calc((100vh - 100px) / 3 * 2);
-  padding: 100px 20px;
+  padding: 100px 20px 100px 10.5%;
   box-sizing: border-box;
   background-color: #f5f5f5;
 }
