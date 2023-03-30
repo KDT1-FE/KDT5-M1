@@ -11,8 +11,8 @@
 - ~~video 섹션~~
 - ~~about 섹션~~
 - ~~소통 (swiper) 섹션~~
-- SNS 섹션
-- footer
+- ~~SNS 섹션~~
+- ~~footer~~
 - floatings
   </br></br>
 
@@ -33,6 +33,9 @@
 - video section에서 BEM활용
 - 플렉스 박스 최대한 활용
 - landing page에 아래로 화살표 추가, 다음섹션으로 넘어가도록, 스크롤 행동 smooth, 화살표 애니매이션 추가
+- sns섹션 + footer의 높이 = 100vh - header높이
+- font-weight 600,900이 없어서 400과 700으로만 진행
+- 일부 a태그 cursor: pointer;로 대체
   </br></br>
 
 ## 질문
