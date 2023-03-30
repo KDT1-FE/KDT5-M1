@@ -5,13 +5,14 @@ header {
   font-family: $font-sans;
   font-size : .75rem;
   letter-spacing : .1em;
+  top : 32px;
   .gnb-wrap {
     position: sticky;
     position: -webkit-sticky; 
-    top: 0;
+    top: 0px;
     width: 100%;
     height: 80px;
-    z-index: 1;
+    z-index: 200;
     background-color: transparent;
     .gnb {
       display: flex;
@@ -81,6 +82,27 @@ header {
   .gnb-wrap.gnb-transparent {
     animation: gnbFadeOut 0.2s;
     animation-fill-mode: forwards;
+  }
+  .gnb-wrap.fix {
+    position: fixed;
+    animation: none !important;
+    background-color: $color-cream;
+    .l-menu  a{ 
+      color : $font-black;
+    }
+    .logo path {
+      fill : $color-bluebottle;
+      stroke : $color-bluebottle
+    }
+    .r-menu-cover a:first-child path {
+      fill : $font-black;
+    }
+    .r-menu-cover a:nth-child(2) svg  {
+      stroke : $font-black;
+    }
+    .r-menu-cover a:last-child path  {
+      stroke : $font-black;
+    }
   }
 }
 

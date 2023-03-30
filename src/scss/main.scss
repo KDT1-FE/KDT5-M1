@@ -1,12 +1,13 @@
 @import 'config';
 @import 'header';
-@import 'left-flyout';
+@import 'left-categories';
+@import 'main-view';
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
   box-sizing: border-box;
   background-color: $color-cream;
-  height: 200vh;
+  height: 300vh;
   margin : 0;
 }
 p {
@@ -21,9 +22,14 @@ svg rect {
   stroke:#fff;
   color : white;
 }
-a {
+a{
   text-decoration: none;
   color : $font-white
+}
+ul, li {
+  list-style: none;
+  padding : 0;
+  margin : 0;
 }
 
 .a11y {
@@ -37,6 +43,8 @@ a {
 }
 
 .banner {
+  position: absolute;
+  top: 0;
   width : 100%;
   height: 32px;
   text-align: center;
@@ -44,7 +52,7 @@ a {
   background-color: $color-cream;
   font-size: 12px;
   line-height: 32px;
-  z-index: 2;
+  z-index: 200;
   a {
     color : $font-black;
   }
@@ -52,18 +60,3 @@ a {
 
 
 
-.view {
-  position :relative;
-  width : 100%;
-  height: 100%;
-  div {
-    position :absolute;
-    top : -128px;
-    width : 100%;
-    height: 100%;
-    background-image: url("/public/images/main_bg_1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
-}

@@ -1,0 +1,88 @@
+.view {
+  position :relative;
+  width : 100%;
+  height: 100%;
+  figure {
+    margin : 0;
+
+  }
+  figure div {
+    position :absolute;
+    top : -98px;
+    width : 100%;
+    height: 768px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition : opacity 0.5s ease-in-out;
+  }
+  figure div:first-child {
+    background-position : center;
+    background-image: url("/public/images/main_bg_1.jpg");
+  }
+  figure div:nth-child(2) {
+    background-image: url("/public/images/main_bg_3.jpg");
+  }
+  // figure div:nth-child(3) {
+  //   background-image: url("/public/images/main_bg_2.jpg");
+  // }
+  .view__content {
+    position: absolute;
+    width : 100%;
+    max-width: 450px;
+    top : 252px;
+    padding-left: 8rem;
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      color : $font-white;
+      font-family: $font-serif;
+      font-weight: 400;
+    }
+    a {
+      display: inline-block;
+      width : 220px;
+      height: 48px;
+      background-color: $color-cream;
+      letter-spacing: .1rem;
+      font-size: .75rem;
+      color : $font-black;
+      text-align: center;
+      line-height: 48px;
+      opacity: 1;
+      transition: opacity 0.1s ease-in-out;
+    }
+    a:hover {
+      opacity: 0.5;
+    }
+  }
+  .progress {
+    position: absolute;
+    width : 100%;
+    max-width : 100px;
+    top : 572px;
+    right : 8rem;
+    padding-left: 8rem;
+    div p.active {
+      color : $font-white
+    }
+    div p {
+      font-size: .75rem;
+      display: inline-block;
+      padding-right: .5rem;
+      color : rgba(255,255,255,0.5)
+    }
+    #progress {
+          appearance: none;
+          width : 100px;
+          height: 2px;
+    }
+    // progressbar의 배경이 되는 요소
+    #progress::-webkit-progress-bar {
+      background: transparent;
+    }
+    // progress의 진행 bar가 되는 요소
+    #progress::-webkit-progress-value {
+      background: $font-white;
+    }
+  }
+}

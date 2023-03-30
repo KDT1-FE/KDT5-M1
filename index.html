@@ -20,7 +20,7 @@
         <div class="gnb gnb-transparent">
           <div class="inner">
             <div class="l-menu">
-              <a href="javascript:void(0)" role="button">
+              <a href="javascript:void(0)" data-category="shop" role="button">
                 SHOP
                 <span class="a11y">매장</span>
               </a>
@@ -28,7 +28,7 @@
                 SUBSCRIPTIONS
                 <span class="a11y">구독하기</span>
               </a>
-              <a href="javascript:void(0)" role="button">
+              <a href="javascript:void(0)" data-category="learn" role="button">
                 LEARN
                 <span class="a11y">더 알아보기</span>
               </a>
@@ -111,30 +111,149 @@
         </div>
       </div>
     </header>
-    <section class="l-flyout-shop">
-      <a href="javasciprt:void(0)" class="cancle" role="button" title="취소하기">
-        <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path
-            stroke="#333333" stroke-width="0.1"
-            fill-rule="evenodd"
-            fill="#333333"
-            d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
-          </path>
-        </svg>
+    <section id="left-menu">
+      <div class="l-shop menu" data-category="shop" style="display : none">
+        <div class="cover">
+          <div class="close-btn">
+            <a href="javascript:void(0)" class="cancle" role="button" title="취소하기">
+              <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#333333" stroke-width="0.1"
+                  fill-rule="evenodd"
+                  fill="#333333"
+                  d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee subscriptions</a>
+              <div class="sub" style="display : none">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="취소하기">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">coffee subscriptions</a>c
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">new: craft instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">featured</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">spresso</a>e
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee</a>
+              <div class="sub" style="display : none">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="취소하기">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">all coffee</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">espresso</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee sets</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">decaf</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee complements</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">insatnt</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">brew tools</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">drinkware</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">COLLECTIBLES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="l-learn" data-category="learn" style="display : none">
         <ul>
-          <li>COFFEE SUBSCRIPTIONS</li>
-          <li>COFFEE</li>
-          <li>INSTANT</li>
-          <li>BREW TOOLS</li>
-          <li>DRINKWARE</li>
-          <li>COLLECTIBLES</li>
+          Learn
         </ul>
-      </a>
-    </section>
-    <section class="l-flyout-learn">
+      </div>
+      <!-- <div class="space"></div> -->
     </section>
     <section class="view">
-      <div></div>
+      <figure>
+        <div></div>
+        <div></div>
+      </figure>
+      <div class="view__content">
+        <h1>Enjoy Free Shipping on Spring On-The-Go Staples</h1>
+        <div>
+          <a href="javascript:void(0)">SHOP NOW</a>
+        </div>
+      </div>
+      <div class="progress">
+        <div>
+          <p>01</p>
+          <p>02</p>
+        </div>
+        <progress id="progress" value="0" min="0" max="100"></progress>
+      </div>
+
     </section>
   </body>
 </html>
