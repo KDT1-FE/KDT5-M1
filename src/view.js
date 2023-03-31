@@ -1,10 +1,13 @@
 /**
  * ms만큼 await합니다.
  * @param {number} ms
- * @returns {boolean}
+ * @returns {undefined}
  */
-// eslint-disable-next-line no-return-await, no-promise-executor-return
-const delay = async (ms) => await new Promise((res) => setTimeout(res, ms))
+const delay = async (ms) => {
+  await new Promise((res) => {
+    setTimeout(res, ms)
+  })
+}
 
 function progress(ms) {
   const start = Date.now()
