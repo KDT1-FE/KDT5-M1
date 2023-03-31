@@ -8,8 +8,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  box-sizing: border-box;
   height: 3000px;
+  user-select: none;
 }
 img {
   display: block;
@@ -17,12 +17,12 @@ img {
 a {
   text-decoration: none;
 }
-/* html::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 html {
   scrollbar-width: none;
-} */
+}
 
 /* HEADER */
 header {
@@ -68,10 +68,7 @@ header .menu .menu__li > a {
   padding: 0 30px;
   font-size: 20px;
   font-weight: 600;
-  /* 이거 왜 있는거? */
-  transition: all 0.2s;
 }
-
 header .menu .menu__li .searchIcon {
   margin-left: 15px;
   background-color: #143f6c;
@@ -87,8 +84,8 @@ header .menu .menu__li .searchIcon {
 }
 
 header .menu .menu__li .searchInput {
+  z-index: -1;
   opacity: 0;
-  display: none;
   position: absolute;
   right: 0;
   top: 76px;
@@ -144,6 +141,71 @@ header .menu .menu__li:hover .menu__submenu a {
 header .menu .menu__li .menu__submenu a:hover {
   color: #fff;
   background-color: #143f6c;
+}
+
+/* FLOATING */
+
+.floatings .info {
+  right: 70px;
+  z-index: 10;
+  position: fixed;
+  transform: translateY(50%);
+}
+.floatings .info a + a {
+  margin-top: 10px;
+}
+.floatings .info a {
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: -1px 5px 10.56px 1.44px rgba(0, 0, 0, 0.17);
+  border: 3px solid #143f6c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.floatings .info a:hover {
+  background-color: #143f6c;
+  opacity: 1;
+}
+
+.floatings .info a img {
+  height: 40px;
+}
+.floatings .info a p {
+  color: #000;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.floatings .info a:hover p {
+  color: #fff;
+}
+.floatings .to-top {
+  z-index: 10;
+  position: fixed;
+  right: 90px;
+  bottom: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 20%);
+}
+.floatings .to-top span {
+  color: #808080;
+  font-size: 25px;
 }
 
 /* VIDEO SECTION */
@@ -287,8 +349,6 @@ section.communication .contents .swiper {
   width: 73.5%;
 }
 
-section.communication .contents .swiper .tab {
-}
 section.communication .contents .swiper .tab .tab__btn {
   margin: 0 25px 50px;
   height: 52px;
@@ -313,6 +373,9 @@ section.communication .contents .swiper .swiper__wrapper {
 section.communication .contents .swiper .swiper__wrapper .swiper__contents {
   background-color: palegoldenrod;
   height: 320px;
+  font-size: 100px;
+  text-align: center;
+  line-height: 320px;
 }
 
 section.communication .contents .swiper .swiper__wrapper .arrow-icon {
@@ -418,7 +481,6 @@ section.sns .contents .info .info__sns {
   height: 85px;
   color: #fff;
   margin-top: 50px;
-  cursor: pointer;
 }
 section.sns .contents .info .info__sns div {
   position: relative;
@@ -433,16 +495,19 @@ section.sns .contents .info .info__sns .info__sns__blog {
   background-image: url("./images/sns_blog.png");
   background-repeat: no-repeat;
   width: 324px;
+  cursor: pointer;
 }
 section.sns .contents .info .info__sns .info__sns__insta {
   background-image: url("./images/sns_insta.png");
   background-repeat: no-repeat;
   width: 324px;
+  cursor: pointer;
 }
 section.sns .contents .info .info__sns .info__sns__talk {
   background-image: url("./images/sns_talk.png");
   background-repeat: no-repeat;
   width: 324px;
+  cursor: pointer;
 }
 
 /* FOTTER */

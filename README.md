@@ -5,39 +5,26 @@
 
 ## 결과물
 
-## todo
+## 원본과의 차이점
 
-- ~~header~~
-- ~~video 섹션~~
-- ~~about 섹션~~
-- ~~소통 (swiper) 섹션~~
-- ~~SNS 섹션~~
-- ~~footer~~
-- floatings
-  </br></br>
+| 원본                      | 과제                                                                    | 추가 설명                                                                                       |
+| ------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| favicon 없음              | favicon 추가                                                            |
+| 반응형                    | 반응형 x                                                                |
+| 스크롤바 있음             | 스크롤바 없음                                                           | 디자인적 완성도                                                                                 |
+| 폰트 'NanumSquareNeo'     | 폰트 'Nanum Gothic'                                                     | 구글폰트에 없음                                                                                 |
+| 다양한 font-weight사용    | 400과 700으로만 진행                                                    |
+| header 불투명             | header가 투명하다가 hover, scroll 위치에 따라 불투명하게                | 원래 홈페이지에서는 동영상이 header로 인해 밀려나 영상의 아랫부분이 한 스크린안에 들어오지 않음 |
+| section별 높이가 가지각색 | 섹션의 height가 header 높이를 포함하여 100vh가 되도록                   |
+|                           | 메인화면에서 아래로 내려가는 화살표 추가                                | 바로 아래 섹션으로 이동                                                                         |
+| a 태그 정상 작동          | a 태그 대부분 비활성화, 일부 a태그 사용하지 않고 cursor: pointer로 대체 |                                                                                                 |
+| floating아이콘 opacity: 1 | 화면 컨텐츠를 너무 가리는 것 같아 opacity 낮춤                          |                                                                                                 |
+| swiper부분 정상작동       | swiper부분 진행 x                                                       |                                                                                                 |
 
-## 마지막에 할 수정사항
-
-- 검색input요소 외부 클릭시 닫히기.
-- 검색 input요소가 active한 경우 header의 bgc가 흰색으로 유지
-- swiper
-  </br></br>
-
-## 원본페이지와 차이점
-
-- favicon 추가
-- google font에 'NanumSquareNeo' 없어서 'Nanum Gothic'사용
-- search 기능x, form태그 사용하지 않고 input으로만 구성
-- 원래 홈페이지에서는 동영상이 header로 인해 밀려나 아랫부분이 잘림. 16:9의 영상을 온전히 보여주기 위해 header의 배경화면을 transparent로 수정. 마우스 hover 시, 스크롤 내릴시 배경화면 #fff으로 변화
-- 섹션의 height가 header 높이를 포함하여 100vh가 되도록 수정
 - video section에서 BEM활용
 - 플렉스 박스 최대한 활용
-- landing page에 아래로 화살표 추가, 다음섹션으로 넘어가도록, 스크롤 행동 smooth, 화살표 애니매이션 추가
-- sns섹션 + footer의 높이 = 100vh - header높이
-- font-weight 600,900이 없어서 400과 700으로만 진행
-- 일부 a태그 cursor: pointer;로 대체
   </br></br>
 
 ## 질문
 
-- video ratio
+- 검색 input 요소 외부 클릭시 검색 닫힘
