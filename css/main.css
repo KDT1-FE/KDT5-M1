@@ -1,36 +1,34 @@
 body {
-  background-image:url("../images/new_main.png");
+  background-image: url("../images/new_main.png");
 }
 header > .inner {
-  width: 1050px;
+  width: auto;
+  height: 59px;
   background-color: gray;
-  right: 23%;
-  position: absolute;
-}
-header > .inner > .wrapper {
   display: flex;
-  position:relative;
-}
-header > .inner > .wrapper > .left {
-  width: 76px;
-  height: 60px;
-  background-color: red;
-  position: absolute;
-  left:0;
+  position: static;
 }
 
-header > .inner > .wrapper > .middle {
+header > .inner > .left {
+  width: 76px;
+  height: 59px;
+  background-color: red;
+  position: absolute;
+  right:76%;
+
+}
+header > .inner > .middle {
   width: 462px;
   height: 59px;
   background-color: blue;
+  right:34%;
   position: absolute;
-  right:20%;
 }
 
-header > .inner > .wrapper > .right {
+header > .inner > .right {
   width: 110px;
   height: 59px;
   background-color: green;
+  right:24%;
   position:absolute;
-  right:0;
 }
