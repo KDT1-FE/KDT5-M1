@@ -1,27 +1,14 @@
 import Swiper from 'swiper/swiper-bundle.esm'
-// import Swiper styles
 import 'swiper/swiper-bundle.min.css'
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+// 예외적으로 인스턴스를 사용하지 않기떄문에 eslint no-new role을 disable하였습니다.
+// eslint-disable-next-line no-new
+new Swiper('.swiper', {
   direction: 'horizontal',
   loop: false,
   slidesPerView: 3,
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 })
-
-console.log(swiper.length)

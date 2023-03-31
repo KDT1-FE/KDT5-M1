@@ -1,35 +1,37 @@
 .subscription {
-  position : relative;
+  position: relative;
   .subscription__fir_article {
-    position : relative;
-    width : 100%;
+    position: relative;
+    width: 100%;
     height: 100%;
     figure {
-      margin : 0;
+      margin: 0;
       img {
-        width : 100%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
     .content {
       position: absolute;
-      top : 0;
+      top: 0;
       display: flex;
       flex-direction: column;
-      width : 30%;
-      color : $font-white;
+      width: 30%;
+      color: $font-white;
       margin-top: 11rem;
       padding-left: 7rem;
-      h2, p, a{
+      h2,
+      p,
+      a {
         font-size: 1.25rem;
         line-height: 1.5rem;
         font-family: $font-serif;
         font-weight: 400;
-        padding : 0 1.25rem;
+        padding: 0 1.25rem;
       }
       h2 {
-        margin-bottom : 2rem;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
       }
       p {
@@ -38,12 +40,12 @@
       a {
         background-color: $color-cream;
         font-family: $font-sans;
-        font-size : .75rem;
-        color : $font-black;
+        font-size: 0.75rem;
+        color: $font-black;
         text-align: center;
-        letter-spacing: .1rem;
-        margin : 0 1.25rem;
-        padding : .75rem 0;
+        letter-spacing: 0.1rem;
+        margin: 0 1.25rem;
+        padding: 0.75rem 0;
       }
     }
   }
@@ -51,37 +53,37 @@
     display: flex;
     // flex-direction: column;
     align-items: center;
-    padding : 130px 30px;
+    padding: 130px 30px;
     // flex-basis: 50%;
     .content {
       display: flex;
-      width : 50%;
+      width: 50%;
       max-width: 42rem;
       font-family: $font-serif;
       // margin : auto;
-      font-size: .875rem;
-      color : $font-black;
+      font-size: 0.875rem;
+      color: $font-black;
       justify-content: center;
       .content__inner {
         max-width: 28rem;
         h2 {
           font-size: 1.5rem;
           font-weight: 400;
-          margin : 0;
+          margin: 0;
           padding-bottom: 20px;
         }
         dl {
           display: flex;
           flex-direction: column;
           line-height: 1.125rem;
-          margin : 0;
+          margin: 0;
           padding-top: 30px;
           row-gap: 1.25rem;
           dt {
             font-family: $font-sans;
           }
           dd {
-            margin : 0;
+            margin: 0;
             p {
               line-height: 1.25rem;
               padding-top: 0.5rem;
@@ -92,34 +94,34 @@
           display: inline-block;
           min-width: 300px;
           box-sizing: border-box;
-          border : 1px solid $font-black;
+          border: 1px solid $font-black;
           font-family: $font-sans;
-          font-size: .75rem;
+          font-size: 0.75rem;
           text-align: center;
-          letter-spacing: .1rem;
-          color : $font-black;
-          padding : 1rem 2.25rem;
+          letter-spacing: 0.1rem;
+          color: $font-black;
+          padding: 1rem 2.25rem;
           background-color: #fff;
           margin-top: 30px;
         }
       }
     }
     figure {
-      margin : 0;
-      width : 50%;
+      margin: 0;
+      width: 50%;
       max-height: 100%;
-      padding : 1.25rem;
+      padding: 1.25rem;
       div {
-        width : 100%;
+        width: 100%;
         span {
-          position : relative;
+          position: relative;
           display: block;
-          width : 100%;
+          width: 100%;
           padding-bottom: 100%;
           background-color: violet;
           img {
             position: absolute;
-            width : 100%;
+            width: 100%;
             height: 100%;
             object-fit: cover;
           }

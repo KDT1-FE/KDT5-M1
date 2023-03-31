@@ -1,7 +1,7 @@
 /**
- * ms만큼 await합니다.
+ * @description ms만큼 await합니다.
  * @param {number} ms
- * @returns {undefined}
+ * @returns {Promise<undefined>}
  */
 const delay = async (ms) => {
   await new Promise((res) => {
@@ -9,6 +9,11 @@ const delay = async (ms) => {
   })
 }
 
+/**
+ * @description progress bar(#progress)의 value를 100ms마다 변경합니다.
+ * @param {number} ms max value
+ * @return {undefined}
+ */
 function progress(ms) {
   const start = Date.now()
   const intervalId = setInterval(() => {
@@ -18,7 +23,10 @@ function progress(ms) {
   setTimeout(() => clearInterval(intervalId), ms)
 }
 
-async function convertViewBg() {
+/**
+ * @description '.view > figure > div' 안에 있는 백그라운드 이미지를 6초마다 변경합니다.
+ */
+async function convertBackground() {
   const TRUE = true
   const viewEls = Array.from(document.querySelectorAll('.view > figure > div'))
   const nextBg = []
@@ -42,4 +50,5 @@ async function convertViewBg() {
     nextBg.push(idx)
   }
 }
-window.addEventListener('DOMContentLoaded', convertViewBg())
+
+window.addEventListener('DOMContentLoaded', convertBackground())

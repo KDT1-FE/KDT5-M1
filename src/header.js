@@ -1,4 +1,17 @@
-// GNB fade in/out
+/**
+ * @description 카테고리를 열고 닫는 버튼을 visible/hidden하는 함수입니다.
+ * @param {boolean} off
+ * @return {undefined}
+ */
+function toggleCategoryCloseBtn(off) {
+  document.querySelectorAll('.cover > .close-btn').forEach((cbtn) => {
+    if (off) cbtn.style.visibility = 'hidden'
+    else cbtn.style.visibility = 'visible'
+  })
+}
+
+// GNB를 fade in/out하는 이벤트리스너 입니다.
+// 스크롤이 위로 움직힐 떄 GNB가 fade in하고 아래로 움직힐 때 fade out합니다.
 let prevY = 0
 window.addEventListener('scroll', () => {
   const currY = window.scrollY
@@ -16,7 +29,7 @@ window.addEventListener('scroll', () => {
   prevY = currY
 })
 
-// Open left menu
+// Open left category
 document.querySelector('.l-menu').addEventListener('click', (e) => {
   if (e.target.tagName !== 'A') return null
 
@@ -37,18 +50,7 @@ document.querySelector('.l-menu').addEventListener('click', (e) => {
   return null
 })
 
-// 카테고리를 열고 닫는 버튼을 on/off하는 함수입니다.
-function toggleCategoryCloseBtn(off) {
-  document.querySelectorAll('.cover > .close-btn').forEach((cbtn) => {
-    if (off) {
-      cbtn.style.visibility = 'hidden'
-    } else {
-      cbtn.style.visibility = 'visible'
-    }
-  })
-}
-
-// Close left category (.menu & .sub display none)
+// Close left category
 document.querySelectorAll('.close-btn > a').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     // gnb를 고정을 풉니다.
@@ -62,7 +64,7 @@ document.querySelectorAll('.close-btn > a').forEach((btn) => {
   })
 })
 
-// Open subcategory (.sub display none/block )
+// Open subcategory (left category의 subcategory입니다)
 document.querySelectorAll('#left-menu .sub-btn').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     document.querySelectorAll('.sub').forEach((subEl) => {

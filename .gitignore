@@ -1,7 +1,9 @@
-# nodejs
+# Nodejs
 node_modules
 
-# build
-dist
+# Bundler
 .cache
 .parcel-cache
+
+# Build
+dist
