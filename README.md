@@ -24,6 +24,7 @@
 | floating아이콘 opacity: 1                                                                                                                                                                                               | opacity: 0.3                                                            | 컨텐츠를 너무 가림                                                                              |
 | swiper 정상작동                                                                                                                                                                                                         | swiper 진행 x                                                           |                                                                                                 |
 
+- <header>, <section> 등 시멘틱 태그를 최대한 활용.
 - BEM, 플렉스박스 최대한 활용
   </br></br>
 
