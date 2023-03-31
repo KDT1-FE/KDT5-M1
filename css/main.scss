@@ -17,6 +17,7 @@ input, textarea, select, button {
 
 a {
   color: #212124;
+  text-decoration: none;
 }
 
 input {
@@ -29,6 +30,7 @@ section, article, header, footer, nav {
 
 ul li {
   margin: 1.6rem;
+  list-style: none;
 }
 
 body {
@@ -96,7 +98,6 @@ header {
             font-weight: 700;
             font-style: normal;
             margin-right: 3rem;
-            text-decoration: none;
             color: #4d5159;
             
           }
@@ -185,6 +186,10 @@ header {
       border-radius: 0.4rem;
       border: 1px solid #d1d3d8;
       cursor: pointer;
+    }
+
+    .chatting-btn:hover {
+      opacity: .6;
     }
     .chatting-btn.isClosing {
       display: none;
@@ -367,7 +372,6 @@ header {
       
       
       .card-link {
-        text-decoration: none;
         color: #212529;
 
         .card-photo {
@@ -445,9 +449,7 @@ header {
       vertical-align: middle;
       margin-left: 3.2rem;
 
-      a {
-        text-decoration: none;
-      }
+      
     }
   }
 }
@@ -502,6 +504,7 @@ header {
   font-weight: bold;
 }
 
+
 .text-center {
   text-align: center;
 }
@@ -511,3 +514,254 @@ header {
   margin-bottom: 1.6rem;
 }
 
+
+
+// FOOTER
+
+#footer {
+  background-color: #fff;
+  color: #212124;
+  border-top: 1px solid #eaebee;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 76.8rem;
+    margin: 0 auto;
+  }
+
+  
+// footer-sitemap 
+  //app-downloads
+  .footer-sitemap {
+    padding: 4.8rem 0;
+  }
+  .app-download {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+
+  .app-download-text {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.3rem;
+  }
+  .app-download-links {
+    display: flex;
+  }
+
+  .app-icon-btns {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  .platform-text {
+    color: #212124;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 0.8rem;
+  }
+  .platform-text-arrow {
+    color: #212124;
+    margin-right: 0.6rem;
+  }
+
+  .app-download-btn {
+    display: none;
+    svg>path {
+      fill: #212124;
+    }
+  }
+  .app-download-btn:hover {
+    opacity: .6;
+  }
+
+
+  @media screen and (min-width: 768px){
+    .app-download {
+      float: right;
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+    .app-download-text {
+      line-height: 1.4;
+      font-size: 1.4rem;
+    }
+    .app-icon-btns {
+      margin-top: 0.8rem;
+      margin-left: 0;
+    }
+    .app-icon-btns:not(:first-child) {
+      margin-left: 1rem;
+    }
+    .platform-text {
+      display: none;
+    }
+    .platform-text-arrow {
+      display: none;
+    }
+    .app-download-btn {
+      display: block;
+    }
+  }
+  //nav-sitemap
+  .nav-sitemap {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    display: flex;
+    max-width: 76.8rem;
+  }
+  
+  .sitemap-ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 33%;
+    .sitemap-li {
+      width: fit-content;
+    }
+  }
+
+
+  .sitemap-ul:last-child {
+    margin-right: 15%;
+  }
+
+  .sitemap-a {
+    outline: 0;
+  }
+
+  .sitemap-a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    .nav-sitemap {
+      line-height: 1.4;
+      font-size: 1.4rem;
+    }
+  
+  }
+
+
+// footer-info
+  .footer-info {
+    padding: 2.4rem 0 10rem;
+    border-top: 1px solid #eaebee;
+  }
+
+
+  .hosting {
+    line-height: 1.3;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    color: #868b94;
+  }
+  .corp {
+    display: flex;
+    align-items: center;
+  }
+  .address {
+    font-style: normal;
+  }
+  .pipe {
+    margin: 0 0.4rem;
+  }
+
+
+
+  .inquiry {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    white-space: nowrap;
+    color: #868b94;
+  }
+  .footer-a:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  .footer-a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  .terms {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-tb {
+      color: #4b5159;
+      font-weight: 700;
+    }
+  }
+
+
+
+  .SNS-links {
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .sns-icon {
+    padding-top: 0.4rem;
+  }
+  .sns-icon:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+
+
+
+  .select-nation {
+    color: #868b94;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+
+  .nations {
+    background-color: #fff;
+    color: #868b94;
+    padding-left: 0.4rem;
+    border: none;
+    text-indent: 0.1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .hosting {
+      line-height: 1.5;
+      font-size: 1.3rem;
+    }
+    .footer-a {
+      line-height: 1.5;
+      font-size: 1.3rem;
+    }
+    .SNS-links {
+      margin-top: 0;
+    }
+
+  }
+}
