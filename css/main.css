@@ -2,11 +2,10 @@ body {
   background-image: url("../images/new_main.png");
 }
 header > .inner {
-  width: auto;
   height: 59px;
-  background-color: gray;
+  background-color: black;
   display: flex;
-  position: static;
+  position: relative;
 }
 
 header > .inner > .left {
@@ -14,21 +13,22 @@ header > .inner > .left {
   height: 59px;
   background-color: red;
   position: absolute;
-  right:76%;
-
+  right: 76%;
 }
+
 header > .inner > .middle {
   width: 462px;
   height: 59px;
   background-color: blue;
-  right:34%;
   position: absolute;
+  right: 30%;
 }
 
 header > .inner > .right {
   width: 110px;
   height: 59px;
   background-color: green;
-  right:24%;
-  position:absolute;
+  position: absolute;
+  left: 76%;
 }
+/*div wrap */
