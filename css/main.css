@@ -3,6 +3,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-gray: #666;
   --color-background: #fafafa;
   --color-main: #fede22;
   --header-height: 80px;
@@ -29,6 +30,12 @@ a:hover {
   width: 1080px;
   margin: 0 auto;
   position: relative;
+}
+
+.inner.inner--coulmn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Product */
@@ -58,21 +65,26 @@ a:hover {
   margin-left: 90px;
 }
 
-.product .product__infos h3.title {
+.product__infos h3.title {
   color: var(--color-black);
   font-weight: 600;
   font-size: 40px;
   line-height: 1.2;
 }
 
-.product .product__infos p.description {
-  color: #666;
+.product__infos p.description {
+  color: var(--color-gray);
   font-size: 15px;
   line-height: 1.6;
   margin: 24px 0 30px;
 }
 
-.product .btn {
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
   background-color: #f6f6f6;
   color: var(--color-black);
   font-size: 16px;
@@ -84,18 +96,13 @@ a:hover {
   align-items: center;
 }
 
-.product .btn::after {
+.btn::after {
   content: '';
   margin-left: 5px;
   width: 6px;
   height: 9px;
   background-image: url(../images/ico_arrow.png);
   background-size: 100%;
-}
-
-.btn-group {
-  display: flex;
-  gap: 6px;
 }
 
 /* HEADER */
@@ -463,10 +470,7 @@ header .contents__menu > ul > li ul li:last-child a {
 
 .day-night .inner {
   height: 930px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .day-night .product__image {
@@ -513,4 +517,79 @@ header .contents__menu > ul > li ul li:last-child a {
   height: 9px;
   background-image: url(../images/ico_arrow_w.png);
   background-size: 100%;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.card h3.title {
+  margin-top: 150px;
+}
+
+.card .inner {
+  height: 1062px;
+  overflow: hidden;
+}
+
+.card .product__infos {
+  align-items: center;
+}
+
+.card h3.title {
+  text-align: center;
+}
+
+.swiper {
+  margin-top: 100px;
+  width: 700px;
+  height: 441px;
+  transform: translate(-12px, 0);
+}
+
+.card .swiper-slide img {
+  width: 280px;
+  height: 441px;
+}
+
+.swiper-slide {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  z-index: 9;
+}
+
+.swiper-prev,
+.swiper-next {
+  width: 100px;
+  height: 100px;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  top: 650px;
+  z-index: 1;
+}
+
+.swiper-prev {
+  left: 80px;
+  background-image: url('https://www.kakaobank.com/static/images/web/img-left.png');
+  background-repeat: no-repeat;
+}
+
+.swiper-next {
+  right: 50px;
+  background-image: url('https://www.kakaobank.com/static/images/web/img-right.png');
+  background-repeat: no-repeat;
 }

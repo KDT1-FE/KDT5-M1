@@ -14,7 +14,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -422,7 +424,7 @@
     <!-- DayNight -->
     <section class="day-night">
       <div class="sky"></div>
-      <div class="inner">
+      <div class="inner inner--coulmn">
         <div class="moon-group">
           <div class="moon"></div>
           <div class="moon__shadow"></div>
@@ -438,6 +440,32 @@
           </div>
         </div>
         <img src="./images/main-loan.png" alt="카카오뱅크 서류 제출" class="product__image" />
+      </div>
+    </section>
+
+    <!-- card -->
+    <section class="card">
+      <div class="inner inner--coulmn">
+        <div class="product__infos">
+          <h3 class="title">
+            프렌즈 체크카드,<br />
+            내가 고르는 선택의 즐거움
+          </h3>
+          <p class="description">프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 원하는 디자인과 기능을 선택할 수 있습니다.</p>
+          <a href="javascript:void(0)" class="btn">카카오뱅크 프렌즈 체크카드</a>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://www.kakaobank.com/static/images/web/renewal/card-1.png" alt="라이언 체크카드" /></div>
+            <div class="swiper-slide"><img src="https://www.kakaobank.com/static/images/web/renewal/card-2.png" alt="라이언 체크카드" /></div>
+            <div class="swiper-slide"><img src="https://www.kakaobank.com/static/images/web/renewal/card-3.png" alt="라이언 체크카드" /></div>
+            <div class="swiper-slide"><img src="https://www.kakaobank.com/static/images/web/renewal/card-4.png" alt="라이언 체크카드" /></div>
+            <div class="swiper-slide"><img src="https://www.kakaobank.com/static/images/web/renewal/card-5.png" alt="라이언 체크카드" /></div>
+          </div>
+        </div>
+        <div class="swiper-prev"></div>
+        <div class="swiper-next"></div>
       </div>
     </section>
   </body>
