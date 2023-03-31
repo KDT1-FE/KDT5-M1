@@ -1,17 +1,7 @@
-const doodle = document.querySelector(".doodle");
-const logIn = document.querySelector(".logIn")
 const appsButton = document.querySelector('.apps-button');
 const appsDropdown = document.querySelector('.apps-dropdown');
 const drop = document.querySelector(".option-item");
 const dropdownContent = document.querySelector(".dropdown-content");
-
-doodle.addEventListener("click", function () {
-    window.location.href = "https://www.google.com/doodles";
-});
-
-logIn.addEventListener("click", function () {
-    window.location.href = "https://accounts.google.com/";
-});
 
 appsButton.addEventListener('click', () => {
   if (appsDropdown.style.display === 'block') {
@@ -21,11 +11,23 @@ appsButton.addEventListener('click', () => {
   }
 });
 
+document.addEventListener("click", function (e) {
+  if (!appsButton.contains(e.target)) {
+    appsDropdown.style.display = 'none';
+  }
+})
+
 drop.addEventListener("click", function() {
   if (dropdownContent.style.display === 'block') {
     dropdownContent.style.display = 'none';
   } else {
     dropdownContent.style.display = 'block';
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (!drop.contains(e.target)) {
+    dropdownContent.style.display = 'none';
   }
 });
 

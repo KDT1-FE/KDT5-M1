@@ -20,7 +20,7 @@ body {
     font-family: Apple SD Gothic Neo,arial,sans-serif;
     width:100%;
     margin:0;
-    min-width: 400px;
+    min-width: 564px;
     height:100%;
 }
 
@@ -30,7 +30,6 @@ header{
     position: relative;;
 }
 header .container-menu {
-    width: max-content;
     height: 60px;
     padding: 6px;
     display: flex;
@@ -75,12 +74,13 @@ header .right-menu a {
 
 header .right-menu span {
     color: #5f6368;
-    position: absolute; 
+    position: absolute;
     justify-content: center;
-    top: 0;
+    top: 5px;
     bottom: 0;
     align-items: center;
     margin: auto;
+    right: 112px;
 }
 header .right-menu .logIn {
     margin-left: 40px;
@@ -201,26 +201,18 @@ header .right-menu .logIn:hover {
 }
 .search-container .search-box .search-right {
     display: flex;
-    flex: 0 0 auto;
-    margin-top: -5px;
-    align-items: stretch;
-    flex-direction: row;
-    height: 44px;
-    width: 122px;
+    margin-top: -10px;
+    position: inherit;
 }
 .search-container .search-box .search-right i {
-    flex: 1 0 auto;
-    display: flex;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border: 0;
     background: transparent;
     outline: none;
     padding: 0 8px;
     width: 24px;
     line-height: 44px;
-    font-size: 24px;
+    font-size: 24px;;
+    position: inherit;
 }
 .search-container .search-room .btn-group {
     padding-top: 18px;
@@ -239,12 +231,12 @@ header .right-menu .logIn:hover {
     font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
-    line-height: 27px;
     height: 36px;
-    min-width: 54px;
-    text-align: center;
     cursor: pointer;
-    user-select: none;
+}
+.search-container .search-room .btn-group .btn:hover {
+    border: 1px solid #c9caca;
+    box-shadow: 0 1px 1px #eaeeee;;
 }
 
 /* blank Space */
@@ -252,8 +244,6 @@ header .right-menu .logIn:hover {
     flex-shrink: 0;
     box-sizing: border-box;
     flex-grow: 1;
-    min-height: 0px;
-    max-height: 352px;
 }
 
 /* Footer */
@@ -284,7 +274,7 @@ header .right-menu .logIn:hover {
     flex-wrap: wrap;
     justify-content: right;
 }
-.footer-container .footer-item-2 a{
+.footer-container .footer-item-2 a {
     display: block;
     padding: 15px;
     white-space: nowrap;
@@ -303,49 +293,91 @@ header .right-menu .logIn:hover {
 
 .container-menu .right-menu .apps-menu {
     position: relative;
+    display: inline-block;
   }
   
-  .container-menu .right-menu .apps-menu .apps-button {
+.container-menu .right-menu .apps-menu .apps-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
 
-  
-
 /* Drop down */
 .container-menu .right-menu .apps-menu .apps-dropdown {
     position: absolute;
-    top: 40px;
-    right: 90px;
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 0 2px 6px rgba(116, 114, 114, 0.8);
     overflow: auto;
-    height: 144px;
+    min-width: 301px;
+    max-height: 448px;
+    right: 0;
     display: none;
+    z-index: 8;
+    border-radius: 8px;
+    top: 50px;
   }
-  .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar {
+.container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar {
     width: 5px;
   }
   .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar-track {
     background-color: transparent;
-  }
-  .container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar-thumb {
+  }  
+.container-menu .right-menu .apps-menu .apps-dropdown::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background-color: rgb(88, 175, 233);
+    background-color: rgba(151, 149, 149, 0.747);
   }
 .container-menu .right-menu .apps-menu .apps-dropdown a {
-    display: block;
+    display: inline-block;
     color: #444;
+    width: 84px;
+    text-align: center;
+    height: 84px;
     text-decoration: none;
-    padding: 5px 0;
-    margin-left: 0;
+    vertical-align: top;
+    padding: 6px;
   }
-  .container-menu .right-menu .apps-dropdown a:hover {
-    background-color: #b3caee;
+  .container-menu .right-menu .apps-menu .apps-dropdown a p {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .09px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 76px;
   }
+.container-menu .right-menu .apps-menu .apps-dropdown a img {
+ 
+    padding-top: 10px;
+  }
+.container-menu .right-menu .apps-dropdown a:hover {
+    background-color: rgb(232,240,254);
+    border-radius: 8px;
+    margin: 0;
+    z-index: 1;
+}
+.container-menu .right-menu .apps-menu .apps-dropdown .other-apps {
+    border-top: 1px solid rgb(232,234,237);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.container-menu .right-menu .apps-menu .apps-dropdown .etc button {
+    background-color: white;
+    border: 1px solid rgb(232,234,237);
+    border-radius: 4px;
+    color: #2488ec;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 25px;
+    height: 36px;
+    cursor: pointer;
+}
+.container-menu .right-menu .apps-menu .apps-dropdown .etc button:hover {
+    background-color: #eaedf1;
+    box-shadow: 0 0.5px 0.5px #eaedf1;
+}
 
 .dropdown {
     top: 200px;
@@ -356,19 +388,17 @@ header .right-menu .logIn:hover {
 .footer-container .footer-item-2 .right-item .dropdown-content {
     position: absolute;
     bottom: 48px;
-    right: 0;
+    right: 21px;
     z-index: 1;
     background-color: #ffffff;
-    min-width: 160px;
-    border-radius: 4px;
     display: none;
-    line-height: 23px;
-    padding: 0 16px;
+    width: 248px;
 }
 .footer-container .footer-item-2 .right-item .dropdown-content a {
     color: black;
     width: 238px;
     height: 23px;
+    padding: 4px 15px;
 }
 .footer-container .footer-item-2 .right-item .dropdown-content a:hover {
     background-color: rgba(0,0,0,0.1);
@@ -385,6 +415,10 @@ header .right-menu .logIn:hover {
     white-space: nowrap;
     color: black;
     opacity: 1;
+    
+}
+.footer-container .footer-item-2 .right-item .dropdown-content div {
+    border-top: 1px solid #dadce0;
 }
 .dropdown-content .dark-mode {
     position: relative;
@@ -407,7 +441,7 @@ header .right-menu .logIn:hover {
     opacity: 1;
 }
 .footer-container .footer-item-2 .right-item .dropdown-content div:hover {
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.1);
 }
 
 
@@ -450,6 +484,16 @@ header .right-menu .logIn:hover {
 
 .header-night .container-menu .left-menu a {
     color: #bdc1c6;
+}
+.header-night .container-menu .right-menu .apps-menu .apps-dropdown .other-apps {
+    border-top: 1px solid #5f6368;
+}
+.header-night .container-menu .right-menu .apps-menu .apps-dropdown .etc button {
+    background-color: #303134;
+}
+.header-night .container-menu .right-menu .apps-menu .apps-dropdown .etc button:hover {
+    background-color: #494b52;
+    box-shadow: 0 0.5px 0.5px #eaedf1;
 }
 .footer-night.footer-container .footer-box {
     background: #171717;
