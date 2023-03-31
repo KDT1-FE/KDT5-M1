@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
 const tabBtn1El = document.querySelector(".tab__btn__1");
 const tabBtn2El = document.querySelector(".tab__btn__2");
 const swiperContentsEl = document.querySelector(".swiper__contents");
+
 tabBtn1El.addEventListener("click", () => {
   tabBtn1El.classList.add("on");
   tabBtn2El.classList.remove("on");
