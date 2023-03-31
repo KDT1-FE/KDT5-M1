@@ -1,0 +1,36 @@
+body {
+  background-image:url("../images/new_main.png");
+}
+header > .inner {
+  width: 1050px;
+  background-color: gray;
+  right: 23%;
+  position: absolute;
+}
+header > .inner > .wrapper {
+  display: flex;
+  position:relative;
+}
+header > .inner > .wrapper > .left {
+  width: 76px;
+  height: 60px;
+  background-color: red;
+  position: absolute;
+  left:0;
+}
+
+header > .inner > .wrapper > .middle {
+  width: 462px;
+  height: 59px;
+  background-color: blue;
+  position: absolute;
+  right:20%;
+}
+
+header > .inner > .wrapper > .right {
+  width: 110px;
+  height: 59px;
+  background-color: green;
+  position:absolute;
+  right:0;
+}
