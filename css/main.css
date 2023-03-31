@@ -35,6 +35,7 @@ a:hover {
 .product-container {
   background-color: var(--color-white);
   position: relative;
+  margin-bottom: 32px;
 }
 
 .product {
@@ -43,12 +44,11 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
   padding: 10px 0 0 10px; /* 전체적으로 우측으로 쏠림 */
   box-sizing: border-box;
 }
 
-.product .product__infos {
+.product__infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,6 +91,11 @@ a:hover {
   height: 9px;
   background-image: url(../images/ico_arrow.png);
   background-size: 100%;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px;
 }
 
 /* HEADER */
@@ -352,11 +357,6 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 440px;
 }
 
-.savings .btn-group {
-  display: flex;
-  gap: 6px;
-}
-
 .savings .btn-group .btn {
   width: 158px;
 }
@@ -396,4 +396,121 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 408px;
   height: 715px;
   margin-right: 40px;
+}
+
+/* DayNight */
+.day-night {
+  width: 100%;
+  background-color: #559cde;
+  position: relative;
+  overflow: hidden;
+}
+
+.day-night .sky {
+  width: 100%;
+  height: 0px;
+  background-color: #333b58;
+  position: absolute;
+  bottom: 0;
+  transition: height 1s;
+  transition-delay: 0.3s;
+}
+
+.day-night .sky.show {
+  height: 930px;
+}
+
+.day-night .moon-group {
+  position: absolute;
+  top: 200px;
+  right: -30px;
+}
+
+.moon-group .moon,
+.moon-group .moon.show,
+.moon-group .moon__shadow,
+.moon-group .moon__shadow.show {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.moon-group .moon {
+  background-color: #fede22;
+  transition: background-color 0.5s;
+  transition-delay: 0.5s;
+}
+
+.moon-group .moon.show {
+  background-color: var(--color-white);
+}
+
+.moon-group .moon__shadow {
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  opacity: 0;
+  background-color: #559cde;
+  transition: transform 2s ease 1.2s, background-color 0.1s ease-in 0.6s, opacity 0.1s 1s;
+}
+
+.moon-group .moon__shadow.show {
+  opacity: 1;
+  background-color: #333b58;
+  transform: translate(70px, 70px);
+}
+
+.day-night .inner {
+  height: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-night .product__image {
+  width: 429px;
+  height: 563px;
+}
+
+.day-night .product__infos {
+  align-items: center;
+  z-index: 1;
+}
+
+.day-night h3.title {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-top: 160px;
+}
+
+.day-night p.description {
+  color: var(--color-white);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 24px 0 30px;
+}
+
+.day-night .btn {
+  background-color: rgba(0, 0, 0, 0.09);
+  color: var(--color-white);
+  font-size: 16px;
+  height: 52px;
+  width: 166px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-night .btn::after {
+  content: '';
+  margin-left: 5px;
+  width: 6px;
+  height: 9px;
+  background-image: url(../images/ico_arrow_w.png);
+  background-size: 100%;
 }
