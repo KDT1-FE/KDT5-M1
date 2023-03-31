@@ -1,0 +1,431 @@
+/* COMMON */
+body {
+  color: #333;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.5px;  /* 자간 */
+  line-height: 1.4;  /* 행간 */
+  height: 7000px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
+}
+header.bottom-border {
+  border-bottom: 1px solid #001b371a;
+}
+header .inner {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .logo img {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+}
+header .main-menu {
+  display: flex;
+}
+header .main-menu ul.menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .main-menu ul.menu li {
+  display: relative;
+}
+header .main-menu ul.menu li::before {
+  content: "";
+  width: 1.2px;
+  height: 14px;
+  background-color: #bdbebf;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .main-menu ul.menu li:not(.lastmenu):before {
+  display: none;
+}
+header .main-menu ul.menu li.language {
+  margin-left: 40px;
+}
+header .main-menu ul.menu li a {
+  font-size: 15px;
+  padding: 10px 16px;
+  margin: 0 5px;
+  display: block;
+  color: #4E5967;
+}
+header .main-menu ul.menu li a:hover {
+  width: auto;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #f2f4f6;
+}
+
+
+/* SECTION 1 메인 */
+.application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.application .inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.application .new-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.application .new-main img {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+.application .new-main .gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+}
+.application .text {
+  position: absolute;
+  top: 170px;
+}
+.application .text h2 {
+  font-size: 65px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+.application .app-store {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 410px;
+}
+.application .app-store .apple,
+.application .app-store .android {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 3px 25px;
+  border: 1px solid #000c1e;
+  border-radius: 8px;
+  background-color: #000c1e;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;
+}
+.application .app-store .apple:hover,
+.application .app-store .android:hover {
+  background-color: #4e5968;
+  border: 1px solid #4e5968;
+}
+.application .app-store .apple img,
+.application .app-store .android img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0 5px 5px 0;
+}
+.application .app-store .apple span,
+.application .app-store .android span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.application .app-store .android {
+  margin-left: 5px;
+}
+.application .more {
+  display: inline;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+}
+.application .more .material-symbols-outlined {
+  font-size: 70px;
+  color: #bdbebf;
+}
+
+
+/* SECTION 2 메인 하단 문구 */
+.section2 {
+  position: relative;
+}
+.section2 .inner {
+  position: relative;
+  top: 0px;
+  background-color: #f9fafb;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+}
+.section2 .text {
+  position: absolute;
+  top: 215px;
+  width: 100%;
+}
+.section2 .text p {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: center;
+}
+
+
+/* SECTION 3 홈,소비 */
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section3 .inner {
+  height: 1680px;
+}
+.section3 .home {
+  position: relative;
+}
+.section3 .home .text-group {
+  position: absolute;
+  top: 250px;
+  left: -215px;
+  width: 1050px;
+}
+.section3 .home .text-group h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.section3 .home .text-group h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3182f6;
+  margin-bottom: 30px;
+}
+.section3 .home .consumption {
+  float: left;
+  width: 600px;
+  height: 936px;
+}
+.section3 .home .consumption img {
+  position: absolute;
+  top: 500px;
+  left: 354px;
+  /* margin: 0 auto; */
+}
+.section3 .home .consumption img.iphone1 {
+  position: absolute;
+  top: 244px;
+  left: 309px;
+  width: 600px;
+}
+.section3 .home .consumption img.home-img1 {
+  position: absolute;
+  top: 338px;
+  left: 438px;
+  width: 342px;
+}
+.section3 .home .this-month {
+
+}
+.section3 .home .this-month img {
+  position: absolute;
+  margin: 0 auto;
+}
+.section3 .home .this-month img.iphone2 {
+  position: absolute;
+  top: 589px;
+  left: -329px;
+  width: 600px;
+}
+.section3 .home .this-month img.home-img2 {
+  position: absolute;
+  top: 677px;
+  left: -200px;
+  width: 342px;
+}
+.section3 .home .text {
+  position: absolute;
+  top: 1250px;
+  left: 395px;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+}
+
+
+/* SECTION 4 송금 */
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f9fafb;
+}
+.section4 .inner {
+  height: 2310px;
+}
+.section4 .payment {
+  position: relative;
+}
+.section4 .payment .title {
+  position: absolute;
+  top: 250px;
+  left: -500px;
+  width: 1040px;
+}
+.section4 .payment .title h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3182f6;
+  margin-bottom: 30px;
+}
+.section4 .payment .title h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.section4 .payment .free {
+  position: relative;
+}
+.section4 .payment .free .text-group {
+  position: absolute;
+  top: 678px;
+  left: -488px;
+  width: 510px;
+}
+.section4 .payment .free .text-group h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3182f6;
+  margin-bottom: 10px;
+}
+.section4 .payment .free .text-group h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section4 .payment .free .text-group p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b7684;
+}
+.section4 .payment .free .image {
+  position: relative;
+}
+.section4 .payment .free .image img {
+  position: absolute;
+  top: 619px;
+  left: 46px;
+  width: 485px;
+}
+.section4 .payment .fraud {
+  position: relative;
+}
+.section4 .payment .fraud .image {
+  position: relative;
+}
+.section4 .payment .fraud .image img {
+  position: absolute;
+  top: 1146px;
+  left: -502px;
+  width: 485px;
+}
+.section4 .payment .fraud .text-group {
+  position: absolute;
+  top: 1190px;
+  left: 79px;
+  width: 510px;
+}
+.section4 .payment .fraud .text-group h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3182f6;
+  margin-bottom: 10px;
+}
+.section4 .payment .fraud .text-group h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section4 .payment .fraud .text-group p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b7684;
+}
+.section4 .payment .auto {
+
+}
+.section4 .payment .auto .text-group {
+  position: absolute;
+  top: 1760px;
+  left: -488px;
+  width: 510px;
+}
+.section4 .payment .auto .text-group h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3182f6;
+  margin-bottom: 10px;
+}
+.section4 .payment .auto .text-group h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section4 .payment .auto .text-group p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b7684;
+}
+.section4 .payment .auto .image {
+  position: absolute;
+  top: 1900px;
+}
+.section4 .payment .auto .image img {
+  position: absolute;
+  top: -207px;
+  left: 105px;
+  width: 485px;
+}

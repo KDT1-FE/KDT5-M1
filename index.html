@@ -2,11 +2,12 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>토스</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>토스 (클론)</title> <!-- 타이틀 나중에 고치기 -->
 
+  <!-- OPEN GRAPH PROTOCOL -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="토스" />
   <meta property="og:title" content="토스" />
@@ -17,27 +18,39 @@
   <meta property="twitter:site" content="토스" />
   <meta property="twitter:title" content="토스" />
   <meta property="twitter:description" content="금융의 모든 것, 토스에서 쉽고 간편하게" />
-  <meta property="twitter:image" content="./images/newtoss-og.jpeg" />
+  <meta property="twitter:image" content="./images/newtoss-og" />
   <meta property="twitter:url" content="https://toss.im/" />
 
-  <link rel="icon" href="./favicon.png">
+  <link rel="icon" href="./favicon.png" />
+
+  <!-- Google Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Reset.css & CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+
+  <!-- LODASH.JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+  integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./JS/main.js"></script>
 </head>
-
 <body>
-
+  
   <!-- HEADER -->
-  <header>
-
+  <header class=".bottom-border">
     <div class="inner">
+
       <!-- MAIN LOGO -->
       <a href="/" class="logo">
         <img src="./images/Toss_Logo.png" alt="토스" />
@@ -69,54 +82,153 @@
           </li>
         </ul>
       </div>
-    </div>
-  
-  </header>
-  
-  <!-- MAIN -->
-  <main>
 
-    <section class="inner">
+    </div>
+  </header>
+
+
+  <!-- SECTION 1 메인 -->
+  <section class="application">
+    <div class="inner">
+
       <div class="new-main">
         <img src="./images/new_main.png" alt="NEW MAIN">
         <div class="gradient"></div>
+      </div>
+
+      <div class="text">
+        <h2>금융의 모든 것<br>토스에서 쉽고 간편하게</h2>
+      </div>
+
+      <div class="app-store">
+        <div class="apple">
+          <img src="./images/applekorea.png" alt="Apple Korea">
+          <span>App Store</span>
+        </div>
+        <div class="android">
+          <img src="./images/googleplay.png" alt="Google Play">
+          <span>Google Play</span>
+        </div>
+      </div>
+
+      <!-- <div class="more">
+        <span class="material-symbols-outlined">expand_more</span>
+      </div> -->
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 2 메인 하단 문구 -->
+  <section class="section2">
+    <div class="inner">
+
+      <div class="text">
+        <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.<br>
+          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,<br>
+          토스와 함께라면 당신의 일상이 새로워질 거예요.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 3 홈,소비 -->
+  <section class="section3">
+    <div class="inner">
+
+      <div class="home">
+
+        <div class="text-group">
+          <h4>홈 · 소비</h4>
+          <h2>내 돈 관리,<br>지출부터 일정까지<br>똑똑하게</h2>
+        </div>
+
+        <div class="consumption">
+          <img src="./images/section1_1_home_01.png" alt="계좌,소비" class="home-img1" />
+          <img src="./images/iPhone12_Clay_Shadow.png" alt="" class="iphone1" />
+        </div>
+
+        <div class="this-month">
+          <img src="./images/section1_1_home_02.png" alt="내 소비" class="home-img2" />
+          <img src="./images/iPhone12_Clay_Shadow.png" alt="" class="iphone2" />
+        </div>
+
         <div class="text">
-          <h2>금융의 모든 것<br>토스에서 쉽고 간편하게</h2>
+          <p>
+            토스에 계좌와 카드를 연결해 보세요.<br>
+            계좌 잔액, 대출·투자 내역은 기본,<br>
+            일자별 소비와 수입까지 한 번에 볼 수 있어요.
+          </p>
         </div>
-        <div class="appstore">
-          <div class="apple">
-            <img src="./images/applekorea.png" alt="Apple Korea">
-            <span>App Store</span>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 4 송금 -->
+  <section class="section4">
+    <div class="inner">
+
+      <div class="payment">
+
+        <div class="title">
+            <h4>송금</h4>
+            <h2>간편하고 안전하게<br>수수료는 평생 무료로,<br>이런 송금 써보셨나요?</h2>
+        </div>
+
+        <div class="free">
+          <div class="text-group">
+            <h4>평생 무료 송금</h4>
+            <h2>토스 평생 무료송금으로<br>모두의 금융에 자유를</h2>
+            <p>
+              누구에게 보내든 은행 상관 없이,<br>
+              이제 토스와 함께 수수료 걱정 없이 송금하세요.
+            </p>
           </div>
-          <div class="android">
-            <img src="./images/googleplay.png" alt="Google Play">
-            <span>Google Play</span>
+
+          <div class="image">
+            <img src="./images/section1_2_01.png" alt="평생 무료 송금" />
           </div>
         </div>
+
+        <div class="fraud">
+          <div class="image">
+            <img src="./images/section1_2_02.png" alt="사기계좌 조회" />
+          </div>
+          <div class="text-group">
+            <h4>사기계좌 조회</h4>
+            <h2>송금 전 사기 내역 조회로<br>피해를 미리 방지할 수 있어요</h2>
+            <p>송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
+              상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
+              안전하게 송금할 수 있어요.
+            </p>
+          </div>
+        </div>
+
+        <div class="auto">
+          <div class="text-group">
+            <h4>자동이체 예약</h4>
+            <h2>은행 점검 시간,<br>기다릴 필요 없어요</h2>
+            <p>
+              은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>
+              점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
+            </p>
+          </div>
+          <div class="image">
+            <img src="./images/section1_2_03.png" alt="자동이체 예약" />
+          </div>
+        </div>
+
       </div>
 
-      <div class="new-main-bottom">
-        <p class="text">
-          내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.<br>
-          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,<br>
-          토스와 함께라면 당신의 일상이 새로워질 거예요.
-        </p>
-      </div>
+    </div>
+  </section>
 
-    </section>
-
-    <!-- <section class="inner">
-      <div class="part2">
-        <p class="text">
-          내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.<br>
-          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,<br>
-          토스와 함께라면 당신의 일상이 새로워질 거예요.
-        </p>
-      </div>
-    </section> -->
-
-  </main>
-  
 
 </body>
 
