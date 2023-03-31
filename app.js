@@ -31,13 +31,15 @@ document.addEventListener("click", function (e) {
   }
 });
 
-const change = document.querySelector("#change");
+const dark= document.querySelector(".dark-mode");
+
 const body = document.querySelector("body");
 const footer = document.querySelector("footer");
 const header = document.querySelector("header");
 const sun = document.querySelector(".sun");
 
-change.addEventListener("click", function () {
+dark.addEventListener("click", function () {
+  const change = document.querySelector("#change");
     if(change.value === "어두운 테마: 사용 안함") {
         body.classList.add("body-night");
         footer.classList.add("footer-night")

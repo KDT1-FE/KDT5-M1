@@ -163,11 +163,9 @@ header .right-menu .logIn:hover {
     margin: 0 auto;
     width: auto;
     max-width: 584px;
-    align-items: center;
-    justify-content: center;
 }
 .search-container .search-box .icon-box {
-    flex: 1;
+    flex-shrink: 0;
     display: flex;
     padding: 5px 8px 0 14px;
 }
@@ -178,6 +176,7 @@ header .right-menu .logIn:hover {
     margin-top: -5px;
     height: 46px;
     width: 20px;
+    flex-wrap: wrap;
 }
 .search-container .search-icons .searchI {
     font-size: 20px;
@@ -201,8 +200,9 @@ header .right-menu .logIn:hover {
 }
 .search-container .search-box .search-right {
     display: flex;
-    margin-top: -10px;
-    position: inherit;
+    position: absolute;
+    right: 5px;
+    top: 10px;
 }
 .search-container .search-box .search-right i {
     cursor: pointer;
@@ -293,7 +293,7 @@ header .right-menu .logIn:hover {
 
 .container-menu .right-menu .apps-menu {
     position: relative;
-    display: inline-block;
+    display: flex;
   }
   
 .container-menu .right-menu .apps-menu .apps-button {
@@ -345,7 +345,7 @@ header .right-menu .logIn:hover {
     line-height: 18px;
     overflow: hidden;
     white-space: nowrap;
-    width: 76px;
+    width: 84px;
   }
 .container-menu .right-menu .apps-menu .apps-dropdown a img {
  
@@ -513,4 +513,10 @@ header .right-menu .logIn:hover {
 .footer-night.footer-container .footer-item-2 .right-item .dropdown-content div:hover,
 .footer-night.footer-container .footer-box .footer-item-2 a:hover {
     background-color: #303134;
+}
+
+@media (max-width: 450px) {
+  .blank {
+    height: 100%;
+  }
 }
