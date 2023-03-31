@@ -1,4 +1,5 @@
 import './scss/main.scss'
-import './header.js'
-import './view.js'
+import './header'
+import './view'
 import './swpier'
+import './landscape'

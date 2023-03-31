@@ -1,80 +1,77 @@
 .view {
-  position :relative;
-  width : 100%;
-  height: 670px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   figure {
-    margin : 0;
+    margin: 0;
   }
   figure div {
-    position :absolute;
-    top : -98px;
-    width : 100%;
-    height: 768px;
+    position: absolute;
+    top: -98px;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position : center;
-    transition : opacity 0.5s ease-in-out;
-
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
   }
   figure div:first-child {
-    background-image: url("/public/images/main_bg_1.jpg");
+    background-image: url('/public/images/main_bg_1.jpg');
   }
   figure div:nth-child(2) {
-    background-image: url("/public/images/main_bg_3.jpg");
+    background-image: url('/public/images/main_bg_3.jpg');
   }
-  // figure div:nth-child(3) {
-  //   background-image: url("/public/images/main_bg_2.jpg");
-  // }
   .view__content {
     position: absolute;
-    width : 100%;
-    max-width: 450px;
-    top : 252px;
+    width: 53%;
+    bottom: 200px;
     padding-left: 8rem;
     h1 {
       font-size: 2.5rem;
       line-height: 3rem;
-      color : $font-white;
+      color: $font-white;
       font-family: $font-serif;
       font-weight: 400;
     }
-    a {
-      display: inline-block;
-      width : 220px;
-      height: 48px;
-      background-color: $color-cream;
-      letter-spacing: .1rem;
-      font-size: .75rem;
-      color : $font-black;
-      text-align: center;
-      line-height: 48px;
-      opacity: 1;
-      transition: opacity 0.1s ease-in-out;
-    }
-    a:hover {
-      opacity: 0.5;
+    div {
+      display: flex;
+      a {
+        width: 50%;
+        display: inline-block;
+        background-color: $color-cream;
+        height: 48px;
+        letter-spacing: 0.1rem;
+        font-size: 0.75rem;
+        color: $font-black;
+        text-align: center;
+        line-height: 48px;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+      }
+      a:hover {
+        opacity: 0.5;
+      }
     }
   }
   .progress {
     position: absolute;
-    width : 100%;
-    max-width : 100px;
-    top : 572px;
-    right : 8rem;
-    padding-left: 8rem;
+    width: 100%;
+    max-width: 100px;
+    bottom: 150px;
+    right: 8rem;
     div p.active {
-      color : $font-white
+      color: $font-white;
     }
     div p {
-      font-size: .75rem;
+      font-size: 0.75rem;
       display: inline-block;
-      padding-right: .5rem;
-      color : rgba(255,255,255,0.5)
+      padding-right: 0.5rem;
+      color: rgba(255, 255, 255, 0.5);
     }
     #progress {
-          appearance: none;
-          width : 100px;
-          height: 2px;
+      appearance: none;
+      width: 100px;
+      height: 2px;
     }
     // progressbar의 배경이 되는 요소
     #progress::-webkit-progress-bar {

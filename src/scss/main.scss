@@ -4,34 +4,35 @@
 @import 'main-view';
 @import 'card-category';
 @import 'subscription';
+@import 'landscape';
 @import 'footer';
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   box-sizing: border-box;
   background-color: $color-cream;
-  margin : 0;
+  margin: 0;
 }
 p {
-  margin : 0;
+  margin: 0;
 }
 svg {
-  stroke-width:1 !important;
-  stroke:#fff
+  stroke: #fff;
 }
 svg rect {
-  stroke-width:1 !important;
-  stroke:#fff;
-  color : white;
+  stroke: #fff;
+  color: white;
 }
-a{
+a {
   text-decoration: none;
-  color : $font-white
+  color: $font-white;
 }
-ul, li {
+ul,
+li {
   list-style: none;
-  padding : 0;
-  margin : 0;
+  padding: 0;
+  margin: 0;
 }
 
 .a11y {
@@ -47,7 +48,7 @@ ul, li {
 .banner {
   position: absolute;
   top: 0;
-  width : 100%;
+  width: 100%;
   height: 32px;
   text-align: center;
   font-family: $font-serif;
@@ -56,6 +57,6 @@ ul, li {
   line-height: 32px;
   z-index: 200;
   a {
-    color : $font-black;
+    color: $font-black;
   }
 }

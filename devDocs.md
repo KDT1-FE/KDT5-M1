@@ -95,4 +95,8 @@ body {
     .bluebottle {
       rgb(0, 169, 224)
     }
+/* highlight background color (color-begie) */
+    .main {
+      background-color : rgb(249, 246, 240)
+    }
 ```

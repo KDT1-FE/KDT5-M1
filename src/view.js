@@ -17,6 +17,7 @@ const delay = async (ms) => {
 function progress(ms) {
   const start = Date.now()
   const intervalId = setInterval(() => {
+    // progressValue = (현제시간 - 시작시간) / (ms/100)
     const progressValue = parseInt((Date.now() - start) / (ms / 100), 10)
     document.querySelector('#progress').value = progressValue
   }, 100)
@@ -29,11 +30,11 @@ function progress(ms) {
 async function convertBackground() {
   const TRUE = true
   const viewEls = Array.from(document.querySelectorAll('.view > figure > div'))
-  const nextBg = []
-  viewEls.map((_, i) => nextBg.push(i))
+  const bgIdxQueue = []
+  viewEls.map((_, i) => bgIdxQueue.push(i))
 
   while (TRUE) {
-    const idx = nextBg.shift()
+    const idx = bgIdxQueue.shift()
     viewEls.map((el, i) => {
       if (i === idx) {
         document.querySelector(`.progress p:nth-child(${i + 1})`).classList.add('active')
@@ -44,10 +45,12 @@ async function convertBackground() {
       }
       return null
     })
+    // 비동기적으로 progress바가 1~100까지 차오릅니다.
     progress(6000)
-    // eslint-disable-next-line no-await-in-loop
+    // 6초간 await합니다.
     await delay(6000)
-    nextBg.push(idx)
+    // 현제 index를 bgIdxQueue queue의 맨 뒤에 넣습니다.
+    bgIdxQueue.push(idx)
   }
 }
 

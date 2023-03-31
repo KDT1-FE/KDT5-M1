@@ -29,5 +29,6 @@ module.exports = {
     'no-param-reassign': 'off', // DOM을 다루다보면 재할당 할 일이 생긴다고 판단했습니다.
     'import/extensions': 'warn', // js파일을 spliting하기 위해 on -> warn으로 변경 하였습니다.
     'prefer-arrow-callback': 'off', // this를 다루게 될 일이 있을 수도 있으니까 off하였습니다.
+    'no-await-in-loop': 'warn',
   },
 }
