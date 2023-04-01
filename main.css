@@ -17,12 +17,6 @@ img {
 a {
   text-decoration: none;
 }
-html::-webkit-scrollbar {
-  display: none;
-}
-html {
-  scrollbar-width: none;
-}
 
 /* HEADER */
 header {
