@@ -32,6 +32,19 @@ ul li {
   list-style: none;
 }
 
+button {
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  color: #212529;
+  text-align: center;
+  font-weight: 700;
+  background-color: #fff;
+  margin: 1.6rem 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #212529;
@@ -40,7 +53,6 @@ body {
 }
 
 header .head-bar {
-  display: block;
   background-color: #fff;
   color: #212124;
   position: fixed;
@@ -50,7 +62,7 @@ header .head-bar {
   max-width: 100vw;
   z-index: 999;
 }
-header .head-bar .head-container {
+header .head-container {
   height: 5.6rem;
   box-sizing: border-box;
   padding: 1.2rem 1.6rem;
@@ -59,83 +71,72 @@ header .head-bar .head-container {
   margin: 0 auto;
   position: relative;
 }
-header .head-bar .head-container .logo {
+header ._contains {
+  display: flex;
+  align-items: center;
+}
+header .logo {
   display: inline-flex;
   align-items: center;
   margin-right: 4rem;
 }
-header .head-bar .head-container .logo span {
+header .logo span {
   margin: -0.1rem 0;
 }
 @media screen and (min-width: 768px) {
-  header .head-bar .head-container.isShrink768 {
+  header .head-container {
     max-width: 120rem;
     height: 6.4rem;
   }
 }
-header .head-bar .navigations .navigations--ul {
+header .navigations {
+  display: none;
+}
+header .navigations--ul {
   display: inline-block;
 }
-header .head-bar .navigations .navigations--ul .navigations--li {
+header .navigations--ul .navigations--li {
   display: inline-block;
   margin: 0;
 }
-header .head-bar .navigations .navigations--ul .navigations--li .navigations--a {
+header .navigations--ul .navigations--li .navigations--a {
   font-weight: 700;
   font-style: normal;
   margin-right: 3rem;
   color: #4d5159;
 }
-header .head-bar .navigations .navigations--ul .navigations--li .navigations--a:hover {
+header .navigations--ul .navigations--li .navigations--a:hover {
   opacity: 0.6;
 }
-@media screen and (min-width: 768px) {
-  header .head-bar .navigations .navigations--ul .navigations--li .navigations--a.isShrink768 {
-    line-height: 1.32;
-    font-size: 1.8rem;
-  }
-}
-header .head-bar .navigations .navigations--ul .navigations--li .orange {
+header .navigations--ul .navigations--li .orange {
   color: #ff6f0f;
 }
 @media screen and (min-width: 768px) {
-  header .head-bar .navigations.isShrink768 {
+  header .navigations {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 0 4rem 0 0;
   }
+  header .navigations--a {
+    line-height: 1.32;
+    font-size: 1.8rem;
+    letter-spacing: -2%;
+  }
 }
-header .head-bar .search-chatting {
+header .search-chatting {
   justify-content: center;
-  align-items: center;
 }
-header .head-bar .search-chatting .search {
-  display: block;
-  margin-top: 0em;
-}
-header .head-bar .search-chatting .search.isClosing {
+header .search-chatting .search {
   display: none;
 }
-@media screen and (min-width: 992px) {
-  header .head-bar .search-chatting .search.isShrink992 {
-    display: block;
-    position: relative;
-    margin-right: 1.2rem;
-  }
-  header .head-bar .search-chatting .search-btn.isShrink992 {
-    display: none;
-  }
-  header .head-bar .search-chatting .search-bar.isShrink992 {
-    display: block;
-    width: 28.8rem;
-  }
-}
-header .head-bar .search-chatting .search-btn {
+header .search-chatting .search-btn {
   margin-right: 1.6rem;
-  cursor: pointer;
+  display: flex;
 }
-header .head-bar .search-chatting .search-bar {
+header .search-chatting .search-bar {
+  line-height: 1.4;
+  font-size: 1.4rem;
   background-color: #f2f3f6;
   box-sizing: border-box;
   height: 4rem;
@@ -143,32 +144,87 @@ header .head-bar .search-chatting .search-bar {
   border: none;
   border-radius: 0.6rem;
   color: #212124;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  header .head-bar .search-chatting .search-bar.isShrink768 {
+  header .search-chatting .search-bar {
     line-height: 1.36;
     font-size: 1.6rem;
-  }
-  header .head-bar .search-chatting .chatting-btn__min-width.isShrink768 {
-    display: none;
+    letter-spacing: -1%;
   }
 }
-header .head-bar .search-chatting .chatting-btn {
+@media screen and (min-width: 992px) {
+  header .search-chatting .search {
+    display: block;
+    position: relative;
+    margin-right: 1.2rem;
+  }
+  header .search-chatting .search-btn {
+    display: none;
+  }
+  header .search-chatting .search-bar {
+    width: 28.8rem;
+  }
+}
+header .search-chatting .isClicked {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+header .search-chatting .isCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .search-chatting .search-sScreen {
+  display: block;
+  margin-right: 1.6rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+header .search-chatting .cancelButton {
+  line-height: 1.36;
+  font-size: 1.6rem;
+  color: #212124;
+  white-space: nowrap;
+  cursor: pointer;
+}
+header .search-chatting #toggle .btn-appear {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+header .search-chatting .chatting-btn {
   font-weight: 700;
   width: fit-content;
   padding: 0.8rem 1.4rem;
   border-radius: 0.4rem;
   border: 1px solid #d1d3d8;
   cursor: pointer;
-}
-header .head-bar .search-chatting .chatting-btn:hover {
-  opacity: 0.6;
-}
-header .head-bar .search-chatting .chatting-btn.isClosing {
   display: none;
 }
+header .search-chatting .chatting-btn:hover {
+  opacity: 0.6;
+}
+header .search-chatting .chatting-btn__outline {
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 1.4rem;
+  width: fit-content;
+  min-height: 3.6rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.4rem;
+}
 @media screen and (min-width: 768px) {
-  header .head-bar .search-chatting .chatting-btn.isShrink768 {
+  header .search-chatting .chatting-btn__outline {
+    min-height: 4rem;
+  }
+  header .search-chatting .chatting-btn {
     line-height: 1.3;
     font-size: 1.6rem;
     display: block;
@@ -176,8 +232,80 @@ header .head-bar .search-chatting .chatting-btn.isClosing {
     background-color: #fff;
     color: #212124;
     padding: 0 1.6rem;
-    min-height: 4rem;
   }
+  header .search-chatting .chatting-btn__min-width {
+    display: none;
+  }
+}
+header .search-chatting .btn-apper {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+header .closed {
+  background: none;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+header .recommand {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.8rem 1.6rem;
+  box-sizing: border-box;
+  transform: translateY(-1.6rem);
+  opacity: 0;
+  height: auto;
+  visibility: hidden;
+  transition: transform 0.3s, opacity 0.1s, visibility 0.1s;
+}
+header .recommand .recommand-searchword {
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.4rem 0;
+  color: #868b94;
+}
+header .recommand .recommand-ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+header .recommand .recommand-ul .recommand-li {
+  line-height: 1.4;
+  font-size: 1.4rem;
+  outline: 0;
+  margin: 0;
+  width: 50%;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #eaebee;
+  cursor: pointer;
+}
+header .recommand .recommand-ul .recommand-li:last-child {
+  border-bottom: none;
+}
+header .recommand .recommand-ul .recommand-li:nth-last-child(2) {
+  border-bottom: none;
+}
+header .recommand-transition {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+header .blank-cancel {
+  background-color: rgb(23, 23, 26);
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 #home-main-section-top {
@@ -396,30 +524,6 @@ header .head-bar .search-chatting .chatting-btn.isClosing {
   margin-left: 3.2rem;
 }
 
-._contains {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #CED4DA;
-  color: #212529;
-  text-align: center;
-  font-weight: 700;
-  background-color: #fff;
-  margin: 1.6rem 0;
-  text-decoration: none;
-}
-
-.btn-apper {
-  appearance: none;
-  border: 0;
-  background: none;
-  padding: 0;
-}
-
 .mtitle {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -486,8 +590,8 @@ header .head-bar .search-chatting .chatting-btn.isClosing {
   display: flex;
 }
 #footer .app-icon-btns {
-  text-decoration: none;
-  outline: 0;
+  display: flex;
+  margin-left: 2.4rem;
 }
 #footer .platform-text {
   color: #212124;
