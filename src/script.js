@@ -1,11 +1,15 @@
 
 new Swiper('.inner .swiper', {
+  loop: true,
   navigation: {
     prevEl: ".swiper-prev",
     nextEl: ".swiper-next",
   },
 });
 
+
+
+// FLICKITY
 let carouselStatus = document.querySelector('.status');
 let progressBar = document.querySelector('.bar');
 
@@ -62,11 +66,4 @@ const nextBtn = document.querySelector('.flickity-prev-next-button.next');
 next.addEventListener('click',(e)=>{
   e.preventDefault();
   nextBtn.dispatchEvent(new Event('click'));
-})
-
-const sitesExten = document.querySelector('.sites__extends');
-const footerSites = document.querySelector('.footer__sites');
-
-footerSites.addEventListener('mouseover', ()=>{
-  
 })
