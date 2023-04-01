@@ -103,6 +103,9 @@ body header .menu .lang .lang--kor::after {
   width: 1px;
   height: 10px;
 }
+body header .menu .sub-menu {
+  cursor: pointer;
+}
 body header .menu .sub-menu .material-icons {
   font-size: 35px;
 }
@@ -183,6 +186,7 @@ body .games .bar {
 }
 body .games .games__body {
   display: flex;
+  position: relative;
 }
 body .games .games__body .body__text {
   width: 40%;
@@ -197,7 +201,7 @@ body .games .games__body .body__text p {
 body .games .games__body .body__img {
   position: absolute;
   width: 58%;
-  right: 0;
+  right: -30px;
 }
 body .games .games__body .body__img img {
   max-width: 100%;
@@ -446,22 +450,50 @@ body footer .inner .footer--right .row .row--head:not(:last-child) {
 }
 body .footer-bottom {
   background-color: #f3f3f3;
+  padding: 30px 0;
 }
 body .footer-bottom .inner .wrapper {
   color: rgb(153, 153, 153);
   font-weight: 200;
   font-size: 15px;
+  height: 15px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  align-items: center;
+  position: relative;
 }
 body .footer-bottom .inner .wrapper .footer__sites {
-  width: 250px;
+  width: 220px;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
+  padding: 15px 0;
 }
 body .footer-bottom .inner .wrapper .footer__sites::after {
   content: "▲";
+}
+body .footer-bottom .inner .wrapper .footer__sites:hover .sites__extends {
+  display: block;
+}
+body .footer-bottom .inner .wrapper .sites__extends {
+  display: none;
+  position: absolute;
+  border: 1px solid;
+  bottom: 44px;
+  right: 0;
+  min-width: 220px;
+  z-index: 1;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
+body .footer-bottom .inner .wrapper .sites__extends li {
+  padding: 12px 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+body .footer-bottom .inner .wrapper .sites__extends li:hover {
+  background-color: #ddd;
 }
 body .top-btn {
   width: 59px;

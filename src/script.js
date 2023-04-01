@@ -63,3 +63,10 @@ next.addEventListener('click',(e)=>{
   e.preventDefault();
   nextBtn.dispatchEvent(new Event('click'));
 })
+
+const sitesExten = document.querySelector('.sites__extends');
+const footerSites = document.querySelector('.footer__sites');
+
+footerSites.addEventListener('mouseover', ()=>{
+  
+})

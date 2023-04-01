@@ -75,7 +75,6 @@ body {
   font-family: 'NexonLv2Gothic', sans-serif;
   box-sizing: border-box;
 
-
   // HEADER
   header {
     display: flex;
@@ -128,6 +127,7 @@ body {
       }
 
       .sub-menu {
+        cursor: pointer;
 
         .material-icons {
           font-size: 35px;
@@ -235,6 +235,7 @@ body {
 
     .games__body {
       display: flex;
+      position: relative;
 
       .body__text {
         width: 40%;
@@ -251,7 +252,7 @@ body {
       .body__img {
         position: absolute;
         width: 58%;
-        right: 0;
+        right: -30px;
 
         img {
           max-width: 100%;
@@ -574,24 +575,56 @@ body {
 
   .footer-bottom {
     background-color: #f3f3f3;
+    padding: 30px 0;
 
     .inner {
       .wrapper {
         color: $gray;
         font-weight: 200;
         font-size: 15px;
+        height: 15px;
         display: flex;
         justify-content: space-between;
-        padding: 30px 0;
+        align-items: center;
+        position: relative;
 
         .footer__sites {
-          width: 250px;
+          width: 220px;
+          font-size: 14px;
           display: flex;
           justify-content: space-between;
+          padding: 15px 0;
 
           &::after {
             content: '▲';
+          }
+          &:hover {
+            .sites__extends {
+              display: block;
+            }
+          }
+        }
 
+        .sites__extends {
+          display: none;
+          position: absolute;
+          border: 1px solid;
+          bottom: 44px;
+          right: 0;
+          min-width: 220px;
+          z-index: 1;
+          background-color: #f1f1f1;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+          border: none;
+          
+          li {
+            padding: 12px 16px;
+            font-size: 12px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #ddd;
+            }
           }
         }
       }

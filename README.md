@@ -1,7 +1,7 @@
 # NEXON GAMES
 원본사이트 [NEXON GAMES](https://www.nexongames.co.kr)
 
-과제 [클론코딩]() 
+과제 [클론코딩](https://foodeco.github.io/NexonGames/) 
 
 ## 내용
 - SCSS 및 Parcel로 작업
