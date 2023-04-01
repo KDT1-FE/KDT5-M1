@@ -1,27 +1,37 @@
-/*
-스크롤에 따라 헤더 라인 보이기 숨기기
+// 메인 하단버튼 클릭 시 특정 위치로 이동
+const btn = document.querySelector('.material-symbols-outlined')
 
-_.throttle(함수, 시간(ms단위))
-gsap.to(요소, 지속시간, 옵션)
+btn.addEventListener('click', function () {
+  window.scrollTo({
+    top: 1193,
+    behavior: 'smooth'
+  });
+});
 
-다시 하기......
 
-*/
-const headerEl = document.querySelector('header.bottom-border');
+// 메인 하단버튼 floating 효과
+function floatingObject(selector) {
+  gsap.to(selector, 1, {
+    y: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut,
+    opacity: 1  // 다시 뒤로 재생되는 옵션
+  });
+};
+floatingObject('.floating');
 
-window.addEventListener('scroll', _.throttle(function () { 
-  if (window.scrollY < 1) {
-    // 라인 보이기
-    gsap.to(headerEl, .1, {
-      opacity: 1
-    });
+
+// 스크롤 시 헤더 border-bottom 숨김 처리
+const header = document.querySelector('header')
+
+window.addEventListener('scroll', function () {
+  if (scrollY > 0) {
+    header.classList.add('border-bottom');
   } else {
-    // 라인 숨기기
-    gsap.to(headerEl, .1, {
-      display: 'none'
-    });
+    header.classList.remove('border-bottom');
   }
-}, 300));
+});
 
 
-
+// 스크롤 애니메이션
