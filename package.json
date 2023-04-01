@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/foodeco/KDT5-M1.git"
+    "url": "git+https://github.com/foodeco/NexonGames.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/foodeco/KDT5-M1/issues"
+    "url": "https://github.com/foodeco/NexonGames/issues"
   },
-  "homepage": "https://github.com/foodeco/KDT5-M1",
+  "homepage": "https://github.com/foodeco/NexonGames",
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.12.5",
