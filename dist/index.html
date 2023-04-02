@@ -12,9 +12,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://webfontworld.github.io/NexonLv2Gothic/NexonLv2Gothic.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
   <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- FLICKITY -->
@@ -37,14 +40,113 @@
     <div class="menu">
       <ul class="lang">
         <li class="lang--kor">
-          <a href="javascript:void(0)">KOR</a>
+          <a href="/">KOR</a>
         </li>
         <li class="lang--eng">
-          <a href="javascript:void(0)">ENG</a>
+          <a href="https://www.nexongames.co.kr/index_en.php">ENG</a>
         </li>
       </ul>
       <div class="sub-menu">
         <span class="material-icons">menu</span>
+      </div>
+      <div class="sub-menu__extend">
+
+        <ul class="lang">
+          <li class="lang--kor">
+            <a href="/">KOR</a>
+          </li>
+          <li class="lang--eng">
+            <a href="https://www.nexongames.co.kr/index_en.php">ENG</a>
+          </li>
+        </ul>
+        
+        <div class="material-icons">
+          close
+          </div>
+        <ul class="row">
+          <li class="row--head">
+            <a href="javascript:void(0)">넥슨게임즈</a>
+            <ul class="row__sub">
+              <li>
+                <a href="https://www.nexongames.co.kr/nexongames/nexongames.php">넥슨게임즈</a>
+              </li>
+            </ul>
+          </li>
+          <li class="row--head">
+            <a href="javascript:void(0)">게임</a>
+            <ul class="row__sub">
+              <li>
+                <a href="https://www.nexongames.co.kr/game/v4.php">V4</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/sudden_attack.php">서든어택</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/blue_archive.php">블루 아카이브</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/hit2.php">히트2</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/veiled_experts.php">베일드 엑스퍼트</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/first_descendant.php">퍼스트 디센던트</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/game/godsome.php">갓썸</a>
+              </li>
+            </ul>
+          </li>
+          <li class="row--head">
+            <a href="javascript:void(0)">인재채용</a>
+            <ul class="row__sub">
+              <li>
+                <a href="https://www.nexongames.co.kr/adopt/culture.php">기업문화</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=people">피플&컬쳐</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/adopt/hire.php">복지</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/adopt/job.php">채용</a>
+              </li>
+            </ul>
+          </li>
+          <li class="row--head">
+            <a href="javascript:void(0)">투자정보</a>
+            <ul class="row__sub">
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/content.php?co_id=str">기업지배구조</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/sub/stockPrice.php">주가정보</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/content.php?co_id=finance">재무정보</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/sub/announcement.php">공시/공고</a>
+              </li>
+            </ul>
+          </li>
+          <li class="row--head">
+            <a href="javascript:void(0)">미디어</a>
+            <ul class="row__sub">
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news">뉴스</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=media_event">보도자료</a>
+              </li>
+              <li>
+                <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=multimedia">멀티미디어</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -206,23 +308,23 @@
       <div class="inner">
         <div class="news-header head">
           <h2>News</h2>
-          <a href="javascript:void(0)" class="a-btn">more</a>
+          <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news" class="a-btn">more</a>
         </div>
         <div class="news-body">
           <ul>
             <li>
               <div class="img">
-                <a href="javascript:void(0)">
+                <a href="http://osen.mt.co.kr/article/G1112067013" target="_blank">
                   <img src="/thumb-13a289e961a045d9a26c4d8dd376d137_1679910776_79_360x278.44b6c857.png" alt="">
                 </a>
               </div>
               <div class="content">
                 <div class="content__head">
-                  <a href="javascript:void(0)">서든어택</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news&sca=%EC%84%9C%EB%93%A0%EC%96%B4%ED%83%9D" target="_blank">서든어택</a>
                   <span>2023.03.27</span>
                 </div>
                 <div class="content__body">
-                  <a href="javascript:void(0)">'대세 연예인만 나온다'...서든어택 거쳐간 스타들은</a>
+                  <a href="http://osen.mt.co.kr/article/G1112067013" target="_blank">'대세 연예인만 나온다'...서든어택 거쳐간 스타들은</a>
                   <p>넥슨 대표 게임 ‘서든어택’은 이러한 연예인 마케팅을 보다 적극적인 방법으로 게임과 접목시키면서 최초로 게임 속 연예인 캐릭터를 탄생시켰다. 자신이 좋아하는 연예인을 게임 속
                     캐릭터로
                     만나…</p>
@@ -231,17 +333,17 @@
             </li>
             <li>
               <div class="img">
-                <a href="javascript:void(0)">
+                <a href="https://news.g-enews.com/ko-kr/news/article/news_all/202303242353121348c5fa75ef86_1/article.html?md=20230325120302_U" target="_blank">
                   <img src="/thumb-13a289e961a045d9a26c4d8dd376d137_1679910419_04_360x278.aff377d1.png" alt="">
                 </a>
               </div>
               <div class="content">
                 <div class="content__head">
-                  <a href="javascript:void(0)">블루 아카이브</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news&sca=%EB%B8%94%EB%A3%A8+%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C" target="_blank">블루 아카이브</a>
                   <span>2023.03.27</span>
                 </div>
                 <div class="content__body">
-                  <a href="javascript:void(0)">'블루 아카이브 축제' 킨텍스서 5월 개최…카톡 이모티콘 출시</a>
+                  <a href="https://news.g-enews.com/ko-kr/news/article/news_all/202303242353121348c5fa75ef86_1/article.html?md=20230325120302_U" target="_blank">'블루 아카이브 축제' 킨텍스서 5월 개최…카톡 이모티콘 출시</a>
                   <p>넥슨 게임즈가 모바일 RPG '블루 아카이브' 이용자들을 위한 라이브 쇼케이스 '고! 고! 키보토스 라이브'를 25일 선보였다. 이 자리에서 공식 1.5주년 행사 개최, 카카오톡
                     이모티콘 …</p>
                 </div>
@@ -249,17 +351,17 @@
             </li>
             <li>
               <div class="img">
-                <a href="javascript:void(0)">
+                <a href="http://www.dt.co.kr/contents.html?article_no=2023032602109931820004&ref=naver">
                   <img src="/thumb-13a289e961a045d9a26c4d8dd376d137_1679909982_89_360x278.b6672685.jpg" alt="">
                 </a>
               </div>
               <div class="content">
                 <div class="content__head">
-                  <a href="javascript:void(0)">넥슨게임즈</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news&sca=%EB%84%A5%EC%8A%A8%EA%B2%8C%EC%9E%84%EC%A6%88" target="_blank">넥슨게임즈</a>
                   <span>2023.03.27</span>
                 </div>
                 <div class="content__body">
-                  <a href="javascript:void(0)">넥슨게임즈 신작 대거 준비… 글로벌 성장 큰 그림 그린다</a>
+                  <a href="http://www.dt.co.kr/contents.html?article_no=2023032602109931820004&ref=naver" target="_blank">넥슨게임즈 신작 대거 준비… 글로벌 성장 큰 그림 그린다</a>
                   <p>통합 법인 출범 1년을 맞은 넥슨게임즈가 올해 글로벌 게임사로의 성장에 박차를 가한다. 기존작의 안정적 서비스와 다수의 신작 출시로 시장은 물론 넥슨그룹 내 존재감을 키운다는
                     구상이다.넥슨…</p>
                 </div>
@@ -276,7 +378,7 @@
       <div class="inner">
         <div class="article-header head">
           <h2>Career</h2>
-          <a href="javascript:void(0)" class="a-btn">지원하기</a>
+          <a href="https://career.nexon.com/user/recruit/member/postList?joinCorp=AG" target="_blank" class="a-btn">지원하기</a>
         </div>
         <div class="box-wrapper">
           <img src="/careers_visual.fa15d02b.jpg" alt="carrers visual">
@@ -312,84 +414,84 @@
         <div class="footer--right">
           <ul class="row">
             <li class="row--head">
-              <a href="javascript:void(0)">넥슨게임즈</a>
+              <a href="https://www.nexongames.co.kr/nexongames/nexongames.php">넥슨게임즈</a>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">넥슨게임즈</a>
+                  <a href="https://www.nexongames.co.kr/nexongames/nexongames.php">넥슨게임즈</a>
                 </li>
               </ul>
             </li>
             <li class="row--head">
-              <a href="javascript:void(0)">게임</a>
+              <a href="https://www.nexongames.co.kr/game/v4.php">게임</a>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">V4</a>
+                  <a href="https://www.nexongames.co.kr/game/v4.php">V4</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">서든어택</a>
+                  <a href="https://www.nexongames.co.kr/game/sudden_attack.php">서든어택</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">블루 아카이브</a>
+                  <a href="https://www.nexongames.co.kr/game/blue_archive.php">블루 아카이브</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">히트2</a>
+                  <a href="https://www.nexongames.co.kr/game/hit2.php">히트2</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">베일드 엑스퍼트</a>
+                  <a href="https://www.nexongames.co.kr/game/veiled_experts.php">베일드 엑스퍼트</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">퍼스트 디센던트</a>
+                  <a href="https://www.nexongames.co.kr/game/first_descendant.php">퍼스트 디센던트</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">갓썸</a>
+                  <a href="https://www.nexongames.co.kr/game/godsome.php">갓썸</a>
                 </li>
               </ul>
             </li>
             <li class="row--head">
-              <a href="javascript:void(0)">인재채용</a>
+              <a href="https://www.nexongames.co.kr/adopt/culture.php">인재채용</a>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">기업문화</a>
+                  <a href="https://www.nexongames.co.kr/adopt/culture.php">기업문화</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">피플&컬쳐</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=people">피플&컬쳐</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">복지</a>
+                  <a href="https://www.nexongames.co.kr/adopt/hire.php">복지</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">채용</a>
+                  <a href="https://www.nexongames.co.kr/adopt/job.php">채용</a>
                 </li>
               </ul>
             </li>
             <li class="row--head">
-              <a href="javascript:void(0)">투자정보</a>
+              <a href="https://www.nexongames.co.kr/bbs/content.php?co_id=str">투자정보</a>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">기업지배구조</a>
+                  <a href="https://www.nexongames.co.kr/bbs/content.php?co_id=str">기업지배구조</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">주가정보</a>
+                  <a href="https://www.nexongames.co.kr/sub/stockPrice.php">주가정보</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">재무정보</a>
+                  <a href="https://www.nexongames.co.kr/bbs/content.php?co_id=finance">재무정보</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">공시/공고</a>
+                  <a href="https://www.nexongames.co.kr/sub/announcement.php">공시/공고</a>
                 </li>
               </ul>
             </li>
             <li class="row--head">
-              <a href="javascript:void(0)">미디어</a>
+              <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news">미디어</a>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">뉴스</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=news">뉴스</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">보도자료</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=media_event">보도자료</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">멀티미디어</a>
+                  <a href="https://www.nexongames.co.kr/bbs/board.php?bo_table=multimedia">멀티미디어</a>
                 </li>
               </ul>
             </li>
@@ -409,12 +511,12 @@
             관련사이트
             <div class="sites__extends">
               <ul>
-                <li><a href="javascript:void(0)">넥슨코리아</a></li>
-                <li><a href="javascript:void(0)">넥슨네트웍스</a></li>
-                <li><a href="javascript:void(0)">네오플</a></li>
-                <li><a href="javascript:void(0)">넥슨커뮤니케이션즈</a></li>
-                <li><a href="javascript:void(0)">엔미디어플랫폼</a></li>
-                <li><a href="javascript:void(0)">넥슨스페이스</a></li>
+                <li><a href="http://company.nexon.com/" target="_blank">넥슨코리아</a></li>
+                <li><a href="https://www.nexon-networks.com/" target="_blank">넥슨네트웍스</a></li>
+                <li><a href="https://www.neople.co.kr" target="_blank">네오플</a></li>
+                <li><a href="http://www.nexon-communications.com/" target="_blank">넥슨커뮤니케이션즈</a></li>
+                <li><a href="http://www.nmp-corp.com/" target="_blank">엔미디어플랫폼</a></li>
+                <li><a href="https://company.nexon.com/" target="_blank">넥슨스페이스</a></li>
               </ul>
             </div>
           </div>

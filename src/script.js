@@ -1,3 +1,47 @@
+const subMenuEls = document.querySelectorAll('.row--head');
+subMenuEls.forEach((el)=>{
+  el.addEventListener('click', (e)=>{
+    
+    let target = e.currentTarget; // .row__sub
+    let target2 = e.target;
+    console.log(target2);
+    if (target2.classList.contains('on')) {
+      gsap.to(target.children[1], 0.5, {
+        display: 'none',
+        height: 0,
+      })
+      target.children[1].classList.remove('on');
+      target2.classList.remove('on');
+    } else {
+      gsap.to(target.children[1], 0.5, {
+        display: 'block',
+        height: target.children[1].children.length * 50 + 'px',
+        overflow: 'hidden',
+      })
+      target.children[1].classList.add('on');
+      target2.classList.add('on');
+    }
+;  })
+})
+
+const openEl = document.querySelector('.sub-menu .material-icons');
+const exitEl = document.querySelector('.sub-menu__extend .material-icons');
+openEl.addEventListener('click', (e)=>{
+  gsap.to(exitEl.parentElement, 0.4, {
+    display: 'block',
+    width: '75%',
+  })
+})
+exitEl.addEventListener('click', (e)=>{
+  let target = e.currentTarget;
+  console.log(target.parentElement);
+  gsap.to(target.parentElement, 0.4, {
+    display: 'none',
+    width: 0,
+  })
+})
+
+
 
 new Swiper('.inner .swiper', {
   loop: true,

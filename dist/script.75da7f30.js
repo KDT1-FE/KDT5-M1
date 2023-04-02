@@ -118,6 +118,47 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
+var subMenuEls = document.querySelectorAll('.row--head');
+subMenuEls.forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    var target = e.currentTarget; // .row__sub
+    var target2 = e.target;
+    console.log(target2);
+    if (target2.classList.contains('on')) {
+      gsap.to(target.children[1], 0.5, {
+        display: 'none',
+        height: 0
+      });
+      target.children[1].classList.remove('on');
+      target2.classList.remove('on');
+    } else {
+      gsap.to(target.children[1], 0.5, {
+        display: 'block',
+        height: target.children[1].children.length * 50 + 'px',
+        overflow: 'hidden'
+      });
+      target.children[1].classList.add('on');
+      target2.classList.add('on');
+    }
+    ;
+  });
+});
+var openEl = document.querySelector('.sub-menu .material-icons');
+var exitEl = document.querySelector('.sub-menu__extend .material-icons');
+openEl.addEventListener('click', function (e) {
+  gsap.to(exitEl.parentElement, 0.4, {
+    display: 'block',
+    width: '75%'
+  });
+});
+exitEl.addEventListener('click', function (e) {
+  var target = e.currentTarget;
+  console.log(target.parentElement);
+  gsap.to(target.parentElement, 0.4, {
+    display: 'none',
+    width: 0
+  });
+});
 new Swiper('.inner .swiper', {
   loop: true,
   navigation: {
@@ -203,7 +244,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53690" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49945" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
