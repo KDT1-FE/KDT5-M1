@@ -58,8 +58,12 @@ document.querySelectorAll('.close-btn > a').forEach((btn) => {
     // 배경을 밝게 합니다.
     document.querySelector('#left-menu').classList.remove('blur')
     // category와 subcategory를 모두 닫습니다.
-    e.currentTarget.closest('.menu').style.display = 'none'
-    e.currentTarget.closest('.sub').style.display = 'none'
+    if (e.currentTarget.closest('.menu')) {
+      e.currentTarget.closest('.menu').style.display = 'none'
+    }
+    if (e.currentTarget.closest('.sub')) {
+      e.currentTarget.closest('.sub').style.display = 'none'
+    }
     // 다음번에 category를 열 때 CategoryCloseBtn버튼이 보이도록 visibility : visible로 변경합니다.
     toggleCategoryCloseBtn(false)
   })
