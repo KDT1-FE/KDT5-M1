@@ -105,6 +105,7 @@ body header .menu {
 }
 body header .menu .sub-menu {
   cursor: pointer;
+  height: 35px;
 }
 body header .menu .sub-menu .material-icons {
   font-size: 35px;
@@ -281,12 +282,12 @@ body .whoweare .whoweare__content .content__top {
 body .whoweare .whoweare__content .content__top h6 {
   color: rgb(202, 212, 1);
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 body .whoweare .whoweare__content .content__top h4 {
   display: inline-block;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 800;
 }
 body .whoweare .whoweare__content .content__top span {
@@ -388,7 +389,7 @@ body .news .news-body ul {
   justify-content: space-between;
 }
 body .news .news-body ul li {
-  width: 24vw;
+  width: 349px;
 }
 body .news .news-body ul li img {
   width: 100%;
@@ -414,8 +415,11 @@ body .news .news-body ul li .content .content__head a::after {
   position: absolute;
   width: 1px;
   height: 8px;
-  right: 0;
+  right: 2px;
   background-color: rgb(153, 153, 153);
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 body .news .news-body ul li .content .content__head span {
   color: rgb(153, 153, 153);
@@ -471,6 +475,9 @@ body footer .inner {
 }
 body footer .inner .footer--left div {
   margin-bottom: 30px;
+}
+body footer .inner .footer--left div a {
+  display: inline-block;
 }
 body footer .inner .footer--left .text {
   color: rgb(153, 153, 153);

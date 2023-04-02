@@ -6,6 +6,10 @@ $news-gray: rgb(136, 136, 136);
 $blue: rgb(1, 159, 232);
 $white: rgb(255, 255, 255);
 
+@mixin langBtn {
+  
+}
+
 // temp
 .recruite {
   img {
@@ -97,22 +101,17 @@ body {
       padding: 8px 12px;
       border-radius: 30px;
       margin-right: 30px;
-
       li a {
         color: $gray;
-
         &:hover {
           color: $white;
         }
       }
-
       .lang--kor {
         margin-right: 20px;
-
         a {
           color: $white;
         }
-
         &::after {
           content: "";
           color: $white;
@@ -128,6 +127,7 @@ body {
 
       .sub-menu {
         cursor: pointer;
+        height: 35px;
 
         .material-icons {
           font-size: 35px;
@@ -275,7 +275,6 @@ body {
     .games__head {
       text-align: center;
 
-
       h1 {
         font-size: 75px;
         font-weight: 300;
@@ -334,7 +333,6 @@ body {
     padding-top: 18vw;
     padding-bottom: 20vw;
 
-
     h2 {
       font-size: 5vw;
       font-weight: 700;
@@ -349,13 +347,13 @@ body {
         h6 {
           color: $lime;
           font-weight: 700;
-          font-size: 1.5vw;
+          font-size: 18px;
           margin-bottom: 30px;
         }
 
         h4 {
           display: inline-block;
-          font-size: 50px;
+          font-size: 45px;
           font-weight: 800;
         }
 
@@ -484,7 +482,7 @@ body {
       justify-content: space-between;
 
       li {
-        width: 24vw;
+        width: 349px;
 
         img {
           width: 100%;
@@ -512,8 +510,11 @@ body {
                 position: absolute;
                 width: 1px;
                 height: 8px;
-                right: 0;
+                right: 2px;
                 background-color: $gray;
+                top: 0;
+                bottom: 0;
+                margin: auto;
               }
             }
 
@@ -592,6 +593,10 @@ body {
 
         div {
           margin-bottom: 30px;
+
+          a {
+            display: inline-block;
+          }
         }
 
         .text {
