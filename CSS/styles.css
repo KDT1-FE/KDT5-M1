@@ -1,0 +1,57 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+  font-family: 'Google Sans', 'sans-serif';
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../assets/fonts/google_sans_mono.woff) format('opentype');
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+/* SIDEBAR */
+.sidebar {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #eff3fa;
+  overflow-y: auto;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 88px;
+  margin-top: 20px;
+}
+.link-section {
+  width: 80px;
+  margin: -2px auto 14px;
+  padding: 2px;
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  margin-bottom: 4px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  font-variation-settings: 'wght' 400 'opsz' 24;
+  border-radius: 16px;
+}
+.link-title {
+  text-align: center;
+  font-variation-settings: 'GRAD' 125;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+  margin: 0 0 4px;
+}
