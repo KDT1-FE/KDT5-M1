@@ -15,8 +15,8 @@ new Swiper('.category-card-swiper', {
   },
 })
 
-// landscape-swiper
-new Swiper('.landscape-swiper', {
+// interior-view-swiper
+new Swiper('.interior-view-swiper', {
   direction: 'horizontal',
   loop: false,
   slidesPerView: 1,

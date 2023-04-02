@@ -1,4 +1,4 @@
-.landscape {
+.interior-view {
   position: relative;
   padding: 140px;
   > h2 {
@@ -10,7 +10,7 @@
     font-family: $font-serif;
     text-align: center;
   }
-  .landscape-inner {
+  .interior-view-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -18,6 +18,10 @@
       .swiper-slide {
         figure {
           margin: 0;
+          img {
+            width: 100%;
+            height: 100%;
+          }
           figcaption {
             margin-top: 0.75rem;
             span {
@@ -59,7 +63,7 @@
       content: '';
       display: none;
     }
-    .landscape-swiper-indexes {
+    .interior-view-swiper-indexes {
       position: absolute;
       font-size: 0.75rem;
       bottom: 0px;
@@ -77,9 +81,9 @@
   }
 }
 
-.landscape:hover .l-swiper-btn-next:not(.swiper-button-disabled) {
+.interior-view:hover .l-swiper-btn-next:not(.swiper-button-disabled) {
   right: 0;
 }
-.landscape:hover .l-swiper-btn-prev:not(.swiper-button-disabled) {
+.interior-view:hover .l-swiper-btn-prev:not(.swiper-button-disabled) {
   left: 0;
 }
