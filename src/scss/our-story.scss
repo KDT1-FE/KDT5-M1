@@ -25,14 +25,11 @@
     position: absolute;
     top: 8rem;
     left: 2rem;
-    width: 100%;
     z-index: 101;
     color: $font-white;
     .inner {
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      width: 100%;
       padding: 0 2rem;
       p {
         width: 41.666%;
@@ -53,6 +50,11 @@
         padding: 1rem 0;
         color: $font-black;
         margin: 0 1.25rem;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+      }
+      a:hover {
+        opacity: 0.4;
       }
     }
   }
