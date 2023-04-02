@@ -23,14 +23,19 @@
   }
   .content {
     position: absolute;
-    top: 8rem;
-    left: 2rem;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 101;
     color: $font-white;
     .inner {
       display: flex;
+      box-sizing: border-box;
+      width: 100%;
       flex-direction: column;
-      padding: 0 2rem;
+      // padding: 0 2rem;
+      padding-top: 14rem;
+      padding-left: 9rem;
       p {
         width: 41.666%;
         max-width: 28rem;
