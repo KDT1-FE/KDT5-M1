@@ -33,7 +33,7 @@ a {
   padding: 2px;
   cursor: pointer;
 }
-.material-symbols-outlined {
+.link-section > .material-symbols-outlined {
   margin-bottom: 4px;
   display: flex;
   position: relative;
@@ -54,4 +54,26 @@ a {
   letter-spacing: 0.1px;
   line-height: 16px;
   margin: 0 0 4px;
+}
+.dark-mode-outer-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.dark-mode__inner-container {
+  width: 48px;
+  height: 48px;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  outline: 1px solid #747775;
+  cursor: pointer;
+}
+.dark-mode--switch {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+  margin-left: -1px;
 }
