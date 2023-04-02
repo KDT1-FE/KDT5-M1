@@ -668,3 +668,108 @@ footer {
   height: 201px;
   background-color: var(--color-lightgray);
 }
+
+footer ul.menu {
+  padding: 20px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul.menu li::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  margin: 8px 15px 0;
+  background-color: #d8d8d8;
+}
+
+footer ul.menu li:last-child::after {
+  content: '';
+  display: none;
+}
+
+footer ul.menu li a {
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-gray);
+}
+
+footer ul.menu li a.black {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 12px;
+  color: #888;
+  padding-bottom: 6px;
+}
+
+footer p > span {
+  color: var(--color-black);
+}
+
+footer .links {
+  padding: 12px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .links .links__web {
+  display: flex;
+  gap: 20px;
+}
+
+footer .links .links__web a {
+  color: var(--color-gray);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .web-accessibility {
+  width: 48px;
+  height: 32px;
+}
+
+footer .web-trust {
+  width: 42px;
+  height: 41px;
+}
+
+footer .links .links__sns {
+  display: flex;
+  gap: 8px;
+}
+
+footer .links__sns a.facebook {
+  background-position: -0px -90px;
+}
+footer .links__sns a.instagram {
+  background-position: -191px -138px;
+}
+footer .links__sns a.youtube {
+  background-position: -90px -90px;
+}
+footer .links__sns a.brunch {
+  background-position: -217px -138px;
+}
+footer a.bg-icon {
+  background-image: url('../images/ico_sns.png');
+  background-size: 290px 170px; /* 원래 사이즈의 절반 */
+  text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  padding: 2px 0;
+}
