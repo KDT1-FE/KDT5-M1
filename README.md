@@ -44,7 +44,13 @@
 1. 서브 폴더 이름(Save to subfolder) 명시
 1. 다운로드!
 
-# block - root, sidebar, content, landing-page, main-content, header, content-container, section, footer
+# root
+
+# (sidebar > navigation, > link-section > material-symbols-outlined, link-title),
+
+# (sidebar > dark-mode-outer-container > dark-mode-inner-container > dark-mode-switch > material-symbols-outlined)
+
+# (page-content > content-container > landing-page > main-content > header, , section, footer
 
 # element-
 
