@@ -81,7 +81,7 @@ $ npm run start
 
 <img width="437" alt="image" src="https://user-images.githubusercontent.com/101441685/229598172-e785b36e-bf73-4e38-abd4-7a71d68f2089.png">
 
--> 메인 페이지에 최상단에 있는 category 부분을 header 의 구역으로 잡았습니다. 
+-> 메인 페이지에 최상단에 있는 category 부분을 header 의 구역으로 잡았습니다. <br/>
 -> 메인페이지 스크롤이 내려 가면서 바뀌는 색의 영역, 내용의 영역을 각각의 section 으로 잡았습니다. 따라,  총 7개의 section 구역으로 나누었습니다. 
 
 ### ⭐️ 2) 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
