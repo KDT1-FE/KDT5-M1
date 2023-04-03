@@ -5,7 +5,7 @@
 [블루 보틀 사이트](https://bluebottlecoffee.com/us/eng) 보러가기
 
 # 구조
-```json
+```
 KDT5-M1
 ├── dist // 이곳에 번들링한 결과물이 쌓입니다.
 ├── README.md
