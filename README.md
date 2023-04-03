@@ -27,14 +27,13 @@ For building and running the application you need:
 
 ### Installation
 ``` bash
-$ git clone https://github.com/hahahaday12/Life-Calender-front.git
-$ cd client
+$ git clone git@github.com:hahahaday12/KDT5-M1.git
+$ cd KDT0_KimHaEun
 ```
 
 #### Frontend
 ```
-$ cd client
-$ nvm use v.8.19.3
+$ cd KDT0_KimHaEun
 $ npm install 
 $ npm run start
 ```
