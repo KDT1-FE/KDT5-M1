@@ -1,5 +1,5 @@
 import './scss/main.scss'
 import './header'
 import './view'
-import './swpier'
+import './swiper'
 import './interior-view'

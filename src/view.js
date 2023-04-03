@@ -45,11 +45,11 @@ async function convertBackground() {
       }
       return null
     })
-    // 비동기적으로 progress바가 1~100까지 차오릅니다.
+    // 비동기적으로 progress바가 1% ~ 100%까지 차오릅니다.
     progress(6000)
     // 6초간 await합니다.
     await delay(6000)
-    // 현제 index를 bgIdxQueue queue의 맨 뒤에 넣습니다.
+    // 현제 index를 bgIdxQueue의 맨 뒤에 넣습니다.
     bgIdxQueue.push(idx)
   }
 }

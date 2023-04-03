@@ -10,7 +10,6 @@
         display: block;
         width: 100%;
         padding-bottom: calc(9 / 16 * 100%); // 56.25%; 9(w) * 16(h)의 비율
-        // background-color: violet;
         img {
           position: absolute;
           inset: 0;
@@ -33,7 +32,6 @@
       box-sizing: border-box;
       width: 100%;
       flex-direction: column;
-      // padding: 0 2rem;
       padding-top: 14rem;
       padding-left: 9rem;
       p {

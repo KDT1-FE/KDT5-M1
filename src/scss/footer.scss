@@ -24,15 +24,11 @@ footer{
       ul.category {
         display: flex;
         width : 100%;
-        // flex-wrap: wrap;
         justify-content: left;
         text-transform: uppercase;
         padding-right: 1rem;
         li.category__item {
           padding : 0 2.5rem 2rem 0.25rem;
-          // white-space: nowrap;
-          // overflow: hidden;
-          // text-overflow: ellipsis;
           h3 {
             margin : 0;
             font-weight: 400;

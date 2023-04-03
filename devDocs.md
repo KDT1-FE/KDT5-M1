@@ -49,11 +49,17 @@ vscode를 사용중이시면 .vscode/settings.json에 아래 내용을 추가해
 
 ```json
 {
+  "editor.linkedEditing": true,
+  "editor.minimap.autohide": true,
   "eslint.enable": true,
   "eslint.validate": [
     "javascript", // ...
     "html" // Add "html" to enable linting `.html` files.
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }
 ```
 
