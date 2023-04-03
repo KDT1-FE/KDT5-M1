@@ -386,3 +386,14 @@ footer {
   margin-top: 24px;
   row-gap: 20px;
 }
+.about ul a {
+  color: #0b57d0;
+}
+.legal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+.legal ul:first-child {
+  margin-right: 8px;
+}
