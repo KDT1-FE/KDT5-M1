@@ -3,7 +3,7 @@
 
 ## 배포 주소
 
-> **서버** : [https://web-life-calender-front-6g2llffebnui.sel3.cloudtype.app/](https://web-life-calender-front-6g2llffebnui.sel3.cloudtype.app/)<br>
+> **서버** :
 
 
 ## 📌 유의사항 
