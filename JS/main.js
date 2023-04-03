@@ -16,7 +16,7 @@ function floatingObject(selector) {
     repeat: -1,
     yoyo: true,
     ease: Power1.easeInOut,
-    opacity: 1  // 다시 뒤로 재생되는 옵션
+    opacity: 1
   });
 };
 floatingObject('.floating');
@@ -35,3 +35,14 @@ window.addEventListener('scroll', function () {
 
 
 // 스크롤 애니메이션
+const spyEls = document.querySelectorAll('section.scroll-spy');
+
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소
+      triggerHook: .7
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});
