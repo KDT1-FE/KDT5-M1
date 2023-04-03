@@ -55,3 +55,7 @@
 1. material_icon 사용 불가능으로 blur_circular 대체
 
 2. primary-container 내 description에 line-height 적용시 primary-container 전체 line-height 적용으로 비율 이상
+
+3. card요소는 반응형이 아닌 고정적 크기를 갖게하기 위해 inline-flex 사용
+
+4. flex의 align-items 개념이 grid의 align-self
