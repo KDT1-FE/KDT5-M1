@@ -357,6 +357,15 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 409px;
   height: 722px;
   margin-left: 40px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+.savings .product__image.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .savings .product__infos .sub-image {
@@ -403,6 +412,15 @@ header .contents__menu > ul > li ul li:last-child a {
   width: 408px;
   height: 715px;
   margin-right: 40px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+.global .product__image.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* DayNight */
