@@ -50,10 +50,8 @@
 
 # (sidebar > dark-mode-outer-container > dark-mode-inner-container > dark-mode-switch > material-symbols-outlined)
 
-# (page-content > content-container > landing-page > main-content > header, , section, footer
-
-# element-
-
-# modifier -
+# (page-content > content-container > landing-page > main-content > header-container, main-container > s1,s2,s3 footer)
 
 1. material_icon 사용 불가능으로 blur_circular 대체
+
+2. primary-container 내 description에 line-height 적용시 primary-container 전체 line-height 적용으로 비율 이상

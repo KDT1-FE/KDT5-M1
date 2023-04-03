@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Google Sans', 'sans-serif';
+  line-height: normal;
 }
 @font-face {
   font-family: 'Google Sans';
@@ -155,6 +156,7 @@ a {
 }
 .primary-container--description {
   font-size: 22px;
+  font-variation-settings: 'wght' 200;
 }
 .button-container {
   display: grid;
@@ -187,4 +189,14 @@ a {
   position: relative;
   z-index: 1;
   font-size: 24px;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+}
+.section {
+  margin: 96px 0;
+}
+.section:last-child {
+  margin-bottom: 0;
 }
