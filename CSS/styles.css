@@ -198,6 +198,7 @@ a {
 }
 
 /* MAIN-CONTENT */
+/* SECTION 1,2 */
 .main-container {
   font-family: 'Google Sans';
   width: 100%;
@@ -337,4 +338,9 @@ a {
 .text-title {
   font-size: 24px;
   margin-right: 56px;
+}
+/* FOOTER */
+.footer-container {
+  width: 100%;
+  margin-top: 112px;
 }
