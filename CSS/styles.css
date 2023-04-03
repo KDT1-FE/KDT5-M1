@@ -60,6 +60,8 @@ a {
     rgba(68, 71, 70, 0.08)
   );
   font-variation-settings: 'wght' 600, 'opsz' 24;
+  transition: 0.5s;
+  transition-timing-function: ease;
 }
 .link-title {
   text-align: center;
