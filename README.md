@@ -59,3 +59,5 @@
 3. card요소는 반응형이 아닌 고정적 크기를 갖게하기 위해 inline-flex 사용
 
 4. flex의 align-items 개념이 grid의 align-self
+
+5. card내의 title정렬

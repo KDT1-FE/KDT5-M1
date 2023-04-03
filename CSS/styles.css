@@ -25,6 +25,7 @@ a {
   background: #eff3fa;
   overflow-y: auto;
   font-family: 'Google Sans';
+  color: #444746;
 }
 .navigation {
   display: flex;
@@ -90,6 +91,7 @@ a {
   min-height: (100vh-64px);
   overflow-y: auto;
   padding-left: 88px;
+  color: #1f1f1f;
 }
 .content-container {
   display: flex;
@@ -262,4 +264,13 @@ a {
   background-size: cover;
   overflow: hidden;
   background-image: url(../assets/images/thumb-container.png);
+}
+.card:nth-of-type(1) .card--background {
+  background-image: url(../assets/images/thumb-container.png);
+}
+.card:nth-of-type(2) .card--background {
+  background-image: url(../assets/images/thumb-container2.png);
+}
+.card:nth-of-type(3) .card--background {
+  background-image: url(../assets/images/thumb-container3.png);
 }
