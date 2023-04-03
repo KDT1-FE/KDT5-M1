@@ -14,9 +14,6 @@ a {
 :root {
   --vh: 7.52px;
 }
-.root {
-  display: flex;
-}
 /* SIDEBAR */
 .sidebar {
   display: flex;
@@ -26,7 +23,7 @@ a {
   height: 100%;
   background: #eff3fa;
   overflow-y: auto;
-  flex-grow: 1;
+  font-family: 'Google Sans';
 }
 .navigation {
   display: flex;
@@ -91,7 +88,7 @@ a {
   height: calc(var(--vh, 1vh) * 100);
   min-height: (100vh-64px);
   overflow-y: auto;
-  flex-grow: 1;
+  padding-left: 88px;
 }
 .content-container {
   display: flex;
@@ -126,6 +123,8 @@ a {
   background-image: url(../assets/images/primary-container-background.jpg);
   grid-column: span 2;
   display: flex;
+  justify-content: center;
+  text-align: center;
   min-height: 544px;
   margin: 0;
   padding: 56px;
@@ -141,6 +140,7 @@ a {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  font-family: 'Google Sans';
 }
 .wrapper .primary-container--title {
   max-width: 840px;
@@ -148,4 +148,43 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.primary-container-header {
+  font-size: 112px;
+  margin: 0 0 8px;
+}
+.primary-container--description {
+  font-size: 22px;
+}
+.button-container {
+  display: grid;
+  width: 100%;
+  margin-top: 24px;
+  grid-gap: 8px;
+}
+.button-container-inner {
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-inner {
+  position: relative;
+  height: 80px;
+  padding: 0 48px;
+  border-radius: 48px;
+  outline: none;
+  border: transparent;
+  background-color: #0b57d0;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn-content {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
 }
