@@ -53,6 +53,15 @@ a {
   font-variation-settings: 'wght' 400 'opsz' 24;
   border-radius: 16px;
 }
+.link-section > .material-symbols-outlined:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(68, 71, 70, 0.08),
+    rgba(68, 71, 70, 0.08)
+  );
+  font-variation-settings: 'wght' 600, 'opsz' 24;
+}
+
 .link-title {
   text-align: center;
   font-variation-settings: 'GRAD' 125;
@@ -74,6 +83,14 @@ a {
   border-radius: 32px;
   outline: 1px solid #747775;
   cursor: pointer;
+}
+.dark-mode__inner-container:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(68, 71, 70, 0.08),
+    rgba(68, 71, 70, 0.08)
+  );
+  font-variation-settings: 'FILL' 1, 'wght' 600, 'opsz' 24;
 }
 .dark-mode--switch {
   width: 48px;
