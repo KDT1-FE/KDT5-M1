@@ -299,3 +299,42 @@ a {
 .section:nth-of-type(2) .card:nth-of-type(6) .card--background {
   background-image: url(../assets/images/thumb-container9.png);
 }
+/* SECTION3 */
+.text-card-set {
+  --stacked-col-max-height: 198px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  grid-auto-flow: row;
+  grid-auto-rows: fit-content(var(--stacked-col-max-height));
+}
+.text-card {
+  grid-column: span 1;
+}
+.text-card__inner {
+  display: inline-flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  text-decoration: none;
+  background-color: #f8fafd;
+}
+.text-container {
+  display: grid;
+  position: relative;
+  margin: 24px;
+  gap: 8px;
+  align-self: end;
+  overflow: hidden;
+}
+.text-title {
+  font-size: 24px;
+  margin-right: 56px;
+}
