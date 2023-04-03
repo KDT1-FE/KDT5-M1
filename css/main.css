@@ -131,6 +131,7 @@ header .search-chatting .search {
   display: none;
 }
 header .search-chatting .search-btn {
+  margin-top: 1.8rem;
   margin-right: 1.6rem;
   display: flex;
 }
@@ -158,9 +159,6 @@ header .search-chatting .search-bar {
     display: block;
     position: relative;
     margin-right: 1.2rem;
-  }
-  header .search-chatting .search-btn {
-    display: none;
   }
   header .search-chatting .search-bar {
     width: 28.8rem;
@@ -194,13 +192,16 @@ header .search-chatting .cancelButton {
   cursor: pointer;
 }
 header .search-chatting #toggle .btn-appear {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   background: none;
   padding: 0;
 }
 header .search-chatting .chatting-btn {
   font-weight: 700;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0.8rem 1.4rem;
   border-radius: 0.4rem;
@@ -215,6 +216,7 @@ header .search-chatting .chatting-btn__outline {
   font-weight: 700;
   line-height: 1.4;
   font-size: 1.4rem;
+  width: -moz-fit-content;
   width: fit-content;
   min-height: 3.6rem;
   padding: 0.8rem 1.4rem;
@@ -233,19 +235,20 @@ header .search-chatting .chatting-btn__outline {
     color: #212124;
     padding: 0 1.6rem;
   }
-  header .search-chatting .chatting-btn__min-width {
-    display: none;
-  }
 }
 header .search-chatting .btn-apper {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   background: none;
   padding: 0;
 }
 header .closed {
   background: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   padding: 0;
   display: flex;
@@ -300,12 +303,52 @@ header .recommand-transition {
   opacity: 1;
   transform: translateY(0);
 }
+header .button-nav {
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateY(-1.6rem);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.1s, visibility 0.1s;
+  border-top: 1px solid #eaebee;
+}
+header .button-nav .button-nav-ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+header .button-nav .button-nav-li {
+  display: inline-block;
+  margin: 0;
+}
+header .button-nav .button-nav-li:first-child a {
+  color: orange;
+}
+header .button-nav .button-nav-a {
+  padding: 1.6rem;
+  display: block;
+  font-size: 1.6rem;
+  color: #4d5159;
+  padding-bottom: 2.2rem;
+}
+header .button-nav .button-nav-a:hover {
+  background-color: #eaebee;
+}
+header .nav-transition {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
 header .blank-cancel {
   background-color: rgb(23, 23, 26);
   opacity: 0.5;
   position: absolute;
   width: 100%;
   height: 100vh;
+  display: none;
 }
 
 #home-main-section-top {
@@ -649,12 +692,16 @@ header .blank-cancel {
 #footer .sitemap-ul {
   display: flex;
   flex-direction: column;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   width: 33%;
 }
 #footer .sitemap-ul .sitemap-li {
+  width: -moz-fit-content;
   width: fit-content;
 }
 #footer .sitemap-ul:last-child {
@@ -759,6 +806,4 @@ header .blank-cancel {
   #footer .SNS-links {
     margin-top: 0;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

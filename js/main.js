@@ -4,8 +4,8 @@ const headBarEl = document.querySelector('.head-bar');
 const formEl = toggleEl.querySelector('form');
 const searchBtnEl = toggleEl.querySelector('.search-btn');
 
-const recommandEl = headBarEl.querySelector('.recommand')
-
+const recommandEl = headBarEl.querySelector('.recommand');
+const blackOpacityEl = headBarEl.querySelector('.blank-cancel');
 
 let cancelBtnEl;
 
@@ -28,15 +28,14 @@ searchBtnEl.addEventListener('click', function handleSearchBtnClick() {
   // 검색어추천 섹션 나타나게 할거임
     recommandEl.style.display = 'flex';
   setTimeout(() => {
-    // 1초 후에 실행될 코드
+    // 0.09초후에 실행될 코드
     recommandEl.classList.add('recommand-transition');
   }, 90);
   
+  // 밑에 요소들 검은투명박스로 가리기
+  blackOpacityEl.style.display='block';
 
 });
-
-
-//검색어추천섹션만들기
 
 
 //취소버튼 만들고 취소버튼을 클릭했을때는?
@@ -58,25 +57,86 @@ function handleCancelBtnClick() {
   // 캔슬버튼 없앰
   cancelBtnEl.remove();
 
+  //추천검색어 리스트 지우기
   recommandEl.classList.remove('recommand-transition');
   recommandEl.style.display = 'none';
+
+  //검은 투명박스 없애기
+  blackOpacityEl.style.display='none';
 }
 
-const mediaQuery = window.matchMedia('(min-width: 992px)');
+const chattingBtnEl = headBarEl.querySelector('.chatting-btn__min-width');
+const buttonNavEl = headBarEl.querySelector('.button-nav');
+const chattingBtnIcon = chattingBtnEl.querySelector('span');
+
+chattingBtnEl.addEventListener('click', function handlechattingBtnElClick(){
+  //클릭 했을 때 nav-transition 클래스를 가지고 있으면 닫아야겠지?
+  if (buttonNavEl.classList.contains('nav-transition')) {
+    chattingBtnIcon.textContent = "menu";
+    buttonNavEl.classList.remove('nav-transition');
+    buttonNavEl.style.display = 'none'
+  }
+  //그럼 안가지고있으면? nav 선수 입장.
+  else {
+    chattingBtnIcon.textContent = "close";
+    buttonNavEl.style.display = 'block'
+    setTimeout(() => {
+    buttonNavEl.classList.toggle('nav-transition');
+    }, 90);
+  }
+});
+
+
+
+
+const mediaQuery992 = window.matchMedia('(min-width: 992px)');
 
 function handleMediaQueryChange(e) {
   if (e.matches) {
     // 웹 페이지의 너비가 992px 이상일 때 실행할 코드
     searchBtnEl.style.display = 'none';
-    
+    toggleEl.classList.remove('isClicked', 'isCentered');
+    formEl.classList.remove('search-sScreen');
+    formEl.classList.add('search');
+    // 캔슬버튼 없앰
+    cancelBtnEl.remove();
+  
+    //추천검색어 리스트 지우기
+    recommandEl.classList.remove('recommand-transition');
+    recommandEl.style.display = 'none';
+  
+    //검은 투명박스 없애기
+    blackOpacityEl.style.display='none';
+
+
+    chattingBtnIcon.textContent = "menu";
+    buttonNavEl.classList.remove('nav-transition');
+    buttonNavEl.style.display = 'none';
   } else {
     // 웹 페이지의 너비가 992px 미만일 때 실행할 코드
     searchBtnEl.style.display = 'block';
+
   }
 }
-mediaQuery.addEventListener('change', handleMediaQueryChange);
+mediaQuery992.addEventListener('change', handleMediaQueryChange);
 
 // 페이지가 로드될 때 실행
-handleMediaQueryChange(mediaQuery);
+handleMediaQueryChange(mediaQuery992);
 
+
+const mediaQuery768 = window.matchMedia('(min-width: 768px)');
+
+function handleMediaQueryChange1(e) {
+  if (e.matches) {
+    // 웹 페이지의 너비가 768px 이상일 때 실행할 코드
+    chattingBtnEl.style.display = 'none';
+  } else {
+    // 웹 페이지의 너비가 768px 미만일 때 실행할 코드
+    chattingBtnEl.style.display = 'flex';
+  }
+}
+mediaQuery768.addEventListener('change', handleMediaQueryChange1);
+
+// 페이지가 로드될 때 실행
+handleMediaQueryChange1(mediaQuery768);
 

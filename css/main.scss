@@ -158,6 +158,7 @@ header {
       display: none;
     }
     .search-btn {
+      margin-top: 1.8rem;
       margin-right: 1.6rem;
       display: flex;
     }
@@ -187,9 +188,6 @@ header {
         display: block;
         position: relative;
         margin-right: 1.2rem;
-      }
-      .search-btn {
-        display: none;
       }
       .search-bar {
         width: 28.8rem;
@@ -278,9 +276,6 @@ header {
         color: #212124;
         padding: 0 1.6rem;
         }
-      .chatting-btn__min-width {
-        display: none;
-      }
     }
 
     .btn-apper {
@@ -358,12 +353,62 @@ header {
   transform: translateY(0);
 }
 
+
+
+.button-nav {
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateY(-1.6rem);
+  opacity: 0;
+  transition: transform .3s, opacity .1s, visibility 0.1s;
+  border-top: 1px solid #eaebee;
+  .button-nav-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .button-nav-li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .button-nav-li:first-child a {
+    color: orange;
+  }
+
+  .button-nav-a {
+    padding: 1.6rem;
+    display: block;
+    font-size: 1.6rem;
+    color: #4d5159;
+    padding-bottom: 2.2rem;
+  }
+
+  .button-nav-a:hover {
+    background-color: #eaebee;
+  }
+  
+}
+
+.nav-transition {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0)
+}
+
+
 .blank-cancel {
   background-color: rgba(23,23,26);
   opacity: .5;
   position: absolute;
   width: 100%;
   height: 100vh;
+  display: none;
 }
 
 }
