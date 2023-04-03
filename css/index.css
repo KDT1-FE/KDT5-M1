@@ -1,0 +1,1141 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+/* COMMON */
+img {
+  /* 베이스라인 제거 */
+  display: block;
+}
+
+body {
+  line-height: 1.43;
+  color: rgb(17, 17, 17);
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue,
+    Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit;
+  font-size: inherit;
+  letter-spacing: -1px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+li {
+  letter-spacing: -0.5px;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.greenButton {
+  color: #fff;
+  background: #13bd7e;
+}
+
+.whiteButton {
+  color: #13bd7e;
+  border: 1px solid #13bd7e;
+  background: #fff;
+}
+
+.violetButton {
+  color: #fff;
+  background: #877af5;
+}
+
+.mustardButton {
+  color: #111;
+  background: #ffbe4c;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  padding: 16px 16px 32px;
+}
+
+.wrap {
+  background: #fbfbfb;
+}
+/* HEADER */
+.navWrap {
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+nav {
+  top: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  background: #fff;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  cursor: pointer;
+  margin-left: 32px;
+  margin-right: 42px;
+}
+
+header nav .item {
+  display: flex;
+  height: 85px;
+}
+
+header nav .item .item__name {
+  display: flex;
+  letter-spacing: -0.08px;
+  padding: 3px 22px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header nav .item .item__name:hover {
+  color: rgb(111, 220, 169);
+}
+
+header nav .item .item__name .item__name__main {
+  font-weight: 700;
+}
+
+header nav .item .item__content {
+  display: none;
+  position: fixed;
+  top: 85px;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+}
+
+header nav .item .item__name:hover .item__content {
+  display: flex;
+}
+
+header nav .item .item__content .contents__menu {
+  width: 100%;
+  z-index: 2;
+}
+
+header nav .item .item__content .contents__menu .non-left-banner {
+  margin-left: 16px;
+}
+
+header nav .item .item__content .contents__menu .left-banner {
+  display: flex;
+  width: 266px;
+  flex-direction: column;
+  padding: 0 32px 0 16px;
+  border-right: 1px solid #ededee;
+  color: rgb(17, 17, 17) !important;
+  margin-right: 32px;
+}
+
+.left-banner-green {
+  color: #18cd8c;
+}
+
+header nav .item .item__content .contents__menu .left-banner > div {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header nav .item .item__content .contents__menu .left-banner > button {
+  width: 100%;
+  height: 50px;
+  padding: 12px 23px;
+  color: #fff;
+  border-radius: 10px;
+  background: #18cd8c;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+}
+
+header
+  nav
+  .item
+  .item__content
+  .contents__menu
+  .left-banner
+  .left-banner__cardContainer {
+  margin: 10px 0;
+}
+
+header nav .item .item__content .contents__menu .left-banner .random__interest {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header
+  nav
+  .item
+  .item__content
+  .contents__menu
+  .left-banner
+  .random__interest
+  > img {
+  width: 160px;
+}
+header nav .item .item__content .contents__menu > ul .dropdown__li {
+  width: 210px;
+  margin-right: 40px;
+}
+
+header
+  nav
+  .item
+  .item__content
+  .contents__menu
+  > ul
+  .dropdown__li
+  .dropdown__gray {
+  padding: 9px 0;
+  color: #888e99;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+}
+
+header
+  nav
+  .item
+  .item__content
+  .contents__menu
+  > ul
+  .dropdown__li
+  .dropdown__menu {
+  padding: 9px 0;
+  color: #111;
+  line-height: 26px;
+}
+
+header
+  nav
+  .item
+  .item__content
+  .contents__menu
+  > ul
+  .dropdown__li
+  .dropdown__menu:hover {
+  font-weight: 700;
+}
+
+.max-benefitCard {
+  position: relative;
+  display: flex;
+  height: 106px;
+  width: 100%;
+  align-items: center;
+  border-radius: 12px;
+  background: #f7f7f7;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.max-benefitCardTextBox {
+  margin-left: 20px;
+}
+
+.mbcGreenText {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: #18cd8c;
+}
+
+.mbcGeneralText {
+  color: #333a44;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.005em;
+}
+
+.max-benefitCardImg {
+  position: absolute;
+  right: 18px;
+}
+
+.max-benefitCardImg > img {
+  width: 60px;
+  transform: rotate(340deg);
+}
+
+/* SECTION - rankingWrap */ /* SECTION - rankingWrap */
+/* SECTION - rankingWrap */ /* SECTION - rankingWrap */
+/* SECTION - rankingWrap */ /* SECTION - rankingWrap */
+
+.rankingWrap {
+  position: relative;
+  overflow: visible;
+  padding: 10px 0;
+  background-color: #fbfbfb;
+
+  margin-top: 85px;
+}
+
+.rankingWrap .rankingContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 946px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 60px;
+}
+
+.rankingWrap .rankingContainer .rankingAnimation {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 32px;
+  display: block;
+  width: calc(100% - 195px);
+  height: 60px;
+  border: 2px solid #f5f5f5;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.rankingContainer:hover .swiper {
+  overflow: visible;
+  /* rankingContainer hover시 swiper 우선 floating */
+  z-index: 3;
+}
+
+.rankingContainer:hover .rankingList {
+  background-color: #fff;
+}
+
+.rankingWrap .rankingContainer .rankingButton {
+  float: right;
+  display: block;
+  width: 115px;
+  margin: 0 0 0 16px;
+  padding: 22px 10px;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  background-color: #91b5be;
+  text-align: center;
+}
+
+.rankingWrap .rankingContainer .rankingAnimation .rankingList .cardList {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 60px;
+  padding: 0 16px;
+  width: 95%;
+  background: #fff;
+}
+
+.rankingList .cardRank {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 16px;
+  display: block;
+  color: #fd8700;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.rankingList .cardName {
+  display: block;
+  padding: 0 80px 0 28px;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 60px;
+}
+.rankingList .cardImg {
+  position: absolute;
+  top: calc(50% - 16px);
+  right: 16px;
+  bottom: auto;
+  left: auto;
+  display: block;
+  width: 50px;
+  height: 32px;
+}
+
+/* SECTION - bannerWrap */ /* SECTION - bannerWrap */
+/* SECTION - bannerWrap */ /* SECTION - bannerWrap */
+/* SECTION - bannerWrap */ /* SECTION - bannerWrap */
+
+.bannerWrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 480px;
+}
+
+.bannerContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerSection {
+  display: block;
+  width: 100%;
+  height: 480px;
+  white-space: nowrap;
+}
+
+.banner1 {
+  background-color: #eafaf3ee;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.banner1-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 916px;
+  height: calc(480px - 130px);
+  margin: 0 auto;
+  padding: 130px 20px 0;
+  background-image: url(../images/banksalad_carousel_1.png);
+  background-repeat: no-repeat;
+  background-position: 100% -10%;
+}
+.banner1-container > h1 {
+  position: relative;
+  display: block;
+  color: #0b0c0c;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.banner2 {
+  background-color: #cbf8e7;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.banner2-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 916px;
+  height: calc(480px - 130px);
+  margin: 0 auto;
+  padding: 130px 20px 0;
+  background-image: url(../images/banksalad_carousel_2.png);
+  background-repeat: no-repeat;
+  background-position: 170% 80%;
+  background-size: 750px;
+}
+
+.banner2-container > h2 {
+  position: relative;
+  display: block;
+  color: #0b0c0c;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.banner2-container > h2 > small {
+  font-weight: 500;
+}
+
+.banner2-container > p {
+  position: relative;
+  margin: 8px 0 0;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.banner3 {
+  background: linear-gradient(91deg, #09f, #ff8a84 90%);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.banner3-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 130px 20px 0;
+  background-repeat: no-repeat;
+  background-position: 110% 80%;
+  background-size: 530px;
+  background-repeat: no-repeat;
+}
+
+.banner3-container > h2 {
+  position: relative;
+  display: block;
+  color: #fafafa;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  padding-left: 30px;
+}
+
+.banner3-container > p {
+  position: relative;
+  margin: 8px 0 0;
+  font-size: 22px;
+  line-height: 25px;
+  padding-left: 30px;
+  color: #ededee;
+}
+
+.banner3-container .bannerButtons {
+  padding-left: 30px;
+}
+
+.banner3-container > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: visible;
+}
+
+.bannerButtons {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 25px 0 0;
+}
+
+.bannerButton {
+  max-width: fit-content;
+  padding: 10px 20px;
+  border-radius: 41px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.bannerButton2 {
+  max-width: fit-content;
+  padding: 10px 20px;
+  border-radius: 41px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 12px;
+}
+
+.bannerNavigation {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 8px;
+  left: 0;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+
+.swiper-pagination {
+  z-index: 3 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  color: transparent !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  transition: all 0.3s ease !important;
+  opacity: 1 !important;
+  margin: 0 0 0 12px !important;
+}
+.swiper-pagination-bullet-active {
+  width: 40px !important;
+  transition: width 0.5s !important;
+  border-radius: 5px !important;
+  background: #fff;
+  opacity: 1 !important;
+}
+
+/* SECTION - featureWrap */ /* SECTION - featureWrap */
+/* SECTION - featureWrap */ /* SECTION - featureWrap */
+/* SECTION - featureWrap */ /* SECTION - featureWrap */
+
+.featureWrap {
+  display: block;
+  margin: 0 0 12px;
+  padding: 48px 0;
+  background: #fff;
+  border-bottom: 2px solid #f5f5f5;
+  height: 444.4px;
+}
+
+.featureContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 946px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.featureTitle {
+  display: block;
+  color: #7b7b7b;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+.featureTitle > strong {
+  display: block;
+  margin: 12px 0 0;
+  color: #0b0c0c;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.features {
+  display: inline-block;
+  margin: 42px 0 0;
+}
+
+.features > li {
+  float: left;
+  display: block;
+  width: 33.3%;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.featureImg {
+  display: inline-block;
+  width: 160px;
+  height: 110px;
+  margin-bottom: 16px;
+}
+
+.featureImg > img {
+  height: 110px;
+}
+
+.featureDesc > h1 {
+  color: #434444;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -1px;
+  margin-bottom: 7px;
+}
+
+.featureDesc > h3 {
+  margin: 0;
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
+
+/* SECTION - pickedWrap */ /* SECTION - pickedWrap */
+/* SECTION - pickedWrap */ /* SECTION - pickedWrap */
+/* SECTION - pickedWrap */ /* SECTION - pickedWrap */
+
+.pickedWrap {
+  display: block;
+  margin: 0 0 12px;
+  padding: 48px 0;
+  background: #fff;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.pickedContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 946px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.pickedTitle {
+  display: block;
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.pickedContentContainer {
+  display: inline-block;
+  width: 100%;
+  margin: 0 -16px 0 0;
+}
+
+.pickedContent {
+  float: left;
+  display: block;
+  width: calc(25% - 16px);
+  margin: 0 16px 16px 0;
+}
+
+.landingPicked {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+  text-align: left;
+}
+
+.landingPicked .pcI_1 {
+  background-image: url("https://financialshopping-cdn.banksalad.com/large-png_2023_TOP_7_850e6299f6.png");
+}
+
+.landingPicked .pcI_2 {
+  background-image: url("https://cdn.banksalad.com/content%2Fupload%2Fimages%2Fbookkeeping-615384_1920.jpg");
+}
+.landingPicked .pcI_3 {
+  background-image: url("https://cdn.banksalad.com/entities/content-columns/1550647851678-code-1839406_1280.jpg");
+}
+.landingPicked .pcI_4 {
+  background-image: url("https://cdn.banksalad.com/entities/content-columns/1552789202508-money-2724241_1280.jpg");
+}
+.landingPicked .pcI_5 {
+  background-image: url("https://cdn.banksalad.com/entities/content-columns/1551088106390-experience-3239623_1280.jpg");
+}
+.landingPicked .pcI_6 {
+  background-image: url("https://cdn.banksalad.com/entities/content-columns/1567693701704-190904_%EB%B1%85%ED%81%AC%EC%83%90%EB%9F%AC%EB%93%9C_30%EB%8C%80_%EC%A7%80%EC%BC%9C%EC%A4%98%28%ED%99%94%EC%9D%B4%ED%8A%B8%29305%20%281%29.jpg");
+}
+
+.pickedcontentImg {
+  width: 100%;
+  height: 130px;
+  background-position: 50%;
+  background-size: cover;
+}
+.pickedcontentBox {
+  position: relative;
+  height: 154px;
+  padding: 16px 12px;
+}
+
+.pickedClickArea {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 70%;
+  color: transparent;
+  font-size: 0;
+}
+
+.pickedcontentBox > h2 {
+  color: #04c584;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -1px;
+}
+
+.pickedcontentBox > h3 {
+  overflow: hidden;
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -1px;
+
+  /* 말 줄임표로 잘린 텍스트가 있다고 표시 */
+  text-overflow: ellipsis;
+
+  margin-top: 10px;
+
+  /* 초과하는 텍스트는 줄바꿈 처리 */
+  word-wrap: break-word;
+}
+
+.pickedButtonContainer {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.pickedButton {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+  font-size: 0;
+  text-align: center;
+}
+
+.pickedButtonContainer .prev > img {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  content: "";
+}
+
+.pickedButtonContainer .next > img {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+
+/* SECTION - appWrap */ /* SECTION - appWrap */
+/* SECTION - appWrap */ /* SECTION - appWrap */
+/* SECTION - appWrap */ /* SECTION - appWrap */
+
+.appWrap {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  background: url(https://cdn.banksalad.com/app/banksalad-web/landing-app-ad-banner-pc.png)
+    no-repeat 40% 0 / cover;
+  padding-top: 80px;
+  text-align: left;
+}
+
+.appContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 946px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.appContainer > h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.appShortCut {
+  margin-left: -12px;
+}
+
+.appShortCut > a {
+  display: inline-block;
+  font-size: 0;
+}
+
+.appShortCut .google > img {
+  width: 158px;
+}
+
+.appShortCut .apple > img {
+  width: 158px;
+}
+
+/* SECTION - allianceWrap */ /* SECTION - allianceWrap */
+/* SECTION - allianceWrap */ /* SECTION - allianceWrap */
+/* SECTION - allianceWrap */ /* SECTION - allianceWrap */
+
+.allianceWrap {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 20px;
+  text-align: center;
+}
+
+.bgShinhan {
+  position: absolute;
+  top: 74px;
+  left: calc(45% - 350px);
+  width: 156px;
+  height: 37px;
+  background: url(https://cdn.banksalad.com/cards/companies/shinhan_gray.png);
+  background-size: cover;
+}
+
+.bgSamsung {
+  position: absolute;
+  top: 159px;
+  left: calc(30% - 250px);
+  width: 118px;
+  height: 15px;
+  background: url(https://cdn.banksalad.com/cards/companies/samsung_gray.png);
+  background-size: cover;
+}
+
+.bgNH {
+  position: absolute;
+  top: 64px;
+  left: calc(55% + 200px);
+  width: 111px;
+  height: 24px;
+  background: url(https://cdn.banksalad.com/cards/companies/nh_gray.png);
+  background-size: cover;
+}
+
+.bgLotte {
+  position: absolute;
+  top: 112px;
+  left: calc(70% + 200px);
+  width: 140px;
+  height: 14px;
+  background: url(https://cdn.banksalad.com/cards/companies/lotte_gray.png);
+  background-size: cover;
+}
+
+.bgHyundai {
+  position: absolute;
+  top: 160px;
+  left: calc(65% + 150px);
+  width: 184px;
+  height: 37px;
+  background: url(https://cdn.banksalad.com/cards/companies/hyundai_gray.png);
+  background-size: cover;
+}
+
+.bgAlliance {
+  opacity: 0.12;
+}
+
+.allianceWrap > h1 {
+  color: #2b2b2b;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+/* SECTION - contactWrap */ /* SECTION - contactWrap */
+/* SECTION - contactWrap */ /* SECTION - contactWrap */
+/* SECTION - contactWrap */ /* SECTION - contactWrap */
+
+.contactWrap {
+  height: 100%;
+  padding: 32px 10px;
+  color: #5c818a;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1px;
+  background-color: #f0f6f8;
+  text-align: center;
+}
+
+.contactWrap > p > a {
+  color: #5c818a;
+  text-decoration: underline;
+}
+
+/* FOOTER */ /* FOOTER */
+/* FOOTER */ /* FOOTER */
+/* FOOTER */ /* FOOTER */
+
+.footerWrap {
+  display: block;
+  width: 100%;
+  padding: 71px 0 88px;
+  background: #fff;
+}
+
+.footerContainer {
+  display: flex;
+  max-width: 946px;
+  margin: 0 auto;
+}
+
+.footerContainer + .footerContainer {
+  margin: 92px auto 0;
+  padding: 24px 0;
+}
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footerLogo .goToMain {
+  display: block;
+  width: 207px;
+  height: 33.23px;
+  font-size: 0;
+  background: url(../images/banksalad_goToMain.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.footerDesktopAndTablet {
+  display: block;
+}
+
+.footerApp {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footerApp > a {
+  display: inline-block;
+  color: transparent;
+  font-size: 0;
+  margin-left: -10px;
+}
+
+.footerApple {
+  display: block;
+  width: 158px;
+  margin-top: 32px;
+}
+
+.footerGoogle {
+  display: block;
+  width: 158px;
+  margin-top: -10px;
+}
+
+.footerNav {
+  display: flex;
+  flex: 1;
+}
+
+.footerNavSites {
+  float: left;
+  display: block;
+}
+
+.footerNavSites:first-child {
+  margin-right: 128px;
+}
+
+.footerMenuTitle {
+  display: block;
+  margin: 0 0 16px;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footerMenuTitle .siteList__1 {
+  display: flex;
+  align-items: center;
+}
+
+.siteList__1 + li {
+  margin: 16px 0 0;
+}
+
+.siteList__2 + li {
+  margin: 16px 0 0;
+}
+
+.siteListLink {
+  display: block;
+  color: #555b66;
+  font-size: 14px;
+}
+
+.siteListLabel {
+  color: #18cd8c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.footerLegal {
+  width: 100%;
+}
+
+.policies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.policies a {
+  color: #555b66;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.copyright {
+  display: block;
+  margin: 25px 0 0;
+  color: #888e99;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.copyright address {
+  display: inline;
+}
+
+/* adress tag의 기본 font-style은 italic */
+.copyright a {
+  color: inherit;
+  font-style: normal;
+  text-decoration: underline;
+}
