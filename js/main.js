@@ -1,4 +1,52 @@
-import "./swiper";
+// SECTION - rankingWrap JS
+const swiper_1 = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  autoplay: {
+    //시간 1000 이 1초
+    delay: 1800,
+    disableOnInteraction: false,
+  },
+  reverseDirection: true,
+});
+
+let hovered = document.querySelectorAll(".cardList");
+
+for (let i of hovered) {
+  i.addEventListener("mouseover", function () {
+    // mouseover => autoplay stop
+    swiper_1.autoplay.stop();
+    // swiper.slideTo((이동할 슬라이드 인덱스, 속도), false)
+    swiper_1.slideTo(0, 0, false);
+  });
+  i.addEventListener("mouseout", function () {
+    // mouseout => autoplay start
+    swiper_1.autoplay.start();
+
+    // 특정 슬라이드에서 mouseover 이후 mouseout시 다시 해당 슬라이드로 이동 구현은?
+    // swiper.activeIndex를 사용하여 특정 슬라이드의 index를 도출할 수 있으나,
+    // swiper.slideTo(0,0, false) 메소드로 인해 결국 index == 0이 된다.
+    //
+  });
+}
+// SECTION - bannerWrap JS
+const swiper_2 = new Swiper(".swiper-container", {
+  // Optional parameters
+
+  loop: true,
+  autoplay: {
+    //시간 1000 이 1초
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  reverseDirection: true,
+  speed: 600,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // SECTION - pickedWrap JS
 let bankIndex = 0;
