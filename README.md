@@ -60,4 +60,4 @@
 
 4. flex의 align-items 개념이 grid의 align-self
 
-5. card내의 title정렬
+5. card내의 title정렬 -done
