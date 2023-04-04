@@ -70,13 +70,13 @@ const buttonNavEl = headBarEl.querySelector('.button-nav');
 const chattingBtnIcon = chattingBtnEl.querySelector('span');
 
 chattingBtnEl.addEventListener('click', function handlechattingBtnElClick(){
-  //클릭 했을 때 nav-transition 클래스를 가지고 있으면 닫아야겠지?
+  //클릭 했을 때 nav-transition 클래스를 가지고 있으면 닫아야한다?
   if (buttonNavEl.classList.contains('nav-transition')) {
     chattingBtnIcon.textContent = "menu";
     buttonNavEl.classList.remove('nav-transition');
     buttonNavEl.style.display = 'none'
   }
-  //그럼 안가지고있으면? nav 선수 입장.
+  //그럼 안가지고있으면? nav 등장.
   else {
     chattingBtnIcon.textContent = "close";
     buttonNavEl.style.display = 'block'
