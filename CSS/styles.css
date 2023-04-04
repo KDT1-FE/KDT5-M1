@@ -16,6 +16,15 @@ a {
 :root {
   --vh: 7.52px;
 }
+.clicked {
+  background-color: #c2e7ff;
+  font-variation-settings: 'wght' 600, 'opsz' 24;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+.noHover {
+  pointer-events: none;
+}
 /* SIDEBAR */
 .sidebar {
   display: flex;
@@ -356,6 +365,7 @@ a {
   background-color: #c2e7ff;
   transition: 0.2s;
   transition-timing-function: ease;
+  cursor: pointer;
 }
 .text-container {
   display: grid;
@@ -446,4 +456,7 @@ footer {
 }
 .legal ul a {
   padding: 1px;
+}
+.legal ul a:hover {
+  text-decoration: underline;
 }
