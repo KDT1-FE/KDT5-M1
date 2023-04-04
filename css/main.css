@@ -9,6 +9,7 @@ header .inner {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  background-color: white;
 }
 .section0 > img {
   position: absolute;
@@ -33,31 +34,39 @@ header .inner > .middle > div {
 }
 
 header .inner > .middle > div:hover {
-  background-color: gray;
+  background-color: #f2f4f6;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 header .inner > .right {
   display: flex;
+  margin-right: 10px;
   width: 110px;
   height: 59px;
 }
 header .inner > .right > div {
+  padding: 5px;
   margin: auto 0;
+}
+header .inner > .right > div:hover {
+  margin: auto 0;
+  background-color: #f2f4f6;
+  cursor: pointer;
 }
 header .message {
   position: absolute;
   font-size: 40px;
-  top:20%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 header .btn {
   position: absolute;
   display: flex;
-  top:40%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 header .btn div {
   color: white;
@@ -66,7 +75,7 @@ header .btn div {
   height: 46px;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 12, 30, 0.8);
   border-radius: 10px;
   padding: 5px 10px 5px 10px;
   margin: 2px;
@@ -123,6 +132,6 @@ header .btn img {
 }
 /* Section3 */
 .section3 > img {
-  width: 1600px;
-  height: 700px;
+  width: 100vw;
+  height: 500px;
 }
