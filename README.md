@@ -1,6 +1,6 @@
 # 👀 자신이 원하는 사이트 레이아웃 클론
 
-### [배포 완료] (https://banksalad-clonecoding.netlify.app/)
+### [배포 완료](https://banksalad-clonecoding.netlify.app/)
 
 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.  
 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.   
