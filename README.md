@@ -2,10 +2,10 @@
 ## 🌸KuKKa Web Page Clone Coding🌸 
 
 ## 배포 주소
--> 
+-> https://642bd96c6bcf2c108a507f62--splendorous-crisp-88ea67.netlify.app/
 
 ## 원본 주소 
--> 
+-> https://kukka.kr/#
 
 
 ## 📌 유의사항 
@@ -13,14 +13,16 @@
 
 
 ## 📜 프로젝트 소개
--> 
+->  깃허브 클론코딩 과제입니다. 
+클론 코딩 사이트는 "꾸까" 라는 웹사이트 입니다.
+봄의 계절에 맞춰 상큼 하고 밝은 사이트를 선택하였으며, 조금이라도 이벤트가 들어있는 웹페이지를 선택하였습니다. 
 
 
 ## 시작 가이드
 ### Requirements
 For building and running the application you need:
 
-- [Npm 9.2.0](https://www.npmjs.com/package/npm/v/9.2.0)
+- [Npm 8.19.3](https://www.npmjs.com/package/npm/v/8.19.3)
 
 
 ### Installation
@@ -33,7 +35,7 @@ $ cd KDT0_KimHaEun
 ```
 $ cd KDT0_KimHaEun
 $ npm install 
-$ npm run start
+$ npm run dev
 ```
 
 ---
@@ -95,39 +97,85 @@ $ npm run start
 <img width="282" alt="image" src="https://user-images.githubusercontent.com/101441685/229601109-a7bbc2c6-8092-49ff-bdf5-4650fa9d1a41.png">
 ->  각각의 칸안에 있는 사진의 경우 grid 를 사용하였습니다. 
 
-### ⭐️ 3) 부분적으로 BEM 방법론을 도입해보세요.
 
-#### BEM 방법론 
+### ⭐️ 3 JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+-> 헤더 아래 메인페이지의 사진 부분은 일정초가 지날때마다 사진도 같이 바뀝니다.  따라 해당 부분을 js로 구현해보았습니다. 
+1) html에 class의 name으로 처음 active 할곳을 지정해 주었습니다. 
+<img width="286" alt="image" src="https://user-images.githubusercontent.com/101441685/229733084-c5a5e0db-7521-419c-a1a6-6408d5489261.png">
 
-**Block (블록)**
--> block(블록)은 페이지 전체 Element(요소)를 의미하거나 하위 Element(요소)를 감싸는 컨테이너를 의미한다. 블록끼리는 상호작용할 수 있지만, 우선순위나 계층이 없다.
+2) scss에 active 가 있는곳은   opacity:1; 를 주었고 그 외 나머지 곳들은  opacity: 0; 으로 보이지 않게 처리해 주었습니다. <br/>
 
-**Element (요소)**
--> 블록의 하위 요소이다. 모든 요소는 상위 블록과 연결된다.
+```javascript
+ .test.active {
+  display: block;
+  opacity:1;
+  transition: opacity 2s ease-out 5s;
+}
+.test {
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+```
+3) test 가 있는 classname 을 [currentSlideIndex] 배열로  만들어 주고 . nextSlideIndex  라는 변수 안에 (currentSlideIndex + 1) % sliders.length; 계산한 값을
+[nextSlideIndex]; 배열 안에 넣어 nextSlide 의 변수에  할당 해주었습니다. 
+3초동안, ("active") 를 add해주면서, active가 발생할때 opacity 1 이 되는것이고, remove 될때는 opacity 0 이 되도록 구현하였습니다.
 
-**Modifier (수정자)**
- -> Naming
-수정자의 이름은 문자, 숫자, 대시(-) 및 밑줄(_)로 구성될 수 있다.
-블럭이름--수정자이름 혹은 요소이름--수정자이름 형태로 작성한다.
-수정자의 이름이 길거나 공백이 있다면 하나의 대시를 사용한다. 블럭이름--border-black
+```javascript
+document.addEventListener("DOMContentLoaded", function(){
+const sliders = document.getElementsByClassName("test");
+let currentSlideIndex = 0;
+const intervalDuration = 3000; // 5 seconds
+
+setInterval(() => {
+  const currentSlide = sliders[currentSlideIndex];
+  const nextSlideIndex = (currentSlideIndex + 1) % sliders.length;
+  const nextSlide = sliders[nextSlideIndex];
+
+  currentSlide.classList.remove("active");
+  nextSlide.classList.add("active");
+
+  currentSlideIndex = nextSlideIndex;
+}, intervalDuration);
+```
 
 
+### ⭐️ 4) SCSS 등의 CSS 전처리도구를 도입해보세요.
+-> scss 를 사용하여 스타일을 작성하였습니다. 
+-> scss 의 를사용하여 ,  심플한 표기법으로 CSS를 구조화 함으로써 , 가독성과 재사용성을 높여주어 유지보수가 쉽도록 구현하였습니다. <br/>
 
-### ⭐️ 4) JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+✨scss 설치법 
+```javascript
+npm i -g sass --save-dev
+```
 
+| scss 사용후 |  scss -> css 변환후   |
+| :-------------------------------------------: | :------------: |
+| <img width="383" alt="image" src="https://user-images.githubusercontent.com/101441685/229776541-2381234c-9450-42f2-8703-b28ef953b75d.png">|<img width="382" alt="image" src="https://user-images.githubusercontent.com/101441685/229776722-6a922e9d-4f73-4cd5-9d57-15e2eb6895ef.png">|  
 
-### ⭐️ 5) SCSS 등의 CSS 전처리도구를 도입해보세요.
+### ⭐️ 5) SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+-> webpack 보다 parcel 이 환경 세팅하기에 조금더 쉬운것 같아 parcel 을 사용하였습니다. 또한 큰 프로젝트가 아닌 작은 규모릐 프로젝트 이기 때문에 해당 번들러를 사용하였습니다.<br/> 
+-> 번들러는 단순히 자바스크립트 파일들 뿐만 아니라, 애플리케이션에 필요한 모든 종류의 파일들을 모듈 단위로 나누어 최소한의 파일 묶음(번들)으로 만들어 냅니다. 뿐만 아니라 자바스크립트 파일을 외부에서 알아 보기 힘들게 코드를 변환하는 작업 을 한다거나, 최신 문법의 자바스크립트를 모든 웹 브라우저에서 작동할 수 있게 ES5문법으로 변환(Transpile)하는 등 다양한 기능을 지원합니다. <br/>
 
-
-
-### ⭐️ 6) SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/101441685/229783798-6688552e-be01-41ec-8afc-d0ceb3cb0642.png">
 
 ---
 
 
 ##  🎇 느낀점 
 
+-> 기존의 프로젝트에서는 styled-component 만 사용하였으나, 이번 기회에 scss를 사용해 보았습니다.  사실 styled-component  사용하는게 익숙해서 인지 scss 의 편리함에 대해 차이점을 잘 느끼지를 못하였으나, 이번 프로젝트에 적용하게 되면서  scss 의 편리함을 깨닫게 되었습니다. 번들러를 사용하며,  조금더 빠른 페이지 로딩을 볼수 있었습니다.<br/>
+요구사항을 활용하여 조금더 세분화된 html의 구조를 잡을수 있게 되었습니다. 
+
+##  🎇 아쉬운점 
+-> BEM 방법론을 사용하지 못하였습니다. "BEM 방법론"을 사용하였다면 조금더 가독성이 좋을것 같았습니다. 
+-> 클래스 명이 조금 더 구체적이지 못한게 아쉽습니다. 
 -> 
+
+
 
 -------
 
