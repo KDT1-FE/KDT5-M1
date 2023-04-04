@@ -345,7 +345,7 @@ header {
   @include SubBackground;
   background-color: white;
  
-  .gridbox{
+  .grid-box{
     width: 100%;
     height: 670px;
     left: 0;
@@ -361,7 +361,6 @@ header {
       grid-template-columns:250px 380px 380px 380px;
       grid-template-rows: 600px;
       gap: 3%;
-      //background-color: tan;
       width: 1600px;
       position:absolute;
       left: 0;
@@ -575,7 +574,7 @@ header {
   margin-top: 60px; 
 }
 
-.classgridbox {
+.classgrid-box {
   width: 90%;
   height: 450px;
   margin-top:6vw;
