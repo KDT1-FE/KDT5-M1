@@ -1,16 +1,14 @@
 당근마켓 클론 사이트입니다.
 
+원본 사이트: https://www.daangn.com/
+배포 사이트: https://dhmoon11.github.io/daangn-clone/
+
 
 header > 메인 카테고리(중고거래, 동네가게, 알바 등) 
+
 section > 인기매물보기, 동네가게 찾기 
+
 footer> 당근마켓 앱 다운로드(App Store / Google Play) 등 각 버튼 실제 당근마켓, 앱스토어 등의 사이트로 연동해 클릭 시 바로 갈 수 있게 구현했습니다.
-
-
-
-
-
-
-
 
 
 
