@@ -95,8 +95,8 @@ h3 {
 
 /* 배경이미지 작업 시작 */
 .backgroundBox {
-  width: 100%;
-  height: 7200px;
+  width: 100vw;
+  //height: 7000px;
   position:absolute;
 }
 /* 배경이미지 작업 끝 */
@@ -188,8 +188,8 @@ header {
   list-style: none;
   width: 9999%;
   right: 3px;
-  transition: all 1s ease 1s;
 }
+
 #slider ul li{
   position: relative;
   width: 99vw;
@@ -200,6 +200,7 @@ header {
 .test.active {
   display: block;
   opacity:1;
+  transition: opacity 2s ease-out 5s;
 }
 .test {
   position:absolute;
@@ -269,7 +270,6 @@ header {
   width: 900px;
   height: 400px;
   padding-bottom: 50px;
-  //background-color: antiquewhite;
 
   p {
     font-size: 14px;
