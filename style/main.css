@@ -7,6 +7,7 @@
 
 
 a {
+  color:#212124;
   text-decoration: none; /*밑줄 제거*/
 }
 
@@ -527,6 +528,7 @@ header .sub-menu .search .chat {
 .keyword-text{
   margin-left: 50px;
   height:47px;
+  color:#212124;
 }
 
 .footer123{
