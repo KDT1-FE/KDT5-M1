@@ -1,0 +1,159 @@
+body{
+  margin: 0px;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1ed760;
+}
+
+nav{
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item{
+  padding: 28px 17px;
+  font-weight: 700;
+}
+
+main{
+  height: 554px;
+  background-color: rgb(255, 205, 210);
+  background-size: 100%;
+  background-position: 46% 4%;
+  text-align: center;
+  background-size: auto;
+}
+
+
+footer{
+  height: 456px;
+  background-color: black;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.headline{
+  padding-top: 48px;
+  padding-bottom: 5px;
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+}
+
+.headline-sec{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sub-headline{
+  width: auto;
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.button-style{
+  padding: 5px 20px;
+  border-radius: 500px;
+  border: none;
+  height: auto;
+  display: block;
+  float: auto;
+}
+
+.button-icon{
+  text-align: auto;
+  overflow: hidden;
+  vertical-align: middle
+}
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  padding-top: 88px;
+  padding-bottom: 50px;  
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 346px;
+}
+.first-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.second-box {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-menu-item {
+  padding-bottom: 15px;
+  padding-top: 3px;
+  font-size: 16px;
+  text-align: left;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.sub-title {
+  color: #919496;
+  font-weight: 900;
+  margin: 20px 0px;
+  font-size: 12px;
+  text-align: left;
+}
+.icon-box {
+  width: 54px;
+  height: 54px;
+  background-color: #222322;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  font-size: 24px;
+}
+.icon:hover {
+  color: #2de26d;
+}
+.first-line {
+  color: #919496;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-right: 24px;
+}
+.second-line {
+  color: #919496;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.second-line-item {
+  margin-right: 24px;
+  color: #919496;
+  font-size: 12px;
+}
