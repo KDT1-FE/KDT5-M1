@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 그 이상의 감동, CGV</title>
+    <!-- Reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/youtube.js"></script>
+    <script defer src="./js/swiper.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header__main">
+        <div class="header__logo">
+          <a href="/">
+            <img src="./images/logoRed.png" alt="" />
+            <span class="header__logo-text">CULTUREPLEX</span>
+          </a>
+        </div>
+        <ul class="header__my-Menu">
+          <img src="./images/header__pop.png" alt="header event img-pop" />
+          <li class="my-Menu__item">
+            <img src="./images/loginPassword.png" alt="" class="item__img" />
+            <div class="item__text">로그인</div>
+          </li>
+          <li class="my-Menu__item">
+            <img src="./images/loginJoin.png" alt="" class="item__img" />
+            <div class="item__text">회원가입</div>
+          </li>
+          <li class="my-Menu__item">
+            <img src="./images/loginMember.png" alt="" class="item__img" />
+            <div class="item__text">MY CGV</div>
+          </li>
+          <li class="my-Menu__item">
+            <img src="./images/loginCustomer.png" alt="" class="item__img" />
+            <div class="item__text">고객센터</div>
+          </li>
+        </ul>
+      </div>
+      <div class="header__nav-line">
+        <div class="header__nav">
+          <ul class="header__menu">
+            <li class="item">
+              <div class="item__name">영화</div>
+              <div class="item__contents">
+                <div class="contents__menu">
+                  <ul class="inner">
+                    <li>
+                      <h4>영화</h4>
+                      <ul>
+                        <li>무비차트</li>
+                        <li>아트하우스</li>
+                        <li>ICECON</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>극장</h4>
+                      <ul>
+                        <li>CGV 극장</li>
+                        <li>특별관</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>예매</h4>
+                      <ul>
+                        <li>빠른예매</li>
+                        <li>상영스케줄</li>
+                        <li>English Ticketing</li>
+                        <li>English Schedule</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>스토어</h4>
+                      <ul>
+                        <li>패키지</li>
+                        <li>영화관람권</li>
+                        <li>기프트카드</li>
+                        <li>콤보</li>
+                        <li>팝콘</li>
+                        <li>음료</li>
+                        <li>스낵</li>
+                        <li>플레이존</li>
+                        <li>씨네샵 ></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>이벤트</h4>
+                      <ul>
+                        <li>SPECIAL</li>
+                        <li>영화/예매</li>
+                        <li>멤버십/CLUB</li>
+                        <li>CGV 극장별</li>
+                        <li>제휴할인</li>
+                        <li>당첨자 발표</li>
+                        <li>종료된 이벤트</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>혜택</h4>
+                      <ul>
+                        <li>CGV 할인정보</li>
+                        <li>CLUB 서비스</li>
+                        <li>VIP 라운지</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">극장</div>
+              <div class="item__contents">
+                <div class="contents__menu"></div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name strong">예매</div>
+              <div class="item__contents">
+                <div class="contents__menu"></div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">스토어</div>
+              <div class="item__contents">
+                <div class="contents__menu"></div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">이벤트</div>
+              <div class="item__contents">
+                <div class="contents__menu"></div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">혜택</div>
+              <div class="item__contents">
+                <div class="contents__menu"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" />
+            <img src="./images/search.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--YOUTUBE VIDEO-->
+    <section class="youtube">
+      <div class="youtube__area">
+        <div id="player"></div>
+      </div>
+      <div class="youtube__cover"></div>
+      <div class="inner">
+        <div class="movie-title">리바운드</div>
+        <div class="movie-sub">
+          "우리는 누구보다 빛났다"<br />장항준 감독이 전하는 감동실화
+        </div>
+        <!-- <div class="movie-btn">
+          <button class="movie-btn-detail">상세보기 ></button>
+          <button class="movie-btn-play"></button>
+          <button class="movie-btn-mute"></button>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="swiper__movie">
+      <section class="swiper-container">
+        <div class="movie-list__title-area">
+          <div class="movie-list__title">
+            <div class="list-title-moviechart chart-strong">무비차트</div>
+            <div class="list-title-schedule">상영예정작</div>
+          </div>
+          <div class="swiper__allbtn">
+            <div class="swiper__allbtn-text">전체보기</div>
+            <div class="swiper__allbtn-icon">></div>
+          </div>
+        </div>
+
+        <!-- 무비차트 swiper -->
+        <div class="movie-chart">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/슬램덩크_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">더 퍼스트 슬램덩크</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 40.3%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/던전앤드래곤_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">던전 앤 드래곤-도적들의 명예</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 12.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/Hero_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">아이 엠 히어로 더 파이널</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>98%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 5.2%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/리바운드_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">리바운드</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 4.6%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에어_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에어</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>99%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 4.1%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/웅남이_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">웅남이</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>74%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 3.2%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에브리씽_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에브리씽 에브리웨어 올앳원스</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>70%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/소울메이트_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">소울메이트</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/찬란한 나의복수_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">찬란한 나의 복수</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>77%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 0.6%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에브리씽_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에브리씽 에브리웨어 올앳원스</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>70%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네비게이션 -->
+          <div class="swiper-prev"><</div>
+          <!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper-next">></div>
+          <!-- 이전 버튼 -->
+        </div>
+
+        <!-- 상영예정작 swiper -->
+        <div class="movie-chart btn-switch">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에어_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에어</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>99%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 4.1%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/슬램덩크_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">더 퍼스트 슬램덩크</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 40.3%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/던전앤드래곤_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">던전 앤 드래곤-도적들의 명예</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 12.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/Hero_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">아이 엠 히어로 더 파이널</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>98%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 5.2%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/리바운드_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">리바운드</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 4.6%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/웅남이_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">웅남이</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>74%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 3.2%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에브리씽_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에브리씽 에브리웨어 올앳원스</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>70%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/소울메이트_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">소울메이트</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>97%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/찬란한 나의복수_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">찬란한 나의 복수</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>77%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 0.6%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/에브리씽_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">에브리씽 에브리웨어 올앳원스</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>70%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 1.8%</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-thumb">
+                <img src="./images/스즈메의문단속_thumb.jpg" alt="" />
+                <div class="imgHover__area">
+                  <button class="movie-detail">상세보기</button>
+                  <button class="movie-reservation">예매하기</button>
+                </div>
+              </div>
+              <div class="item-sub">
+                <div class="item-title">스즈메의 문단속</div>
+                <div class="item__info">
+                  <div class="item__info-percent">
+                    <img src="./images/eggGoldenegggood.png" alt="" />
+                    <span>94%</span>
+                  </div>
+                  <div class="item__info-reservation">예매율 17.8%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네비게이션 -->
+          <div class="swiper-prev"><</div>
+          <!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper-next">></div>
+          <!-- 이전 버튼 -->
+        </div>
+      </section>
+    </section>
+
+    <section class="swiper__event">
+      <section class="swiper-container">
+        <div class="swiper__event-title-area">
+          <div class="swiper__event-title">EVENT</div>
+          <div class="swiper__allbtn">
+            <div class="swiper__allbtn-text">전체보기</div>
+            <div class="swiper__allbtn-icon">></div>
+          </div>
+        </div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_1.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">
+                [스즈메의 문단속]4DX 스페셜 포스터 증정 이벤트
+              </div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_2.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">
+                [던전 앤 드래곤]IMAX 한정판 포스터 증정 이벤트
+              </div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_3.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">[미니게임천국] ★리바운드★ 농놀퐁</div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_4.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">
+                [스즈메의 문단속]4DX 스페셜 포스터 증정 이벤트
+              </div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_5.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">
+                [던전 앤 드래곤]IMAX 한정판 포스터 증정 이벤트
+              </div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-thumb">
+              <img src="./images/event_6.jpg" alt="" />
+            </div>
+            <div class="item-sub">
+              <div class="item-title">[미니게임천국] ★리바운드★ 농놀퐁</div>
+              <div class="item-date">2023.03.24~2023.04.05</div>
+            </div>
+          </div>
+        </div>
+        <!-- 네비게이션 -->
+        <div class="swiper-prev"><</div>
+        <!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+        <div class="swiper-next">></div>
+        <!-- 이전 버튼 -->
+      </section>
+    </section>
+
+    <section class="special__section">
+      <div class="special__section-cover">
+        <div class="special__section-title-area">
+          <div class="special__section-title">특별관</div>
+          <div class="swiper__allbtn">
+            <div class="swiper__allbtn-text">전체보기</div>
+            <div class="swiper__allbtn-icon">></div>
+          </div>
+        </div>
+
+        <div class="special__section-main">
+          <div class="special__section-main-thumb">
+            <img src="./images/special_1.png" alt="" id="special-thumb" />
+          </div>
+          <div class="special__section-main-content">
+            <ul class="special__section-main-content__list">
+              <li class="list-item">
+                <div class="list-item__title">SUITE CINEMA</div>
+                <div class="list-item__hashtag">#호텔 컨셉의 프리미엄관</div>
+              </li>
+              <li class="list-item">
+                <div class="list-item__title">CINE & LIVINGROOM</div>
+                <div class="list-item__hashtag">#신개념 소셜 상영관</div>
+              </li>
+              <li class="list-item">
+                <div class="list-item__title">4DX</div>
+                <div class="list-item__hashtag">#모션시트 #오감체험</div>
+              </li>
+              <li class="list-item">
+                <div class="list-item__title">CINE de CHEF</div>
+                <div class="list-item__hashtag">#쉐프가 있는 영화관</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
