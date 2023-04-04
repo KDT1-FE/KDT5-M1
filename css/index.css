@@ -6,12 +6,14 @@
   font-style: normal;
 }
 
+/* COMMON */
+
 * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
 }
-/* COMMON */
+
 img {
   /* 베이스라인 제거 */
   display: block;
@@ -52,6 +54,7 @@ p {
 
 li {
   letter-spacing: -0.5px;
+  list-style: none;
 }
 
 .bold {
@@ -79,30 +82,26 @@ li {
   background: #ffbe4c;
 }
 
-.inner {
-  position: relative;
-  display: flex;
-  padding: 16px 16px 32px;
-}
-
 .wrap {
   background: #fbfbfb;
 }
-/* HEADER */
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+
 .navWrap {
   position: relative;
   z-index: 10;
-  display: block;
 }
 
-nav {
+.navbar {
   top: 0;
   display: flex;
   position: fixed;
   width: 100%;
   height: 85px;
   background: #fff;
-  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -113,12 +112,12 @@ nav {
   margin-right: 42px;
 }
 
-header nav .item {
+.gnbItems {
   display: flex;
   height: 85px;
 }
 
-header nav .item .item__name {
+.gnbItem {
   display: flex;
   letter-spacing: -0.08px;
   padding: 3px 22px 0;
@@ -126,57 +125,51 @@ header nav .item .item__name {
   justify-content: center;
 }
 
-header nav .item .item__name:hover {
+.gnbItem:hover {
   color: rgb(111, 220, 169);
 }
 
-header nav .item .item__name .item__name__main {
+.gnbItem__main {
   font-weight: 700;
 }
 
-header nav .item .item__content {
+.lnbContainer {
   display: none;
   position: fixed;
   top: 85px;
   width: 100%;
   left: 0;
-  z-index: 99;
+  z-index: 2;
   background: #fff;
+  padding: 16px 16px 32px;
 }
 
-header nav .item .item__name:hover .item__content {
+.gnbItem:hover .lnbContainer {
   display: flex;
 }
 
-header nav .item .item__content .contents__menu {
-  width: 100%;
-  z-index: 2;
-}
-
-header nav .item .item__content .contents__menu .non-left-banner {
+.non-left-banner {
   margin-left: 16px;
 }
 
-header nav .item .item__content .contents__menu .left-banner {
+.gnbFeaturedItem {
   display: flex;
-  width: 266px;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 0 32px 0 16px;
-  border-right: 1px solid #ededee;
-  color: rgb(17, 17, 17) !important;
-  margin-right: 32px;
+  width: 250px;
+  padding: 0 16px;
 }
 
-.left-banner-green {
-  color: #18cd8c;
-}
-
-header nav .item .item__content .contents__menu .left-banner > div {
+.featuredItemTitle {
+  width: 100%;
+  color: #111;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 140%;
 }
 
-header nav .item .item__content .contents__menu .left-banner > button {
+.gnbFeaturedButton {
   width: 100%;
   height: 50px;
   padding: 12px 23px;
@@ -189,45 +182,35 @@ header nav .item .item__content .contents__menu .left-banner > button {
   letter-spacing: -0.005em;
 }
 
-header
-  nav
-  .item
-  .item__content
-  .contents__menu
-  .left-banner
-  .left-banner__cardContainer {
-  margin: 10px 0;
-}
-
-header nav .item .item__content .contents__menu .left-banner .random__interest {
+.randomInterest {
   height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header
-  nav
-  .item
-  .item__content
-  .contents__menu
-  .left-banner
-  .random__interest
-  > img {
+
+.randomInterest > img {
   width: 160px;
 }
-header nav .item .item__content .contents__menu > ul .dropdown__li {
+
+.verticalDivder {
+  width: 1px;
+  margin: 0 16px;
+  background: #ededee;
+}
+
+.lnbCategoryList {
+  display: flex;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+.lnbCategory {
   width: 210px;
   margin-right: 40px;
 }
 
-header
-  nav
-  .item
-  .item__content
-  .contents__menu
-  > ul
-  .dropdown__li
-  .dropdown__gray {
+.lnbCategoryTitle {
   padding: 9px 0;
   color: #888e99;
   font-size: 16px;
@@ -236,27 +219,15 @@ header
   letter-spacing: -0.005em;
 }
 
-header
-  nav
-  .item
-  .item__content
-  .contents__menu
-  > ul
-  .dropdown__li
-  .dropdown__menu {
+.lnbCategoryItem {
   padding: 9px 0;
   color: #111;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 26px;
 }
 
-header
-  nav
-  .item
-  .item__content
-  .contents__menu
-  > ul
-  .dropdown__li
-  .dropdown__menu:hover {
+.lnbCategoryItem:hover {
   font-weight: 700;
 }
 
