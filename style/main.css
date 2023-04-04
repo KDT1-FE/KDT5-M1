@@ -501,16 +501,100 @@ header .sub-menu .search .chat {
   text-align: center;
 }
 
+.keword-title{
+  padding-bottom: 20px;
+}
+
 .keword-title-m{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.3px;
+  text-decoration: underline;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #212529;
+  font-weight: bold;
 }
 
 
 .keyword-list{
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
   margin-bottom: 0;
+  justify-content: center;
+
 }
 
+.keyword-text{
+  margin-left: 50px;
+  height:47px;
+}
+
+.footer123{
+  background-color: #ffffff;
+  color: #212124;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+  border-top: 1px solid #eaebee;
+}
+
+.footer123_1{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.foot1{
+  padding: 48px 0;
+}
+
+.foot1_1{
+  float: right;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+
+.foot1_11{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.foot1_111{
+  display: flex;
+  
+}
+
+.apple{
+  width:150px;
+  height:45px;
+  padding-right:10px;
+}
+.google{
+  width: 150px;
+  height:45px;
+}
+
+.footer1_21{
+  display: flex;
+  font-size: 14px;
+
+}
+
+.footer1_22 {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 33%;
+  
+}
+
+.footer1_222{
+  margin-bottom: 1.6rem;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+.footer_li_1{
+  color:#212124;
+}
