@@ -1,9 +1,9 @@
 // 메인 하단버튼 클릭 시 특정 위치로 이동
-const btn = document.querySelector('.material-symbols-outlined')
+const btn = document.querySelector('.material-symbols-outlined');
 
 btn.addEventListener('click', function () {
   window.scrollTo({
-    top: 1193,
+    top: 916,
     behavior: 'smooth'
   });
 });
@@ -34,7 +34,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// 스크롤 애니메이션
+// 스크롤 애니메이션 to-up
 const spyEls = document.querySelectorAll('section.scroll-spy');
 
 spyEls.forEach(function (spyEl) {
@@ -46,3 +46,4 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 });
+

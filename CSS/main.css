@@ -7,7 +7,6 @@ body {
   letter-spacing: -0.5px;  /* 자간 */
   line-height: 1.4;  /* 행간 */
   width: 100%;
-  /* height: 7000px; */
 }
 img {
   display: block;
@@ -46,6 +45,9 @@ a {
 }
 .show .back-to-position.delay-6 {
   transition-delay: 3s;
+}
+.fade-in-1 {
+  opacity: 0.5;
 }
 
 
@@ -311,7 +313,7 @@ header .main-menu ul.menu li a:hover {
   width: 342px;
 }
 .section3 .home .this-month {
-
+  position: relative;
 }
 .section3 .home .this-month img {
   position: absolute;
@@ -439,7 +441,7 @@ header .main-menu ul.menu li a:hover {
   color: #6b7684;
 }
 .section4 .payment .auto {
-
+  position: relative;
 }
 .section4 .payment .auto .text-group {
   position: absolute;
@@ -668,19 +670,19 @@ header .main-menu ul.menu li a:hover {
 
 /* SECTION 7 투자 */
 .invest {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellowgreen;
+  position: relative;
 }
 .invest .inner {
   position: relative;
+  height: 1725px;
 }
 .invest .title {
   position: absolute;
-  top: 240px;
-  left: 190px;
+  top: 265px;
+  left: -525px;
   width: 1050px;
 }
 .invest .title h4 {
@@ -694,55 +696,66 @@ header .main-menu ul.menu li a:hover {
   font-weight: 600;
 }
 .invest .text-group1 {
-  font-size: 20px;
-  font-weight: 500;
+  position: absolute;
+  top: 820px;
+  left: -440px;
+  font-size: 21px;
+  font-weight: 600;
   line-height: 1.7;
+  width: 220px;
 }
 .invest .text-group2 {
-  font-size: 20px;
-  font-weight: 500;
+  position: absolute;
+  top: 820px;
+  left: 240px;
+  font-size: 21px;
+  font-weight: 600;
   line-height: 1.7;
+  width: 220px;
 }
 .invest .text-group3 {
-  font-size: 20px;
-  font-weight: 500;
+  position: absolute;
+  top: 1410px;
+  left: -523px;
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
   line-height: 1.7;
+  width: 1050px;
 }
 .invest .image-group {
   position: relative;
 }
 .invest .image-group .stock img {
   position: absolute;
-  top: 270px;
-  left: 584px;
+  top: 580px;
+  left: -170px;
   width: 342px;
   height: auto;
 }
 .invest .image-group .stocks {
-  flex-direction: flex-start;
+  display: flex;
+  position: absolute;
+  top: 1115px;
+  left: -672px;
+  width: 1342px;
+  height: 178px;
 }
 .invest .image-group .stocks img {
   width: 178px;
   height: 178px;
+  margin-left: 16px;
+}
+.invest .image-group .stocks img:nth-child(1) {
+  margin-left: 0;
 }
 .invest .image-group .iphone img {
   position: absolute;
-  top: 180px;
-  left: 460px;
+  top: 480px;
+  left: -300px;
   width: 600px;
   height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
@@ -753,11 +766,13 @@ footer {
   position: relative;
   padding: 50px 0 100px 0;
   height: 800px;
+  box-sizing: border-box;
   color: #b0b8c1;
   background-color: #191f28;
 }
 footer .inner {
   position: absolute;
+  padding-top: 50px;
 }
 footer .inner a {
   color: #6b7684;
