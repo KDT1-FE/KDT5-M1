@@ -149,9 +149,7 @@ header {
 
 
 
-  //search-chatting
-
-
+  //search&&chatting
   .search-chatting {
     justify-content: center;
     .search {
@@ -261,6 +259,11 @@ header {
       padding: 0.8rem 1.4rem;
       border-radius: 0.4rem;
     }
+
+    .chatting-btn__min-width {
+      display: flex;
+      align-items: center;
+    }
     @media screen and (min-width: 768px) {
 
       .chatting-btn__outline {
@@ -275,7 +278,10 @@ header {
         background-color: #fff;
         color: #212124;
         padding: 0 1.6rem;
-        }
+      }
+      .chatting-btn__min-width {
+        display: none;
+      }
     }
 
     .btn-apper {

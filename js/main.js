@@ -98,6 +98,7 @@ function handleMediaQueryChange(e) {
     toggleEl.classList.remove('isClicked', 'isCentered');
     formEl.classList.remove('search-sScreen');
     formEl.classList.add('search');
+
     // 캔슬버튼 없앰
     cancelBtnEl.remove();
   
@@ -115,28 +116,10 @@ function handleMediaQueryChange(e) {
   } else {
     // 웹 페이지의 너비가 992px 미만일 때 실행할 코드
     searchBtnEl.style.display = 'block';
-
   }
 }
 mediaQuery992.addEventListener('change', handleMediaQueryChange);
 
 // 페이지가 로드될 때 실행
 handleMediaQueryChange(mediaQuery992);
-
-
-const mediaQuery768 = window.matchMedia('(min-width: 768px)');
-
-function handleMediaQueryChange1(e) {
-  if (e.matches) {
-    // 웹 페이지의 너비가 768px 이상일 때 실행할 코드
-    chattingBtnEl.style.display = 'none';
-  } else {
-    // 웹 페이지의 너비가 768px 미만일 때 실행할 코드
-    chattingBtnEl.style.display = 'flex';
-  }
-}
-mediaQuery768.addEventListener('change', handleMediaQueryChange1);
-
-// 페이지가 로드될 때 실행
-handleMediaQueryChange1(mediaQuery768);
 

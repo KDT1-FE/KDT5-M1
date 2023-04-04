@@ -192,16 +192,13 @@ header .search-chatting .cancelButton {
   cursor: pointer;
 }
 header .search-chatting #toggle .btn-appear {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   background: none;
   padding: 0;
 }
 header .search-chatting .chatting-btn {
   font-weight: 700;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.8rem 1.4rem;
   border-radius: 0.4rem;
@@ -216,11 +213,14 @@ header .search-chatting .chatting-btn__outline {
   font-weight: 700;
   line-height: 1.4;
   font-size: 1.4rem;
-  width: -moz-fit-content;
   width: fit-content;
   min-height: 3.6rem;
   padding: 0.8rem 1.4rem;
   border-radius: 0.4rem;
+}
+header .search-chatting .chatting-btn__min-width {
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   header .search-chatting .chatting-btn__outline {
@@ -235,20 +235,19 @@ header .search-chatting .chatting-btn__outline {
     color: #212124;
     padding: 0 1.6rem;
   }
+  header .search-chatting .chatting-btn__min-width {
+    display: none;
+  }
 }
 header .search-chatting .btn-apper {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   background: none;
   padding: 0;
 }
 header .closed {
   background: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   padding: 0;
   display: flex;
@@ -692,16 +691,12 @@ header .blank-cancel {
 #footer .sitemap-ul {
   display: flex;
   flex-direction: column;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   width: 33%;
 }
 #footer .sitemap-ul .sitemap-li {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #footer .sitemap-ul:last-child {
@@ -806,4 +801,6 @@ header .blank-cancel {
   #footer .SNS-links {
     margin-top: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
