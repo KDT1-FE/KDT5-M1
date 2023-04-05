@@ -1,0 +1,314 @@
+/* common block*/
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-img-box img, .message-title img, .introduction-img-box img {
+  border-radius: 80px 0 80px 0;
+}
+.contact-img-box h5, .message-title h5, .introduction-img-box h5 {
+  font-size: 25px;
+  color: #222222;
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+/* common block*/
+.main-head-container {
+  width: 100%;
+}
+
+.main-head-wrap {
+  width: 90%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/main_banner01.png");
+  /* grid */
+}
+
+.main-head-inner {
+  width: 90%;
+  height: 100px;
+  display: grid;
+  position: fixed;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.main-head-logo img {
+  width: 220px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+.main-head-menu-wrap ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.main-head-menu-wrap li {
+  font-size: 18px;
+  padding: 0 20px;
+  color: #fff;
+}
+.main-head-menu-wrap li:nth-child(4) {
+  margin-right: 30px;
+}
+
+.sub-menu {
+  position: relative;
+}
+
+.company-sub-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #eee;
+  width: auto;
+  background: #eeeeee;
+  position: absolute;
+  top: -21px;
+  right: -500px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.company-sub-menu li {
+  font-size: 12px;
+  color: #666;
+  margin: 10px;
+}
+
+.business-sub-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #eee;
+  width: auto;
+  background: #eeeeee;
+  position: absolute;
+  top: -21px;
+  right: -641px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.business-sub-menu li {
+  font-size: 12px;
+  color: #666;
+  margin: 10px;
+}
+
+.team-sub-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #eee;
+  width: auto;
+  background: #eeeeee;
+  position: absolute;
+  top: -21px;
+  right: -718px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.team-sub-menu li {
+  font-size: 12px;
+  color: #666;
+  margin: 10px;
+}
+
+.contact-sub-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #eee;
+  width: auto;
+  background: #eeeeee;
+  position: absolute;
+  top: -21px;
+  right: -819px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.contact-sub-menu li {
+  font-size: 12px;
+  color: #666;
+  margin: 10px;
+}
+
+.company-container {
+  width: 100%;
+  height: 1000px;
+  margin-top: 200px;
+  background-image: url(../images/bg_mc02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.company-inner {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+
+.company-title h2 {
+  font-weight: 700;
+  font-size: 80px;
+  color: #222;
+}
+
+.introduction-img-box {
+  margin-top: 40px;
+  position: absolute;
+  top: 125px;
+  right: 45px;
+}
+
+.message-title {
+  position: absolute;
+  top: 456px;
+  right: 720px;
+}
+
+.contact-img-box {
+  position: absolute;
+  top: 720px;
+  right: 45px;
+}
+
+.business-container {
+  width: 100%;
+  margin-top: 300px;
+}
+
+.business-container-inner {
+  width: 85%;
+  margin: 200px auto;
+}
+
+.business-title h2 {
+  margin: 60px 0 90px 0;
+  font-weight: 700;
+  font-size: 80px;
+  color: #222;
+}
+
+.business-img-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-img-box {
+  width: 509px;
+  height: 700px;
+  margin-top: 50px;
+  position: relative;
+}
+.business-img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80px 0 80px 0;
+}
+.business-img-box h6 {
+  position: absolute;
+  font-size: 34px;
+  color: #fff;
+  top: 82px;
+  left: 50px;
+}
+.business-img-box ul {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.business-img-box ul li {
+  font-size: 19px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.contact-container {
+  width: 100%;
+  left: 200px;
+  height: 500px;
+}
+
+.contact-container-inner {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.contact-container-title h2 {
+  font-weight: 700;
+  font-size: 80px;
+  color: #222;
+}
+
+.contact-map-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.address {
+  justify-content: flex-start;
+  padding: 0 10px;
+  align-items: center;
+  display: flex;
+  color: #222;
+}
+.address h6 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.address p {
+  padding: 0 10px;
+  font-size: 17px;
+  color: #666;
+}
+
+.phone {
+  display: flex;
+  padding: 0 10px;
+  align-items: flex-start;
+}
+.phone h6 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.phone p {
+  font-size: 17px;
+  margin-right: 10px;
+  color: #666;
+}
+
+.email {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+.email h6 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.email p {
+  font-size: 17px;
+  margin-right: 10px;
+  color: #666;
+}
+
+/*# sourceMappingURL=main.css.map */
