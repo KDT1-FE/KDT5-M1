@@ -6,8 +6,8 @@
 [토스 홈페이지](https://toss.im/)<br />
 [과제물 실제 배포 페이지](https://funny-vacherin-5977e2.netlify.app/)<br />
 ## 사용한 기술 스택
-HTML : `<header>` , `<section>` , `<footer>` 등
-CSS : flex, position, hover 등
+HTML : `<header>` , `<section>` , `<footer>` 등<br />
+CSS : flex, position, hover 등<br />
 JS : scroll animation, 이미지 floating 효과<br />
 ## 작업 내용
 - 상단 헤더 내 메인 메뉴 hover 효과
