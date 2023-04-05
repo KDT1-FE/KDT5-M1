@@ -1,0 +1,2184 @@
+/* COMMON  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 16px/1.5 'SDNeoL', 'notoR', 'Malgun Gothic', '맑은 고딕', '돋움', sans-serif;
+  letter-spacing: -.06em;
+  font-size: 16px;
+  color: #777;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  width: 100%;
+}
+button {
+  overflow: visible;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+nav {
+  display: block;
+}
+input {
+  outline: none;
+}
+
+
+/* HEADER */
+header {
+  text-align: center;
+}
+header .banner {
+  background-color: #000;
+}
+header .banner .contWrap {
+  position: relative;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header .banner a {
+  color: #fff;
+}
+header .banner a .txt {
+  display: block;
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+/* HEADER--myutil */
+header .myutil {
+  height: 46px;
+  background-color: #f3f1f2;
+}
+header .myutil .inner {
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header .myutil ul.list__util {
+  position: relative;
+  display: flex;
+  float: right;
+  height: 46px;
+  align-items: center;
+}
+header .myutil ul.list__util > li {
+  position: relative;
+  display: inline-block;
+  margin-right: 21px;
+}
+header .myutil ul.list__util > li:last-child {
+  margin-right: 0;
+}
+header .myutil ul.list__util > li a {
+  font-size: 14px;
+  font-family: 'SDNeol', 'notoR';
+  color: #777;
+}
+header .myutil ul.list__util > li a:hover {
+  color: #12b560;
+}
+header .myutil ul.list__util > li .login {
+  margin-left: 20px;
+}
+header .myutil ul.list__util > li .login::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 1px;
+  height: 11px;
+  border-left: 1px solid #969495;
+}
+header .myutil ul.list__util > li a #cart {
+  display: inline-block;
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  line-height: 19px;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+  font-family: 'roboR';
+  font-size: 14px;
+  text-align: center;
+}
+/* HEADER--gnbmenu */
+header .gnbmenu {
+  position: relative;
+  padding-top: 23px;
+}
+header .gnbmenu .inner {
+  position: relative;
+  display: flex;
+  min-width: 1024px;
+  width: 1280px;
+  height: 73px;
+  margin: 0 auto;
+  align-items: center;
+}
+header .gnbmenu .logo {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  z-index: 5;
+}
+header .gnbmenu .search {
+  position: relative;
+  width: 400px;
+  padding-left: 222px;
+}
+header .gnbmenu .search .keywordInput {
+  position: relative;
+  height: 34px;
+  padding-right: 50px;
+  border: 2px solid #d9d9d9;
+  border-radius: 21px;
+  overflow: hidden;
+}
+header .gnbmenu .search .keywordInput .inpitTxt {
+  width: 100%;
+  height: 34px;
+  border: 0;
+  font-size: 14px;
+  padding: 0 8px;
+  padding-left: 17px;
+  box-sizing: border-box;
+  color: #222;
+  vertical-align: middle;
+}
+header .gnbmenu .search .btnSearch {
+  position: absolute;
+  top: 3px;
+  height: 30px;
+  right: 11px;
+  width: 30px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_search.png");
+  background-size: auto 30px;
+}
+header .gnbmenu .gnbnew {
+  margin-left: 50px;
+  flex: 1 0 auto;
+}
+header .gnbmenu .gnbnew .gnblist {
+  height: 63px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .gnbmenu .gnbnew .gnblist li {
+  position: relative;
+  margin-left: 24px;
+}
+header .gnbmenu .gnbnew .gnblist li .hit {
+  position: absolute;
+  top: 1px;
+  right: -9px;
+  width: 6px;
+  height: 6px;
+  background-color: #12b560;
+  border-radius: 50%;
+}
+header .gnbmenu .gnbnew .gnblist li:first-child {
+  margin-left: 0 !important;
+}
+header .gnbmenu .gnbnew .gnblist li a {
+  display: inline-block;
+  color: #222;
+  font: 18px/1 'SDNeoM', 'notoM';
+  letter-spacing: -.5px;
+  vertical-align: middle;
+}
+header .category {
+  position: relative;
+  border-bottom: 1px solid #a6a6a6;
+}
+header .category > .inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header .category ul.cateList {
+  position: relative;
+  z-index: 2;
+}
+header .category ul.cateList > li {
+  display: inline-flex;
+  align-items: center;
+  height: 55px;
+  margin-right: 15px;
+}
+/* catelist li에 마우스를 올릴 때 catedetail를 보이게 하는 것으로 대체*/
+header .category ul.cateList > li:hover .catedetail {
+  display: block;
+}
+/* catelist li에 마우스를 올릴 때 a::after를 보이게 하는 것으로 대체*/
+header .category ul.cateList > li:hover > a::after {
+  display: block;
+}
+header .category ul.cateList > li a:hover {
+  color: #12b560;
+}
+header .category ul.cateList > li a {
+  position: relative;
+  display: inline-block;
+  color: #222;
+}
+/* catelist li에 마우스를 올리기 전에 a::after를 보이지 않게 하는 것으로 대체*/
+header .category ul.cateList > li > a::after {
+  content: '';
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  top: 31px;
+  left: 43%;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/depth2_arr.png");
+  display: none;
+}
+header .category ul.cateList > li .catedetail {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 1280px;
+  height: 278px;
+  background-color: #fff;
+  border: 1px solid #b6b6b6;
+  border-top: 0;
+  padding: 31px 41px 20px 41px;
+  box-sizing: border-box;
+  display: none;
+}
+header .category ul.cateList > li .catedetail ul {
+  float: left;
+  overflow: hidden;
+}
+header .category ul.cateList > li .catedetail ul > li {
+  float: left;
+  width: 150px;
+}
+header .category ul.cateList > li .catedetail ul > li > a {
+  font-family: 'SDNeoM', 'notoM';
+  font-size: 14px;
+  color: #888;
+  text-align: left;
+  margin-bottom: 11px;
+  display: block;
+}
+header .category ul.cateList>li .catedetail ul>li>a:hover {
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* SECTION-EVENT SLIDE */
+.mainco {
+  position: relative;
+  min-height: 500px;
+  padding-bottom: 110px;
+  border-top: 1px solid transparent;
+}
+.mainco--con {
+  box-sizing: border-box;
+}
+.mainco--con .eventbn {
+  position: relative;
+  margin: 0 auto;
+}
+.mainco--con .eventbn .slideWrap {
+  position: relative;
+  margin: 0 auto;
+  height: 640px;
+  overflow: hidden;
+}
+.mainco--con .eventbn .slideWrap .slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 640px;
+  overflow: hidden;
+}
+.mainco--con .swiper-wrapper {
+  position: relative;
+  display: flex;
+}
+.mainco--con .eventbn .slideWrap .slide .swiper-slide {
+  position: relative;
+  width: 1920px;
+}
+.mainco--con .swiper-wrapper .swiper-slide {
+  flex-shrink: 0;
+}
+.mainco--con .eventbn .imgWrap {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 1920px;
+  height: 640px;
+}
+.mainco--con .eventbn .imgWrap img {
+  width: 100%;
+}
+.mainco--con .eventbn .cntWrap {
+  width: 1280px;
+  height: 100%;
+  padding-top: 213px;
+  margin: 0 auto;
+}
+.mainco--con .eventbn .cntWrap .inner {
+  position: relative;
+  padding-top: 47px;
+}
+.mainco--con .eventbn .cntWrap .inner .tag-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  white-space: nowrap;
+}
+.mainco--con .eventbn .cntWrap .inner .tag-card > span {
+  display: inline-block;
+  text-align: center;
+  height: 24px;
+  line-height: 25px;
+  margin: 0 1px 0 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+  vertical-align: -webkit-baseline-middle;
+}
+.mainco--con .eventbn .cntWrap .inner .tag-card > span.cardSt_1 {
+  background-color: #ffff89;
+  color: #222;
+}
+.mainco--con .eventbn .cntWrap .inner .tag-card > span.cardSt_2 {
+  background-color: #222;
+  color: #fff;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-name {
+  font-size: 40px;
+  color: #222;
+  line-height: 46px;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-name > span {
+  display: block;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-option {
+  margin-top: 5px;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-option > span {
+  float: left;
+  margin-right: 8px;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-option .price em {
+  font-size: 28px;
+  color: #222;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-option .price .tCost {
+  font-family: sans-serif;
+  text-decoration: line-through;
+}
+.mainco--con .eventbn .cntWrap .inner .pi-option .price .tUnit {
+  font-family: 'roboM';
+  margin-left: 5px;
+}
+.mainco--con .eventbn .slideControl {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+.mainco--con .eventbn .slideControl .inner {
+  position: relative;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  bottom: 26px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+.mainco--con .eventbn .slideControl .swiper-prev,
+.mainco--con .eventbn .slideControl .swiper-next {
+  position: absolute;
+  top: 315px;
+}
+.mainco--con .eventbn .slideControl .swiper-prev {
+  left: -140px;
+}
+.mainco--con .eventbn .slideControl .swiper-next {
+  right: -140px;
+}
+.mainco--con .eventbn .slideControl .swiper-button-prev::before,
+.mainco--con .eventbn .slideControl .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: #fff;
+  font-size: 0;
+  color: transparent;
+  outline: none;
+  z-index: 9;
+  transform: rotate(45deg);
+}
+.mainco--con .eventbn .slideControl .swiper-button-prev::before {
+  left: 16px;
+  border-width: 0px 0px 2px 2px;
+}
+.mainco--con .eventbn .slideControl .swiper-button-next::before {
+  right: 16px;
+  border-width: 2px 2px 0px 0px;
+}
+
+
+/* SECTION-실시간 인기 #키워드 */
+.live-keword {
+  border-bottom: 1px solid #ddd;
+}
+.live-keword .inner {
+  position: relative;
+  display: flex;
+  width: 1280px;
+  height: 108px;
+  margin: 0 auto;
+}
+.live-keword .inner .keyword--hashSlide {
+  width: 100%;
+  align-self: center;
+  padding: 0 0 0 40px;
+}
+.live-keword .inner .keyword--title {
+  width: 228px;
+  padding-top: 32px;
+  border-right: 1px solid #ddd;
+}
+.live-keword .inner .keyword--title .title__name {
+  font-size: 20px;
+  font-family: 'SDNeoM';
+  color: #222;
+  line-height: 26px;
+  padding-top: 2px;
+}
+.live-keword .inner .keyword--title .title__date {
+  font-size: 13px;
+  color: #999;
+}
+.swiper-container-horizontal {
+  overflow: hidden;
+}
+.live-keword .inner .keyword--hashSlide .shadow {
+  display: none !important;
+  filter: blur(3px);
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  right: 48px;
+  pointer-events: none;
+  border: 15ps solid #f5f5f5;
+  opacity: .9;
+}
+.swiper-wrapper {
+  position: relative;
+  display: flex;
+}
+.swiper-wrapper .swiper-slide {
+  flex-shrink: 0;
+}
+.live-keword .inner .keyword--hashSlide .hashTag {
+  border: 1px solid #ccc;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+}
+.live-keword .inner .keyword--hashSlide li:last-child .hashTag {
+  margin-right: 0;
+}
+.live-keword .inner .keyword--hashSlide .hashTag:hover {
+  border: 1px solid #12b560;
+  background-color: #f7fffd;
+  color: #12b560;
+}
+.live-keword .inner .keyword--hashSlide .hashTag:hover a {
+  color: #12b560;
+}
+.live-keword .inner .keyword--hashSlide .hashTag a {
+  display: block;
+  padding: 0px 16px 0px 16px;
+  color: #222;
+}
+
+
+/* SECTION-지금이 쇼핑찬스 */
+.mainco--con .shopch {
+  position: relative;
+  width: 1280px;
+  margin: 90px auto 0 auto;
+}
+.shopch * {
+  box-sizing: border-box;
+}
+.shopch .title {
+  display: flex;
+  justify-content: space-between;
+}
+.shopch .title h4 {
+  font-size: 32px;
+  font-family: 'SDNeoM';
+  color: #222;
+}
+.shopch .title .link {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  padding: 0 30px 2px 0;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/main/icon_more.png") no-repeat 100% 100%;
+  color: #333;
+}
+.shopch ul>div {
+  display: flex;
+}
+.shopch .shopch__list {
+  width: 314px;
+  margin-left: 8px;
+  transition: all .3s;
+  border-radius: 5px;
+}
+.shopch .shopch__list:nth-child(1) {
+  margin-left: 0px;
+}
+.shopch .pdtList {
+  position: relative;
+  margin-top: 32px;
+  transition: all .3s;
+  background-color: #fff;
+}
+.shopch .pdtList .pdtOver .pdtImg:hover .basic {
+  opacity: 0;
+  z-index: -4;
+}
+.shopch .pdtList .pdtOver .pdtImg:hover .over {
+  opacity: 1;
+  z-index: 4;
+  transform: rotateY(0);
+}
+.shopch .pdtList .pdtOver {
+  position: relative;
+  display: block;
+  transition: all .3s;
+}
+.shopch .pdtList .pdtImg {
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  transition: all .3s;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+.shopch .pdtList .pdtImg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fafafa;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+.shopch .pdtList .pdtImg > img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.shopch .pdtList .pdtOver .pdtImg .basic {
+  opacity: 1;
+  transition: all .3s;
+}
+.shopch .pdtList .pdtOver .pdtImg .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -4;
+  transition: all .3s;
+  transform: rotateY(180deg);
+}
+.shopch .pdtList .pdtCont {
+  position: relative;
+  display: block;
+  height: 206px;
+  padding: 20px 24px 0 24px;
+  font-family: 'SDNeoL''notoL';
+  box-sizing: border-box;
+}
+.shopch .pdtList .pdtCont .pdname {
+  display: block;
+  margin: 0 0 3px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+  word-break: break-all;
+}
+.shopch .pdtList .pdtCont .price {
+  position: relative;
+  margin-top: 0;
+  font-family: 'roboR';
+}
+.shopch .pdtList .pdtCont .price .unit {
+  font-size: 26px;
+  font-family: 'roboM';
+  vertical-align: 0px;
+  line-height: 1.6;
+  color: #222;
+}
+.shopch .pdtList .pdtCont .price .cost {
+  font-size: 19px;
+  font-family: 'notoL';
+  margin: 0 3px 0 4px;
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #999;
+  vertical-align: 2px;
+}
+.shopch .pdtList .pdtCont .price .stock {
+  font-size: 26px;
+  color: #d62136;
+}
+.shopch .pdtList .pdtCont .starWrap em.starM {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/icon_starM.png") no-repeat left top;
+  background-size: 100%;
+  font-size: 0;
+}
+.shopch .pdtList .pdtCont .starWrap .starNum {
+  display: inline-block;
+  font-size: 14px;
+  color: #777;
+  white-space: nowrap;
+  margin-left: -1px;
+}
+.shopch .shopch__contents .shopch-control {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: transparent;
+  z-index: 10;
+}
+.shopch .shopch-control > div {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  opacity: 0.67;
+}
+.shopch .shopch-control .shopch-control__prev {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_left.png") no-repeat;
+  background-size: cover;
+  left: -80px;
+}
+.shopch .shopch-control .shopch-control__next {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_right.png") no-repeat;
+  background-size: cover;
+  right: -80px;
+}
+.shopch .shopch-control .shopch-control__prev:hover,
+.shopch .shopch-control .shopch-control__next:hover {
+  opacity: 1;
+}
+
+
+/* SECTION-이 상품 관심있지 않으세요? */
+.shopforu {
+  position: relative;
+  min-width: 1280px;
+  max-width: 1920px;
+  height: 790px;
+  padding: 75px 0 0 0;
+  margin: 76px auto 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.shopforu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  z-index: -1;
+}
+.shopforu .title {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.shopforu .title h4 {
+  font-size: 32px;
+  font-family: 'SDNeoM';
+  color: #222;
+}
+.shopforu .title .link {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  padding: 0 30px 2px 0;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/main/icon_more.png") no-repeat 100% 100%;
+  color: #333;
+}
+.shopforu .shopforu-contents {
+  width: 1920px;
+  position: absolute;
+  top: 154px;
+}
+.shopforu .shopforu-contents::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: calc(50% - 642px);
+  background-color: rgba(250, 250, 250, .5);
+}
+.shopforu .shopforu-contents::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: calc(50% - 642px);
+  background-color: rgba(250, 250, 250, .5);
+}
+.shopforu .shopforu-list {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+.shopforu .shopforu-list ul {
+  position: relative;
+  display: flex;
+  margin-left: -34%;
+}
+.shopforu .shopforu-list ul > li {
+  width: 416px;
+  margin-right: 16px;
+}
+.shopforu .pdtList {
+  position: relative;
+  margin-top: 0;
+}
+.shopforu .pdtList .pdtOver {
+  display: block;
+  width: 416px;
+}
+.shopforu .pdtList .pdtOver .pdtImg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+}
+.shopforu .pdtList .pdtOver .pdtImg > img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  transition: all .3s;
+  transform: rotateY(0);
+  backface-visibility: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.shopforu .pdtList .pdtOver .pdtImg:hover .basic {
+  opacity: 0;
+  z-index: -4;
+}
+.shopforu .pdtList .pdtOver .pdtImg:hover .over {
+  opacity: 1;
+  z-index: 4;
+  transform: rotateY(0);
+}
+.shopforu .pdtList .pdtOver .pdtImg .basic {
+  opacity: 1;
+  transition: all .3s;
+  z-index: 4;
+}
+.shopforu .pdtList .pdtOver .pdtImg .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -4;
+  transition: all .3s;
+  transform: rotateY(180deg);
+}
+.shopforu .pdtList .pdtCont {
+  position: relative;
+  display: block;
+  height: 142px;
+  padding: 20px 24px 0 24px;
+  font-family: 'SDNeoL', 'notoL';
+}
+.shopforu .pdtList .pdtCont .pdname {
+  margin: 0 0 3px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+  word-break: break-all;
+}
+.shopforu .pdtList .pdtCont .price {
+  position: relative;
+  margin-top: 0;
+  font-family: 'roboR';
+}
+.shopforu .pdtList .pdtCont .price .unit {
+  font-size: 26px;
+  font-family: 'roboM';
+  vertical-align: 0px;
+  line-height: 1.6;
+  color: #222;
+}
+.shopforu .pdtList .pdtCont .price .cost {
+  font-size: 19px;
+  font-family: 'notoL';
+  margin: 0 3px 0 4px;
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #999;
+  vertical-align: 2px;
+}
+.shopforu .pdtList .pdtCont .price .stock {
+  font-size: 26px;
+  color: #d62136;
+}
+.shopforu .shopforu-control {
+  position: absolute;
+  top: 225px;
+  width: 100%;
+  z-index: 10;
+}
+.shopforu .shopforu-control .shopforu-button__prev,
+.shopforu .shopforu-control .shopforu-button__next {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  opacity: .67;
+}
+.shopforu .shopforu-control .shopforu-button__prev:hover,
+.shopforu .shopforu-control .shopforu-button__next:hover {
+  opacity: 1;
+}
+.shopforu .shopforu-control .shopforu-button__prev {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_left.png") no-repeat;
+  background-size: cover;
+  left: -80px;
+}
+.shopforu .shopforu-control .shopforu-button__next {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_right.png") no-repeat;
+  background-size: cover;
+  right: -80px;
+}
+
+
+/* SECTION-고객님에게 딱이에요! */
+.shopClient {
+  position: relative;
+  min-width: 1280px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.shopClient .topBx {
+  height: 336px;
+  margin: 0 auto;
+  padding-top: 64px;
+  background-image: linear-gradient(111deg, #1a90fb -7%, #12b260 50%, #ffff82 107%);
+  box-sizing: border-box;
+}
+.shopClient .topBx .title {
+  position: relative;
+  text-align: center;
+  width: 1280px;
+  margin: 0 auto;
+}
+.shopClient .topBx .title h4 {
+  display: inline-block;
+  width: 80px;
+  height: 38px;
+  margin: 0 auto;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/fou_tit.png") no-repeat left top;
+  background-size: 100%;
+  color: transparent;
+  line-height: 55px;
+}
+.shopClient .topBx .title .link {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 38px;
+  margin: 0 0 0 11px;
+  font-family: 'SDNeoM';
+}
+.shopClient .topBx .title .link::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 7px;
+  width: 38px;
+  height: 38px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/icon_m_w_right.png") no-repeat left top;
+  background-size: 100%;
+}
+.shopClient .fou-option {
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  width: 1280px;
+  height: 88px;
+  padding: 25px 0 0;
+  font-size: 24px;
+  color: #999;
+  background-color: #fff;
+  margin: 21px auto 0 auto;
+  text-align: center;
+  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, .07);
+  box-sizing: border-box;
+}
+.shopClient .fou-option button.option {
+  width: auto;
+  height: auto;
+  padding: 0 30px 0 0;
+  border: 0;
+  border-bottom: 2px solid #222;
+  color: #222;
+  font-size: 24px;
+  font-family: 'SDNeoM';
+  line-height: 1.2;
+  border-radius: unset;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/icon_s_drop_open.png") no-repeat right center;
+  background-size: 24px;
+}
+.shopClient .fou-option p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.shopClient .fou-option p.p01 {
+  margin-right: 13px;
+}
+.shopClient .pdtList {
+  position: relative;
+  width: 1280px;
+  height: 1096px;
+  margin: -44px auto 0 auto;
+}
+.shopClient .pdtList ul {
+  margin-left: -16px;
+  overflow: hidden;
+}
+.shopClient .pdtList ul > li {
+  position: relative;
+  float: left;
+  width: 416px;
+  margin: 0px 0 24px;
+  margin-left: 16px;
+}
+.shopClient .pdtList .pdtOver {
+  display: block;
+}
+.shopClient .pdtList .pdtImg {
+  position: relative;
+  display: block;
+  height: 416px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+.shopClient .pdtList .pdtImg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fafafa;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+.shopClient .pdtList .pdtImg .stikerWrap {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+}
+.shopClient .pdtList .pdtImg .stikerWrap .stikderType2 {
+  font-size: 16px;
+  display: block;
+  width: auto;
+  min-width: 58px;
+  padding: 0 6px;
+  height: 29px;
+  margin: 0 0 4px;
+  line-height: 29px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  background-color: #fff;
+  color: #222;
+  font-family: 'SDNeoM';
+  text-align: center;
+  letter-spacing: -.64px;
+  box-sizing: border-box;
+}
+.shopClient .pdtList .pdtOver {
+  display: block;
+  width: 414px;
+  height: 414px;
+}
+.shopClient .pdtList .pdtOver .pdtImg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.shopClient .pdtList .pdtOver .pdtImg::before .basic {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.shopClient .pdtList .pdtOver .pdtImg:hover .basic {
+  opacity: 0;
+  z-index: -4;
+}
+.shopClient .pdtList .pdtOver .pdtImg:hover .over {
+  opacity: 1;
+  z-index: 4;
+  transform: rotateY(0);
+}
+.shopClient .pdtList .pdtOver .pdtImg .basic {
+  opacity: 1;
+  transition: all .3s;
+  z-index: 4;
+}
+.shopClient .pdtList .pdtOver .pdtImg .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -4;
+  transition: all .3s;
+  transform: rotateY(180deg);
+}
+.shopClient .pdtCont {
+  position: relative;
+  display: block;
+  height: 108px;
+  padding: 20px 24px 0 24px;
+  font-family: 'SDNeoL', 'notoL';
+}
+.shopClient .pdtCont .name {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shopClient .pdtCont .tag2 {
+  height: 20px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 0px 9px 0px 8px;
+  margin: 0 1px 4px 0;
+  font-size: 12px;
+  color: #222;
+  background-color: #fff;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.shopClient .more {
+  margin-top: 15px;
+  text-align: center;
+}
+.shopClient .more .btnRefesh {
+  position: relative;
+  width: 298px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #222;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.shopClient .more .btnRefesh::before {
+  content: '';
+  display: inline-block;
+  margin: 0 8px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/icon_m_refresh.png") no-repeat;
+  background-size: 100%;
+  vertical-align: -10px;
+}
+.shopClient .more .btnRefesh .ttal {
+  font-family: 'roboM';
+  font-size: 14px;
+  margin-left: 5px;
+  color: #222;
+}
+.shopClient .more .btnRefesh .ttal span {
+  color: #999;
+}
+
+
+/* SECTION-지금 제일 잘나가요 */
+.shopRank {
+  position: relative;
+  min-width: 1280px;
+  height: 730px;
+  padding: 70px 0 0 0;
+  margin: 40px auto 0 auto;
+}
+.shopRank::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  z-index: -1;
+}
+.shopRank .title {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.shopRank .title h4 {
+  font-size: 32px;
+  font-family: 'SDNeoM';
+  color: #222;
+}
+.shopRank .tabWrap {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopRank .tabWrap .rankingTab {
+  margin: 12px 0 40px 0;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+.shopRank .tabWrap .rankingTab > li {
+  position: relative;
+  float: left;
+  width: 154px;
+}
+.shopRank .tabWrap .rankingTab > .active a {
+  color: #12b560;
+  font-family: 'SDNeoM';
+  background-color: #fff;
+  border: 2px solid #12b560;
+  border-radius: 24px;
+  line-height: 40px;
+}
+.shopRank .tabWrap .rankingTab > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  color: #999;
+  font-size: 16px;
+  text-align: center;
+}
+.shopRank .tabWrap .link {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding: 0 30px 2px 0;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/main/icon_more.png") no-repeat 100% 100%;
+  color: #333;
+}
+.shopRank .shopRankList {
+  min-width: 1280px;
+  max-width: 1920px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+}
+.shopRank .shopRankList::before {
+  content: '';
+  position: absolute;
+  top: 219px;
+  left: 0;
+  bottom: 0;
+  height: 454px;
+  z-index: 6;
+  width: calc(50% - 640px);
+  background-color: rgba(250, 250, 250, .5);
+}
+.shopRank .shopRankList::after {
+  content: '';
+  position: absolute;
+  top: 219px;
+  right: 0;
+  bottom: 0;
+  height: 454px;
+  z-index: 6;
+  width: calc(50% - 640px);
+  background-color: rgba(250, 250, 250, .5);
+}
+.shopRank .shopRank-contents {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  overflow: unset;
+}
+.shopRank .shopRank-contents > ul {
+  position: relative;
+  display: flex;
+  margin-left: -320px;
+}
+.shopRank .shopRank-contents > ul > li {
+  width: 314px;
+  margin-right: 8px;
+}
+.shopRank .pdtList {
+  margin-top: 0;
+  position: relative;
+}
+.shopRank .pdtList .pdtOver {
+  height: 314px;
+  display: block;
+}
+.shopRank .pdtList .pdtOver .pdtImg {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.shopRank .pdtList .pdtOver .pdtImg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+.shopRank .pdtList .pdtOver .pdtImg .rankNum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.shopRank .pdtList .pdtOver .pdtImg .rankNum .rankNumType_1,
+.shopRank .pdtList .pdtOver .pdtImg .rankNum .rankNumType_2 {
+  display: block;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  margin: 0 0 4px;
+  line-height: 44px;
+  border-radius: 5px 1px 5px 1px;
+  color: #fff;
+  font-family: 'roboM', 'SDNeoL';
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  z-index: 5;
+}
+.shopRank .pdtList .pdtOver .pdtImg .rankNum .rankNumType_1 {
+  background-color: #12b560;
+}
+.shopRank .pdtList .pdtOver .pdtImg .rankNum .rankNumType_2 {
+  background-color: #ccc;
+}
+.shopRank .pdtList .pdtOver {
+  display: block;
+  width: 312px;
+  height: 312px;
+}
+.shopRank .pdtList .pdtOver .pdtImg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.shopRank .pdtList .pdtOver .pdtImg::before .basic {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.shopRank .pdtList .pdtOver .pdtImg:hover .basic {
+  opacity: 0;
+  z-index: -4;
+}
+.shopRank .pdtList .pdtOver .pdtImg:hover .over {
+  opacity: 1;
+  z-index: 4;
+  transform: rotateY(0);
+}
+.shopRank .pdtList .pdtOver .pdtImg .basic {
+  opacity: 1;
+  transition: all .3s;
+  z-index: 4;
+}
+.shopRank .pdtList .pdtOver .pdtImg .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -4;
+  transition: all .3s;
+  transform: rotateY(180deg);
+}
+.shopRank .pdtList .pdtCont {
+  position: relative;
+  display: block;
+  height: 142px;
+  padding: 20px 24px 0 24px;
+  font-family: 'SDNeoL', 'notoL';
+}
+.shopRank .pdtList .pdtCont .pdname {
+  margin: 0 0 3px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+  word-break: break-all;
+}
+.shopRank .pdtList .pdtCont .price {
+  position: relative;
+  margin-top: 0;
+  font-family: 'roboR';
+}
+.shopRank .pdtList .pdtCont .price .unit {
+  font-size: 26px;
+  font-family: 'roboM';
+  vertical-align: 0px;
+  line-height: 1.6;
+  color: #222;
+}
+.shopRank .pdtList .pdtCont .price .cost {
+  font-size: 19px;
+  font-family: 'notoL';
+  margin: 0 3px 0 4px;
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #999;
+  vertical-align: 2px;
+}
+.shopRank .pdtList .pdtCont .price .stock {
+  font-size: 26px;
+  color: #d62136;
+}
+.shopRank .shopRank-control {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 10;
+}
+.shopRank .shopRank-control .Rank-button-prev,
+.shopRank .shopRank-control .Rank-button-next {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  opacity: .67;
+}
+.shopRank .shopRank-control .Rank-button-prev:hover,
+.shopRank .shopRank-control .Rank-button-next:hover {
+  opacity: 1;
+}
+.shopRank .shopRank-control .Rank-button-prev {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_left.png") no-repeat;
+  background-size: cover;
+  left: -80px;
+}
+.shopRank .shopRank-control .Rank-button-next {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_right.png") no-repeat;
+  background-size: cover;
+  right: -80px;
+}
+
+
+
+/* SECTION-주목해야 할 신제품 추천 */
+.newPd {
+  position: relative;
+  min-width: 1280px;
+  max-width: 1920px;
+  margin: 70px auto 0 auto;
+}
+.newPd .title {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.newPd .title h4 {
+  font-size: 32px;
+  font-family: 'SDNeoM';
+  color: #222;
+}
+.newPd .title .link {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  padding: 0 30px 2px 0;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/main/icon_more.png") no-repeat 100% 100%;
+  color: #333;
+}
+.newPd .newPd--contents {
+  position: relative;
+  width: 1280px;
+  margin: 30px auto 0 auto;
+}
+.newPd .newPd--contents .newPd__detail {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  width: 1280px;
+  justify-content: space-between;
+}
+.newPd .newPd--contents .newPd__detail .newPd__list {
+  width: 632px !important;
+  margin-left: 16px;
+}
+.newPd .newPd--contents .newPd__detail .newPd__list:nth-child(1),
+.newPd .newPd--contents .newPd__detail .newPd__list:nth-child(3) {
+  margin-left: 0px;
+}
+.newPd .newPd--contents .pdtList {
+  position: relative;
+  margin-top: 0;
+}
+.newPd .newPd--contents .pdtList .pdtImg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  border-radius: 5px;
+  height: 382px;
+  overflow: hidden;
+}
+.newPd .newPd--contents .pdtList .pdtImg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fafafa;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+.newPd .newPd--contents .pdtList .pdtImg .tag-card {
+  position: absolute;
+  bottom: 16px;
+  right: 14px;
+  z-index: 10;
+  white-space: nowrap;
+}
+.newPd .newPd--contents .pdtList .pdtImg .tag-card > span {
+  display: inline-block;
+  align-items: center;
+  max-width: 50px;
+  height: 24px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+}
+.newPd .newPd--contents .pdtList .pdtImg .tag-card > span.cardSt_1 {
+  background-color: #12b560;
+  color: #fff;
+}
+.newPd .newPd--contents .pdtList .pdtCont {
+  position: relative;
+  display: block;
+  height: 154px;
+  padding: 20px 24px 0 24px;
+  font-family: 'SDNeoL', 'notoL';
+}
+.newPd .newPd--contents .pdtList .pdtCont .newPdname {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  font-family: 'SDNeoM';
+  margin: 0 0 8px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.newPd .newPd--contents .pdtList .pdtCont .newPdname2 {
+  font-size: 16px;
+  color: #999;
+  margin: 0 0 2px;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+
+/* SECTION-고객님들의 솔직한 리뷰 */
+.clientReview {
+  position: relative;
+  min-width: 1280px;
+  height: 790px;
+  padding: 70px 0 0 0;
+  margin: 70px auto 0 auto;
+}
+.clientReview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  z-index: -1;
+}
+.clientReview .title {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.clientReview .title h4 {
+  font-size: 32px;
+  font-family: 'SDNeoM';
+  color: #222;
+}
+.clientReview .Reviewcont {
+  position: relative;
+  width: 1280px;
+  margin: 30px auto 0 auto;
+}
+.clientReview .Reviewcont__cont {
+  position: relative;
+  margin: 0 auto;
+}
+.clientReview .Condetail {
+  display: flex;
+}
+.clientReview .Condetail li {
+  width: 416px !important;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.clientReview .pdtList {
+  position: relative;
+  height: 588px;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 0;
+}
+.clientReview .pdtList .pdtImg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  border-radius: 5px 5px 0 0;
+  height: 416px;
+  box-shadow: 2px 4px 5px 0 rgb(0 0 0 / 7%);
+  overflow: hidden;
+}
+.clientReview .pdtList .pdtImg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fafafa;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+.clientReview .pdtList .pdtImg > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all .3s;
+  transform: rotateY(0);
+  border-radius: 5px 5px 0 0;
+}
+.clientReview .pdtList .pdtCont {
+  position: absolute;
+  bottom: 5px;
+  height: 168px;
+  width: 416px;
+  border: 1px solid #f4f4f4;
+  border-top: 0;
+  border-left: 2px #f4f4f4;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 23px 30px 0 30px;
+  box-shadow: 2px 4px 5px 0 rgb(0 0 0 / 7%);
+  transition: all .3s;
+  z-index: 3;
+  overflow: hidden;
+}
+.clientReview .pdtList .pdtCont:hover {
+  height: 232px;
+}
+.clientReview .pdtList .pdtCont .name {
+  display: block;
+  margin: 0 0 3px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+  word-break: break-all;
+}
+.clientReview .pdtList .pdtCont .name2 {
+  color: #777;
+  overflow: hidden;
+  white-space: normal;
+  margin: 0 0 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.clientReview .pdtList .pdtCont .starWrap em.starM {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/icon_starM.png") no-repeat left top;
+  background-size: 100%;
+  font-size: 0;
+}
+.clientReview .pdtList .pdtCont .starWrap .starNum {
+  display: inline-block;
+  font-size: 14px;
+  color: #777;
+  white-space: nowrap;
+  margin-left: -1px;
+}
+.clientReview .clientReview-control {
+  position: absolute;
+  top: 267px;
+  width: 100%;
+  z-index: 10;
+}
+.clientReview .clientReview-control .Review-button-prev,
+.clientReview .clientReview-control .Review-button-next {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  opacity: .67;
+}
+.clientReview .clientReview-control .Review-button-prev:hover,
+.clientReview .clientReview-control .Review-button-next:hover {
+  opacity: 1;
+}
+.clientReview .clientReview-control .Review-button-prev {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_left.png") no-repeat;
+  background-size: cover;
+  left: -80px;
+}
+.clientReview .clientReview-control .Review-button-next {
+  background: url("https://images.innisfree.co.kr/resources/web2/images/home/sprd_right.png") no-repeat;
+  background-size: cover;
+  right: -80px;
+}
+
+
+/* SECTION-이니스프리 멤버십 혜택 안내 */
+.MemberShip {
+  position: relative;
+}
+.MemberShip .MemberShip--subTitle {
+  position: relative;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 96px auto 9px;
+  font-size: 32px;
+  color: #222;
+  font: 32px/1.2 'SDNeoM', 'notoM';
+}
+.MemberShip .MemberShip--contWrap {
+  position: relative;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.MemberShip .MemberShip--contWrap .pdtMore {
+  position: absolute;
+  top: -42px;
+  right: 0;
+  padding: 0 30px 1px 0;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/main/icon_more.png") no-repeat 100% 100%;
+  color: #222;
+}
+.MemberShip .MemberShip--contWrap .subTxt {
+  font-size: 20px;
+  color: #222;
+}
+.MemberShip .MemberShip--contWrap .list {
+  display: flex;
+  justify-content: space-around;
+  margin: 42px 0 0;
+}
+.MemberShip .MemberShip--contWrap .list li {
+  text-align: center;
+  font-size: 18px;
+}
+.MemberShip .MemberShip--contWrap .list li .icon {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+.MemberShip .MemberShip--contWrap .list li .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+}
+.MemberShip .MemberShip--contWrap .list li .icon img {
+  position: relative;
+  max-width: 100%;
+  z-index: 2;
+}
+.MemberShip .MemberShip--contWrap .list li .tit {
+  font-size: 18px;
+  font-family: 'SDNeoM';
+  display: block;
+  margin-top: 30px;
+  color: #222;
+}
+.MemberShip .MemberShip--contWrap .list li span {
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* HEADER-FIXED (FadeIn, FadeOut) */
+.fix--head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  background-color: rgba(18, 181, 96, .9);
+  z-index: 100;
+}
+.fix--head .inner {
+  position: relative;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.fix--head #nav-icon {
+  position: relative;
+  width: 25px;
+  height: 19px;
+  cursor: pointer;
+}
+.fix--head #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transition: .25s ease-in-out;
+}
+.fix--head #nav-icon span:nth-child(1) {
+  top: 0;
+}
+.fix--head #nav-icon span:nth-child(2) {
+  top: 9px;
+}
+.fix--head #nav-icon span:nth-child(3) {
+  top: 18px;
+}
+.fix--head .inner .logo {
+  margin-left: 38px;
+}
+.fix--head .inner .logo img {
+  vertical-align: top;
+  border: 0;
+}
+.fix--head .inner .right {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: flex;
+}
+.fix--head .inner .g_search {
+  position: relative;
+  width: 370px;
+  height: 34px;
+  padding-right: 40px;
+  border-bottom: 2px solid #d9d9d9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.fix--head .inner .g_search .inputTxt {
+  width: 100%;
+  height: 34px;
+  border: 0;
+  font-size: 16px;
+  font-family: 'SDNeoL', 'notoL';
+  padding-left: 2px;
+  background-color: transparent;
+  color: #fff;
+}
+.fix--head .inner .g_search .inputTxt::placeholder {
+  color: #fff;
+}
+.fix--head .inner .g_search .btnSearch {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 20px;
+  height: 21px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/btn_g_search.png") no-repeat 0 50%;
+}
+.fix--head .inner .list_myutil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 48px;
+}
+.fix--head .inner .list_myutil > li {
+  position: relative;
+  margin-right: 20px;
+}
+.fix--head .inner .list_myutil > li:last-child {
+  margin-right: 0;
+}
+.fix--head .inner .list_myutil > li > a {
+  font-size: 14px;
+  font-family: 'SDNeoL', 'notoR';
+  color: #fff;
+}
+.fix--head .inner .list_myutil .btnCart em {
+  display: inline-block;
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  line-height: 19px;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+  font-family: 'roboR';
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* ASIDE */
+.floatingMenu {
+  position: fixed;
+  top: 70px;
+  right: 42%;
+  margin-right: -780px;
+  z-index: 10;
+}
+.floatingMenu .innerWrap {
+  width: 100px;
+  margin: 37px 0 0;
+  text-align: center;
+}
+.floatingMenu .pdtList {
+  position: relative;
+  float: right;
+  margin: 0 0 15px;
+  background-color: #fff;
+  text-align: left;
+  transition: all .3s;
+}
+.floatingMenu .pdtList.hideList {
+  width: 98px;
+  border: 1px solid #dcdcdc;
+}
+.floatingMenu .pdtList.hideList .pdtHistoryTit {
+  margin: 10px 0 15px 25px;
+  margin-left: 0;
+  text-align: center;
+  font: 16px/1.2 'SDNeoL', 'notoR';
+  color: #333;
+}
+.floatingMenu .pdtList.hideList .list {
+  max-height: 470px;
+  overflow: visible;
+}
+.floatingMenu .pdtList.hideList .list li.nonList {
+  display: block;
+  position: relative;
+  height: 74px;
+  padding: 20px 0 0;
+  font-size: 12px;
+  text-align: center;
+}
+.floatingMenu .btnDocTop {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  background: #fff url("https://images.innisfree.co.kr/resources/web2/images/common/btn_doc_top.png") no-repeat 50% 50%;
+  overflow: visible;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 0 0 80px;
+  border-top: 1px solid #dbdbdb;
+}
+footer .menuWrap {
+  border-bottom: 1px solid #dbdbdb;
+}
+footer .menuWrap .menuWrpa__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+footer .menuWrap nav {
+  padding: 15px 0 15px 0;
+  margin-left: -16px;
+}
+footer .menuWrap nav > a {
+  position: relative;
+  margin-left: 16px;
+  color: #222;
+  font-family: 'Malgun Gothic';
+}
+footer .menuWrap nav strong {
+  font-family: 'SDNeoM', 'notoM';
+  color: #000;
+}
+footer .snsIcon {
+  opacity: .8;
+}
+footer .snsIcon [class*="btn"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .snsIcon [class*="btn"] + [class*="btn"] {
+  margin-left: 16px;
+}
+footer .snsIcon [class*="btn"] a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer .snsIcon .btn-Youtube {
+  width: 32px;
+  height: 22px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_youtube.png") no-repeat;
+}
+footer .snsIcon .btn-Instargram {
+  width: 28px;
+  height: 28px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_instagram.png") no-repeat;
+}
+footer .snsIcon .btn-Facebook {
+  width: 15px;
+  height: 28px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_facebook.png") no-repeat;
+}
+footer .snsIcon .btn-Twitter {
+  width: 28px;
+  height: 24px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_twitter.png") no-repeat;
+}
+footer .snsIcon .btn-App {
+  width: 24px;
+  height: 31px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/icon_app.png") no-repeat;
+}
+footer .menuWrap__ftinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 0 0;
+  margin: 0 auto;
+  min-width: 1024px;
+  max-width: 1280px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/logo_footer.png") no-repeat 0 34px;
+}
+footer .menuWrap__ftinfo .info {
+  overflow: hidden;
+  margin: 16px 0 0;
+  font: 14px/1.7 'SDNeoL', 'notoL';
+}
+footer .menuWrap__ftinfo .info .inner {
+  margin-left: -13px;
+}
+footer .menuWrap__ftinfo .info .inner span {
+  position: relative;
+  display: inline-block;
+  margin-left: 13px;
+}
+footer .menuWrap__ftinfo .info .inner span::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -8px;
+  width: 1px;
+  height: 10px;
+  background-color: #ccc;
+}
+footer .menuWrap__ftinfo .info .inner span a {
+  color: #777;
+}
+footer .menuWrap__ftinfo .info .Paytoss {
+  margin: 9px 0 0;
+  font-size: 14px;
+}
+footer .menuWrap__ftinfo .info .Paytoss strong {
+  color: #222;
+  font-family: 'Malgun Gothic';
+  font-weight: 600;
+}
+footer .menuWrap__ftinfo .info .Paytoss em {
+  color: #777;
+}
+footer .menuWrap__ftinfo .info .Paytoss button {
+  text-decoration: underline;
+  color: #222;
+}
+footer .menuWrap__ftinfo .info .copyright {
+  margin-top: 10px;
+}
+footer .menuWrap__ftinfo .info .awards {
+  padding-left: 42px;
+  margin-top: 12px;
+  line-height: 20px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/awards_footer.png") no-repeat left top;
+}
+footer .menuWrap__ftinfo .info-2 {
+  width: 380px;
+  height: 212px;
+  padding: 31px;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+}
+footer .menuWrap__ftinfo .info-2 dl dt {
+  color: #555;
+}
+footer .menuWrap__ftinfo .info-2 dl dd {
+  font-size: 14px;
+}
+footer .menuWrap__ftinfo .info-2 dl dd strong {
+  font: 30px/1.6 'roboM';
+  color: #555;
+  margin-right: 5px;
+}
+footer .menuWrap__ftinfo .info-2 dl dd a.btn {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  height: 32px;
+  margin-top: 11px;
+  color: #222;
+  border: 1px solid #222;
+  box-sizing: border-box;
+  padding-left: 18px;
+  background: url("https://images.innisfree.co.kr/resources/web2/images/common/arw_link_bs.png") no-repeat right 15px center;
+}
