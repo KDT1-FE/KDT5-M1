@@ -1,59 +1,158 @@
-# 👀 사이트 레이아웃 클론
+# innisfree 홈페이지 클론코딩
+<br>
 
-래퍼런스 사이트 : https://hkd-microbiome.com/ko/
+> 과제 결과물  
+https://azure0929.github.io/innisfree-clone-coding/
 
-## 작업 사항
+<br>
 
-사용 기술 HTML, CSS, SCSS, JS
+> 원본 사이트  
+https://www.innisfree.com/kr/ko/Main.do
 
-이번 클론코딩 과제에서는 시멘틱 태그와 명시적인 태그 네이밍을 주의하며 구조를 만들었습니다.
-사이트의 디자인 요소 중 기술이 부족하여 구현하지 못한 부분은 CSS 및 다른 방법으로 대체 구현해 보았습니다.
-( 화살표, 버튼, 이미지 등 활성화 할 수 있는 요소들에는 css로 작업할 수 있는 간단한 모션을 추가했습니다.)
-복잡한 작업환경을 개선하기위해 scss를 활용하여 스타일링 파일의 코드를 줄일 수 있도록 하였습니다.
-추후에 반응형, JS 기술 부분도 지속적으로 업데이트 할 예정입니다!
+<br>
+---
 
-# CSS, JS 요소
+<br>
 
-    CSS 효과
-    0. 부드럽게 효과 변환시키기.
-    1. 버튼 Hover :
-    2. <a> 텍스트 hover : 화살표 transform, border_bottom 라인 생성, 글자 크기 변화
-    3. Img hover : filter 기능으로 색 변화. 이미지 사이즈 변화,
-    4. cursor: pointer활용 링크 기능없는 경우 링크 있는것 처럼
-    5. 빈 링크에 javascript:void(0)
+### CDN
+  1. `Swiper`  
+  https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js  
 
-    JS 효과
-    1. gsap,lodash 활용
-        <header> top:0일때 Opacity:0 / 지정 부분 아래에서 요소 노출
-    2. <footer> 웹페이지 최상단으로 가기 버튼
-        (사이트 명들도 최상단 이동으로 지정)
+  2. `Reset`  
+   https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
 
-# ❗️구현하지 못한 부분
+<br>
 
-    현재 본인 수준이 부족해 구현하지 못하고 CSS로 대체한 부분들. 추후 더 공부해 디벨롭할 부분들 리스트!
+### Scroll Js
+  1. Scroll (스크롤 시 Header show & hide 부분 적용)   
+  https://code.jquery.com/jquery-3.6.4.js
 
-## 효과
+<br>
 
-- <a> 태그 border_bottom의 애니메이션 효과 (좌에서 우로 라인 그어짐)
-- butoon의 애니메이션 효과 (원형으로 퍼지며 배경,글자 색상 변경)
+> HTML  
+> -header / mainco / aside / footer
 
-## 구성
+```html
+<header></header>
 
-- header
-  [1] 아래로 스크롤 하는 동안은 네비 노출 x, 위로 스크롤 할때에만 나타내야 함.
-  [2] 햄버거 애니메이션 🔥
-  [3] 드롭다운 페이지
-- big_banner 🔥🔥
-  테스트 모션 [1]페이드 인 [2]아래에서 위로 팝업
-  이미지 모션 [1]자동 롤링 [2] 사용자 액션 없이 이미지 사이즈 변화 애니메이션[3].dot을 누르면 해당 배너로 수동 전환 [4]자동 롤링 일시정지 기능 [5] .dot hover 시 애니메이션
-- center_guide
-  [1] 타이틀 hover시 화살표 움직임 반복
-  [2] 뷰포트 외부의 이미지 롤링 및 롤링 버튼 활성화 🔥🔥
-  [3] 이미지 hover 시 관련 아이콘 팝업
-- VR_guide
-  배경 일러스트 형식 SVG 이미지 사용했으나, 화면 구성이 깨짐 (사이즈 조절해도 같은 문제가 발생해 JEPG로 대체)
-  마우스 hover 시 일러스트 애니메이션 필요 (창문에 불 들어옴)
-- REASERCH
-  연구 리스트 클릭 시 관련 이미지, 텍스트로 전환 🔥
-- INGREDIENTS
-  순차적으로 요소 지정 효과 나타내기
+<!-- mainco = maincontents -->
+<section class="mainco"></section> 
+
+<!-- aside = 최근 본 제품 및 ScrollTop 부분 -->
+<aside></aside>
+
+<footer></footer>
+```
+
+<br>
+
+> CSS   
+> -공통으로 쓰이는 태그의 속성과 값은 COMMON으로 적용
+
+```css
+/* COMMON  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 16px/1.5 'SDNeoL', 'notoR', 'Malgun Gothic', '맑은 고딕', '돋움', sans-serif;
+  letter-spacing: -.06em;
+  font-size: 16px;
+  color: #777;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  width: 100%;
+}
+button {
+  overflow: visible;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+nav {
+  display: block;
+}
+input {
+  outline: none;
+}
+
+/* header & main-co & aside & footer 안에 이런 형식으로 최소 및 최대를 설정하여 진행했습니다.*/
+div {
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* display: flex를 사용했습니다. */
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+```
+
+<br>
+
+> Javascript   
+> -Swiper : Event 부분 슬라이드   
+> -Jquery: 스크롤 시 상단으로  
+> -스크롤 시 Header show & hide
+
+```javascript
+// Swiper를 활용한 배너 슬라이드
+new Swiper('.slideWrap .swiper-container', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+  },
+});
+// .swiper-button-prev 와 next를 클릭 시 좌우로 슬라이드가 가능하고, autoplay delay를 5초로 설정하여 5초 후 다음 슬라이드가 보여지도록 했습니다.
+
+
+// ASIDE Part - 버튼 클릭 시 페이지 상단으로 이동
+const $topBtn = document.querySelector(".btnDocTop");
+
+$topBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+// .btnDocTop를 클래스로 사용하는 버튼을 클릭 시 상단으로 자연스럽게 이동하도록 설정했습니다.
+
+
+// HEADER-FIXED - 스크롤 시 Show & Hide
+$(document).ready(function () {
+  var navHeight = $("header").height();
+  $(".fix--head").hide();
+  $(window).scroll(function () {
+    var rollIt = $(this).scrollTop() >= navHeight;
+    if (rollIt) {
+      $(".fix--head").show().css({
+        "position": "fixed",
+      });
+    } else {
+      $(".fix--head").hide();
+    }
+  });
+});
+// header의 영역이 끝난 후 .fix-head 클래스를 가진 요소가 fixed된 상태에서 보여지고 반대로 스크롤이 올라간 후에는 사라지는 것을 설정했습니다. 
+```
