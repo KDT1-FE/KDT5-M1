@@ -231,6 +231,10 @@ li {
   font-weight: 700;
 }
 
+.creditCardGreenText {
+  color: #18cd8c;
+}
+
 .max-benefitCard {
   position: relative;
   display: flex;
