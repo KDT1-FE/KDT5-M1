@@ -1,266 +1,59 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dest/css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script defer src="./js/main.js"></script>
-    <title>HKDmicrobiome CloneCoding</title>
-  </head>
-  <body>
-    
-  <!-- HEADER -->
+<body>
+  <!-- 오른쪽 상단부위 -->
   <header>
-    <div class="inner">
-      <div class="nav">
-        <a class="logo" href="javascript:void(0)" onclick="window.scrollTo(0,0);">
-            Microbiome Center
-        </a>
-        <div class="menu">
-            <ul class="lang" href="">     
-                <li>
-                  <a href="javascript:void(0)">JP</a> 
-                </li>
-                <li>
-                  <a href="javascript:void(0)">EN</a> 
-                </li>
-                <li>
-                  <a href="javascript:void(0)">KR</a> 
-                </li>
-            </ul>
-            <a class="hamburger" href="javascript:void(0)">=</a>
-        </div>
-      </div>
-    </div>
+    <ul>
+      <li><a href="https://mail.google.com/">Gmail</a></li>
+      <li><a href="https://www.google.co.kr/imghp?hl=ko&ogbl">이미지</a></li>
+      <li><button class="google-app"><i class="fas fa-th"></i></button></li>
+      <li><button><img class="profile-image" src="images/profile.jpeg"></button></li>
+    </ul>
   </header>
-  <div class="header_white">
-    <div class="nav_white">
-      <a class="logo" href="javascript:void(0)" onclick="window.scrollTo(0,0);">
-          Microbiome Center
-      </a>
-      <div class="menu">
-          <ul class="lang" href="">     
-              <li>
-                <a href="javascript:void(0)">JP</a> 
-              </li>
-              <li>
-                <a href="javascript:void(0)">EN</a> 
-              </li>
-              <li>
-                <a href="javascript:void(0)">KR</a> 
-              </li>
-          </ul>
-          <a class="hamburger" href="javascript:void(0)">=</a>
-      </div>
-    </div>      
-  </div>
-  
-  <!-- BIG BANNER -->
-  <section class="bigbanner">
-    <div class="inner">
-        <h2 class="mainTitle">발효 에너지가<br>숨 쉬는 공간</h2>
-        <h4 class="subTitle">전국 각지의 땅에서 잉태된 식물들이
-          <br>천천히,그리고 정성스럽게, 최적의 조건에서 숙성 중입니다.</h4>
-        <a class="dots" href="javascript:void(0)">
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons"> pause </span>
-        </a>
+  <!-- 로고, 검색바, Google 검색, 프로그래머스 코테연습 -->
+  <section class="middle">
+    <div class="google-logo">
+      <img class="logo-image" src="images/logo.png">
+    </div>
+    <div class="search-box">
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <span class="keyboard-icon"><i class="far fa-keyboard"></i></span>
+      <span class="microphone-icon"><i class="fas fa-microphone"></i></span>
+      <input class="search-bar" type="text">
+    </div>
+    <div class="additional-box">
+      <a href="#" class="additional-search">Google 검색</a>
+      <a href="https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&levels=0&languages=javascript&partIds=33882"
+        class="additional-lucky">프로그래머스 코테연습</a>
     </div>
   </section>
-
-  <!-- CENTER GUIDE -->
-  <section class="center_intro">
-    <!-- <div class="inner"> -->
-      <div class="center_title">
-          <a class="center_main" href="javascript:void(0)">Microbiome</a>
-          <a class="center_main" href="javascript:void(0)">Center<span class="arrow">→</span></a>
-          <span class="center_sub">센터소개</span>
-      </div>
-      <article class="center_image">
-          <div class="box">
-            <div class="image_odd" Style="cursor: pointer">
-              <img src="./img/cente_front.jpg" alt="센터입구">
-              <div class="image_name">센터입구</div>
-            </div>
-            <div class="image_even" Style="cursor: pointer">
-              <img src="./img/center_convention.jpg" alt="전시실">
-              <span class="image_name">전시실</span>
-            </div>            
-            <div class="image_odd" Style="cursor: pointer">
-              <img src="./img/center_lab.jpg" alt="연구실">
-              <span class="image_name">연구실</span>
-            </div>
-            <div class="image_even" Style="cursor: pointer">
-              <img src="./img/center_pub.jpg" alt="출아실">
-              <span class="image_name">출아실</span>
-            </div>
-          </div>
-      </article>
-    <!-- </div> -->
-  </section>
-
-<!-- VR GUIDE -->
-  <section class="vrTour">
-    <div class="vrTour_title">
-      <a class="vrTour_main" href="javascript:void(0)">VR Showroom Tour</a>
-      <span class="vrTour_sub">마이크로바이옴 센터의 내부 공간을<br>360° VR로 관람하실 수 있습니다.</span>
-      <button class="vr_button">360VRº 둘러보기</button>
-    </div>
-    <div class="illust-pic"></div>  
-  </section>
-
-  <!-- HERITAGE -->
-  <main class="Heritage">
-    <div class="Heritage_inner">
-      <div class="Heritage_main">
-        <div>청정지역이 만들어준 자연발효 헤리티지<br>훗카이도 마이크로바이옴 센터</div>
-        <div>자연과 공존으로 태어나는<br>아름다움과 건강의 결정체를 찾아</div>
-        <div>깨끗한 자연을 토대로,<br>이 땅에서 다시 시작합니다.</div>
-      </div>
-      <img class="map_icon" src="/img/researchingMap.png" alt="훗카이도지도">
-      <div class="Heritage_icons">
-        <img class="Heritage_icon" src="/img/img0121.svg" alt="원료1">
-        <img class="Heritage_icon" src="/img/img0122.svg" alt="원료2">
-        <img class="Heritage_icon" src="/img/img0123.svg" alt="원료3">
-        <img class="Heritage_icon" src="/img/img0124.svg" alt="원료4">
-        <img class="Heritage_icon" src="/img/img0125.svg" alt="원료5">
-        <img class="Heritage_icon" src="/img/img0126.svg" alt="원료1">
-      </div>
-    </div>  
-  </main>
-
-  <!-- RESEARCH -->
-  <div class="research">
-    <div class="left">
-      <ul class="left_list">
-        <li class="research_list">Research</li>
-        <li class="research_list" Style="cursor: pointer">마이크로바이옴 연구</li>
-        <li class="research_list" Style="cursor: pointer">식물발효액 연구</li>
-        <li class="research_list" Style="cursor: pointer">전통발효기술 연구</li>
+  <!-- 하단 국가, 약관, 설정 등 -->
+  <footer>
+    <div class="country-info">대한민국</div>
+    <div class="instruction">
+      <ul>
+        <li class="left-side">
+          <a href="#">Google 정보</a>
+          <a href="#">광고</a>
+          <a href="#">비즈니스</a>
+          <a href="#">검색의 원리</a>
+        </li>
+        <li class="right-side">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">약관</a>
+          <a href="#">설정</a>
+        </li>
       </ul>
-      <div class="research_img"></div>
     </div>
-    <span class="right">
-        <img src="/img/researchimg0129.svg" alt="분자">
-        <div class="research_info">마이크로바이옴 연구</div>
-        <div class="reserach_text">다양한 제품개발을 위하여 피부타입과<br>피부미생물을 분석해 피부 특성을 대표하는<br>skin microbiome을 발굴합니다.</div>
-        <button class="reserach_button">자세히 보기</button>
-    </span>
-  </div>
+  </footer>
+</body>
 
-  <!-- INGREDIENTS -->
-    <article class="ingredients">
-      <div class="inner_narrow">
-        <div class="in_title">청정지역 홋카이도의 식물들과 각 나라 전통발효 원물을 모아 발효 소재를 개발합니다.</div>
-        <div class="ingredient">
-          <div class="box"> 
-            <span>세이지</span>
-            <img class="img1" src="/img/ingredientsimg0134.jpg" alt="세이지">
-          </div>
-          <div class="box"> 
-            <span>클로브 꽃</span>
-            <img class="img1" src="/img/ingredientsimg0135.jpg" alt="클로브 꽃">
-          </div>
-          <div class="box"> 
-            <span>석류나무</span>
-            <img class="img1" src="/img/ingredientsimg0136.jpg" alt="석류나무">
-          </div>
-          <div class="box"> 
-            <span>님나무</span>
-            <img class="img1" src="/img/ingredientsimg0137.jpg" alt="님나무">
-          </div>
-          <div class="box"> 
-            <span>생강</span>
-            <img class="img1" src="/img/ingredientsimg0138.jpg" alt="생강">
-          </div>
-          <div class="box"> 
-            <span>보스웰리아</span>
-            <img class="img1" src="/img/ingredientsimg0139.jpg" alt="보스웰리아">
-          </div>
-          <div class="box"> 
-            <span>고수씨</span>
-            <img class="img1" src="/img/ingredientsimg0140.jpg" alt="고수씨">
-          </div>
-          <div class="box"> 
-            <span>타임</span>
-            <img class="img1" src="/img/ingredientsimg0141.jpg" alt="타임">
-          </div>
-          <div class="box"> 
-            <span>팔각</span>
-            <img class="img1" src="/img/ingredientsimg0142.jpg" alt="팔각">
-          </div>
-          <div class="box"> 
-            <span>고추냉이</span>
-            <img class="img1" src="/img/ingredientsimg0143.jpg" alt="고추냉이">
-          </div>
-        </div>
-        <button class="in_button">자세히 보기</button>
-      </div>
-    </article>
-  <!-- RPODUCT -->
-    <section class="products">
-      <div class="inner">
-        <div class="product_title">
-          <a class="product_main" href="javascript:void(0)">Product<span class="arrow"> →</span></a>
-          <span class="product_sub">자연발효기술로 완성된<br>LG생활건강의 화장품을<br>소개합니다</span>
-        </div>
-        <div class="product">
-
-          <article class="product__mission">
-            <div class="product_img">
-              <img src="./img/main-product-mission-y.jpg" alt="mission">
-            </div>
-            <a class="product_name">미션Y</a>
-            <div class="product_text">30년 이상의 효모 연구 노하우와 청정 지역 식물 발효액 성분을 적용한 발효 화장품</div>
-            <button class="product_button">자세히 보기</button>
-          </article>
-
-          <article class="product__sum">
-            <div class="product_img">
-              <img src="./img/main-product-sum.jpg" alt="mission">
-            </div>
-            <a class="product_name">숨 37º</a>
-            <div class="product_text">오랜 연구와 진보된 발효과학을 통해 건강한 피부를 약속하는 자연발효 화장품</div>
-            <button class="product_button">자세히 보기</button>
-          </article>
-
-        </div>
-      </div>
-    </section>
-  <!-- FOOTER -->
-    <footer class="footer">
-      <div class="inner">
-        <h2 Style="cursor: pointer" onclick="window.scrollTo(0,0);">Hokkaido<br>Microbiome<br>Center</h2>
-        <span class="material-symbols-outlined" Style="cursor: pointer;" onclick="window.scrollTo(0,0);">arrow_upward</span>        
-        <div class="footer__menu">
-          <a  href="javascript:void(0)">마이크로바이옴센터</a>
-          <a  href="javascript:void(0)">VR쇼룸투어</a>
-          <a  href="javascript:void(0)"> 자연발효연구</a>
-        </div>
-        <div class="footer_info">
-          <span>〒047-0001 일본 홋카이도 오타루시 와카타케초 19-25
-          </span>
-          <span>© LG H & H Tokyo R&D Center Ltd. All Rights Reserved.</span>
-          <span>
-            <a href="javascript:void(0)">CONTACT</a>
-            <a href="javascript:void(0)">PRIVACY POLIC</a>
-            <a href="javascript:void(0)">COOKIE POLICYY</a>
-          </span>
-        </div>
-      </div>
-
-    </footer>
-
-  </body>
 </html>
