@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nanum Barun Gothic", "Malgun Gothic", sans-serif;
+  font-size: 1em;
+  color: #333;
+  line-height: 120%;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.inner {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  border-top: 4px solid #3ca747;
+  border-bottom: 1px solid #c0d1c1;
+  background-color: #fff;
+  z-index: 2;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .inner .wrapper .main-menu {
+  display: flex;
+  position: relative;
+}
+header .inner .wrapper .main-menu > li {
+  position: relative;
+}
+header .inner .wrapper .main-menu > li:hover .sub-menu {
+  display: block;
+}
+header .inner .wrapper .main-menu > li > a {
+  padding: 33px 25px;
+  font-size: 18px;
+  letter-spacing: -0.0625em;
+  color: #000;
+}
+header .inner .wrapper .main-menu > li > a:hover {
+  color: #3cb149;
+}
+header .inner .wrapper .sub-menu {
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -5px;
+  width: 140%;
+  background-color: #fff;
+  z-index: 9;
+}
+header .inner .wrapper .sub-menu .menu__contents {
+  border: 1px solid #ddd;
+}
+header .inner .wrapper .sub-menu .menu__contents li {
+  border-bottom: 1px solid #ddd;
+}
+header .inner .wrapper .sub-menu .menu__contents li:hover a {
+  background-color: #3bc149;
+  color: #fff;
+}
+header .inner .wrapper .sub-menu .menu__contents a {
+  display: block;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.0625em;
+}
+
+main .container {
+  position: relative;
+}
+main .main__title {
+  position: relative;
+  left: 50%;
+  height: 590px;
+  width: 1920px;
+  margin-left: -960px;
+  z-index: 1;
+}
+main .main__title::after {
+  display: block;
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  height: 100%;
+  background-image: url(/slide_pattern.03be192e.png);
+}
+main .main__title .title__photo {
+  position: relative;
+  z-index: -1;
+}
+main .main__title .inner {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+main .main__title .inner .title__text {
+  margin-bottom: 21px;
+}
+main .main__title .inner .title__text h2 {
+  display: block;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: -2px;
+}
+main .main__title .inner .title__description p {
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: -0.7px;
+}
+main .main__info {
+  position: relative;
+  left: 50%;
+  width: 1920px;
+  margin-left: -960px;
+  z-index: 1;
+  background-image: url(/banner_bg.16a5abfb.png);
+}
+main .main__info .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+  padding: 49px 0;
+}
+main .main__info .inner .info__intro {
+  color: #fff;
+}
+main .main__info .inner .info__intro .intro__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .main__info .inner .info__intro .intro__description p {
+  font-size: 12px;
+  line-height: 1.8333333;
+}
+main .main__info .inner .info__service {
+  position: relative;
+  top: 5px;
+  right: -30px;
+}
+main .main__info .inner .info__service ul {
+  display: flex;
+  justify-content: space-around;
+  width: 470px;
+  height: 132px;
+}
+main .main__info .inner .info__service .main_icon1 {
+  background-image: url(/main_icon1.37b07732.png);
+}
+main .main__info .inner .info__service .main_icon2 {
+  background-image: url(/main_icon2.008243bf.png);
+}
+main .main__info .inner .info__service .main_icon3 {
+  background-image: url(/main_icon3.2a493f2a.png);
+}
+main .main__info .inner .info__service .service__img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 10px;
+  background-image: url(/circle_bg.492d4b59.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .main__info .inner .info__service .service__img .icon {
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .main__info .inner .info__service .service__name {
+  position: relative;
+  top: 5px;
+  right: -8px;
+}
+main .main__info .inner .info__service .service__name strong {
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+main .main__notice {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+main .main__notice .inner {
+  display: flex;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
