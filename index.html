@@ -9,15 +9,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <!--1. 폰트 어떻게 적용할지 알아보기-->
-    <!--2. margin만 쓰면 생기는 문제점-->
-    <link rel="stylesheet" href="https://static.toss.im/fonts/all.css" />
+    <!--gsap-->
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="section0">
-        <img src="./images/new_main.png" alt="" />
+        <img class="fade-in" src="./images/new_main.png" alt="" />
         <div class="inner">
           <div class="left">
             <img src="./images/logo.svg" alt="logo" />
@@ -75,5 +81,150 @@
     <section class="section3">
       <img src="./images/section3.jpg" alt="section3" />
     </section>
+    <div class="section-1">
+      <div class="inner">
+        <div class="device">
+          <img src="./images/section4_device.jpg" alt="device">
+        </div>
+        <div class="notice">
+          <h1>사업도 토스와 함께</h1>
+          <p>
+            사업을 시작하셨나요?<br />사업의 시작부터 관리까지<br />이제 토스와
+            함께 하세요
+          </p>
+        </div>
+        <div class="card">
+          <div>
+            <h1>토스결제</h1>
+            <p>
+              합리적인 수수료, <br />간편한 결제 경험으로 비용은<br />절감하고
+              매출은 늘리세요
+            </p>
+            <button @click="javascript:void(0)">가맹점 문의하기</button>
+          </div>
+          <div>
+            <h1>내 매출 장부</h1>
+            <p>
+              내 매출 장부 따로 관리할 필요 업어요.<br />총 매출, 총 임금, 총
+              지출을 보기 쉽게<br />
+              알려드려요.
+            </p>
+            <button @click="javascript:void(0)">자세히 알아보기</button>
+          </div>
+          <div>
+            <h1>토스페이먼츠</h1>
+            <p>
+              시작하기 어려웠던 온라인 비즈니스,<br />
+              온라인 결제 토스페이먼츠와<br />
+              함께 해보세요.
+            </p>
+            <button @click="javascript:void(0)">홈페이지 바로가기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="section-last">
+        <div class="inner">
+          <div>
+            <ul>
+              <li class="title">서비스</li>
+              <li>공지사항</li>
+              <li>자주 묻는 질문</li>
+              <li>공동인증서 관리</li>
+              <li>계정 일시잠금</li>
+              <li>고객센터</li>
+              <li>브랜드 리소스센터</li>
+              <li>토스의 개인정보 보호</li>
+            </ul>
+            <ul>
+              <li class="title">회사</li>
+              <li>회사 소개</li>
+              <li>토스페이먼츠</li>
+              <li>토스인슈어런스</li>
+              <li>토스증권</li>
+              <li>토스씨엑스</li>
+              <li>토스뱅크</li>
+              <li>토스플레이스</li>
+              <li>채용</li>
+              <li>블로그</li>
+              <li>공고</li>
+            </ul>
+            <ul>
+              <li class="title">문의</li>
+              <li>사업 제휴</li>
+              <li>광고 문의</li>
+              <li>인증 사업 문의</li>
+              <li>마케팅·PR</li>
+              <li>IR</li>
+            </ul>
+            <ul>
+              <li class="title">고객센터</li>
+              <li>전화:1599-4905(24시간 연중무휴)</li>
+              <li>이메일(고객전용): support@toss.im</li>
+              <li>이메일(외부기관전용): safe@toss.im</li>
+              <li>민원 접수</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="title">㈜비바리퍼블리카</li>
+              <li>사업자 등록번호 : 120-88-01280 | 대표 : 이승건</li>
+              <li>
+                호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 :
+                2014-서울강남-03377 사업자정보확인
+              </li>
+              <li>
+                06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동,
+                아크플레이스)
+              </li>
+              <li>
+                고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동,
+                한국타이어빌딩)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>서비스 이용약관</li>
+              <li class="title flag">개인정보 처리방침</li>
+              <li>가맹점 고지사항</li>
+            </ul>
+            <ul>
+              <li>통합 금융정보 서비스 약관</li>
+              <li class="title flag">채용팀 개인정보 처리방침</li>
+              <li>토스 전자서명인증업무준칙</li>
+            </ul>
+            <ul>
+              <li>마이데이터 서비스 이용약관</li>
+              <li>영상정보처리기기 운영 관리 방침</li>
+              <li>토스 전자인증서비스 약관</li>
+            </ul>
+            <ul>
+              <li>이용자의 권리 및 유의사항</li>
+              <li>위치기반서비스 이용약관</li>
+              <li>금융소비자보호</li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)"
+              ><img src="./images/icn-facebook.svg" alt="facebook"
+            /></a>
+            <a href="javascript:void(0)"
+              ><img src="./images/icn-blog.svg" alt="blog"
+            /></a>
+            <a href="javascript:void(0)"
+              ><img src="./images/icn-naver.svg" alt="naver"
+            /></a>
+            <a href="javascript:void(0)"
+              ><img src="./images/icn-twitter.svg" alt="twitter"
+            /></a>
+            <a href="javascript:void(0)"
+              ><img src="./images/icn-instagram.svg" alt="instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
