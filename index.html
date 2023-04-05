@@ -10,23 +10,25 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <!--gsap-->
-    <script src="./js/main.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
       integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script defer src="./js/main.js"></script>
 
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="section0">
-        <img class="fade-in" src="./images/new_main.png" alt="" />
-        <div class="inner">
+        <img src="./images/new_main.png" alt="" />
+        <div class="inner fade-in">
           <div class="left">
-            <img src="./images/logo.svg" alt="logo" />
+            <a href="javascript:void(0)"
+              ><img src="./images/logo.svg" alt="logo"
+            /></a>
           </div>
           <div class="middle">
             <div>회사 소개</div>
@@ -36,55 +38,70 @@
             <div>채용</div>
           </div>
           <div class="right">
-            <div>KOR</div>
+            <div class="lang">KOR</div>
             <div>|</div>
-            <div>ENG</div>
+            <div class="lang">ENG</div>
           </div>
         </div>
-        <div class="message">금융의 모든 것<br />토스에서 쉽고 간편하게</div>
+        <div class="container">
+          <div class="message fade-in">
+            <h1>금융의 모든 것</h1>
+            <p>토스에서 쉽고 간편하게</p>
+          </div>
+        </div>
         <div class="btn">
-          <div>
+          <div class="fade-in">
             <img src="./images/applekorea.png" alt="applekorea" />App Store
           </div>
-          <div>
+          <div class="fade-in">
             <img src="./images/googleplay.png" alt="googleplay" />Google Play
           </div>
         </div>
       </div>
     </header>
+    <!--Section1-->
     <section class="section1">
       <div>
-        <p>
-          내 모든 금융 내역을 한눈에 조회하고 한 곳에서<br />관리하세요.<br />이제껏
-          경험 못 했던 쉽고 편리한 금융 서비스, <br />토스와 함께라면 당신의
-          일상이 새로워질 거예요.
-        </p>
+        <div>
+          <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.</p>
+          <p>이제껏 경험 못 했던 쉽고 편리한 금융 서비스,</p>
+          <p>토스와 함께라면 당신의 일상이 새로워질 거예요.</p>
+        </div>
       </div>
     </section>
     <section class="section2">
       <div>
-        <p class="p1">
-          홈·소비<br />
-          내 돈 관리,<br />
-          지출부터 일정까지<br />
-          똑똑하게
-        </p>
-        <img class="img1" src="./images/section1_1_home_01.png" alt="" />
-        <img class="img2" src="./images/section1_1_home_02.png" alt="" />
-        <p class="p2">
-          토스에 계좌와 카드를 연결해 보세요.<br />
-          계좌 잔액, 대출·투자 내역은 기본,<br />
-          일자별 소비와 수입까지 한 번에 볼 수 있어요.
-        </p>
+        <div class="p1 fade-in">
+          <p>홈·소비</p>
+          <p>내 돈 관리,</p>
+          <p>지출부터 일정까지</p>
+          <p>똑똑하게</p>
+        </div>
+        <div class="container">
+          <img class="img1" src="./images/section1_1_home_01.png" alt="" />
+          <img class="img2" src="./images/section1_1_home_02.png" alt="" />
+          <img
+            class="img3"
+            src="./images/iPhone12_Clay_Shadow.png"
+            alt="iphone_frame"
+          />
+          <img
+            class="img4"
+            src="./images/iPhone12_Clay_Shadow.png"
+            alt="iphone_frame"
+          />
+        </div>
+        <div class="p2 fade-in">
+          <p>토스에 계좌와 카드를 연결해 보세요.</p>
+          <p>계좌 잔액, 대출·투자 내역은 기본,</p>
+          <p>일자별 소비와 수입까지 한 번에 볼 수 있어요.</p>
+        </div>
       </div>
-    </section>
-    <section class="section3">
-      <img src="./images/section3.jpg" alt="section3" />
     </section>
     <div class="section-1">
       <div class="inner">
         <div class="device">
-          <img src="./images/section4_device.jpg" alt="device">
+          <img src="./images/section4_device.jpg" alt="device" />
         </div>
         <div class="notice">
           <h1>사업도 토스와 함께</h1>

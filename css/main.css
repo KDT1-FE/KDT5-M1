@@ -1,7 +1,9 @@
+/*Section0*/
 .section0 {
   position: relative;
   width: 100vw;
   height: 100vh;
+  font-weight: bold;
 }
 header .inner {
   position: relative;
@@ -14,10 +16,10 @@ header .inner {
 .section0 > img {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 800px;
 }
 
-header .inner > .left > img {
+header .inner > .left img {
   width: 76px;
   height: 59px;
   margin-left: 20px;
@@ -26,6 +28,7 @@ header .inner > .left > img {
 header .inner > .middle {
   display: flex;
   justify-content: space-between;
+  opacity: 0.7;
 }
 
 header .inner > .middle > div {
@@ -49,24 +52,41 @@ header .inner > .right > div {
   padding: 5px;
   margin: auto 0;
 }
-header .inner > .right > div:hover {
+header .inner > .right > .lang:hover {
   margin: auto 0;
   background-color: #f2f4f6;
   cursor: pointer;
 }
+header .container {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .message {
-  position: absolute;
-  font-size: 40px;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 40px;
+}
+header .message > h1 {
+  text-indent: 100px;
+  margin-bottom: 20px;
 }
 header .btn {
   position: absolute;
   display: flex;
-  top: 40%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+}
+header .btn > div:hover {
+  background-color: rgb(78, 89, 104);
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
 }
 header .btn div {
   color: white;
@@ -85,13 +105,29 @@ header .btn img {
   height: 25px;
 }
 /* Section1 */
+.section1 {
+  width: 100vw;
+  height: 700px;
+  position: relative;
+}
 .section1 > div {
+  position: absolute;
+  top: 20%;
   width: 100vw;
   height: 603.56px;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 30px;
+  font-weight: bold;
+}
+.section1 > div > div > p {
+  margin: 15px;
+}
+.section1 > div > div > p:nth-child(2) {
+  text-indent: 100px;
+}
+.section1 > div > div > p:nth-child(3) {
+  text-indent: 80px;
 }
 /* Section2 */
 
@@ -102,33 +138,66 @@ header .btn img {
   display: flex;
   background-color: #f9fafb;
 }
-.section2 > div > .img1 {
+.section2 > div .img1 {
   position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 400px;
+  right: 134px;
+  width: 340px;
+  top: 250px;
   height: auto;
-  box-shadow: -20px 20px 50px 10px gray;
   z-index: 5;
+  border-radius: 30px;
 }
-.section2 > div > .img2 {
+.section2 > div .img2 {
   position: absolute;
-  top: 30%;
-  left: 5%;
-  width: 400px;
+  left: 130px;
+  width: 340px;
+  top: 500px;
   height: auto;
-  box-shadow: -20px 20px 50px 10px gray;
+  border-radius: 30px;
+  background-color: black;
+}
+
+.section2 > div .img3 {
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  width: 600px;
+  height: auto;
+}
+.section2 > div .img4 {
+  position: absolute;
+  top:150px;
+  right: 0px;
+  width: 600px;
+  height: auto;
 }
 .section2 > div > .p1 {
   position: absolute;
   top: 10%;
   left: 10%;
+}
+.section2 > div > .p1 > p:first-child {
+  margin: 10px;
+  margin-bottom:30px;
+  color: #3182f6;
   font-size: 20px;
+  font-weight: bold;
+}
+.section2 > div > .p1 > p:nth-child(n + 2) {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 10px;
+}
+.section2 > div > .p2 > p:nth-child(n + 1) {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px;
 }
 .section2 > div > .p2 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   right: 10%;
+  opacity: 0.8;
 }
 /* Section3 */
 .section3 > img {
@@ -147,18 +216,18 @@ header .btn img {
   align-items: center;
   font-weight: bold;
 }
-.section-1 > .inner{
-  margin:10px;
+.section-1 > .inner {
+  margin: 10px;
 }
-.section-1 > .inner > .device{
-  margin:0;
-  display:flex;
+.section-1 > .inner > .device {
+  margin: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-1 > .inner > .device > img{
-  width:1100px;
-  height:700px;
+.section-1 > .inner > .device > img {
+  width: 1100px;
+  height: 700px;
 }
 .section-1 > .inner > .notice {
   position: relative;
@@ -207,6 +276,7 @@ header .btn img {
   color: white;
   font-weight: bold;
   background-color: #3182f6;
+  cursor: pointer;
 }
 /* Section-last */
 .section-last {
@@ -256,4 +326,7 @@ header .btn img {
 }
 .section-last > .inner .title.flag {
   margin: 10px;
+}
+.fade-in {
+  opacity: 0;
 }
