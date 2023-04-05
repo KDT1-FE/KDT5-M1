@@ -1,0 +1,181 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+div#banner {
+  border: 1px solid;
+}
+
+div#banner>img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.banner2 {
+  display: block;
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+  font-size: 20px;
+  border: 1px solid;
+}
+
+#Languages a {
+  color: #000;
+}
+
+.lnk {
+  color: #DD0000;
+  font-weight: bold;
+}
+
+/* 글자 태그 사이즈 */
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 400;
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+  margin: 15px 0;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 700;
+
+}
+
+h4 {
+  display: block;
+  margin: 10px 10px 5px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h5 {
+  display: block;
+  margin: 5px 10px 20px 10px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+
+p {
+  display: block;
+  text-align: justify;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+  clear: both;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+
+/* 상단 헤더 영역 스타일 */
+header {
+  display: block;
+}
+
+
+
+div#Languages {
+  display: block;
+  text-align: center;
+  margin: 20px 15px 5px 15px;
+}
+
+/* 좌측 사이드바 영역 스타일 */
+.left-sidebar {}
+
+/* 메인 섹션 영역 스타일 */
+div#content {
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+}
+
+#fence {
+  display: block;
+}
+
+#fence>div {
+  width: 45.5%;
+  text-align: left;
+}
+
+#fence>div:nth-of-type(even) {
+  float: right;
+  margin: 0 1.5% 0 3%;
+}
+
+#fence>div:nth-of-type(odd) {
+  float: left;
+  margin: 0 1.5% 0 3%;
+}
+
+form {
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+div.boxed {
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 10px 3% 10px 3%;
+  padding: 0;
+  clear: both;
+}
+
+div.boxed span.strong {
+  font-weight: bold;
+}
+
+div.boxed .fontimg {
+  margin: 10px 5px 0 5px;
+  border: 0;
+}
+
+#Packages>a {
+  margin: 0 5px;
+  color: #000;
+}
+
+
+/* 우측 사이드바 영역 스타일 */
+.right-sidebar {}
+
+
+footer div a {
+  color: #000;
+  text-decoration: none;
+}
