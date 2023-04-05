@@ -1,0 +1,75 @@
+.total-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.9);
+  text-align: center;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .2s ease-out;
+  z-index: 9;
+  .inner {
+    padding-top: 100px;
+    .total-logo {
+      display: inline-block;
+      margin-bottom: 67px;
+    }
+    .total-list {
+      li {
+        margin-bottom: 10px;
+        a {
+          display: inline-block;
+          height: 25px;
+          line-height: 1.2;
+          padding-bottom: 5px;
+          color: $color--white;
+          font-size: 16px;
+          font-weight: 600;
+          text-decoration: none;
+          box-sizing: border-box;
+          .ico-arrow {
+            display: inline-block;
+            width: 11px;
+            height: 7px;
+            margin: -1px 0 0 8px;
+            background: url(/img/ico_arrow_top_11x7_ffffff.png) 0 0 no-repeat;
+          }
+        }
+        .depth-menu {
+          margin-top: 10px;
+          li {
+            margin-bottom: 0;
+            a {
+              font-size: 14px;
+              height: auto;
+            }
+          }
+        }
+      }
+      .has-depth {
+        border-bottom: 2px solid #fff;
+      }
+    }
+    .total-info {
+      margin-top: 34px;
+      margin-bottom: 70px;
+      color: $color--white;
+      font-size: 13px;
+      font-weight: 600;
+      .sns-area {
+        margin-bottom: 8px;
+      }
+      p {
+        line-height: 20px;
+      }
+    }
+  }
+  .btn-menu-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+  }
+}

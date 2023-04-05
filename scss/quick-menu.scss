@@ -1,0 +1,55 @@
+.quick-menu{
+  position: fixed;
+  left: 2vw;
+  top: 50%;
+  width: 26px;
+  transform: translateY(-50%);
+  z-index: 7;
+  li {
+    position: relative;
+    margin-bottom: 15px;
+    &:first-child {
+      margin-bottom: 18px;
+    }
+    .search-box {
+      position: absolute;
+      top: -10px;
+      left: -8px;
+      width: 286px;
+      height: 41px;
+      background-color: #fff;
+      text-align: left;
+      .ico-search {
+        float: left;
+        width: 43px;
+        height: 41px;
+        padding: 6px 0;
+        border: 2px solid #000;
+        box-sizing: border-box;
+      }
+      fieldset {
+        input[type=text] {
+          width: 177px;
+          height: 41px;
+          line-height: 41px;
+          padding: 0 0 0 9px;
+          border: 2px solid #000;
+          border-width: 2px 0;
+          color: $color--lightgray;
+          font-size: 12px;
+          outline: none;
+          box-sizing: border-box;
+        }
+        input[type=submit] {
+          position: absolute;
+          right: 0;
+          width: 66px;
+          height: 41px;
+          border: none;
+          background-image: url('/img/btn_search.png');
+          outline: none;
+        }
+      }
+    }
+  }
+}

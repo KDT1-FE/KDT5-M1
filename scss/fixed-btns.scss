@@ -1,0 +1,19 @@
+/* scroll up */
+.scroll-up {
+  position: fixed;
+  top: 50%;
+  right: 2vw;
+  width: 26px;
+  transform: translateY(-50%);
+  z-index: 8;
+}
+
+/* kakao channel */
+.kakao-icon {
+  position: fixed;
+  right: 7.5vw;
+  bottom: 5%;
+  width: 50px;
+  transform: translateY(-50%);
+  z-index: 8;
+}

@@ -1,0 +1,115 @@
+header {
+  position: relative;
+  width: 1500px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-top: 0;
+  border-bottom-width: 4px;
+  z-index: 8;
+  .inner {
+    .logo-area {
+      width: 120px;
+      border-right: 2px solid #000;
+      box-sizing: border-box;
+      border-bottom: 2px solid #000;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .gnb-area {
+      font-size: 12px;
+      font-weight: bold;
+      .util-area {
+        padding: 0 10px;
+        height: 41px;
+        line-height: 41px;
+        border-bottom: 2px solid #000;
+        box-sizing: border-box;
+        .util-menu {
+          a {
+            display: inline-block;
+            margin-left: 10px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .board {
+            color: $color--blue;
+          }
+          .cart {
+            padding-left: 24px;
+            background: url("/img/ico_cart.png") no-repeat 0 8px;
+            color: $color--orange;
+          }
+        }
+      }
+      .gnb {
+        > li {
+          position: relative;
+          float: left;
+          width: 16.666%;
+          height: 40px;
+          line-height: 40px;
+          box-sizing: border-box;
+          border-bottom: 2px solid #000;
+          > a {
+            display: block;
+            padding: 0 10px;
+            font-family: 'Malgun Gothic', sans-serif;
+            text-decoration: none;
+            .ico-arrow {
+              display: inline-block;
+              width: 13px;
+              height: 8px;
+              margin: -1px 0 0 7px;
+              background: url(/img/ico_arrow_bottom_13x8_black.png) no-repeat 0 0;
+              vertical-align: middle;
+            }
+          }
+          &:hover {
+            background-color: $color--blue;
+            .ico-arrow {
+              transform: rotate(180deg);
+            }
+            .gnb-depth {
+              display: block;
+            }
+          }
+          &:nth-child(6n+1) {
+            border-left: 0;
+          }
+          & + li {
+            border-left: 2px solid #000;
+          }
+          .gnb-depth {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -2px;
+            right: -2px;
+            border: 2px solid #000;
+            border-top-width: 6px;
+            background-color: #fff;
+            z-index: 5;
+            > li {
+              padding: 0 10px;
+              height: 39px;
+              line-height: 39px;
+              color: $color--blue;
+              font-size: 11px;
+              font-weight: bold;
+              a {
+                color: inherit;
+                text-decoration: none;
+              }
+              & + li {
+                border-top: 2px solid #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
