@@ -22,3 +22,4 @@ https://www.megabox.co.kr/
 - [ ] semantic 태그의 활용이 많이 부족한 점
 - [ ] 과제 초기부터 commit을 남기면서 작업하지 않은 점
 - [ ] class 사용에 있어 규칙이 다소 난잡하고 일관되지 않은 점
+- [ ] border-sizing : border-box 로 레이아웃 밀림을 초기에 방지하지 못한 점
