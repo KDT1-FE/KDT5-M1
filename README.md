@@ -1,5 +1,5 @@
 ## 원래 사이트 : [쏘카](https://www.socar.kr/)
-## 과제 : [과제쏘카]()
+## 과제 : [과제쏘카](https://genuine-palmier-371aa9.netlify.app)
 
 <br>
 
