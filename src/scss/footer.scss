@@ -1,0 +1,130 @@
+footer {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  small {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    color: #888;
+    align-self: flex-start;
+  }
+}
+
+.footer-content {
+  max-width: 1296px;
+  width: 1296px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      &::before {
+        position: absolute;
+        top: 5px;
+        left: -16px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffcd00;
+        vertical-align: top;
+        content: "";
+      }
+    }
+  }
+  span {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: #888;
+    cursor: pointer;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.footer-etc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .footer-recruit {
+    margin-top: 18px;
+  }
+  .footer-account {
+    margin-top: 8px;
+  }
+}
+
+.footer-under {
+  max-width: 1296px;
+  width: 1296px;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-terms {
+    display: flex;
+    span {
+      font-size: 12px;
+      color: #888;
+      cursor: pointer;
+      &:first-child {
+        margin: 0;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        color: #000;
+        font-weight: 700;
+        margin-left: 24px;
+      }
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:last-child {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+.site {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border-radius: 24px;
+  font-size: 12px;
+  padding: 0 20px;
+  line-height: 40px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.copyright {
+  max-width: 1296px;
+  width: 1296px;
+  margin: 16px auto;
+  padding: 16px 0;
+}

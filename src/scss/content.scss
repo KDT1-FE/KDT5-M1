@@ -1,1 +1,453 @@
+section {
+  padding-top: 72px;
+  position: relative;
+  max-width: 1296px;
+  width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
 
+.date {
+  font-size: 46px;
+  letter-spacing: -1px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-weight: 700;
+  padding-top: 96px;
+  line-height: 66px;
+  max-width: 1296px;
+  align-self: flex-start;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  float: left;
+  margin: 0 -18px;
+  padding: 96px 0 0;
+  user-select: none;
+}
+
+.content-item {
+  flex: 1;
+  position: relative;
+  max-width: 655px;
+  margin: 0 18px;
+}
+
+.right-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 420px 420px 192px 192px;
+  gap: 36px;
+}
+
+.item-card {
+  overflow: hidden;
+  margin-top: 36px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s ease-in-out;
+  position: sticky;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 12px 20px 6px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.wrap-cont {
+  position: relative;
+  flex: 1;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 25px 24px 0;
+  img {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+  .text-category {
+    display: inline-block;
+    height: 34px;
+    background: #eee;
+    border-radius: 12px;
+    font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+      sans-serif;
+    font-size: 12px;
+    padding: 0 12px;
+    line-height: 34px;
+    vertical-align: top;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -4px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M0 0c3.003 2.178 4.963 5.706 4.961 9.699V18H18C18 8.059 9.941 0 0 0' fill='%23eee' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+  }
+  .text-date {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -1px;
+  }
+}
+
+.card-title {
+  display: block;
+  font-size: 32px;
+  letter-spacing: -3px;
+  font-weight: 700;
+  line-height: 46px;
+  padding: 14px 24px 0;
+}
+
+.info-card {
+  display: flex;
+  padding: 14px 24px;
+  .text-keyword {
+    color: #666;
+    font-size: 14px;
+    margin-right: 3px;
+    font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+      sans-serif;
+    font-weight: 300;
+  }
+}
+
+.thumb {
+  width: 100%;
+  margin-top: 14px;
+  height: 245px;
+  background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/34eea597018700001.png?type=thumb&opt=C630x472.fwebp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-card {
+  width: 297px;
+  height: 420px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/30ef110c018700001.png?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.third-card {
+  width: 297px;
+  height: 192px;
+  .num-container {
+    display: flex;
+    align-items: center;
+    padding: 25px 24px 0;
+    .num-title {
+      font-weight: 400;
+      font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+        sans-serif;
+      font-size: 40px;
+      line-height: 59px;
+      letter-spacing: -1px;
+      margin-right: 10px;
+    }
+    .info-down {
+      font-size: 14px;
+      display: inline-block;
+      color: #2879ff;
+    }
+  }
+  .info-card {
+    font-size: 13px;
+    font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+      sans-serif;
+    color: #666;
+  }
+}
+
+.fourth-card {
+  width: 297px;
+  height: 420px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2b1dfbe1018700001.png?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.fifth-card {
+  width: 297px;
+  height: 420px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.sixth-card {
+  width: 297px;
+  height: 192px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.seventh-card {
+  width: 297px;
+  height: 420px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.eighth-card {
+  width: 297px;
+  height: 192px;
+  .card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-category {
+    font-size: 13px;
+  }
+  .text-date {
+    font-size: 12px;
+  }
+  .info-card {
+    font-size: 13px;
+  }
+  .thumb {
+    width: 297px;
+    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
+    height: 223px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.culture-container {
+  max-width: 1296px;
+  width: 1296px;
+  height: 540px;
+  margin: 36px 18px;
+  padding: 54px 66px 0;
+  border-radius: 14px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 2px 5px 40px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  strong {
+    font-size: 42px;
+    line-height: 62px;
+    display: block;
+    color: #000;
+  }
+  span {
+    display: inline-block;
+    height: 33px;
+    margin-top: 36px;
+    padding: 0 20px;
+    border-radius: 42px;
+    font-size: 14px;
+    line-height: 33px;
+    color: #fff;
+    background: #000;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .culture-image {
+    background: url(https://www.kakaocorp.com/page/bg_home_culture_210325.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 900px;
+    height: 240px;
+  }
+}
+
+// etc
+.etc-container {
+  max-width: 1296px;
+  width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  .etc-item {
+    width: 630px;
+    height: 360px;
+    background: #fae100;
+    border-radius: 12px;
+    padding: 36px 36px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    strong {
+      font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+        sans-serif;
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 700;
+    }
+    span {
+      display: inline-block;
+      height: 40px;
+      margin-top: 24px;
+      padding: 0 20px;
+      border-radius: 42px;
+      font-size: 14px;
+      line-height: 40px;
+      color: #fff;
+      background: #000;
+      vertical-align: top;
+    }
+    img {
+      display: block;
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 0 36px 36px 0;
+    }
+    &:last-child {
+      background: #3c64ff;
+      img {
+        width: 310px;
+        height: 160px;
+      }
+    }
+  }
+}
+
+.more-button {
+  width: 260px;
+  height: 60px;
+  text-align: center;
+  background: #eee;
+  color: #000;
+  font-size: 18px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  border-radius: 60px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  &:hover {
+    background: #dfdfdf;
+  }
+}
+
+.top-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  &:hover {
+    background: #444;
+  }
+}

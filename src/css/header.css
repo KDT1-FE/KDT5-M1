@@ -1,58 +1,68 @@
 @charset "UTF-8";
 header {
   width: 100%;
-  height: 60px;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #eee;
   background: #fff;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
 
 .header-content {
   margin: 0 97px;
-  max-width: 1024px;
-  width: 1024px;
+  max-width: 1296px;
+  width: 1296px;
   height: inherit;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .header-content h1 {
-    width: 74px;
-    height: 24px; }
-    .header-content h1 a {
-      width: inherit;
-      height: inherit;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url(https://i.namu.wiki/i/IqmOmj71Vd9La5zunuoLdkOXMuy8BHcg2Hk5KN-oGgJp1gvlCytffdNpbUwd3P4WfORoqi7cad4f71d6uOgEug.svg); }
-  .header-content nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit; }
-    .header-content nav ul {
-      display: flex;
-      align-items: center;
-      cursor: pointer; }
-      .header-content nav ul:hover {
-        color: #888; }
-      .header-content nav ul li {
-        padding: 30px;
-        font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        transition: color 0.2s ease-in-out;
-        position: relative;
-        user-select: none; }
-        .header-content nav ul li:hover {
-          color: #000; }
+  align-items: center;
+}
+.header-content h1 {
+  width: 74px;
+  height: 24px;
+}
+.header-content h1 a {
+  width: inherit;
+  height: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://i.namu.wiki/i/IqmOmj71Vd9La5zunuoLdkOXMuy8BHcg2Hk5KN-oGgJp1gvlCytffdNpbUwd3P4WfORoqi7cad4f71d6uOgEug.svg);
+}
+.header-content nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.header-content nav ul {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-content nav ul:hover {
+  color: #888;
+}
+.header-content nav ul li {
+  padding: 30px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+  position: relative;
+  user-select: none;
+}
+.header-content nav ul li:hover {
+  color: #000;
+}
 
 .sub {
   height: 48px;
@@ -66,69 +76,57 @@ header {
   top: 68px;
   border-radius: 30px;
   padding: 0 20px;
-  letter-spacing: -0.5px; }
-  .sub span {
-    display: block;
-    font-weight: 500; }
-    .sub span:hover {
-      font-weight: 700; }
+  letter-spacing: -0.5px;
+}
+.sub span {
+  display: block;
+  font-weight: 500;
+}
+.sub span:hover {
+  font-weight: 700;
+}
 
 .kakao-menu {
   width: 268px;
   right: -90px;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .tech {
   width: 142px;
   right: 4px;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .promises {
   width: 480px;
   left: -170px;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .active {
-  visibility: visible; }
+  visibility: visible;
+}
 
 .header-right-menu-pc {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; }
-  .header-right-menu-pc .header-icon {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background 0.2s ease-in-out;
-    cursor: pointer; }
-    .header-right-menu-pc .header-icon i {
-      font-size: 20px; }
-    .header-right-menu-pc .header-icon:hover {
-      background: #eee; }
-
-@media all and (min-width: 1025px) {
-  .header-right-menu-mobile {
-    display: none; }
-  .mobile-menu {
-    display: none; } }
-
-@media all and (max-width: 1024px) {
-  .header-content nav {
-    display: none; }
-  .header-right-menu-pc {
-    display: none; }
-  .header-right-menu-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28px; }
-    .header-right-menu-mobile .header-icon {
-      cursor: pointer; }
-      .header-right-menu-mobile .header-icon i {
-        font-size: 24px; }
-      .header-right-menu-mobile .header-icon:last-child i {
-        font-size: 32px; } }
+  gap: 20px;
+}
+.header-right-menu-pc .header-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.header-right-menu-pc .header-icon i {
+  font-size: 20px;
+}
+.header-right-menu-pc .header-icon:hover {
+  background: #eee;
+}
