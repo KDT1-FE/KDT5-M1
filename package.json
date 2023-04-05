@@ -1,0 +1,19 @@
+{
+  "name": "KDT5-M1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pildrums/KDT5-M1.git",
+  "author": "pildrums <there7788@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -w -r src/scss -o src/css"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

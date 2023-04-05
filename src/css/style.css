@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+  font-family: KakaoSmall;
+  font-weight: 300;
+  src: url(../font/KakaoSmall-Light-v1.0.ef99f33.woff2); }
+
+@font-face {
+  font-family: KakaoSmall;
+  font-weight: 400;
+  src: url(../font/KakaoSmall-Regular-v1.0.5c6e996.woff2); }
+
+@font-face {
+  font-family: KakaoBig;
+  font-weight: 400;
+  src: url(../font/KakaoBig-Regular-v1.0.4bf7d77.woff2); }
+
+@font-face {
+  font-family: KakaoBig;
+  font-weight: 700;
+  src: url(../font/KakaoBig-Bold-v1.0.335a95e.woff2); }
+
+@font-face {
+  font-family: KakaoSmall;
+  font-weight: 700;
+  src: url(../font/KakaoSmall_Bold_OTF.b852aad.woff2); }
+
+body {
+  font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+  background: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  display: block;
+  color: #000;
+  text-decoration: none; }
+
+span {
+  display: block; }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오 Clone</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.kakaocorp.com/page/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/content.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/modal.css" />
+    <link rel="stylesheet" href="src/css/mobile-menu.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1 class="header-logo"><a href="."></a></h1>
+        <nav>
+          <ul id="gnb">
+            <li>
+              카카오
+              <div class="kakao-menu sub">
+                <span>카카오 문화</span>
+                <span>공동체</span>
+                <span>히스토리</span>
+              </div>
+            </li>
+            <li>뉴스</li>
+            <li>
+              기술과 서비스
+              <div class="tech sub">
+                <span>기술</span>
+                <span>서비스</span>
+              </div>
+            </li>
+            <li>
+              약속과 책임
+              <div class="promises sub">
+                <span>ESG</span>
+                <span>카카오의 다짐</span>
+                <span>소셜임팩트</span>
+                <span>디지털 권리</span>
+                <span>AI 윤리</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right-menu-pc">
+          <div class="header-icon"><i class="bi bi-search"></i></div>
+          <div class="header-icon"><i class="bi bi-globe"></i></div>
+          <div class="header-icon"><i class="bi bi-moon"></i></div>
+        </div>
+        <div class="header-right-menu-mobile">
+          <div class="header-icon"><i class="bi bi-search"></i></div>
+          <div class="header-icon mobile-menu-on">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-header">
+          <h1 class="header-logo mobile-menu-logo">
+            <a href="."></a>
+          </h1>
+          <div class="mobile-menu-close">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="mobile-menu-wrapper">
+          <div class="mobile-menu-content">
+            <img
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/65779d87017800001.png"
+              alt=""
+            />
+            <div class="mobile-menu-item">
+              <span>카카오</span>
+              <ul class="mobile-menu-list">
+                <li>카카오 문화</li>
+                <li>공동체</li>
+                <li>히스토리</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-menu-content">
+            <img
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/657726a1017800001.png"
+              alt=""
+            />
+            <div class="mobile-menu-item">
+              <span>뉴스</span>
+            </div>
+          </div>
+          <div class="mobile-menu-content">
+            <img
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6575c56d017800001.png"
+              alt=""
+            />
+            <div class="mobile-menu-item">
+              <span>기술과 서비스</span>
+              <ul class="mobile-menu-list">
+                <li>기술</li>
+                <li>서비스</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-menu-content">
+            <img
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/657759fa017800001.png"
+              alt=""
+            />
+            <div class="mobile-menu-item">
+              <span>약속과 책임</span>
+              <ul class="mobile-menu-list">
+                <li>ESG</li>
+                <li>카카오의 다짐</li>
+                <li>소셜임팩트</li>
+                <li>디지털 권리</li>
+                <li>AI 윤리</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu-footer">
+          <ul class="mobile-menu-footer-list">
+            <li>투자정보</li>
+            <li>인재영입</li>
+            <li>고객센터</li>
+          </ul>
+          <ul class="mobile-menu-icon">
+            <li><i class="bi bi-globe"></i></li>
+            <li><i class="bi bi-moon"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section></section>
+    <footer></footer>
+    <!-- Modal -->
+    <div id="open">카카오 링크</div>
+    <div id="modal-wrapper">
+      <div id="modal">
+        <div id="close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="kakao-image"></div>
+        <h2>카카오</h2>
+        <a class="modal-under-box" href="https://www.kakaocorp.com/page/"
+          >바로가기</a
+        >
+      </div>
+    </div>
+    <script src="src/js/header.js"></script>
+    <script src="src/js/modal.js"></script>
+    <script src="src/js/mobileMenu.js"></script>
+  </body>
+</html>
