@@ -6,6 +6,8 @@ https://www.megabox.co.kr/
 
 ### 클론 메가박스 서비스 링크
 
+https://kdt5-chadongmin--loquacious-alpaca-1cc888.netlify.app/
+
 ## 과제 진행 내용
 
 - [ ] 메가박스 공식 홈페이지 내의 상단 메뉴바, 중앙 박스오피스 영역, 최하단 footer 영역의 클론코딩
