@@ -1,266 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dest/css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>여행은 살아보는 거야 - 에어비앤비 - 에어비앤비</title>
+  <link rel="icon" href="https://a0.muscache.com/airbnb/static/icons/airbnb-0611901eac33ccfa5e93d793a2e21f09.svg"
+    color="#FF5A5F" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/main.js"></script>
+</head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
 
-    <script defer src="./js/main.js"></script>
-    <title>HKDmicrobiome CloneCoding</title>
-  </head>
-  <body>
-    
-  <!-- HEADER -->
+  <!-- 헤더 메뉴 영역 -->
   <header>
+
     <div class="inner">
-      <div class="nav">
-        <a class="logo" href="javascript:void(0)" onclick="window.scrollTo(0,0);">
-            Microbiome Center
-        </a>
-        <div class="menu">
-            <ul class="lang" href="">     
-                <li>
-                  <a href="javascript:void(0)">JP</a> 
-                </li>
-                <li>
-                  <a href="javascript:void(0)">EN</a> 
-                </li>
-                <li>
-                  <a href="javascript:void(0)">KR</a> 
-                </li>
+      <div class="up-menu">
+
+        <div class="left-menu">
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <div class="logo_svg"><svg width="102" height="32" style="display: block;">
+                  <path
+                    d="M29.3864 22.7101C29.2429 22.3073 29.0752 21.9176 28.9157 21.5565C28.6701 21.0011 28.4129 20.4446 28.1641 19.9067L28.1444 19.864C25.9255 15.0589 23.5439 10.1881 21.0659 5.38701L20.9607 5.18316C20.7079 4.69289 20.4466 4.18596 20.1784 3.68786C19.8604 3.0575 19.4745 2.4636 19.0276 1.91668C18.5245 1.31651 17.8956 0.833822 17.1853 0.502654C16.475 0.171486 15.7005 -9.83959e-05 14.9165 4.23317e-08C14.1325 9.84805e-05 13.3581 0.171877 12.6478 0.503224C11.9376 0.834571 11.3088 1.31742 10.8059 1.91771C10.3595 2.46476 9.97383 3.05853 9.65572 3.68858C9.38521 4.19115 9.12145 4.70278 8.8664 5.19757L8.76872 5.38696C6.29061 10.1884 3.90903 15.0592 1.69015 19.8639L1.65782 19.9338C1.41334 20.463 1.16057 21.0102 0.919073 21.5563C0.75949 21.9171 0.592009 22.3065 0.448355 22.7103C0.0369063 23.8104 -0.094204 24.9953 0.0668098 26.1585C0.237562 27.334 0.713008 28.4447 1.44606 29.3804C2.17911 30.3161 3.14434 31.0444 4.24614 31.4932C5.07835 31.8299 5.96818 32.002 6.86616 32C7.14824 31.9999 7.43008 31.9835 7.71027 31.9509C8.846 31.8062 9.94136 31.4366 10.9321 30.8639C12.2317 30.1338 13.5152 29.0638 14.9173 27.5348C16.3194 29.0638 17.6029 30.1338 18.9025 30.8639C19.8932 31.4367 20.9886 31.8062 22.1243 31.9509C22.4045 31.9835 22.6864 31.9999 22.9685 32C23.8664 32.002 24.7561 31.8299 25.5883 31.4932C26.6901 31.0444 27.6554 30.3161 28.3885 29.3804C29.1216 28.4447 29.5971 27.3341 29.7679 26.1585C29.9287 24.9952 29.7976 23.8103 29.3864 22.7101ZM14.9173 24.377C13.1816 22.1769 12.0678 20.1338 11.677 18.421C11.5169 17.7792 11.4791 17.1131 11.5656 16.4573C11.6339 15.9766 11.8105 15.5176 12.0821 15.1148C12.4163 14.6814 12.8458 14.3304 13.3374 14.0889C13.829 13.8475 14.3696 13.7219 14.9175 13.7219C15.4655 13.722 16.006 13.8476 16.4976 14.0892C16.9892 14.3307 17.4186 14.6817 17.7528 15.1151C18.0244 15.5181 18.201 15.9771 18.2693 16.4579C18.3556 17.114 18.3177 17.7803 18.1573 18.4223C17.7661 20.1349 16.6526 22.1774 14.9173 24.377ZM27.7406 25.8689C27.6212 26.6908 27.2887 27.4674 26.7762 28.1216C26.2636 28.7759 25.5887 29.2852 24.8183 29.599C24.0393 29.9111 23.1939 30.0217 22.3607 29.9205C21.4946 29.8089 20.6599 29.5239 19.9069 29.0824C18.7501 28.4325 17.5791 27.4348 16.2614 25.9712C18.3591 23.3846 19.669 21.0005 20.154 18.877C20.3723 17.984 20.4196 17.0579 20.2935 16.1475C20.1791 15.3632 19.8879 14.615 19.4419 13.9593C18.9194 13.2519 18.2378 12.6768 17.452 12.2805C16.6661 11.8842 15.798 11.6777 14.9175 11.6777C14.0371 11.6777 13.1689 11.8841 12.383 12.2803C11.5971 12.6765 10.9155 13.2515 10.393 13.9589C9.94707 14.6144 9.65591 15.3624 9.5414 16.1465C9.41524 17.0566 9.4623 17.9822 9.68011 18.8749C10.1648 20.9993 11.4748 23.384 13.5732 25.9714C12.2555 27.4348 11.0845 28.4325 9.92769 29.0825C9.17468 29.5239 8.34007 29.809 7.47395 29.9205C6.64065 30.0217 5.79525 29.9111 5.0162 29.599C4.24581 29.2852 3.57092 28.7759 3.05838 28.1217C2.54585 27.4674 2.21345 26.6908 2.09411 25.8689C1.97932 25.0334 2.07701 24.1825 2.37818 23.3946C2.49266 23.0728 2.62663 22.757 2.7926 22.3818C3.0274 21.851 3.27657 21.3115 3.51759 20.7898L3.54996 20.7197C5.75643 15.9419 8.12481 11.0982 10.5894 6.32294L10.6875 6.13283C10.9384 5.64601 11.1979 5.14267 11.4597 4.6563C11.7101 4.15501 12.0132 3.68171 12.3639 3.2444C12.6746 2.86903 13.0646 2.56681 13.5059 2.35934C13.9473 2.15186 14.4291 2.04426 14.9169 2.04422C15.4047 2.04418 15.8866 2.15171 16.3279 2.35911C16.7693 2.56651 17.1593 2.86867 17.4701 3.24399C17.821 3.68097 18.1242 4.15411 18.3744 4.65538C18.6338 5.13742 18.891 5.63623 19.1398 6.11858L19.2452 6.32315C21.7097 11.0979 24.078 15.9415 26.2847 20.7201L26.3046 20.7631C26.5498 21.2936 26.8033 21.8419 27.042 22.382C27.2082 22.7577 27.3424 23.0738 27.4566 23.3944C27.7576 24.1824 27.8553 25.0333 27.7406 25.8689Z"
+                    fill="currentcolor"></path>
+                  <path
+                    d="M41.6847 24.1196C40.8856 24.1196 40.1505 23.9594 39.4792 23.6391C38.808 23.3188 38.2327 22.8703 37.7212 22.2937C37.2098 21.7172 36.8263 21.0445 36.5386 20.3078C36.2509 19.539 36.123 18.7062 36.123 17.8093C36.123 16.9124 36.2829 16.0475 36.5705 15.2787C36.8582 14.51 37.2737 13.8373 37.7852 13.2287C38.2966 12.6521 38.9039 12.1716 39.6071 11.8513C40.3103 11.531 41.0455 11.3708 41.8765 11.3708C42.6756 11.3708 43.3788 11.531 44.0181 11.8833C44.6574 12.2037 45.1688 12.6841 45.5843 13.2927L45.6802 11.7232H48.6209V23.7992H45.6802L45.5843 22.0375C45.1688 22.6781 44.6254 23.1906 43.9222 23.575C43.2829 23.9274 42.5158 24.1196 41.6847 24.1196ZM42.4519 21.2367C43.0272 21.2367 43.5386 21.0765 44.0181 20.7882C44.4656 20.4679 44.8172 20.0515 45.1049 19.539C45.3606 19.0265 45.4884 18.4179 45.4884 17.7452C45.4884 17.0725 45.3606 16.4639 45.1049 15.9514C44.8492 15.4389 44.4656 15.0225 44.0181 14.7022C43.5706 14.3818 43.0272 14.2537 42.4519 14.2537C41.8765 14.2537 41.3651 14.4139 40.8856 14.7022C40.4382 15.0225 40.0866 15.4389 39.7989 15.9514C39.5432 16.4639 39.4153 17.0725 39.4153 17.7452C39.4153 18.4179 39.5432 19.0265 39.7989 19.539C40.0546 20.0515 40.4382 20.4679 40.8856 20.7882C41.3651 21.0765 41.8765 21.2367 42.4519 21.2367ZM53.6392 8.4559C53.6392 8.80825 53.5753 9.12858 53.4154 9.38483C53.2556 9.64109 53.0319 9.86531 52.7442 10.0255C52.4565 10.1856 52.1369 10.2497 51.8173 10.2497C51.4976 10.2497 51.178 10.1856 50.8903 10.0255C50.6026 9.86531 50.3789 9.64109 50.2191 9.38483C50.0592 9.09654 49.9953 8.80825 49.9953 8.4559C49.9953 8.10355 50.0592 7.78323 50.2191 7.52697C50.3789 7.23868 50.6026 7.04649 50.8903 6.88633C51.178 6.72617 51.4976 6.66211 51.8173 6.66211C52.1369 6.66211 52.4565 6.72617 52.7442 6.88633C53.0319 7.04649 53.2556 7.27072 53.4154 7.52697C53.5433 7.78323 53.6392 8.07152 53.6392 8.4559ZM50.2191 23.7672V11.6911H53.4154V23.7672H50.2191V23.7672ZM61.9498 14.8623V14.8943C61.79 14.8303 61.5982 14.7982 61.4383 14.7662C61.2466 14.7342 61.0867 14.7342 60.895 14.7342C60 14.7342 59.3287 14.9904 58.8812 15.535C58.4018 16.0795 58.178 16.8483 58.178 17.8413V23.7672H54.9817V11.6911H57.9223L58.0182 13.517C58.3379 12.8763 58.7214 12.3958 59.2648 12.0435C59.7762 11.6911 60.3835 11.531 61.0867 11.531C61.3105 11.531 61.5342 11.563 61.726 11.595C61.8219 11.6271 61.8858 11.6271 61.9498 11.6591V14.8623ZM63.2283 23.7672V6.72617H66.4247V13.2287C66.8722 12.6521 67.3836 12.2036 68.0229 11.8513C68.6622 11.531 69.3654 11.3388 70.1645 11.3388C70.9635 11.3388 71.6987 11.4989 72.3699 11.8193C73.0412 12.1396 73.6165 12.588 74.128 13.1646C74.6394 13.7412 75.0229 14.4139 75.3106 15.1506C75.5983 15.9194 75.7261 16.7522 75.7261 17.6491C75.7261 18.546 75.5663 19.4109 75.2787 20.1796C74.991 20.9484 74.5755 21.6211 74.064 22.2297C73.5526 22.8063 72.9453 23.2867 72.2421 23.6071C71.5389 23.9274 70.8037 24.0875 69.9727 24.0875C69.1736 24.0875 68.4704 23.9274 67.8311 23.575C67.1918 23.2547 66.6804 22.7742 66.2649 22.1656L66.169 23.7352L63.2283 23.7672ZM69.3973 21.2367C69.9727 21.2367 70.4841 21.0765 70.9635 20.7882C71.411 20.4679 71.7626 20.0515 72.0503 19.539C72.306 19.0265 72.4339 18.4179 72.4339 17.7452C72.4339 17.0725 72.306 16.4639 72.0503 15.9514C71.7626 15.4389 71.411 15.0225 70.9635 14.7022C70.5161 14.3818 69.9727 14.2537 69.3973 14.2537C68.822 14.2537 68.3106 14.4139 67.8311 14.7022C67.3836 15.0225 67.032 15.4389 66.7443 15.9514C66.4886 16.4639 66.3608 17.0725 66.3608 17.7452C66.3608 18.4179 66.4886 19.0265 66.7443 19.539C67 20.0515 67.3836 20.4679 67.8311 20.7882C68.3106 21.0765 68.822 21.2367 69.3973 21.2367ZM76.9408 23.7672V11.6911H79.8814L79.9773 13.2607C80.3289 12.6841 80.8084 12.2357 81.4157 11.8833C82.023 11.531 82.7262 11.3708 83.5253 11.3708C84.4203 11.3708 85.1874 11.595 85.8267 12.0115C86.4979 12.4279 87.0094 13.0365 87.361 13.8053C87.7126 14.574 87.9043 15.5029 87.9043 16.56V23.7992H84.708V16.9764C84.708 16.1436 84.5162 15.4709 84.1326 14.9904C83.7491 14.51 83.2376 14.2537 82.5664 14.2537C82.0869 14.2537 81.6714 14.3498 81.2878 14.574C80.9362 14.7982 80.6486 15.0865 80.4248 15.503C80.2011 15.8873 80.1052 16.3678 80.1052 16.8483V23.7672H76.9408V23.7672ZM89.5025 23.7672V6.72617H92.6989V13.2287C93.1464 12.6521 93.6578 12.2036 94.2971 11.8513C94.9364 11.531 95.6396 11.3388 96.4387 11.3388C97.2378 11.3388 97.9729 11.4989 98.6442 11.8193C99.3154 12.1396 99.8907 12.588 100.402 13.1646C100.914 13.7412 101.297 14.4139 101.585 15.1506C101.873 15.9194 102 16.7522 102 17.6491C102 18.546 101.841 19.4109 101.553 20.1796C101.265 20.9484 100.85 21.6211 100.338 22.2297C99.8268 22.8063 99.2195 23.2867 98.5163 23.6071C97.8131 23.9274 97.0779 24.0875 96.2469 24.0875C95.4478 24.0875 94.7446 23.9274 94.1053 23.575C93.466 23.2547 92.9546 22.7742 92.5391 22.1656L92.4432 23.7352L89.5025 23.7672ZM95.7035 21.2367C96.2788 21.2367 96.7903 21.0765 97.2697 20.7882C97.7172 20.4679 98.0688 20.0515 98.3565 19.539C98.6122 19.0265 98.7401 18.4179 98.7401 17.7452C98.7401 17.0725 98.6122 16.4639 98.3565 15.9514C98.1008 15.4389 97.7172 15.0225 97.2697 14.7022C96.8222 14.3818 96.2788 14.2537 95.7035 14.2537C95.1281 14.2537 94.6167 14.4139 94.1373 14.7022C93.6898 15.0225 93.3382 15.4389 93.0505 15.9514C92.7628 16.4639 92.6669 17.0725 92.6669 17.7452C92.6669 18.4179 92.7948 19.0265 93.0505 19.539C93.3062 20.0515 93.6898 20.4679 94.1373 20.7882C94.6167 21.0765 95.0962 21.2367 95.7035 21.2367Z"
+                    fill="currentcolor"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 검색 영역 상단 메뉴 작업중 -->
+        <!-- <div class="center-menu">
+          <div class="center-menu__container">
+            <div class="center-menu__item">숙소</div>
+            <div class="center-menu__item">체험</div>
+            <div class="center-menu__item">온라인 체험</div>
+          </div>
+        </div> -->
+
+        <div class="center-menu">
+          <div class="center-menu__container">
+            <div class="center-menu__item">어디든지</div>
+            <div class="center-menu__item">언제든 일주일</div>
+            <div class="center-menu__item">게스트 추가</div>
+            <div class="center-menu__item__logo">
+              <div class="btn_search">
+                <div class="search">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 13px; width: 13px; stroke: currentcolor; stroke-width: 5; overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-menu">
+          <div class="right-menu__container">
+
+            <div class="right-menu__item">당신의 공간을 에어비앤비하세요</div>
+
+            <div class="right-menu__languages-btn">
+              <div class="languages-btn-icon">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                  <path
+                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="right-menu__profile-btn">
+
+              <div class="profile-btn-left">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false"
+                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                  <g fill="none" fill-rule="nonzero">
+                    <path d="m2 16h28"></path>
+                    <path d="m2 24h28"></path>
+                    <path d="m2 8h28"></path>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="profile-btn-right">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                  <path
+                    d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                  </path>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 검색 영역 작업중 -->
+      <div class="down-menu">
+        <div class="tab_menu">
+          <ul class="list">
+
+            <li class="is_on">
+              <div class="inner_is_on">
+                <a href="" id="#tab1">
+                  <div class="btn">여행지</div>
+                  <h3>여행지 검색</h3>
+                </a>
+                <div id="#tab1" class="cont">Tab1 Content</div>
+              </div>
+            </li>
+
+            <li>
+              <div class="inner_is_on">
+                <a href="" class="tab2_btn" id="#tab2">
+                  <div class="btn">체크인</div>
+                  <h3>날짜 추가</h3>
+                </a>
+                <div id="#tab2" class="cont">Tab2 Content</div>
+              </div>
+            </li>
+
+            <li>
+              <div class="inner_is_on">
+                <a href="" class="tab3_btn" id="#tab3">
+                  <div class="btn">체크아웃</div>
+                  <h3>날짜 추가</h3>
+                </a>
+                <div id="#tab3" class="cont">Tab3 Content</div>
+              </div>
+            </li>
+
+            <li>
+              <div class="inner_is_on">
+                <a href="" class="tab4_btn" id="#tab4">
+                  <div class="btn">여행자</div>
+                  <h3>게스트 추가</h3>
+                </a>
+                <div id="#tab4" class="cont">Tab4 Content</div>
+              </div>
+            </li>
+
+            <div class="btn_search">
+              <div class="search">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false"
+                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                  <g fill="none">
+                    <path
+                      d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 숙소 스타일 슬라이드 영역 -->
+    <div class="swiper">
+      <div class="inner">
+        <div class="slid__container">
+
+          <div class="slid_left_btn">
+            <div class="left_move_btn">
+              <div class="btn_arrow_left">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false"
+                  style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                  <g fill="none">
+                    <path
+                      d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="slid_box">
+            <ul class="container_list">
+              <li><img src="/image/airbnb_icon_1.jpeg" alt="">
+                <h3>캐슬</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_2.jpeg" alt="">
+                <h3>초소형 주택</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_3.jpeg" alt="">
+                <h3>디자인</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_4.jpeg" alt="">
+                <h3>풍차</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_5.jpeg" alt="">
+                <h3>호숫가</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_6.jpeg" alt="">
+                <h3>개인실</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_7.jpeg" alt="">
+                <h3>최고의 전망</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_8.jpeg" alt="">
+                <h3>기상천외한 숙소</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_9.jpeg" alt="">
+                <h3>한옥</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_10.jpeg" alt="">
+                <h3>해변 바로 앞</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_11.jpeg" alt="">
+                <h3>인기 급상승</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_12.jpeg" alt="">
+                <h3>한적한 시골</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_13.jpeg" alt="">
+                <h3>국립공원</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_14.jpeg" alt="">
+                <h3>료칸</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_15.jpeg" alt="">
+                <h3>멋진 수영장</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_16.jpeg" alt="">
+                <h3>저택</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_17.jpeg" alt="">
+                <h3>캠핑장</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_18.jpeg" alt="">
+                <h3>농장</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_19.jpeg" alt="">
+                <h3>신규</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_20.jpeg" alt="">
+                <h3>보트</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_21.jpeg" alt="">
+                <h3>속세를 벗어난 숙소</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_22.jpeg" alt="">
+                <h3>Luxe</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_23.jpeg" alt="">
+                <h3>사막</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_24.jpeg" alt="">
+                <h3>통나무집</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_25.jpeg" alt="">
+                <h3>키즈</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_26.jpeg" alt="">
+                <h3>열대 지역</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_27.jpeg" alt="">
+                <h3>상징적 도시</h3>
+              </li>
+              <li><img src="/image/airbnb_icon_28.jpeg" alt="">
+                <h3>북극</h3>
+              </li>
             </ul>
-            <a class="hamburger" href="javascript:void(0)">=</a>
+          </div>
+
+          <div class="slid_right_btn">
+            <div class="right_move_btn">
+              <div class="btn_arrow_right">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false"
+                  style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                  <g fill="none">
+                    <path
+                      d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="slid_right_btn_filter">
+            <div class="filter_btn">
+              <div class="filter_icon">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                  style="display:block;height:14px;width:14px;fill:currentColor" aria-hidden="true" role="presentation"
+                  focusable="false">
+                  <path
+                    d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                  </path>
+                </svg>
+              </div>
+              <h3>필터</h3>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </header>
-  <div class="header_white">
-    <div class="nav_white">
-      <a class="logo" href="javascript:void(0)" onclick="window.scrollTo(0,0);">
-          Microbiome Center
-      </a>
-      <div class="menu">
-          <ul class="lang" href="">     
-              <li>
-                <a href="javascript:void(0)">JP</a> 
-              </li>
-              <li>
-                <a href="javascript:void(0)">EN</a> 
-              </li>
-              <li>
-                <a href="javascript:void(0)">KR</a> 
-              </li>
-          </ul>
-          <a class="hamburger" href="javascript:void(0)">=</a>
-      </div>
-    </div>      
-  </div>
-  
-  <!-- BIG BANNER -->
-  <section class="bigbanner">
-    <div class="inner">
-        <h2 class="mainTitle">발효 에너지가<br>숨 쉬는 공간</h2>
-        <h4 class="subTitle">전국 각지의 땅에서 잉태된 식물들이
-          <br>천천히,그리고 정성스럽게, 최적의 조건에서 숙성 중입니다.</h4>
-        <a class="dots" href="javascript:void(0)">
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons">fiber_manual_record</span>
-          <span class="material-icons"> pause </span>
-        </a>
-    </div>
-  </section>
 
-  <!-- CENTER GUIDE -->
-  <section class="center_intro">
-    <!-- <div class="inner"> -->
-      <div class="center_title">
-          <a class="center_main" href="javascript:void(0)">Microbiome</a>
-          <a class="center_main" href="javascript:void(0)">Center<span class="arrow">→</span></a>
-          <span class="center_sub">센터소개</span>
-      </div>
-      <article class="center_image">
-          <div class="box">
-            <div class="image_odd" Style="cursor: pointer">
-              <img src="./img/cente_front.jpg" alt="센터입구">
-              <div class="image_name">센터입구</div>
+  </header>
+
+  <!-- 하단 중앙 지도 표시하기 버튼 -->
+  <div class="map_center_button">
+    <h3>지도 표시하기</h3>
+    <div class="map_icon">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+        focusable="false" style="display: block; height: 16px; width: 16px; fill: var(--f-mkcy-f);">
+        <path
+          d="M31.245 3.747a2.285 2.285 0 0 0-1.01-1.44A2.286 2.286 0 0 0 28.501 2l-7.515 1.67-10-2L2.5 3.557A2.286 2.286 0 0 0 .7 5.802v21.95a2.284 2.284 0 0 0 1.065 1.941A2.29 2.29 0 0 0 3.498 30l7.515-1.67 10 2 8.484-1.886a2.285 2.285 0 0 0 1.802-2.245V4.247a2.3 2.3 0 0 0-.055-.5zM12.5 25.975l-1.514-.303L9.508 26H9.5V4.665l1.514-.336 1.486.297v21.349zm10 1.36l-1.515.337-1.485-.297V6.025l1.514.304L22.493 6h.007v21.335z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 메인 콘텐츠 리스트 영역 -->
+  <main>
+    <div class="inner">
+      <div class="main_grid">
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
             </div>
-            <div class="image_even" Style="cursor: pointer">
-              <img src="./img/center_convention.jpg" alt="전시실">
-              <span class="image_name">전시실</span>
-            </div>            
-            <div class="image_odd" Style="cursor: pointer">
-              <img src="./img/center_lab.jpg" alt="연구실">
-              <span class="image_name">연구실</span>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
             </div>
-            <div class="image_even" Style="cursor: pointer">
-              <img src="./img/center_pub.jpg" alt="출아실">
-              <span class="image_name">출아실</span>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
             </div>
           </div>
-      </article>
-    <!-- </div> -->
-  </section>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Okuizumo, Nita District, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">607km 거리</div>
+          <div class="lodging_Period">4월 7일~12일</div>
+          <div class="lodging_Price">₩67,943<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Fujieda, 일본</div>
+            <div class="lodging_star">★4.97</div>
+          </div>
+          <div class="lodging_Distance">1,047km 거리</div>
+          <div class="lodging_Period">7월 22일~29일</div>
+          <div class="lodging_Price">₩203,182<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Sakuho-machi, 일본</div>
+            <div class="lodging_star">★4.94</div>
+          </div>
+          <div class="lodging_Distance">1,039km 거리</div>
+          <div class="lodging_Period">5월 8일~13일</div>
+          <div class="lodging_Price">₩145,034<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Imabari, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">654km 거리</div>
+          <div class="lodging_Period">6월 25일 ~ 7월 1일</div>
+          <div class="lodging_Price">₩134,942<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Osaka city, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">829km 거리</div>
+          <div class="lodging_Period">8월 28일 ~ 9월 2일</div>
+          <div class="lodging_Price">₩93,988<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Nabari-city, 일본</div>
+            <div class="lodging_star">★4.93</div>
+          </div>
+          <div class="lodging_Distance">880km 거리</div>
+          <div class="lodging_Period">6월 4일~9일</div>
+          <div class="lodging_Price">₩33,972<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Okuizumo, Nita District, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">607km 거리</div>
+          <div class="lodging_Period">4월 7일~12일</div>
+          <div class="lodging_Price">₩67,943<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">京都市, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">836km 거리</div>
+          <div class="lodging_Period">6월 28일 ~ 7월 3일</div>
+          <div class="lodging_Price">₩440,796<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">高松市, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">729km 거리</div>
+          <div class="lodging_Period">8월 26일 ~ 9월 1일</div>
+          <div class="lodging_Price">₩232,196<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Kōshū-shi, 일본</div>
+            <div class="lodging_star">★4.71</div>
+          </div>
+          <div class="lodging_Distance">1,069km 거리</div>
+          <div class="lodging_Period">4월 22일~27일</div>
+          <div class="lodging_Price">₩256,031<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Kyōto-shi, 일본</div>
+            <div class="lodging_star">★4.99</div>
+          </div>
+          <div class="lodging_Distance">607km 거리</div>
+          <div class="lodging_Period">6월 20일~25일</div>
+          <div class="lodging_Price">₩341,349<p>/박</p>
+          </div>
+        </div>
+        <div class="main_grid_item">
+          <div class="img">
+            <div class="grid_item_heart_btn">
+              <img src="/image/heart.svg" alt="">
+            </div>
+            <div class="grid_item_left_right_btn_box">
+              <div class="grid_item_left_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+              <div class="grid_item_right_btn">
+                <img src="/image/arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="grid_item_radio_btn">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <input type="radio" name="slider" id="slide4">
+              <input type="radio" name="slider" id="slide5">
+            </div>
+          </div>
+          <div class="lodging_title_box">
+            <div class="lodging_title">Fushimi-ku Kyoto-shi, 일본</div>
+            <div class="lodging_star">★4.86</div>
+          </div>
+          <div class="lodging_Distance">838km 거리</div>
+          <div class="lodging_Period">6월 22일~27일</div>
+          <div class="lodging_Price">₩200,622<p>/박</p>
+          </div>
+        </div>
 
-<!-- VR GUIDE -->
-  <section class="vrTour">
-    <div class="vrTour_title">
-      <a class="vrTour_main" href="javascript:void(0)">VR Showroom Tour</a>
-      <span class="vrTour_sub">마이크로바이옴 센터의 내부 공간을<br>360° VR로 관람하실 수 있습니다.</span>
-      <button class="vr_button">360VRº 둘러보기</button>
+      </div>
     </div>
-    <div class="illust-pic"></div>  
-  </section>
-
-  <!-- HERITAGE -->
-  <main class="Heritage">
-    <div class="Heritage_inner">
-      <div class="Heritage_main">
-        <div>청정지역이 만들어준 자연발효 헤리티지<br>훗카이도 마이크로바이옴 센터</div>
-        <div>자연과 공존으로 태어나는<br>아름다움과 건강의 결정체를 찾아</div>
-        <div>깨끗한 자연을 토대로,<br>이 땅에서 다시 시작합니다.</div>
-      </div>
-      <img class="map_icon" src="/img/researchingMap.png" alt="훗카이도지도">
-      <div class="Heritage_icons">
-        <img class="Heritage_icon" src="/img/img0121.svg" alt="원료1">
-        <img class="Heritage_icon" src="/img/img0122.svg" alt="원료2">
-        <img class="Heritage_icon" src="/img/img0123.svg" alt="원료3">
-        <img class="Heritage_icon" src="/img/img0124.svg" alt="원료4">
-        <img class="Heritage_icon" src="/img/img0125.svg" alt="원료5">
-        <img class="Heritage_icon" src="/img/img0126.svg" alt="원료1">
-      </div>
-    </div>  
   </main>
 
-  <!-- RESEARCH -->
-  <div class="research">
-    <div class="left">
-      <ul class="left_list">
-        <li class="research_list">Research</li>
-        <li class="research_list" Style="cursor: pointer">마이크로바이옴 연구</li>
-        <li class="research_list" Style="cursor: pointer">식물발효액 연구</li>
-        <li class="research_list" Style="cursor: pointer">전통발효기술 연구</li>
-      </ul>
-      <div class="research_img"></div>
+  <!-- 푸터 영역 -->
+  <footer>
+    <div class="footer_inner">
+
+      <div class="company_info">
+
+        <ul class="info_left">
+          <li>© 2023 Airbnb, Inc.</li>
+          <li><a href="javascript:void(0)">개인정보 처리방침</a></li>
+          <li><a href="javascript:void(0)">이용약관</a></li>
+          <li><a href="javascript:void(0)">사이트맵</a></li>
+          <li><a href="javascript:void(0)">한국의 변경된 환불 정책</a></li>
+          <li><a href="javascript:void(0)">회사 세부정보</a></li>
+        </ul>
+
+        <ul class="info_right">
+          <li><a href="javascript:void(0)">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                <path
+                  d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                </path>
+              </svg></a></li>
+          <li><a href="javascript:void(0)">한국어 (KR)</a></li>
+          <li><a href="javascript:void(0)">₩</a></li>
+          <li><a href="javascript:void(0)">KRW</a></li>
+          <li><a href="javascript:void(0)">지원 및 참고 자료</a></li>
+          <li><a href="javascript:void(0)"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" role="presentation" focusable="false"
+                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                <g fill="none">
+                  <path
+                    d="m4 20 11.2928932-11.29289322c.3905243-.39052429 1.0236893-.39052429 1.4142136 0l11.2928932 11.29289322">
+                  </path>
+                </g>
+              </svg></a></li>
+        </ul>
+
+      </div>
+
+      <div class="company_notice">
+        <div class="notice_p">
+          <p>웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8 Hanover Quay Dublin 2, D02 DP23 Ireland | 이사:
+            Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT 번호: IE9827384L | 사업자 등록 번호: IE 511825 | 연락처:
+            terms@airbnb.com, 웹사이트, 080-822-0230 | 호스팅 서비스 제공업체: 아마존 웹서비스 | 에어비앤비는 통신판매 중개자로 에어비앤비 플랫폼을 통하여 게스트와 호스트 사이에
+            이루어지는 통신판매의 당사자가 아닙니다. 에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당 서비스를 제공하는 호스트에게 있습니다.</p>
+        </div>
+      </div>
+
     </div>
-    <span class="right">
-        <img src="/img/researchimg0129.svg" alt="분자">
-        <div class="research_info">마이크로바이옴 연구</div>
-        <div class="reserach_text">다양한 제품개발을 위하여 피부타입과<br>피부미생물을 분석해 피부 특성을 대표하는<br>skin microbiome을 발굴합니다.</div>
-        <button class="reserach_button">자세히 보기</button>
-    </span>
-  </div>
+  </footer>
 
-  <!-- INGREDIENTS -->
-    <article class="ingredients">
-      <div class="inner_narrow">
-        <div class="in_title">청정지역 홋카이도의 식물들과 각 나라 전통발효 원물을 모아 발효 소재를 개발합니다.</div>
-        <div class="ingredient">
-          <div class="box"> 
-            <span>세이지</span>
-            <img class="img1" src="/img/ingredientsimg0134.jpg" alt="세이지">
-          </div>
-          <div class="box"> 
-            <span>클로브 꽃</span>
-            <img class="img1" src="/img/ingredientsimg0135.jpg" alt="클로브 꽃">
-          </div>
-          <div class="box"> 
-            <span>석류나무</span>
-            <img class="img1" src="/img/ingredientsimg0136.jpg" alt="석류나무">
-          </div>
-          <div class="box"> 
-            <span>님나무</span>
-            <img class="img1" src="/img/ingredientsimg0137.jpg" alt="님나무">
-          </div>
-          <div class="box"> 
-            <span>생강</span>
-            <img class="img1" src="/img/ingredientsimg0138.jpg" alt="생강">
-          </div>
-          <div class="box"> 
-            <span>보스웰리아</span>
-            <img class="img1" src="/img/ingredientsimg0139.jpg" alt="보스웰리아">
-          </div>
-          <div class="box"> 
-            <span>고수씨</span>
-            <img class="img1" src="/img/ingredientsimg0140.jpg" alt="고수씨">
-          </div>
-          <div class="box"> 
-            <span>타임</span>
-            <img class="img1" src="/img/ingredientsimg0141.jpg" alt="타임">
-          </div>
-          <div class="box"> 
-            <span>팔각</span>
-            <img class="img1" src="/img/ingredientsimg0142.jpg" alt="팔각">
-          </div>
-          <div class="box"> 
-            <span>고추냉이</span>
-            <img class="img1" src="/img/ingredientsimg0143.jpg" alt="고추냉이">
-          </div>
-        </div>
-        <button class="in_button">자세히 보기</button>
-      </div>
-    </article>
-  <!-- RPODUCT -->
-    <section class="products">
-      <div class="inner">
-        <div class="product_title">
-          <a class="product_main" href="javascript:void(0)">Product<span class="arrow"> →</span></a>
-          <span class="product_sub">자연발효기술로 완성된<br>LG생활건강의 화장품을<br>소개합니다</span>
-        </div>
-        <div class="product">
+</body>
 
-          <article class="product__mission">
-            <div class="product_img">
-              <img src="./img/main-product-mission-y.jpg" alt="mission">
-            </div>
-            <a class="product_name">미션Y</a>
-            <div class="product_text">30년 이상의 효모 연구 노하우와 청정 지역 식물 발효액 성분을 적용한 발효 화장품</div>
-            <button class="product_button">자세히 보기</button>
-          </article>
-
-          <article class="product__sum">
-            <div class="product_img">
-              <img src="./img/main-product-sum.jpg" alt="mission">
-            </div>
-            <a class="product_name">숨 37º</a>
-            <div class="product_text">오랜 연구와 진보된 발효과학을 통해 건강한 피부를 약속하는 자연발효 화장품</div>
-            <button class="product_button">자세히 보기</button>
-          </article>
-
-        </div>
-      </div>
-    </section>
-  <!-- FOOTER -->
-    <footer class="footer">
-      <div class="inner">
-        <h2 Style="cursor: pointer" onclick="window.scrollTo(0,0);">Hokkaido<br>Microbiome<br>Center</h2>
-        <span class="material-symbols-outlined" Style="cursor: pointer;" onclick="window.scrollTo(0,0);">arrow_upward</span>        
-        <div class="footer__menu">
-          <a  href="javascript:void(0)">마이크로바이옴센터</a>
-          <a  href="javascript:void(0)">VR쇼룸투어</a>
-          <a  href="javascript:void(0)"> 자연발효연구</a>
-        </div>
-        <div class="footer_info">
-          <span>〒047-0001 일본 홋카이도 오타루시 와카타케초 19-25
-          </span>
-          <span>© LG H & H Tokyo R&D Center Ltd. All Rights Reserved.</span>
-          <span>
-            <a href="javascript:void(0)">CONTACT</a>
-            <a href="javascript:void(0)">PRIVACY POLIC</a>
-            <a href="javascript:void(0)">COOKIE POLICYY</a>
-          </span>
-        </div>
-      </div>
-
-    </footer>
-
-  </body>
 </html>
