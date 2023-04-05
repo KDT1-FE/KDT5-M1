@@ -6,7 +6,7 @@ https://www.megabox.co.kr/
 
 ### 클론 메가박스 서비스 링크
 
-https://kdt5-chadongmin--loquacious-alpaca-1cc888.netlify.app/
+https://kdt5-chadongmin--kdt5-cdm-megaboxclone.netlify.app/
 
 ## 과제 진행 내용
 
