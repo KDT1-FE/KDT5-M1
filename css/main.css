@@ -208,7 +208,7 @@ section .inner .main-section .main-menu .menu .menu-box {
 section .inner .main-section .main-menu .menu .menu-box .menu-text {
   display: inline-block;
   height: 100%;
-
+  box-sizing: border-box;
 }
 section .inner .main-section .main-menu .menu .menu-box:hover .menu-text {
   border-bottom: 4px solid #08a0e9;
@@ -276,14 +276,33 @@ section .inner .main-section .tweets-section .tweets .tweet .tweet_inside {
 section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .name-card{
   display: flex;
   justify-content: space-between;
-
+}
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .name-card .material-icons{
+  font-size: 15px;
+  font-weight: 400;
+  
 }
 section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .name-card .card {
   width: 100%;
   display: inline-flex;
   margin: 0;
 }
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .name-card .card .info{
+  padding: 0 4px;
+  color: #536471;
+}
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .name-card .card .name-full{
+  color: #0F1419;
+}
 section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_container {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  margin-top: 12px;
+}
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_container--four {
   width: 100%;
   height: 280px;
   border-radius: 10px;
@@ -291,19 +310,28 @@ section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_c
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 12px;
 }
-section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_container .pic_container__indiv {
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_container--four .pic_container__indiv--four {
   width: 50%;
   height: 50%;
 }
-section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .pic_container .pic_container__indiv img {
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside img {
   width: 100%;
 }
-
-section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet_inside-icons {
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet__inside-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 425px;
+  margin-top: 12px;
+}
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet__inside-icons .tweet__inside-icon {
   display: flex;
 }
-section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet__inside-icons .material-icons {
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet__inside-icons .tweet__inside-icon .number {
+padding: 0 12px;
+}
+section .inner .main-section .tweets-section .tweets .tweet .tweet_inside .tweet__inside-icons .tweet__inside-icon .material-icons {
   font-size: 18px;
 }
 
