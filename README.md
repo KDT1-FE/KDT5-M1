@@ -2,7 +2,7 @@
 ### 실제 사이트
 🔗 https://twitter.com
 ### 과제 결과
-🔗 
+🔗 https://remarkable-palmier-bf8451.netlify.app/
 ## 리뷰
 ### 사이트 선정 이유
 1. SNS 사이트에 관심이 있었고, 이 기회에 레이아웃을 분석해보고 싶다는 마음
