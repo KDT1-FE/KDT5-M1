@@ -7,6 +7,7 @@ const kakaoMenu = gnb[0].querySelector(".kakao-menu");
 const tech = gnb[2].querySelector(".tech");
 const promises = gnb[3].querySelector(".promises");
 
+// 서브메뉴 이벤트 함수
 function onKakaoMenu() {
   kakaoMenu.classList.toggle("active");
   tech.classList.remove("active");
@@ -31,18 +32,24 @@ function onPromises() {
   tech.classList.remove("active");
 }
 
+// 스크롤을 내렸을시 헤더 숨김 이벤트 함수
 function onScrollHeader() {
+  // 스크롤 위치가 1 이상인 경우
   if (window.scrollY >= 1) {
-    header.style.borderBottom = "1px solid #eee";
+    header.style.borderBottom = "1px solid #eee"; // 헤더 하단에 선 생성
+    // 스크롤 위치가 250 이상인 경우
     if (window.scrollY >= 250) {
-      header.style.transform = "translateY(-72px)";
+      header.style.transform = "translateY(-72px)"; // 헤더 높이만큼 올려서 없애기
     }
   } else {
+    // 생성된 선 none 처리
     header.style.borderBottom = "none";
+    // 높이만큼 올라가서 없어졌던 헤더 다시 높이만큼 내려오기
     header.style.transform = "translateY(0)";
   }
 }
 
+// 이벤트 리스너
 gnb[0].addEventListener("click", onKakaoMenu);
 gnb[1].addEventListener("click", onNews);
 gnb[2].addEventListener("click", onTech);
