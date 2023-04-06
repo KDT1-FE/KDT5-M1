@@ -19,6 +19,16 @@ section {
   line-height: 66px;
   max-width: 1296px;
   align-self: flex-start; }
+  .date h1 {
+    display: flex;
+    align-items: center; }
+    .date h1:first-child .date-icon {
+      background: url(https://www.kakaocorp.com/page/calendar/light/ico_date6.gif);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      margin-right: 8px; }
 
 .content-container {
   display: grid;
@@ -139,7 +149,10 @@ section {
 
 .third-card {
   width: 297px;
-  height: 192px; }
+  height: 192px;
+  position: absolute;
+  top: 0;
+  right: 0; }
   .third-card .num-container {
     display: flex;
     align-items: center;
@@ -162,7 +175,10 @@ section {
 
 .fourth-card {
   width: 297px;
-  height: 420px; }
+  height: 420px;
+  position: absolute;
+  right: 0;
+  top: 228px; }
   .fourth-card .card-title {
     font-size: 22px;
     line-height: 32px; }
@@ -181,7 +197,10 @@ section {
 
 .fifth-card {
   width: 297px;
-  height: 420px; }
+  height: 420px;
+  position: absolute;
+  left: 0;
+  top: 456px; }
   .fifth-card .card-title {
     font-size: 22px;
     line-height: 32px; }
@@ -200,7 +219,10 @@ section {
 
 .sixth-card {
   width: 297px;
-  height: 192px; }
+  height: 192px;
+  position: absolute;
+  left: 0;
+  top: 912px; }
   .sixth-card .card-title {
     font-size: 22px;
     line-height: 32px; }
@@ -219,7 +241,10 @@ section {
 
 .seventh-card {
   width: 297px;
-  height: 420px; }
+  height: 420px;
+  position: absolute;
+  right: 0;
+  top: 684px; }
   .seventh-card .card-title {
     font-size: 22px;
     line-height: 32px; }
@@ -238,7 +263,10 @@ section {
 
 .eighth-card {
   width: 297px;
-  height: 192px; }
+  height: 192px;
+  position: absolute;
+  right: 0;
+  top: 1140px; }
   .eighth-card .card-title {
     font-size: 22px;
     line-height: 32px; }
@@ -259,11 +287,11 @@ section {
   max-width: 1296px;
   width: 1296px;
   height: 540px;
-  margin: 36px 18px;
+  margin-top: 36px;
   padding: 54px 66px 0;
   border-radius: 14px;
   font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
-  background-color: #fff;
+  background: #fff;
   text-align: center;
   box-shadow: 2px 5px 40px 0 rgba(0, 0, 0, 0.08);
   display: flex;
@@ -295,6 +323,46 @@ section {
     background-size: contain;
     width: 900px;
     height: 240px; }
+
+.sns-content {
+  max-width: 1296px;
+  width: 1296px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 2px 5px 40px 0 rgba(0, 0, 0, 0.08);
+  padding: 0 40px;
+  border-radius: 14px; }
+  .sns-content h1 {
+    font-size: 32px;
+    font-weight: 700; }
+  .sns-content .sns-items {
+    display: flex;
+    justify-content: space-between; }
+    .sns-content .sns-items span {
+      width: 60px;
+      height: 60px;
+      background: #eee;
+      border-radius: 50%;
+      cursor: pointer; }
+      .sns-content .sns-items span:nth-child(2), .sns-content .sns-items span:nth-child(3), .sns-content .sns-items span:nth-child(4), .sns-content .sns-items span:nth-child(5) {
+        margin-left: 10px; }
+    .sns-content .sns-items .kakao {
+      background: url(https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png) 0 0/317px no-repeat; }
+    .sns-content .sns-items .youtube {
+      background: url(https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png) 0 0/317px no-repeat;
+      background-position-x: -64px; }
+    .sns-content .sns-items .instagram {
+      background: url(https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png) 0 0/317px no-repeat;
+      background-position-x: -128px; }
+    .sns-content .sns-items .facebook {
+      background: url(https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png) 0 0/317px no-repeat;
+      background-position-x: -192px; }
+    .sns-content .sns-items .linkedin {
+      background: url(https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png) 0 0/317px no-repeat;
+      background-position-x: -256px; }
 
 .etc-container {
   max-width: 1296px;
