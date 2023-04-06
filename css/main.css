@@ -1,5 +1,6 @@
 /* COMMON */
 body {
+  font-family: 'Noto Sans KR', sans-serif;
   height: 100vh;
   background-color: #fff;
   color: #0F1419;
@@ -346,7 +347,7 @@ section .inner .trending .searching input {
   background-color: rgba(0, 0, 0, 0);
 }
 section .inner .trending .menu-back{
-  height: 53px;
+  height: 63px;
 }
 section .inner .trending .trending_container {
   background-color: #efefef;
