@@ -47,9 +47,10 @@ section {
   border-radius: 14px;
   background: #fff;
   box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
-  transition: all 0.2s ease-in-out;
-  position: sticky; }
+  position: sticky;
+  height: 700px; }
   .item-card:hover {
+    transition: all 0.2s ease-in-out;
     transform: translateY(-5px);
     box-shadow: 4px 12px 20px 6px rgba(0, 0, 0, 0.18); }
 
@@ -112,7 +113,7 @@ section {
 .thumb {
   width: 100%;
   margin-top: 14px;
-  height: 245px;
+  height: 472px;
   background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/34eea597018700001.png?type=thumb&opt=C630x472.fwebp);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -274,7 +275,8 @@ section {
     font-size: 42px;
     line-height: 62px;
     display: block;
-    color: #000; }
+    color: #000;
+    font-weight: 700; }
   .culture-container span {
     display: inline-block;
     height: 33px;

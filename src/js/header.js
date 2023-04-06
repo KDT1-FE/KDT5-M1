@@ -32,9 +32,9 @@ function onPromises() {
 }
 
 function onScrollHeader() {
-  if (window.scrollY >= 72) {
+  if (window.scrollY >= 1) {
     header.style.borderBottom = "1px solid #eee";
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 250) {
       header.style.transform = "translateY(-72px)";
     }
   } else {
