@@ -33,16 +33,14 @@ section {
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  float: left;
   margin: 0 -18px;
   padding: 96px 0 0;
-  user-select: none; }
+  user-select: none;
+  width: 100%; }
 
 .content-item {
-  flex: 1;
   position: relative;
-  max-width: 655px;
-  margin: 0 18px; }
+  max-width: 655px; }
 
 .right-grid {
   width: 100%;
