@@ -25,20 +25,22 @@ subMenuEls.forEach((el)=>{
 })
 
 const openEl = document.querySelector('.sub-menu .material-icons');
-const exitEl = document.querySelector('.sub-menu__extend .material-icons');
+const subMenuHead = document.querySelector('.sub-menu__head');
+const exitEl = subMenuHead.querySelector('.sub-menu__extend .material-icons');
 openEl.addEventListener('click', (e)=>{
-  gsap.to(exitEl.parentElement, 0.4, {
+  gsap.to(exitEl.parentElement.parentElement, 0.4, {
     display: 'block',
-    width: '75%',
+    right: '0',
   })
 })
 exitEl.addEventListener('click', (e)=>{
   let target = e.currentTarget;
   console.log(target.parentElement);
-  gsap.to(target.parentElement, 0.4, {
+  gsap.to(subMenuHead.parentElement, 0.4, {
     display: 'none',
-    width: 0,
+    right: '-75%',
   })
+  //gsap.to(subMenuHead.children[0])
 })
 
 

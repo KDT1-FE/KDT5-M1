@@ -113,16 +113,18 @@ body header .menu .sub-menu .material-icons {
 body header .menu .sub-menu__extend {
   display: none;
   position: fixed;
-  right: 0;
+  right: -75%;
   top: 0;
   height: 100vh;
   background-color: #fff;
-  padding-top: 50px;
+  width: 75%;
+}
+body header .menu .sub-menu__extend .sub-menu__head {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
 }
 body header .menu .sub-menu__extend .material-icons {
-  top: 13px;
-  right: 10px;
-  position: fixed;
   font-weight: 900;
   color: gray;
   cursor: pointer;
@@ -156,9 +158,7 @@ body header .menu .sub-menu__extend .row--head .on {
   background-color: #f3f3f3;
 }
 body header .menu .sub-menu__extend .lang {
-  position: fixed;
-  top: 13px;
-  right: 50px;
+  margin-right: 40px;
 }
 body header .menu .sub-menu__extend .lang a {
   height: auto;

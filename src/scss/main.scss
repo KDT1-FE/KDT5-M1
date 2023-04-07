@@ -6,10 +6,6 @@ $news-gray: rgb(136, 136, 136);
 $blue: rgb(1, 159, 232);
 $white: rgb(255, 255, 255);
 
-@mixin langBtn {
-  
-}
-
 // temp
 .recruite {
   img {
@@ -138,16 +134,18 @@ body {
       .sub-menu__extend {
         display: none;
         position: fixed;
-        right: 0;
+        right: -75%;
         top: 0;
         height: 100vh;
         background-color: #fff;
-        padding-top: 50px;
+        width: 75%;
 
+        .sub-menu__head {
+          display: flex;
+          justify-content: end;
+          padding: 15px;
+        }
         .material-icons {
-          top: 13px;
-          right: 10px;
-          position: fixed;
           font-weight: 900;
           color: gray;
           cursor: pointer;
@@ -187,9 +185,7 @@ body {
         }
 
         .lang {
-          position: fixed;
-          top: 13px;
-          right: 50px;
+          margin-right: 40px;
 
           a {
             height: auto;

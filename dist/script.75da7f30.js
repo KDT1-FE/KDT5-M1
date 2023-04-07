@@ -144,21 +144,24 @@ subMenuEls.forEach(function (el) {
   });
 });
 var openEl = document.querySelector('.sub-menu .material-icons');
-var exitEl = document.querySelector('.sub-menu__extend .material-icons');
+var subMenuHead = document.querySelector('.sub-menu__head');
+var exitEl = subMenuHead.querySelector('.sub-menu__extend .material-icons');
 openEl.addEventListener('click', function (e) {
-  gsap.to(exitEl.parentElement, 0.4, {
+  gsap.to(exitEl.parentElement.parentElement, 0.4, {
     display: 'block',
-    width: '75%'
+    right: '0'
   });
 });
 exitEl.addEventListener('click', function (e) {
   var target = e.currentTarget;
   console.log(target.parentElement);
-  gsap.to(target.parentElement, 0.4, {
+  gsap.to(subMenuHead.parentElement, 0.4, {
     display: 'none',
-    width: 0
+    right: '-75%'
   });
+  //gsap.to(subMenuHead.children[0])
 });
+
 new Swiper('.inner .swiper', {
   loop: true,
   navigation: {
@@ -244,7 +247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64594" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52778" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
