@@ -1,45 +1,158 @@
-# 👀 자신이 원하는 사이트 레이아웃 클론
+# innisfree 홈페이지 클론코딩
+<br>
 
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.  
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.   
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+> 배포 결과물  
+https://innisfree-clone-coding.netlify.app/
 
-## 과제 수행 및 제출 방법
+<br>
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-1. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, `git branch KDT0_ParkYoungWoong`)
-1. 자신의 본명 브랜치에서 과제를 수행합니다.
-1. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(`main` 브랜치에 푸시하지 않도록 꼭 주의하세요, `git push origin KDT0_ParkYoungWoong`)
-1. 저장소에서 `main` 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, `main` <== `KDT0_ParkYoungWoong`)
+> 원본 사이트  
+https://www.innisfree.com/kr/ko/Main.do
 
-- `main` 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+<br>
+---
 
-## 필수 요구사항
+<br>
 
-- [ ] 과제에 대한 설명을 포함한 `README.md` 파일을 제공하세요!
-- [ ] 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- [ ] 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요! 
-- [ ] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+### CDN
+  1. `Swiper`  
+  https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js  
 
-## 선택 요구사항
+  2. `Reset`  
+   https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
 
-- [ ] `<header>`, `<section>` 등 시멘틱 태그를 최대한 활용해보세요.
-- [ ] 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- [ ] 부분적으로 BEM 방법론을 도입해보세요.
-- [ ] JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-- [ ] SCSS 등의 CSS 전처리도구를 도입해보세요.
-- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+<br>
 
-## 손쉬운 이미지 추출 방법
+### Scroll Js
+  1. Scroll (스크롤 시 Header show & hide 부분 적용)   
+  https://code.jquery.com/jquery-3.6.4.js
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+<br>
 
-1. 원하는 사이트 접속
-1. Image Downloader 확장 프로그램 실행
-1. 다운로드 원하는 이미지 선택
-1. 서브 폴더 이름(Save to subfolder) 명시
-1. 다운로드!
+> HTML  
+> -header / mainco / aside / footer
+
+```html
+<header></header>
+
+<!-- mainco = maincontents -->
+<section class="mainco"></section> 
+
+<!-- aside = 최근 본 제품 및 ScrollTop 부분 -->
+<aside></aside>
+
+<footer></footer>
+```
+
+<br>
+
+> CSS   
+> -공통으로 쓰이는 태그의 속성과 값은 COMMON으로 적용
+
+```css
+/* COMMON  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 16px/1.5 'SDNeoL', 'notoR', 'Malgun Gothic', '맑은 고딕', '돋움', sans-serif;
+  letter-spacing: -.06em;
+  font-size: 16px;
+  color: #777;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  width: 100%;
+}
+button {
+  overflow: visible;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+nav {
+  display: block;
+}
+input {
+  outline: none;
+}
+
+/* header & main-co & aside & footer 안에 이런 형식으로 최소 및 최대를 설정하여 진행했습니다.*/
+div {
+  min-width: 1024px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* display: flex를 사용했습니다. */
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+```
+
+<br>
+
+> Javascript   
+> -Swiper : Event 부분 슬라이드   
+> -Jquery: 스크롤 시 상단으로  
+> -스크롤 시 Header show & hide
+
+```javascript
+// Swiper를 활용한 배너 슬라이드
+new Swiper('.slideWrap .swiper-container', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+  },
+});
+// .swiper-button-prev 와 next를 클릭 시 좌우로 슬라이드가 가능하고, autoplay delay를 5초로 설정하여 5초 후 다음 슬라이드가 보여지도록 했습니다.
+
+
+// ASIDE Part - 버튼 클릭 시 페이지 상단으로 이동
+const $topBtn = document.querySelector(".btnDocTop");
+
+$topBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+// .btnDocTop를 클래스로 사용하는 버튼을 클릭 시 상단으로 자연스럽게 이동하도록 설정했습니다.
+
+
+// HEADER-FIXED - 스크롤 시 Show & Hide
+$(document).ready(function () {
+  var navHeight = $("header").height();
+  $(".fix--head").hide();
+  $(window).scroll(function () {
+    var rollIt = $(this).scrollTop() >= navHeight;
+    if (rollIt) {
+      $(".fix--head").show().css({
+        "position": "fixed",
+      });
+    } else {
+      $(".fix--head").hide();
+    }
+  });
+});
+// header의 영역이 끝난 후 .fix-head 클래스를 가진 요소가 fixed된 상태에서 보여지고 반대로 스크롤이 올라간 후에는 사라지는 것을 설정했습니다. 
+```
