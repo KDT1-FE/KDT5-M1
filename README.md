@@ -145,7 +145,7 @@ setInterval(() => {
 
 
 ### ⭐️ 4) SCSS 등의 CSS 전처리도구를 도입해보세요.
--> scss 를 사용하여 스타일을 작성하였습니다. 
+-> scss 를 사용하여 스타일을 작성하였습니다.  
 -> scss 의 를사용하여 ,  심플한 표기법으로 CSS를 구조화 함으로써 , 가독성과 재사용성을 높여주어 유지보수가 쉽도록 구현하였습니다. <br/>
 
 ✨scss 설치법 
@@ -158,7 +158,7 @@ npm i -g sass --save-dev
 | <img width="383" alt="image" src="https://user-images.githubusercontent.com/101441685/229776541-2381234c-9450-42f2-8703-b28ef953b75d.png">|<img width="382" alt="image" src="https://user-images.githubusercontent.com/101441685/229776722-6a922e9d-4f73-4cd5-9d57-15e2eb6895ef.png">|  
 
 ### ⭐️ 5) SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
--> webpack 보다 parcel 이 환경 세팅하기에 조금더 쉬운것 같아 parcel 을 사용하였습니다. 또한 큰 프로젝트가 아닌 작은 규모릐 프로젝트 이기 때문에 해당 번들러를 사용하였습니다.<br/> 
+-> webpack 보다 parcel 이 환경 세팅하기에 조금더 쉬운것 같아 parcel 을 사용하였습니다. 또한 큰 프로젝트가 아닌 작은 규모의 프로젝트 이기 때문에 해당 번들러를 사용하였습니다.<br/> 
 -> 번들러는 단순히 자바스크립트 파일들 뿐만 아니라, 애플리케이션에 필요한 모든 종류의 파일들을 모듈 단위로 나누어 최소한의 파일 묶음(번들)으로 만들어 냅니다. 뿐만 아니라 자바스크립트 파일을 외부에서 알아 보기 힘들게 코드를 변환하는 작업 을 한다거나, 최신 문법의 자바스크립트를 모든 웹 브라우저에서 작동할 수 있게 ES5문법으로 변환(Transpile)하는 등 다양한 기능을 지원합니다. <br/>
 
 <img width="280" alt="image" src="https://user-images.githubusercontent.com/101441685/229783798-6688552e-be01-41ec-8afc-d0ceb3cb0642.png">
@@ -178,7 +178,7 @@ npm i -g sass --save-dev
 
 -------
 
-
+## 2023-04-09 1차 피드백 
 
 
 
