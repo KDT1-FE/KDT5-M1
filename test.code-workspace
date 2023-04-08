@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Desktop/test"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "KDT5-M1"
+	}
+}
