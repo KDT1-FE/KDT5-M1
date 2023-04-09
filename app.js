@@ -62,11 +62,11 @@ dark.addEventListener('click', function () {
     if(change.value === '어두운 테마: 사용 안함') {
         add();
         change.value = '어두운 테마: 사용';
-        document.querySelector('.material-icons.sun').textContent = 'dark_mode';
+        sun.textContent = 'dark_mode';
     } else {
         remove();
         change.value = '어두운 테마: 사용 안함';
-        document.querySelector('.material-icons.sun').textContent = 'light_mode';
+        sun.textContent = 'light_mode';
     }
 });
 
@@ -78,6 +78,6 @@ function add () {
 };
 function remove () {
   body.classList.remove('body-night');
-        footer.classList.remove('footer-night');
-        header.classList.remove('header-night');
+  footer.classList.remove('footer-night');
+  header.classList.remove('header-night');
 };
