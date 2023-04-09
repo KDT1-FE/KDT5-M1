@@ -1,4 +1,4 @@
-// search
+// search : 좌측 퀵 메뉴의 검색 버튼 클릭 시 검색창이 나타나고 재 클릭시 닫힘
 const searchUnderButton = document.querySelector('.btn-search')
 const searchTopButton = document.querySelector('.ico-search')
 const searchBox = document.querySelector('.search-box')
@@ -10,7 +10,7 @@ searchTopButton.addEventListener('click', function () {
   searchBox.classList.add('hide')
 })
 
-// totalmenu
+// totalmenu : 좌측 퀵 메뉴의 전체 메뉴 열기 버튼 클릭 시 나타나는 전체 메뉴  
 const totalMenuButton = document.querySelector('.btn-total-menu')
 const totalMenuCloseButton = document.querySelector('.btn-menu-close')
 const totalMenu = document.querySelector('.total-menu')
@@ -29,7 +29,7 @@ totalMenuCloseButton.addEventListener('click', function () {
   body.style.overflow = 'auto'
 })
 
-// scroll up 
+// scroll up : 우측 고정 버튼으로 클릭 시 화면 최상단으로 이동 
 const scrollupButton = document.querySelector('.scroll-up')
 scrollupButton.addEventListener('click', function () {
   window.scrollTo({
@@ -37,7 +37,7 @@ scrollupButton.addEventListener('click', function () {
   })
 })
 
-// swiper
+// swiper : swiper.js를 활용한 배너 슬라이드
 new Swiper('.main-visual .swiper', {
   autoplay: {
     delay: 4000
