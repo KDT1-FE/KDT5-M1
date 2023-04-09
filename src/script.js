@@ -4,7 +4,6 @@ subMenuEls.forEach((el)=>{
     
     let target = e.currentTarget; // .row__sub
     let target2 = e.target;
-    console.log(target2);
     if (target2.classList.contains('on')) {
       gsap.to(target.children[1], 0.5, {
         display: 'none',
@@ -27,20 +26,17 @@ subMenuEls.forEach((el)=>{
 const openEl = document.querySelector('.sub-menu .material-icons');
 const subMenuHead = document.querySelector('.sub-menu__head');
 const exitEl = subMenuHead.querySelector('.sub-menu__extend .material-icons');
-openEl.addEventListener('click', (e)=>{
+openEl.addEventListener('click', ()=>{
   gsap.to(exitEl.parentElement.parentElement, 0.4, {
     display: 'block',
     right: '0',
   })
 })
-exitEl.addEventListener('click', (e)=>{
-  let target = e.currentTarget;
-  console.log(target.parentElement);
+exitEl.addEventListener('click', ()=>{
   gsap.to(subMenuHead.parentElement, 0.4, {
     display: 'none',
     right: '-75%',
   })
-  //gsap.to(subMenuHead.children[0])
 })
 
 
