@@ -1,9 +1,11 @@
 html, body, main { 
   scroll-behavior: smooth !important;
+  text-decoration: inherit;
 }
 
 *{
   list-style: none;
+  text-decoration: inherit;
 }
 
 
@@ -13,6 +15,7 @@ body{
   color: #7d7d7d;
   font-family: 'NSKR', '맑은 고딕';
   line-height: 1;
+
 } 
 
 
@@ -411,28 +414,6 @@ body::-webkit-scrollbar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #section3{
   position: relative;
   width: 100%;
@@ -563,9 +544,65 @@ body::-webkit-scrollbar {
 
 .main4_banner_wrap{
   position: relative;
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 400px;
+  margin-top: 450px;
+  height: auto;
+  font-size: 25px;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
+  text-decoration: inherit;
 }
+
+
+
+.main4_banner_wrap .banner_card{
+  padding: 60px;
+  color: #fff;
+}
+
+.main4_banner_wrap .banner_card .top_img{
+  border-bottom: 1px solid rgb(255,  255, 255, 1);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: inherit;
+
+}
+
+
+.main4_banner_wrap .banner_card .top_img img{
+  color: #fff;
+  margin: 0 auto;
+}
+
+
+/* 앵커 */
+
+#ancor {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 450px;
+  right:100px;
+  height: 200px;
+  z-index: 99999;
+}
+
+#ancor span {
+  border: 2px solid #9b8c8cfb;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+
 
 
 
