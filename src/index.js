@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-const sliders = document.getElementsByClassName("test");
+const sliders = document.getElementsByClassName("back_slide");
 let currentSlideIndex = 0;
 const intervalDuration = 3000; // 5 seconds
 
