@@ -12,20 +12,28 @@ https://www.innisfree.com/kr/ko/Main.do
 <br>
 ---
 
+
+
 <br>
 
 ### CDN
   1. `Swiper`  
-  https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js  
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1 swiper-bundle.min.js" integrity="sha512-J0i98QZsJc12MkNEyDbinrKKoe7Jiw0rtryAXBesZrVwRkaqgP9QNCPyo5sMZ2jfiJQb+9RIE4I3xNl8fFqQIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+``` 
 
-  2. `Reset`  
-   https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
+  1. `Reset`  
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+```
 
 <br>
 
 ### Scroll Js
   1. Scroll (스크롤 시 Header show & hide 부분 적용)   
-  https://code.jquery.com/jquery-3.6.4.js
+```html
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+```
 
 <br>
 
