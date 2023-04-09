@@ -1,7 +1,9 @@
 *{
   scroll-behavior: smooth;
   list-style: none;
+  color: inherit;
 }
+
 
 
 body{
@@ -9,6 +11,8 @@ body{
   color: #7d7d7d;
   font-family: 'NSKR', '맑은 고딕';
   line-height: 1;
+  color: inherit;
+  
 } 
 
 

@@ -1,7 +1,9 @@
 *{
   scroll-behavior: smooth;
   list-style: none;
+  color: inherit;
 }
+
 
 
 body{
