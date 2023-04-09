@@ -1,12 +1,22 @@
+
 /* COMMON */
+:root {
+  --white: #ffff;
+  --black: #000000;
+  --gray: #656565;
+  --red: #ED2B2A;
+  --beige: #F3DEBA; 
+  --yellow: #FFD93D; 
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Consolas , serif;
   font-family: "Noto Sans KR", sans-serif;
-  color: #333;
 }
+
 img {
   display: block;
 }
@@ -19,7 +29,6 @@ a {
   margin: 0 auto;
   position: relative;
   padding-bottom: 70px;
-  //background-color: rgb(219, 140, 140);
 }
 
 /* 노말라이즈 */
@@ -31,11 +40,9 @@ li {
 }
 h1{
   font-size:50px;
-  color: #fff;
 }
 h5{
   font-size:15px;
-  color: #fff;
 }
 h3 {
   font-size: 30px;
@@ -50,7 +57,7 @@ h3 {
   position: absolute;
   top: 100px;
   left: -15px;
-  color: black;
+  color: var(--black);
 }
 
 @mixin BlackButton {
@@ -61,9 +68,9 @@ h3 {
   height: 52px;
   position: absolute;
   top: 100px;
-  color: white;
-  border: 1px solid white;
-  background-color: black;
+  color: var(--white);;
+  border: 1px solid var(--white);
+  background-color: var(--black);
   left: -15px;
 }
 
@@ -80,7 +87,7 @@ h3 {
 }
 
 .bg-center .text_c_w{
-  color: white;
+  color: var(--white);
 }
 
 @mixin TitleStyle {
@@ -90,27 +97,26 @@ h3 {
   position: absolute;
   left: 25px;
 }
-
 /* 노말라이즈 끝 */
+
 
 /* 배경이미지 작업 시작 */
 .backgroundBox {
   width: 100vw;
-  //height: 7000px;
   position:absolute;
 }
 /* 배경이미지 작업 끝 */
 
 
 /* HEADER START*/
-header {
+nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   height: 70px;
-  background-color: white;
+  background-color: var(--white);
   z-index: 200;
   display: flex;
   justify-content: space-between;
@@ -141,7 +147,7 @@ header {
     .item .item__name {
       padding: 10px 4px 10px 10px;
       font-size: 17px;
-      color: #333;
+      color: var(--black);
       transition: all;
     }
   }
@@ -163,7 +169,7 @@ header {
           font-size: 16px;
           padding: 11px 16px;
           display: block;
-          color: #656565;
+          color: var(--gray);
         }
     }  
   }
@@ -182,27 +188,22 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
-}
-#slider ul{
-  position: relative;
-  list-style: none;
-  width: 9999%;
-  right: 3px;
+
+  ul{
+    list-style: none;
+    width: 9999%;
+    right: 3px;
+
+    li{
+      position: relative;
+      width: 99vw;
+      height: 100vh;
+      float: left;
+    }
+  }
 }
 
-#slider ul li{
-  position: relative;
-  width: 99vw;
-  height: 100vh;
-  float: left;
-}
-
-.test.active {
-  display: block;
-  opacity:1;
-  transition: opacity 2s ease-out 5s;
-}
-.test {
+.back_slide {
   position:absolute;
   top:0;
   left:0;
@@ -211,50 +212,40 @@ header {
   transition: opacity 1s ease-in-out;
 }
 
-#slider ul .test.first{
-  background: url("../img/img1.png");
-  @include ImgSize;
-  position: absolute;
+.active {
+  display: block;
+  opacity:1;
+  transition: opacity 2s ease-out 5s;
 }
-#slider ul .test.s{
-  background: url("../img/img2.png");
-  @include ImgSize;
-}
-#slider ul .test.t{
-  background: url("../img/img3.png");
-  @include ImgSize;
-}
-#slider ul .test.f{
-  background: url("../img/img4.png");
-  @include ImgSize;
-}
-#slider ul .test.five{
-  background: url("../img/img5.png");
-  @include ImgSize;
-}
-#slider ul .test.six{
-  background: url("../img/img6.png");
-  @include ImgSize;
-}
-#slider ul .test.seven{
-  background: url("../img/img7.png");
-  @include ImgSize;
-}#prev, #next{
+
+$slide_img_list: (img1, img2, img3, img4, img5, img6, img7);
+  @each $back_slide in $slide_img_list {
+    $index:index($slide_img_list, $back_slide);
+      .back_slide:nth-child(#{$index}){
+        @include ImgSize;
+        background-image: url("../img/#{$back_slide}.png");
+      }  
+  }
+
+#prev, #next{
   z-index: 999;
   position: absolute;
   top: 45%;
   font-size: 35px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-family: sans-serif;
   transition: .3s ease;
 }
+
 #prev:hover, #next:hover{
   transform: scale(1.5)
 }
+
 #prev{
   left: 50px;
 }
+
 #next{
   right: 50px;
 }
@@ -274,55 +265,51 @@ header {
   p {
     font-size: 14px;
     margin-bottom: 23px;
-  }
+  };
 
   span {
     display: block;
-  }
+  };
 
-  .main_text_first h1{
-    color: black;
-  }
-
-  .main_text_second h5 {
-    color: black;
-  }
+  .main_text_first h1 h5{
+    color: var(--black);
+  };
 
   .text_first {
-    color: white;
+    color: var(--white);
     font-weight: bold;
     margin-bottom: 20px;
-  }
+  };
 
   .text_second {
-    color: white;
+    color: inherit;
     margin-top: 10px;
-  }
+  };
 
   .color_r {
     @include ButtonCommon;
     margin-left: 350px;
     margin-top: 163px;
-    color: #fff;
-    background-color: red;
-  }
+    color: var(--white);
+    background-color: var(--red);
+  };
 
   .color_y {
     @include ButtonCommon;
     margin-left: 350px;
     margin-top: 135px;
-    background-color: rgb(205, 176, 112);
-    color: #fff;
-  }
+    background-color: var(--beige);
+    color: var(--white);
+  };
 
   .button {
     @include ButtonCommon;
     margin-top: 140px;
     margin-left: 350px;
-    color: white;
-    background-color: black;
-  }
-}
+    color: var(--white);
+    background-color: var(--black);
+  };
+};
 
 @mixin SizeRound {
   font-size: 20px;
@@ -332,18 +319,18 @@ header {
   position: absolute;
   bottom: 90px;
   margin-left: 25px;
-  background-color: rgb(10, 10, 10);
-}
+  background-color: var(--black);
+};
 
 @mixin SubBackground{
   width: 100%;
   min-height: 1000px;
   position: relative;
-}
+};
 
 .subscript {
   @include SubBackground;
-  background-color: white;
+  background-color: var(--white);
  
   .grid-box{
     width: 100%;
@@ -351,7 +338,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 0; // 수정 불가.
     margin: auto auto;
     position: absolute;
     text-align: center;
@@ -368,180 +355,140 @@ header {
       top: 0;
       bottom: 0;
       margin: auto auto;
-    }
-  }
+    }; 
+  };
 
-.item{
-  width: 100%;
+  .item{
+    width: 100%;
 
     .title {
       @include TitleStyle;
-    
+
+      
       h3{
         width: 130px;
         position: absolute;
         top: 10px;
-        color: black;
-      }
-   
+        color: var(--black);
+      };
+  
       p {
         width: 180px;
         position: absolute;
         top: 80px;
-        color: black;
-      }
-    }
+        color: inherit;
+      };
+    };
 
-      .startbutton {
-        @include ButtonCommon;
-        border: solid 1px rgb(8, 8, 8);
-        margin-top: 60px;
-      }
-  
-      .Round_text{
-        @include SizeRound;
+    .Round_text{
+      @include SizeRound;
 
-        p {
-          font-weight: 400;
-          color: yellow;
-        }
-      }
-
-      .Round_text_XL {
-        @include SizeRound
-      }
-
-      .Round_text_XL > P {
+      p {
         font-weight: 400;
-        margin-left: 3px;
-        color: yellow;
-      }
-}
+        color: var(--yellow);
+      };
+    };
+
+    .Round_text_XL {
+      @include SizeRound
+    };
+
+    .Round_text_XL > P {
+      font-weight: 400;
+      margin-left: 3px;
+      color: var(--yellow);
+    };
+  };
+
+  .startbutton {
+    @include ButtonCommon;
+    border: solid 1px var(--black);
+    margin-top: 60px;
+  };
 
   .bottom_text{
     @include CommonText;
     bottom: 5px;
-  } 
+  }; 
 
-  .item:nth-child(1){
-    background-color: white;
-  }
-  .item:nth-child(2){
-    background-image: url(../img/flower1.jpg);
-    @include ImgSize;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-  }
-  .item:nth-child(3){
-    background-image: url(../img/flower2.jpg);
-    @include ImgSize;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-  }
-  .item:nth-child(4){
-    background-image: url(../img/flower3.jpg);
-    @include ImgSize;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-  }
-}
-
-
-@mixin text_white {
-  color: white;
-  font-size: 18px;
-}
-
-.text_w {
-  @include text_white;
-}
-
-.title > h3{
-  color: white;
-}
+  $image_list: (0, flower1, flower2 ,flower3);
+    @each $item in $image_list {
+    $index:index($image_list, $item);
+    
+    .item:nth-child(#{$index}){
+      @if $item == 0 {
+        background-color: var(--white);
+      }@else{
+        @include ImgSize;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-image: url("../img/#{$item}.jpg");
+      };
+    };
+  };
+};
 
 .s_item .title{
   @include TitleStyle;
-}
+  color: var(--white);
+};
 
+$seconed_image_list: (0, flower4, flower5 ,flower6);
+@each $s_item in $seconed_image_list {
+  $index:index($seconed_image_list, $s_item);
 
-.s_item:nth-child(1){
-  background-color: black;
-}
-.s_item:nth-child(2){
-  background-image: url(../img/flower4.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.s_item:nth-child(3){
-  background-image: url(../img/flower5.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.s_item:nth-child(4){
-  background-image: url(../img/flower6.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
+    .s_item:nth-child(#{$index}){
+      @if $s_item == 0 {
+        background-color: var(--black);
+      }@else{
+        @include ImgSize;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-image: url("../img/#{$s_item}.jpg");
+      };
+    };
+};
 
 .s_bottom_text{
   @include CommonText;
   bottom: -20px;
-} 
-
-.s_bottom_text > P{
- @include text_white;
-}
-
+  color: var(--white)
+}; 
 
 .storebutton{
   @include BlackButton;
   margin-top: 60px;
-}
+};
 
 .s_item .Round_text{
   @include SizeRound;
 
   p{
     font-weight: 400;
-    color: yellow;
-  }
-}
+    color: var(--yellow);
+  };
+};
 
 .t_item .title{
   @include TitleStyle;
-}
+};
 
-.t_item:nth-child(1){
-  background-color: white;
-}
-.t_item:nth-child(2){
-  background-image: url(../img/flower7.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.t_item:nth-child(3){
-  background-image: url(../img/flower8.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.t_item:nth-child(4){
-  background-image: url(../img/flower9.jpg);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
+$third_image_list: (0, flower7, flower8 ,flower9);
 
-.allbutton{
-  @include ButtonCommon;
-  border: solid 1px rgb(8, 8, 8);
-  margin-top: 60px; 
-}
+@each $t_item in $third_image_list {
+  $index:index($third_image_list, $t_item);
+
+    .t_item:nth-child(#{$index}){
+      @if $t_item == 0 {
+        background-color: var(--white);
+      }@else{
+        @include ImgSize;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-image: url("../img/#{$t_item}.jpg");
+      };
+    };
+};
 
 .t_bottom_text{
   @include CommonText;
@@ -549,30 +496,34 @@ header {
   margin-left: 1px;
   :nth-child(2){
     text-decoration: line-through;
-    color: #d1d1d1;
+    color: var(--gray);
     font-weight: 200;
     font-size: 12px;
     margin-top: 5px;
-  }
+  };
   :nth-child(3){
     font-weight: bold;
     margin-top: 5px;
-  }
-} 
+  };
+}; 
 
-.t_item .inner_text{
-  @include SizeRound;
+.t_item{
+  color: var(--black);
 
-  p{
-    font-weight: 400;
-    color: yellow;
-  }
-}
+  .inner_text{
+    @include SizeRound;
+  
+    p{
+      font-weight: 400;
+      color: var(--yellow);
+    };
+  };
+};
 
 .classbutton{
   @include BlackButton;
   margin-top: 60px; 
-}
+};
 
 .classgrid-box {
   width: 90%;
@@ -581,13 +532,18 @@ header {
   margin-left: 5vw;
   position: absolute;
   top: 10px;
-}
+};
 
 .f_sub{
   display: grid;
   grid-template-columns:250px 600px 600px;
   grid-template-rows: 600px;
   gap: 3%;
+  color: var(--white);
+
+  .f_item .title{
+    @include TitleStyle;
+  };
 
   .f_inner_text{
     width: 400px;
@@ -595,23 +551,8 @@ header {
     position: absolute;
     top: 50px;
     margin-left: 50px;
-    
-    :nth-child(1){
-      color: white;
-      font-weight: 600;
-      font-size: 30px;
-    }
-
-    :nth-child(2){
-      color: white;
-      font-size: 18px;
-      margin-top: 15px;
-    }
-  }
-
-  .f_item .title{
-    @include TitleStyle;
-  }
+    color: inherit;
+  };
 
   .f_bottom_text{
     width: 300px;
@@ -619,45 +560,39 @@ header {
     position: absolute;
     top: 320px;
     left: 350px;
-  }
+  };
 
   .f_bottom_text > p{
-    color: rgb(249, 249, 249);
     font-size: 90px;
     opacity: 0.7;
-  }
-}
+    margin-left: 10px;
+  };
+};
 
-.one_text > p{
-  color: white;
+.one_text {
+  color: inherit;
   font-size: 90px;
   opacity: 0.7;
   position: absolute;
   top: 320px;
   margin-left: 40px;
-}
+};
 
-.f_item:nth-child(1){
-  background-color: black;
-}
-.f_item:nth-child(2){
-  background-image: url(../img/hobby.png);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.f_item:nth-child(3){
-  background-image: url(../img/oneday.png);
-  @include ImgSize;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
+$class_image_list: (0, hobby, oneday);
+@each $f_item in $class_image_list {
+  $index:index($class_image_list, $f_item);
 
-.allContent {
-  @include ButtonCommon;
-  border: solid 1px rgb(8, 8, 8);
-  margin-top: 80px;
-}
+    .f_item:nth-child(#{$index}){
+      @if $f_item == 0 {
+        background-color: var(--black);
+      }@else{
+        @include ImgSize;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-image: url("../img/#{$f_item}.png");
+      }
+    }
+};
 
 .content_sub{
   display: grid;
@@ -671,49 +606,48 @@ header {
   top: 0;
   bottom: 0;
   margin: auto auto;
-}
-
+};
 
 .content_sub .title{
   @include TitleStyle;
-}
+  background-color: inherit;
+};
 
 .content_sub .content_item {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 4px;
-}
+};
 
 @mixin InBoxStyle{
   width: 360px;
   height: 420px;
   margin: 20px 20px 20px 20px;
-}
+};
 
 .content_item{
-
-  .inner_box{
+ 
+  .inner_box:nth-child(1){
     @include InBoxStyle;
     @include ImgSize;
     background-image: url('../img/content1.jpg');
-  }
-   
-  .inner_canation{
+  };
+
+  .inner_canation:nth-child(1){
     @include InBoxStyle;
     @include ImgSize;
     background-image: url('../img/content2.jpg');
-  }
+    };
 
   .inner_market{
     @include InBoxStyle;
     @include ImgSize;
     background-image: url('../img/content3.jpg'); 
-  }
+  };
 
   .box_text{
     width: 350px;
     height: 50px;
     position: relative;
-    //background-color: #656565;
     top: 450px;
     font-weight: 500;
     font-size: 22px; 
@@ -727,15 +661,16 @@ header {
       top: 100px;
       bottom: 0;
       margin: auto auto;
-      border: solid 1px black
-    }
-  }
-}
+      border: solid 1px var(--black);
+    };
+  };
+};
+
 @mixin PhotoStyle{
   width: 300px;
   height: 600px;
   border-radius: 10px;
-}
+};
 
 .PhotoContainer {
   width: 1550px;
@@ -749,41 +684,18 @@ header {
   display: flex;
   gap:20px;
   
+  $Photo_list: (photo1, photo2, photo3, photo4, photo5);
 
-  .Photo:nth-child(1){
-    background-image: url(../img/photo1.png);
-    @include PhotoStyle;
-    @include ImgSize;
-    opacity: 0.7;
-  }
-  
-  .Photo:nth-child(2){
-    background-image: url(../img/photo2.png);
-    @include PhotoStyle;
-    @include ImgSize;
-    opacity: 0.7;
-  }
-  
-  .Photo:nth-child(3){
-    background-image: url(../img/photo3.png);
-    @include PhotoStyle;
-    @include ImgSize;
-    opacity: 0.7;
-  }
+    @each $Photo in $Photo_list {
+      $index:index($Photo_list, $Photo);
 
-  .Photo:nth-child(4){
-    background-image: url(../img/photo4.png);
-    @include PhotoStyle;
-    @include ImgSize;
-    opacity: 0.7;
-  }
-
-  .Photo:nth-child(5){
-    background-image: url(../img/photo5.png);
-    @include PhotoStyle;
-    @include ImgSize;
-    opacity: 0.7;
-  }
+      .Photo:nth-child(#{$index}){
+        @include PhotoStyle;
+        @include ImgSize;
+        opacity: 0.7;
+        background-image: url("../img/#{$Photo}.png");
+      }    
+    };
 
   .sub{
     @include PhotoStyle;
@@ -803,6 +715,7 @@ header {
       transform: translate(-50%, 0px);
       z-index: 100;
       transition: 0.5s;
+      color: var(--white);
 
         .linkButton{
           min-width: 180px;
@@ -814,56 +727,54 @@ header {
           padding: 15px;
           margin-top: 23px;
           text-align: center;
-          color: white;
-        }
+        };
 
         p {
-          color: white;
           text-align: center;
           font-weight: 500;
           font-size: 30px;
           z-index: 300;
           opacity: 1;
-        }  
+        };
 
-      }
-  }
+    };
+  };
 
   .Photo:hover{
     opacity: 1;
     transition: opacity 0.1s ease-out 0s;
-  }
+  };
 
   .sub:hover .summary{
     transform: translate(-150px, 50px);
     transition: 0.5s;
-  }
+  };
 
   .sub:hover .linkButton{
     opacity: 1;
     margin-top: 33px;
     transition: opacity 0.1s ease-out 0s;
-  }
+  };
 
   :nth-child(even){
     margin-top: 50px;  
-  }
-}
+  };
+};
 
 
 /* FOOTER */
 footer{
   width: 100%;
   height: 320px;
-  background-color: #000;
-  border-top: 1px solid gray;
+  background-color: var(--black);
+  border-top: 1px solid var(--gray);
 
   #inner {
     width: 100%;
     height: 301px;
     display: flex;
     position: relative;
-  }
+  };
 
   .footer_box {
     width: 100%;
@@ -873,48 +784,44 @@ footer{
     top: 0;
     bottom: 0;
     margin: auto auto;
+    color: var(--white);
 
     img {
       width: 250px;
       margin-top: 50px;
-    }
+    };
 
     .centernumber {
       width: 600px;
       height: 50px;
       display: flex;
-      color: white;
-    }
+    };
     .center {
       padding: 10px 10px 10px 10px;
       width: 100px;
       height: 45px;
-      border: 1px solid white;
+      border: 1px solid var(--white);
       border-radius: 5px;
-      color: white;
       display: flex;
       margin-top: 10px;
       margin-left: 10px;
       margin-right: 40px;
-    }
+    };
 
     .size{
       width: 1100px;
       height: 40px;
       margin-top: 10px;
-      //background-color: yellow;
       font-size: 11px;
-      color: white;
 
       p {
-        color: white;
+        color: inherit;
       }
-    }
+    };
 
     address {
       font-size: 11px;
       margin-left: 10px;
-      color: white;
       margin-bottom: 10px;
       margin-top: 20px;
     }
@@ -922,72 +829,65 @@ footer{
     address span {
       font-size: 11px;
       margin-left: 10px;
-      color: #d16060;
       margin-bottom: 10px;
       margin-top: 10px;
-     
-    }
+    };
 
     #copyright {
       font-size: 12px;
       margin-left: 10px;
-      color: #fff;
-    }
+    };
 
     address span {
-      color: #fff;
       margin-left: 7px;
       padding-left: 7px;
-      border-left: 1.5px solid #fff;
+      border-left: 1.5px solid var(--white);
+    };
+  };
+
+  #inner #right_footer {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    right: 100px;
+    bottom: 160px;
+
+    i {
+      cursor: pointer;
+      font-size: 24px;
+      text-align: right;
+      margin-top: 100px;
+      position: absolute;
+      right: 0;
+      margin-bottom: 40px;
     }
-  }
-}
 
-footer > #inner #right_footer {
-  width: 180px;
-  height: 80px;
-  position: absolute;
-  right: 100px;
-  bottom: 160px;
-}
+    #center {
+      cursor: pointer;
+      text-align: right;
+      font-size: 11px;
 
-footer > #inner #right_footer i {
-  cursor: pointer;
-  color: #fff;
-  font-size: 24px;
-  text-align: right;
-  margin-top: 100px;
-  position: absolute;
-  right: 0;
-  margin-bottom: 40px;
-}
+      span {
+        margin-left: 7px;
+        padding-left: 7px;
+        border-left: 1.5px solid var(--white);
+      };
+    };
 
-footer > #inner #right_footer #center {
-  cursor: pointer;
-  text-align: right;
-  font-size: 11px;
-  color: #fff;
-}
+    #last {
+      cursor: pointer;
+      font-size: 12px;
+      text-align: right;
+      margin-top: 15px;
 
-footer > #inner #right_footer #center span {
-  color: #fff;
-  margin-left: 7px;
-  padding-left: 7px;
-  border-left: 1.5px solid #fff;
-}
+      span {
+        margin-left: 10px;
+      };
+    }; 
+  };
+};
 
-footer > #inner #right_footer #last {
-  cursor: pointer;
-  font-size: 12px;
-  text-align: right;
-  color: #fff;
-  margin-top: 15px;
-}
 
-footer > #inner #right_footer #last span {
-  color: #fff;
-  margin-left: 10px;
-}
 
 
 
