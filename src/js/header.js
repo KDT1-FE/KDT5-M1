@@ -40,6 +40,9 @@ function onScrollHeader(e) {
     // 스크롤 위치가 250 이상인 경우
     if (e.deltaY >= 250) {
       header.style.transform = "translateY(-72px)"; // 헤더 높이만큼 올려서 없애기
+    } else if (e.deltaY < e.deltaY - 1) {
+      header.style.transform = "translateY(0)";
+      header.style.borderBottom = "1px solid #eee";
     }
   } else {
     // 생성된 선 none 처리
