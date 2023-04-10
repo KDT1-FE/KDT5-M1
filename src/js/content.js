@@ -14,7 +14,6 @@ function onScrollFixedCard() {
       leftContent.style.position = "absolute";
       leftContent.style.top = "635px";
     }
-    console.dir(window.scrollY);
   } else {
     // 상단에 올라갔을 시 다시 원위치 고정
     leftContent.style.position = "sticky";
