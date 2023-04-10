@@ -28,12 +28,11 @@ function progress(ms) {
  * @description '.view > figure > div' 안에 있는 백그라운드 이미지를 6초마다 변경합니다.
  */
 async function convertBackground() {
-  const TRUE = true
   const viewEls = Array.from(document.querySelectorAll('.view > figure > div'))
   const bgIdxQueue = []
   viewEls.map((_, i) => bgIdxQueue.push(i))
 
-  while (TRUE) {
+  while (bgIdxQueue.length) {
     const idx = bgIdxQueue.shift()
     viewEls.map((el, i) => {
       if (i === idx) {

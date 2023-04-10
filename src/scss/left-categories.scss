@@ -9,16 +9,23 @@
   background-color: rgba(0,0,0,0.2);
   z-index: 100;
 }
-#left-menu > div {
-  position : fixed;
-  top : 80px;
-  width : 100%;
-  max-width: 480px;
-  height: 100%;
-  background-color: $color-cream;
-  padding-left: 3.75rem;
-  box-sizing: border-box; // body에서 상속이 안되네요...?!
-  z-index: 101;
+
+#left-menu {
+  .l-shop,
+  .l-learn {
+    display: none;
+  }
+  > div {
+    position : fixed;
+    top : 80px;
+    width : 100%;
+    max-width: 480px;
+    height: 100%;
+    background-color: $color-cream;
+    padding-left: 3.75rem;
+    box-sizing: border-box; // body에서 상속이 안되네요...?!
+    z-index: 101;
+
   .cover {
     position : relative;
     display: flex;
@@ -57,6 +64,7 @@
         }
       }
       .sub {  
+        display: none;
         position: absolute;
         top : 0;
         left : 420px;
@@ -72,4 +80,5 @@
       }
     }
   }
+}
 }
