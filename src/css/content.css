@@ -413,7 +413,8 @@ section {
   border-radius: 60px;
   border: none;
   margin-top: 20px;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  cursor: pointer; }
   .more-button:hover {
     background: #dfdfdf; }
 
