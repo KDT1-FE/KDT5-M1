@@ -10,7 +10,8 @@
   bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  opacity: 0; }
 
 #modal {
   width: 400px;
