@@ -5,6 +5,13 @@ body{
 }
 
 /* main */
+.main{
+    /* 조원분들에게 피드백 받은 부분 */
+    display: flex;
+    justify-content: center;
+}
+
+/* main 수정전
 .main__event{
     position: absolute;
     left: 50%;
@@ -12,3 +19,4 @@ body{
     margin-left: -1000px;
     text-align: center;
 }
+*/
