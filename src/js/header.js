@@ -35,10 +35,10 @@ function onPromises() {
 // 스크롤을 내렸을시 헤더 숨김 이벤트 함수
 function onScrollHeader(e) {
   // 스크롤 위치가 1 이상인 경우
-  if (e.deltaY >= 1) {
+  if (e.deltaY > 1) {
     header.style.borderBottom = "1px solid #eee"; // 헤더 하단에 선 생성
     // 스크롤 위치가 250 이상인 경우
-    if (e.deltaY >= 250) {
+    if (e.deltaY > 250) {
       header.style.transform = "translateY(-72px)"; // 헤더 높이만큼 올려서 없애기
     } else if (e.deltaY < e.deltaY - 1) {
       header.style.borderBottom = "1px solid #eee";

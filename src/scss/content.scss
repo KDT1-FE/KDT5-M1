@@ -10,7 +10,7 @@ section {
   gap: 40px;
 }
 
-.date {
+.content-date {
   font-size: 46px;
   letter-spacing: -1px;
   font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
@@ -46,18 +46,208 @@ section {
 }
 
 .content-item {
-  // flex: 1;
   position: relative;
   max-width: 655px;
-  // margin: 0 18px;
 }
 
-.right-grid {
+.right-item {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 420px 420px 192px 192px;
   gap: 36px;
+  .first-card {
+    width: 297px;
+    height: 420px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/30ef110c018700001.png?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .second-card {
+    width: 297px;
+    height: 192px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .num-container {
+      display: flex;
+      align-items: center;
+      padding: 25px 24px 0;
+      .num-title {
+        font-weight: 400;
+        font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+          sans-serif;
+        font-size: 40px;
+        line-height: 59px;
+        letter-spacing: -1px;
+        margin-right: 10px;
+      }
+      .info-down {
+        font-size: 14px;
+        display: inline-block;
+        color: #2879ff;
+      }
+    }
+    .info-card {
+      font-size: 13px;
+      font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+        sans-serif;
+      color: #666;
+    }
+  }
+  .third-card {
+    width: 297px;
+    height: 420px;
+    position: absolute;
+    right: 0;
+    top: 228px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2b1dfbe1018700001.png?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .fourth-card {
+    width: 297px;
+    height: 420px;
+    position: absolute;
+    left: 0;
+    top: 456px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .fifth-card {
+    width: 297px;
+    height: 192px;
+    position: absolute;
+    left: 0;
+    top: 912px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .sixth-card {
+    width: 297px;
+    height: 420px;
+    position: absolute;
+    right: 0;
+    top: 684px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .seventh-card {
+    width: 297px;
+    height: 192px;
+    position: absolute;
+    right: 0;
+    top: 1140px;
+    .card-title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .text-category {
+      font-size: 13px;
+    }
+    .text-date {
+      font-size: 12px;
+    }
+    .info-card {
+      font-size: 13px;
+    }
+    .thumb {
+      width: 297px;
+      background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
+      height: 223px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
 .item-card {
@@ -150,204 +340,6 @@ section {
   background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/34eea597018700001.png?type=thumb&opt=C630x472.fwebp);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.second-card {
-  width: 297px;
-  height: 420px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/30ef110c018700001.png?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.third-card {
-  width: 297px;
-  height: 192px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  .num-container {
-    display: flex;
-    align-items: center;
-    padding: 25px 24px 0;
-    .num-title {
-      font-weight: 400;
-      font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
-        sans-serif;
-      font-size: 40px;
-      line-height: 59px;
-      letter-spacing: -1px;
-      margin-right: 10px;
-    }
-    .info-down {
-      font-size: 14px;
-      display: inline-block;
-      color: #2879ff;
-    }
-  }
-  .info-card {
-    font-size: 13px;
-    font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
-      sans-serif;
-    color: #666;
-  }
-}
-
-.fourth-card {
-  width: 297px;
-  height: 420px;
-  position: absolute;
-  right: 0;
-  top: 228px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2b1dfbe1018700001.png?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.fifth-card {
-  width: 297px;
-  height: 420px;
-  position: absolute;
-  left: 0;
-  top: 456px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.sixth-card {
-  width: 297px;
-  height: 192px;
-  position: absolute;
-  left: 0;
-  top: 912px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/2fce18db018700001.jpg?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.seventh-card {
-  width: 297px;
-  height: 420px;
-  position: absolute;
-  right: 0;
-  top: 684px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.eighth-card {
-  width: 297px;
-  height: 192px;
-  position: absolute;
-  right: 0;
-  top: 1140px;
-  .card-title {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .text-category {
-    font-size: 13px;
-  }
-  .text-date {
-    font-size: 12px;
-  }
-  .info-card {
-    font-size: 13px;
-  }
-  .thumb {
-    width: 297px;
-    background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2ad0f35d018700001.png?type=thumb&opt=C630x472.fwebp);
-    height: 223px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
 
 // culture
