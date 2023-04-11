@@ -1,28 +1,28 @@
-const subMenuEls = document.querySelectorAll('.row--head');
-subMenuEls.forEach((el)=>{
-  el.addEventListener('click', (e)=>{
-    
-    let target = e.currentTarget; // .row__sub
-    let target2 = e.target;
-    if (target2.classList.contains('on')) {
-      gsap.to(target.children[1], 0.5, {
-        display: 'none',
-        height: 0,
-      })
-      target.children[1].classList.remove('on');
-      target2.classList.remove('on');
-    } else {
-      gsap.to(target.children[1], 0.5, {
-        display: 'block',
-        height: target.children[1].children.length * 50 + 'px',
-        overflow: 'hidden',
-      })
-      target.children[1].classList.add('on');
-      target2.classList.add('on');
-    }
-;  })
+// event delegation
+// drop-down
+const subMenu = document.querySelector('.row');
+subMenu.addEventListener('click', (e)=>{
+  
+  const target = e.target;
+  if(target === null) return
+
+  if (target.classList.contains('on')) {
+    gsap.to(target.nextElementSibling, 0.5, {
+      display: 'none',
+      height: 0,
+    })
+    target.classList.remove('on');
+  } else {
+    gsap.to(target.nextElementSibling, 0.5, {
+      display: 'block',
+      height: target.nextElementSibling.children.length * 50 + 'px',
+      overflow: 'hidden',
+    })
+    target.classList.add('on');
+  }
 })
 
+// Menu
 const openEl = document.querySelector('.sub-menu .material-icons');
 const subMenuHead = document.querySelector('.sub-menu__head');
 const exitEl = subMenuHead.querySelector('.sub-menu__extend .material-icons');

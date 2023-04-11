@@ -118,50 +118,44 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
-var subMenuEls = document.querySelectorAll('.row--head');
-subMenuEls.forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    var target = e.currentTarget; // .row__sub
-    var target2 = e.target;
-    console.log(target2);
-    if (target2.classList.contains('on')) {
-      gsap.to(target.children[1], 0.5, {
-        display: 'none',
-        height: 0
-      });
-      target.children[1].classList.remove('on');
-      target2.classList.remove('on');
-    } else {
-      gsap.to(target.children[1], 0.5, {
-        display: 'block',
-        height: target.children[1].children.length * 50 + 'px',
-        overflow: 'hidden'
-      });
-      target.children[1].classList.add('on');
-      target2.classList.add('on');
-    }
-    ;
-  });
+// event delegation
+// drop-down
+var subMenu = document.querySelector('.row');
+subMenu.addEventListener('click', function (e) {
+  var target = e.target;
+  if (target === null) return;
+  if (target.classList.contains('on')) {
+    gsap.to(target.nextElementSibling, 0.5, {
+      display: 'none',
+      height: 0
+    });
+    target.classList.remove('on');
+  } else {
+    gsap.to(target.nextElementSibling, 0.5, {
+      display: 'block',
+      height: target.nextElementSibling.children.length * 50 + 'px',
+      overflow: 'hidden'
+    });
+    target.classList.add('on');
+  }
 });
+
+// Menu
 var openEl = document.querySelector('.sub-menu .material-icons');
 var subMenuHead = document.querySelector('.sub-menu__head');
 var exitEl = subMenuHead.querySelector('.sub-menu__extend .material-icons');
-openEl.addEventListener('click', function (e) {
+openEl.addEventListener('click', function () {
   gsap.to(exitEl.parentElement.parentElement, 0.4, {
     display: 'block',
     right: '0'
   });
 });
-exitEl.addEventListener('click', function (e) {
-  var target = e.currentTarget;
-  console.log(target.parentElement);
+exitEl.addEventListener('click', function () {
   gsap.to(subMenuHead.parentElement, 0.4, {
     display: 'none',
     right: '-75%'
   });
-  //gsap.to(subMenuHead.children[0])
 });
-
 new Swiper('.inner .swiper', {
   loop: true,
   navigation: {
@@ -247,7 +241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52778" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53781" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

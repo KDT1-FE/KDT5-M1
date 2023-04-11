@@ -87,13 +87,13 @@ body header .lang li a {
 body header .lang li a:hover {
   color: rgb(255, 255, 255);
 }
-body header .lang .lang--kor {
+body header .lang .lang__kor {
   margin-right: 20px;
 }
-body header .lang .lang--kor a {
+body header .lang .lang__kor a {
   color: rgb(255, 255, 255);
 }
-body header .lang .lang--kor::after {
+body header .lang .lang__kor::after {
   content: "";
   color: rgb(255, 255, 255);
   width: 1px;
