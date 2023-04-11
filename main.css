@@ -4,7 +4,10 @@ html {
   scroll-padding-top: 100px;
 }
 body {
-  font-family: "Nanum Gothic", sans-serif;
+  /* 폰트 추가 */
+  font-family: "Nanum Gothic", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -19,6 +22,11 @@ a {
 }
 
 /* HEADER */
+
+h1 {
+  display: none;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -127,13 +135,28 @@ header .menu .menu__li .menu__submenu a:hover {
 }
 
 /* FLOATING */
+
+/* js hover 삭제, CSS로만  */
+.floating1:hover img {
+  content: url("./images/ft_icon1_hv.png");
+}
+.floating2:hover img {
+  content: url("./images/ft_icon2_hv.png");
+}
+.floating3:hover img {
+  content: url("./images/ft_icon3_hv.png");
+}
+.floating4:hover img {
+  content: url("./images/ft_icon4_hv.png");
+}
+
 .floatings .info {
   right: 70px;
   z-index: 10;
   position: fixed;
   transform: translateY(50%);
 }
-.floatings .info a + a {
+.floatings .info li + li {
   margin-top: 10px;
 }
 .floatings .info a {
@@ -320,7 +343,7 @@ section.communication .contents .text p:last-child {
 section.communication .contents .swiper {
   width: 73.5%;
 }
-section.communication .contents .swiper .tab .tab__btn {
+section.communication .contents .swiper .tab a {
   margin: 0 25px 50px;
   height: 52px;
   display: inline-block;
@@ -331,7 +354,7 @@ section.communication .contents .swiper .tab .tab__btn {
   font-size: 30px;
   box-sizing: border-box;
 }
-section.communication .contents .swiper .tab .tab__btn.on {
+section.communication .contents .swiper .tab .on {
   color: #39b54a;
   border-bottom: 6px solid #39b54a;
   box-sizing: border-box;
@@ -367,6 +390,17 @@ section.communication .contents .swiper .swiper__wrapper .arrow-icon.next {
 }
 
 /* SNS */
+/* /* js hover 삭제, CSS로만  */
+.sns__blog:hover {
+  content: url("./images/footer_blog_hv.png");
+}
+.sns__insta:hover {
+  content: url("./images/footer_insta_hv.png");
+}
+.sns__talk:hover {
+  content: url("./images/footer_talk_hv.png");
+}
+
 section.sns {
   height: calc((100vh - 100px) / 3 * 2);
   padding: 100px 20px 100px 10.5%;
