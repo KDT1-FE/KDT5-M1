@@ -1703,6 +1703,10 @@ header .category ul.cateList>li .catedetail ul>li>a:hover {
 .clientReview .pdtList .pdtCont:hover {
   height: 232px;
 }
+.clientReview .pdtList .pdtCont:hover .name2 {
+  -webkit-line-clamp: 5;
+  margin-bottom: 14px;
+}
 .clientReview .pdtList .pdtCont .name {
   display: block;
   margin: 0 0 3px;
