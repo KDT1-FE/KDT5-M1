@@ -28,9 +28,6 @@ button {
 li {
   list-style: none;
 }
-nav {
-  display: block;
-}
 input {
   outline: none;
 }
@@ -193,7 +190,7 @@ header .gnbmenu .gnbnew .gnblist li .hit {
   border-radius: 50%;
 }
 header .gnbmenu .gnbnew .gnblist li:first-child {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 header .gnbmenu .gnbnew .gnblist li a {
   display: inline-block;
