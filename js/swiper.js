@@ -1,6 +1,6 @@
 const swiperPrev = document.querySelector(".swiper-prev");
 
-new Swiper(".swiper__movie .swiper-container .movie-chart", {
+new Swiper(".movieChart__section .swiper-container .movie-swiper", {
   slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
   spaceBetween: 30, // 슬라이드 사이 여백
   slidesPerGroup: 5, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
@@ -8,8 +8,8 @@ new Swiper(".swiper__movie .swiper-container .movie-chart", {
   observeParents: true, //display: none이 되는 컴포넌트 안에서 Swiper를 사용하는 경우에 필요
   navigation: {
     // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: ".swiper__movie .swiper-prev", // 이전 버튼 선택자
-    nextEl: ".swiper__movie .swiper-next", // 다음 버튼 선택자
+    prevEl: ".movie-swiper .swiper-prev", // 이전 버튼 선택자
+    nextEl: ".movie-swiper .swiper-next", // 다음 버튼 선택자
   },
   //첫번재, 마지막 슬라이드에서 버튼 숨김처리
   on: {

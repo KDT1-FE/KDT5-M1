@@ -28,10 +28,10 @@ itemHover.forEach((el, index) => {
 });
 
 //차트 클릭 switch
-const movieChart = document.querySelector(".list-title-moviechart");
-const movieSchedule = document.querySelector(".list-title-schedule");
+const movieChart = document.querySelector(".title-chart");
+const movieSchedule = document.querySelector(".title-schedule");
 const btnSwitch = document.querySelector(".btn-switch");
-const movieSwiper = document.querySelectorAll(".movie-chart");
+const movieSwiper = document.querySelectorAll(".movie-swiper");
 
 function chartSwitch(event) {
   const eventTarget = event.target;
