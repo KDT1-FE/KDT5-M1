@@ -1,0 +1,91 @@
+footer {
+  background-color: $color--blue;
+  .inner {
+    width: 1500px;
+    padding: 40px 0 70px;
+    margin: 0 auto;
+    .footer-info {
+      border: 2px solid #000;
+      border-top-width: 6px;
+      font-size: 12px;
+      box-sizing: border-box;
+      .logo-area {
+        width: 303px;
+        min-height: 86px;
+        border-right: 2px solid #000;
+        box-sizing: border-box;
+        img {
+          position: relative;
+          top: 2px;
+        }
+      }
+      .info-area {
+        > div {
+          min-height: 43px;
+          line-height: 1.2;
+          padding-left: 18px;
+          box-sizing: border-box;
+        }
+        .cs-center {
+          position: relative;
+          font-size: 22px;
+          font-weight: bold;
+          .footer-x {
+            width: 50px;
+          }
+        }
+        .work-time {
+          border-top: 2px solid #000;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+      .footer-menu {
+        width: 603px;
+        border-right: 2px solid #000;
+        > ul {
+          float: left;
+          width: 50%;
+          border-right: 2px solid #000;
+          box-sizing: border-box;
+          &:last-child {
+            border-right: 0;
+          }
+          > li > a {
+            height: 42px;
+            line-height: 42px;
+            padding: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          > li + li {
+            border-top: 2px solid #000;
+          }
+        }
+      }
+      .company-info-top {
+        padding: 13px;
+        address {
+          line-height: 16px;
+          font-style: normal;
+          font-size: 11px;
+          letter-spacing: 1px;
+          b {
+            font-weight: 900;
+          }
+        }
+      }
+      .company-info-bottom {
+        padding: 12px 13px;
+        border-top: 2px solid #000;
+        .sns-list {
+          float: right;
+          a {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+}

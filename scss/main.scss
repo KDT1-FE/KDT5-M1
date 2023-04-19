@@ -1,0 +1,117 @@
+@import "variable";
+@import "header"; 
+@import "quick-menu";
+@import "fixed-btns";
+@import "total-menu"; 
+@import "contents"; 
+@import "footer";
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  body{
+    position: relative;
+    min-width: 1500px;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Open Sans', NanumGothic, 'Malgun Gothic', Dotum, sans-serif;
+    font-size: 12px;
+
+    div, dl, dt, dd, ul, ol, li, 
+    h1, h2, h3, h4, h5, h6,  
+    form, fieldset, legend, input, textarea, p, img {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    img, fieldset {
+      border: none;
+      vertical-align: top;
+    }
+
+    table {
+      width: 100%;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    button {
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    b {
+      font-weight: bold;
+    }
+    
+    input, textarea {
+      color: $color--lightgray;
+      font-family: "돋움", Dotum;
+      font-size: 100%;
+      vertical-align: middle;
+    }
+
+    .tc {
+      text-align: center;
+    }
+
+    .fl {
+      float: left;
+    }
+    
+    .fr {
+      float: right;
+    }
+
+    .mt30  {
+      margin-top: 30px;
+    }
+
+    .layout-table {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .column {
+      &-middle{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .scroll-hidden {
+      overflow: hidden;
+    }
+
+    [class^='btn'] img {
+      margin: -2px 1px 0;
+      vertical-align: middle;
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+}
