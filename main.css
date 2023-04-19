@@ -1,0 +1,131 @@
+
+/* header */
+#header div.top {
+  width: 100%;
+  height: 81px;
+  font-size: 11px;
+  background-color: #A9BB00;
+  text-align: center;
+}
+#header div.middle {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
+#header div.middle img {
+  display: block;
+  float: left;
+  border: none;
+  vertical-align: top;
+}
+#header div.middle input {
+  display: block;
+  float: left;
+  width: 230px;
+  height: 24px;
+  padding: 2px;
+  border: 2px solid #9AC91C;
+  outline: none;
+  margin-top: 30px;
+}
+#header div.middle_box {
+  float: left;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 450px;
+  padding: 10px 0 7px;
+}
+#header div.middle_box ul.line {
+ display: flex;
+}
+#header div.middle_box ul.line li {
+ position: relative;
+}
+#header div.middle_box ul.line li::before {
+ content: "";
+}
+#header div.middle_box .tm {
+  float: left;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#header div.middle_box a {
+  float: left;
+  color: #8f8f91;
+  font-size: 12px;
+  font-family: 'Nanum Gothic',sans-serif;
+  text-decoration: none;
+  display: flex;
+  padding: 0px 8px 0 9px;
+}
+#header div.bottom {
+  height: 470px;
+  margin-bottom: 60px;
+  background-color: #fff;
+}
+/* main */
+#container {
+  width: 1024px;
+  margin: 0 auto;
+}
+#container .banner_warp {
+  background-color: #f6f6f6;
+  position: relative;
+  border: none;
+  vertical-align: top;
+}
+#container .banner {
+  overflow: hidden;
+  position: absolute;
+  width: 1024px;
+  height: 229px;
+}
+#container .banner a {
+  float: left;
+  margin: 0 18px 0 18px;
+}
+#header .middle_box ul.menu {
+  width: 1180px;
+  height: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  background-color: #EC2A2E;;
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
+}
+#header .middle .middle_box ul.menu li {
+  float: left;
+  text-decoration: none;
+}
+#header .middle .middle_box ul.menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 2.7em;
+}
+#contents .product {
+  margin: 30px 0;
+  margin-bottom: 100px;
+}
+#contents .product .prdlist li.pr {
+  display: block;
+  float: left;
+}
+#contents .product .prdlist li.pr img {
+  width: 238px;
+  height: 238px;
+  border: 1px solid #ececec;
+
+}
