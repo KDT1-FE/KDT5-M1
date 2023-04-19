@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당신 근처의 당근마켓_KW</title>
+    <meta
+      name="description"
+      content="중고 거래부터 동네 정보까지, 이웃과 함께해요. 가깝고 따뜻한 당신의 근처를 만들어요."
+    />
+    <meta property="og:url" content="https://www.daangn.com/" />
+    <meta
+      property="og:description"
+      content="중고 거래부터 동네 정보까지, 이웃과 함께해요. 가깝고 따뜻한 당신의 근처를 만들어요."
+    />
+    <meta property="og:site_name" content="당근마켓" />
+    <meta
+      property="og:image"
+      content="https://www.daangn.com/images/meta/home/daangn.png"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@danggeunmarket" />
+    <meta name="twitter:title" content="당신 근처의 당근마켓" />
+    <meta
+      name="twitter:description"
+      content="중고 거래부터 동네 정보까지, 이웃과 함께해요. 가깝고 따뜻한 당신의 근처를 만들어요."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.daangn.com/images/meta/home/daangn.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://d1unjqcospf8gs.cloudfront.net/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="head-bar">
+        <div class="head-container  _contains">
+          <a class="logo" target="_self" href="#">
+            <span>
+              <img src="./Images/svg-gobbler-logo.svg" alt="carrot_logo">
+            </span>
+          </a>
+          <nav class="navigations  _contains">
+            <ul class="navigations-ul">
+              <li class="navigations-li">
+                <a class="navigations-a  orange" href="javascript:void(0)">중고거래</a>
+              </li>
+              <li class="navigations-li">
+                <a class="navigations-a " href="javascript:void(0)">동네가게</a>
+              </li>
+              <li class="navigations-li">
+                <a class="navigations-a " href="javascript:void(0)">알바</a>
+              </li>
+              <li class="navigations-li">
+                <a class="navigations-a " href="javascript:void(0)">부동산 직거래</a>
+              </li>
+              <li class="navigations-li">
+                <a class="navigations-a " href="javascript:void(0)">중고차 직거래</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-chatting _contains">
+            <span id="toggle">
+              <button class="search-btn btn-apper _contains">
+                <img src="./Images/svg-gobbler-search.svg" alt="search-icon">
+              </button>
+              <form class="search">
+              <input class="search-bar" type="search" placeholder="물품이나 동네를 검색해보세요" />
+              </form>
+            </span>
+            <span>
+              <button class="btn-apper chatting-btn__min-width  _contains"><span class="material-symbols-outlined">menu</span></button>
+              <button class="chatting-btn chatting-btn__outline closed" type="button">채팅하기</button>
+            </span>
+          </div>
+        </div>
+        <section class="recommand">
+          <h1 class="recommand-searchword">추천</h1>
+          <ul class="recommand-ul">
+            <li class="recommand-li">자전거</li>
+            <li class="recommand-li">송파 자전거</li>
+            <li class="recommand-li">인천 노트북</li>
+            <li class="recommand-li">홍대 쇼파</li>
+            <li class="recommand-li">부산 책상</li>
+            <li class="recommand-li">잠실 냉장고</li>
+          </ul>
+        </section>
+        <nav class="button-nav">
+          <ul class="button-nav-ul">
+            <li class="button-nav-li">
+              <a href="javascript:void(0)" class="button-nav-a">중고거래</a>
+            </li>
+            <li class="button-nav-li">
+              <a href="javascript:void(0)" class="button-nav-a">동네가게</a>
+            </li>
+            <li class="button-nav-li">
+              <a href="javascript:void(0)" class="button-nav-a">알바</a>
+            </li>
+            <li class="button-nav-li">
+              <a href="javascript:void(0)" class="button-nav-a">부동산 직거래</a>
+            </li>
+            <li class="button-nav-li">
+              <a href="javascript:void(0)" class="button-nav-a">중고차 직거래</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="blank-cancel"></div>
+      </div>
+      
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section id="home-main-section-top">
+        <div id="home-main-top">
+          <div>
+            <h1 class="home-main-title">당신 근처의<br/>당근마켓</h1>
+            <p class="home-main-description">
+              중고 거래부터 동네 정보까지, 이웃과 함께해요.
+              <br>
+              가깝고 따뜻한 당신의 근처를 만들어요.
+            </p>
+          </div>
+          <div class="home-main-image-top">
+            <img srcset="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-top-d6869a79bc4cb58ea59aa5a408decfdf4a4ba60ac639837081da12861083cdbb.webp " class="home-main-image-top" alt="중고거래, 동네생활 질문글과 동네가게" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-top-68ba12f0da7b5af9a574ed92ca8b3a9c0068db176b566dd374ee50359693358b.png"/>
+          </div>
+        </div>
+      </section>
+      <section class="home-main-section">
+        <div class="home-main-content">
+          <div class="home-main-image home-main-image-1">
+            <img srcset="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-1-cc678e9a217b96f5cb459f7f0684f5ba67706f9889801618b8cf879fbc2c0ea7.webp " class="home-main-image-1" alt="우리동네 중고 직거래 사진" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-1-39ac203e8922f615aa3843337871cb654b81269e872494128bf08236157c5f6a.png"/>
+          </div> 
+          <div>
+            <h1 class="home-main-title">
+              우리동네<br>중고직거래 마켓
+            </h1>
+            <p class="home-main-description">
+              동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.
+            </p>
+            <div class="home-buttons">
+              <a href="javascript:void(0)" class="home-button">인기매물 보기</a>
+              <a href="javascript:void(0)" class="home-button home-button__right">믿을 수 있는 중고거래</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-main-section background-pale-green">
+        <div class="home-main-content home-main-reverse">
+          <div class="home-main-image home-main-image-2">
+            <img srcset="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-2-91a2286453bdf82dea16a7f0ee4ceb9dd325eae0e5a2a9967ba72c344bf8f2fc.webp " class="home-main-image-2" alt="이웃과 함께하는 동네생활" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-2-f286322ab98acedf914a05bf77e84c67dcb897c8ccb543e66f6afea9d366d06d.png"/>
+          </div>
+          <div>
+            <h1 class="home-main-title">
+              이웃과 함께 하는<br>동네생활
+            </h1>
+            <p class="home-main-description">
+              우리 동네의 다양한 이야기를 이웃과 함께 나누어요.
+            </p>
+            <ul class="home-story-ul">
+              <li class="home-story-li">
+                <div class="story-icon story-icon-1"></div>
+                <div class="story-li__subtitle">우리동네질문</div>
+                <div class="story-li__subdecs">궁금한 게 있을 땐 이웃에게 물어보세요.</div>
+              </li>
+              <li class="home-story-li">
+                <div class="story-icon story-icon-2"></div>
+                <div class="story-li__subtitle">동네분실센터</div>
+                <div class="story-li__subdecs">무언가를 잃어버렸을 때, 함께 찾을 수 있어요.</div>
+              </li>
+              <li class="home-story-li">
+                <div class="story-icon story-icon-3"></div>
+                <div class="story-li__subtitle">동네모임</div>
+                <div class="story-li__subdecs">관심사가 비슷한 이웃과 온오프라인으로 만나요.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="home-main-section">
+        <div class="home-main-content">
+          <div class="home-main-image home-main-image-3">
+            <img srcset="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-3-5fd6fb61d603ab919a45566b2ea6b505c83a93ec218f34ddcd5cb482543e2317.webp " class="home-main-image-3"alt="내 근처에서 찾는 동네가게" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-3-0c8b631ac2294ac5a3b3e7a3a5580c3e68a3303ad2aded1e84aa57a2e1442786.png">
+          </div>
+          <div>
+            <h1 class="home-main-title">
+              내 근처에서 찾는<br>동네 가게
+            </h1>
+            <p class="home-main-description">
+              우리 동네 가게를 찾고 있나요? <br> 동네 주민이 남긴 진짜 후기를 함께 확인해보세요!
+            </p>
+            <div class="home-buttons">
+              <a href="javascript:void(0)" class="home-button">당근마켓 동네가게 찾기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-main-section background-gray">
+        <div class="home-hot-content">
+          <h1 class="home-main-title home-hot-title">중고거래 인기매물</h1>
+          <div class="cards-wrap">
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/753695579fb1e25ac280f3174e4b513c978f3127df6a3bc9e8463aaae836e7ba.jpg?q=82&s=300x300&t=crop" alt="누나빽파는사람">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">정품입니다 누가 제 컴퓨터 팔아버려서 저도 헐값에 팔아 버릴랍니다</h2>
+                  <div class="card-price">10,000원</div>
+                  <div class="card-region-name">부산 북구 구포동</div>
+                  <div class="card-counts">
+                    <span>관심 34</span>
+                    ∙
+                    <span>채팅 12</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/26ce3a4aded0df0573cc9d128f9ef17dd7ef4857d83a277c7ae80815cbcd4ed0.jpg?q=82&s=300x300&t=crop" alt="우드선반">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">우드2단 선반</h2>
+                  <div class="card-price">8,000원</div>
+                  <div class="card-region-name">충남 서산시 예천동</div>
+                  <div class="card-counts">
+                    <span>관심 17</span>
+                    ∙
+                    <span>채팅 46</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2e3462bb439e276d12b809c12f515a5ee4ed128aa4799ca88879a79de0df7c79.webp?q=82&s=300x300&t=crop" alt="제습기">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">위닉스제습기</h2>
+                  <div class="card-price">50,000원</div>
+                  <div class="card-region-name">서울 성동구 행당동</div>
+                  <div class="card-counts">
+                    <span>관심 33</span>
+                    ∙
+                    <span>채팅 66</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/b0611a6c3a0b1df2cae8ee5a971a375e513659775cdb051fb43f18579d7b8bc8.webp?q=82&s=300x300&t=crop" alt="자전거">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">자전거 팝니다</h2>
+                  <div class="card-price">10,000원</div>
+                  <div class="card-region-name">서울 양천구 신정4동</div>
+                  <div class="card-counts">
+                    <span>관심 9</span>
+                    ∙
+                    <span>채팅 37</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/214fea88e02b8e9480981e603b32bf2c809693558dacf58acc5e2be9936c284a.webp?q=82&s=300x300&t=crop" alt="코드제로">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">코드제로</h2>
+                  <div class="card-price">150,000원</div>
+                  <div class="card-region-name">충남 서산시 예천동</div>
+                  <div class="card-counts">
+                    <span>관심 21</span>
+                    ∙
+                    <span>채팅 9</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/8d08207aa1262ca9c5379dcd9c3c5dd1588828f8d227b97b571eba522901affe.jpg?q=82&s=300x300&t=crop" alt="위닉스 제습기">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">위닉스 제습기</h2>
+                  <div class="card-price">50,000원</div>
+                  <div class="card-region-name">부산 부산진구 전포동</div>
+                  <div class="card-counts">
+                    <span>관심 5</span>
+                    ∙
+                    <span>채팅 27</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/3308d778c50f0a95a56b9d6a24e19927bc8341f423d2307d72b7df1fd7e33e6b.webp?q=82&s=300x300&t=crop" alt="가게정리">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">가게정리</h2>
+                  <div class="card-price">1,000원</div>
+                  <div class="card-region-name">전북 군산시 영동</div>
+                  <div class="card-counts">
+                    <span>관심 13</span>
+                    ∙
+                    <span>채팅 54</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="card-top">
+              <a href="javascript:void(0)" class="card-link">
+                <div class="card-photo">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/7c0a3c3645abc9f767d9b437449edff4d0e1aa472b1483c45b26d01d93c3965d.jpg?q=82&s=300x300&t=crop" alt="아이폰14pro">
+                </div>
+                <div class="card-desc">
+                  <h2 class="card-title">아이폰14pro</h2>
+                  <div class="card-price">100,000원</div>
+                  <div class="card-region-name">충남 아산시 배방읍</div>
+                  <div class="card-counts">
+                    <span>관심 11</span>
+                    ∙
+                    <span>채팅 36</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="home-hot-content__more-content">
+            <a href="javascript:void(0)" id="hot-articles-more">인기매물 더 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-keywords-content">
+        <h3 class="home-main-title">
+          <a href="javascript:void(0)">중고거래 인기검색어</a>
+        </h3>
+        <ul class="top-keywords-ul">
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">자전거</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">의자</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">아이폰</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">냉장고</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">노트북</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">패딩</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">아이패드</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">모니터</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">스타벅스</a>
+          </li>
+          <li class="top-keyword-li">
+            <a href="javascript:void(0)" class="keyword-link">책상</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-container">
+        <section class="footer-sitemap">
+          <section class="app-download">
+            <div class="app-download-text">당근마켓 앱 다운로드</div>
+            <div class="app-download-links">
+              <a href="javascript:void(0)" class="app-icon-btns icon-shrink">
+                <div class="platform-text">iOS</div>
+                <span class="platform-text-arrow">
+                  <img src="./Images/svg-gobbler-arrow.svg" alt="arrow">
+                </span>
+                <div class="app-download-btn">
+                  <img src="./Images/svg-gobbler-apple_download.svg" alt="apple">
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="app-icon-btns icon-shrink">
+                <div class="platform-text">Android</div>
+                <span class="platform-text-arrow">
+                  <img src="./Images/svg-gobbler-arrow.svg" alt="arrow">
+                </span>
+                <div class="app-download-btn">
+                  <img src="./Images/svg-gobbler-google_download.svg" alt="android">
+                </div>
+              </a>
+            </div>
+          </section>
+          <nav class="nav-sitemap">
+            <ul class="sitemap-ul">
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">중고거래</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">동네가게</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">당근알바</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">부동산 직거래</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">중고차 직거래</a>
+              </li>
+            </ul>
+            <ul class="sitemap-ul">
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">당근비즈니스</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">채팅하기</a>
+              </li>
+            </ul>
+            <ul class="sitemap-ul">
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">자주 묻는 질문</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">회사 소개</a>
+              </li>
+              <li class="sitemap-li">
+                <a href="javascript:void(0)" class="sitemap-a">인재 채용</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-info">
+          <section class="informations">
+            <section class="informations__hosting">
+              <div class="informations__corp">
+                <span><b>대표</b> 김용현, 황도연</span>
+                <span class="informations__pipe">|</span>
+                <span><b>사업자번호</b> 357-87-00088</span>
+              </div>
+              <div><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</div>
+              <address class="informations__address">
+                <div><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호(당근서비스)</div>
+                <div>
+                  <b>전화</b> 1544-9796
+                  <span class="informations__pipe">|</span>
+                  <b>고객문의</b> cs@daangnservice.com
+                </div>
+              </address>
+            </section>
+            <section class="footer-info__inquiry">
+              <a href="javascript:void(0)" class="footer__a">제휴 문의</a>
+              <a href="javascript:void(0)" class="footer__a">광고 문의</a>
+              <a href="javascript:void(0)" class="footer__a">PR 문의</a>
+              <a href="javascript:void(0)" class="footer__a">IR 문의</a>
+            </section>
+            <section class="footer-info__terms">
+              <div class="footer__a">
+                <a href="javascript:void(0)">이용약관</a>
+              </div>
+              <div class="footer__a">
+                <a href="javascript:void(0)" class="footer-tb">개인정보처리방침</a>
+              </div>
+              <div class="footer__a">
+                <a href="javascript:void(0)">위치기반서비스 이용약관</a>
+              </div>
+              <div class="footer__a">
+                <a href="javascript:void(0)">이용자보호 비전과 계획</a>
+              </div>
+            </section>
+          </section>
+          <section class="footer-info__sns-set-languages">
+            <a aria-label="facebook" href="javascript:void(0)" class="sns-icon">
+              <img src="./Images/svg-gobbler-facebook.svg" alt="facebook">
+            </a>
+            <a aria-label="instagram" href="javascript:void(0)" class="sns-icon">
+              <img src="./Images/svg-gobbler-instagram.svg" alt="facebook">
+            </a>
+            <a aria-label="youtube" href="javascript:void(0)" class="sns-icon">
+              <img src="./Images/svg-gobbler-youtube.svg" alt="facebook">
+            </a>
+            <a aria-label="blog" href="javascript:void(0)" class="sns-icon">
+              <img src="./Images/svg-gobbler-naver_blog.svg" alt="facebook">
+            </a>
+            <div>
+              <label class="set-languages" for="label-select-nation">
+                <span class="material-symbols-outlined">language</span>
+                <select id="label-select-nation" class="set-languages__nations">
+                  <option value="kr" selected>한국</option>
+                  <option value="null">영국</option>
+                  <option value="null">캐나다</option>
+                  <option value="null">미국</option>
+                  <option value="null">일본</option>
+                </select>
+
+              </label>
+            </div>
+          </section>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
