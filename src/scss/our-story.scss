@@ -1,0 +1,64 @@
+.our-story {
+  position: relative;
+  figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    > div {
+      > span {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-bottom: calc(9 / 16 * 100%); // 56.25%; 9(w) * 16(h)의 비율
+        img {
+          position: absolute;
+          inset: 0;
+          margin: auto;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    color: $font-white;
+    .inner {
+      display: flex;
+      box-sizing: border-box;
+      width: 100%;
+      flex-direction: column;
+      padding-top: 14rem;
+      padding-left: 9rem;
+      p {
+        width: 41.666%;
+        max-width: 28rem;
+        font-family: $font-serif;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin: 0 1.25rem 1.25rem 1.25rem;
+      }
+      a {
+        width: 41.666%;
+        max-width: 28rem;
+        text-align: center;
+        font-size: 0.75rem;
+        letter-spacing: 0.1rem;
+        line-height: 1rem;
+        background-color: $color-cream;
+        padding: 1rem 0;
+        color: $font-black;
+        margin: 0 1.25rem;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+      }
+      a:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+}

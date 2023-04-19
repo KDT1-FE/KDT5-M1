@@ -1,0 +1,89 @@
+.interior-view {
+  position: relative;
+  padding: 140px;
+  > h2 {
+    margin: 50px 0;
+    color: $font-black;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-family: $font-serif;
+    text-align: center;
+  }
+  .interior-view-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .swiper-wrapper {
+      .swiper-slide {
+        figure {
+          margin: 0;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          figcaption {
+            margin-top: 0.75rem;
+            span {
+              font-size: 0.75rem;
+              line-height: 1rem;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: $font-black;
+            }
+          }
+        }
+      }
+    }
+    .l-swiper-btn-prev,
+    .l-swiper-btn-next {
+      position: absolute;
+      top: 50%;
+      height: 32px;
+      min-width: 68px;
+      background-color: #fff;
+      transition: all 0.2s ease-in-out;
+      border: none;
+      z-index: 101;
+      cursor: pointer;
+      svg,
+      path {
+        stroke: $font-black;
+        stroke-width: 0.5;
+      }
+    }
+    .l-swiper-btn-next {
+      right: -68px;
+    }
+    .l-swiper-btn-prev {
+      left: -68px;
+    }
+    .l-swiper-btn-next::after,
+    .l-swiper-btn-prev::after {
+      content: '';
+      display: none;
+    }
+    .interior-view-swiper-indexes {
+      position: absolute;
+      font-size: 0.75rem;
+      bottom: 0px;
+      right: 0;
+      background-color: $color-cream;
+      z-index: 102;
+      span {
+        margin-left: 10px;
+        opacity: 0.4;
+      }
+      span.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.interior-view:hover .l-swiper-btn-next:not(.swiper-button-disabled) {
+  right: 0;
+}
+.interior-view:hover .l-swiper-btn-prev:not(.swiper-button-disabled) {
+  left: 0;
+}

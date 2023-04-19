@@ -1,0 +1,62 @@
+@import 'config';
+@import 'header';
+@import 'left-categories';
+@import 'main-view';
+@import 'card-category';
+@import 'subscription';
+@import 'interior-view';
+@import 'footer';
+@import 'our-story';
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  background-color: $color-cream;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+svg {
+  stroke: #fff;
+}
+svg rect {
+  stroke: #fff;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: $font-white;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.a11y {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  font-family: $font-serif;
+  background-color: $color-cream;
+  font-size: 12px;
+  line-height: 32px;
+  z-index: 200;
+  a {
+    color: $font-black;
+  }
+}

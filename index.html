@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/svg/favicon.ico">
+    <title>Whole Bean Coffee | Blue Bottle Coffee</title>
+    <meta name="description" content="Blue Bottle Coffee is a specialty coffee roaster with cafes in LA, SF, NYC, & Japan. Enjoy our freshly roasted coffee, brewers and guides online & in-store.">
+    <script defer type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- Top Banner -->
+    <div class="banner">
+      <p>
+        Enjoy 15% off <a href="javascript:void(0)">Instant Single Serve</a>
+        | Free Shipping on <a href="javascript:void(0)">Travel Mugs and Instant Espresso</a>
+      </p>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="gnb-wrap">
+        <div class="gnb gnb-transparent">
+          <div class="inner">
+            <div class="l-menu">
+              <a href="javascript:void(0)" data-category="shop" role="button">
+                SHOP
+              </a>
+              <a href="/">
+                SUBSCRIPTIONS
+              </a>
+              <a href="javascript:void(0)" data-category="learn" role="button">
+                LEARN
+              </a>
+            </div>
+            <div class="logo">
+              <a href="/" title="Back to the home">
+                <svg stroke="transparent" viewBox="0 0 23 57" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.2753 2.6693C10.2753 2.6693 9.60825 2.61864 9.56181 2.61441C9.34353 2.58541 9.14432 2.5623 8.96266 2.54123C7.58438 2.38135 7.21682 2.33871 7.2019 0.727327C7.23568 0.292495 7.68317 -0.67849 8.56128 0.752657C8.95389 1.20438 9.43938 1.45768 9.84044 1.59277C9.74842 1.56104 9.85461 1.57674 10.0948 1.61226C10.8133 1.7185 12.7311 2.00207 14.1296 1.72364C14.6025 2.04871 14.1254 2.6313 13.9734 2.80017C13.9312 2.84661 12.1497 3.28988 10.4526 3.18012C10.4483 3.16583 10.4256 3.10323 10.3979 3.02646C10.3436 2.87634 10.2697 2.67209 10.2753 2.6693ZM22.2099 23.8526C22.3323 24.4943 22.4505 25.1697 22.5434 25.9085C22.8812 31.4474 23.1893 43.057 21.9524 50.3436C21.8215 53.0285 20.783 55.1816 20.4706 55.2703C20.4671 55.2721 20.455 55.2802 20.4349 55.2938C20.0908 55.5249 17.3822 57.3448 14.3872 56.942C13.2408 56.7877 12.342 56.8308 11.3714 56.8773C9.68646 56.9581 7.78541 57.0492 3.99763 56.1357C3.45304 55.7431 3.23773 55.4729 3.20818 55.2703C3.14063 54.8861 2.60026 52.1715 2.60026 52.1715C-0.916391 35.5002 0.155913 25.0346 0.14747 25.1444C0.155913 24.9755 0.171862 24.7992 0.18781 24.6228C0.195785 24.5346 0.203759 24.4464 0.210795 24.3592C0.548528 20.6694 0.75539 19.213 3.98075 18.0013C9.00085 16.1239 8.94975 13.2415 8.87055 8.77436C8.8673 8.59077 8.86399 8.4045 8.86099 8.21551C8.83566 7.17698 8.83144 6.33687 8.83144 6.33687C8.82722 6.34531 8.89477 4.54688 8.89477 4.54688V3.94318L12.8674 3.13262C12.8645 3.13829 12.8693 6.99754 12.8727 9.78114C12.8744 11.1435 12.8758 12.2483 12.8758 12.5174C13.165 15.0215 14.8389 15.4362 16.1695 15.7658C16.4899 15.8452 16.7904 15.9197 17.0468 16.0172C20.1624 17.4441 21.3065 20.7454 22.2099 23.8526Z"
+                    fill="white">
+                  </path>
+                </svg>
+                <span class="a11y">Back to the home</span>
+              </a>
+            </div>
+            <div class="r-menu">
+              <div class="r-menu-cover">
+                <!-- search icon -->
+                <a href="javscript:void(0)" role="button" title="search">
+                  <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7383 15.4724C17.0872 15.8213 17.0872 16.3894 16.7383 16.7383C16.3893 17.0872 15.821 17.0872 15.472 16.7383L11.0962 12.3636C10.9217 12.1892 10.613 12.1668 10.4161 12.301C10.4161 12.301 10.2953 12.3949 10.0358 12.5426C9.05593 13.0972 7.91946 13.4193 6.71141 13.4193C3.00671 13.4193 0 10.4134 0 6.70964C0 3.00592 3.00671 0 6.71141 0C10.4161 0 13.4228 3.00592 13.4228 6.70964C13.4228 7.92633 13.0962 9.07144 12.5324 10.0555C12.3848 10.306 12.3043 10.4089 12.3043 10.4089C12.1611 10.6147 12.1879 10.9188 12.3624 11.0933L16.7383 15.4724ZM6.71141 11.63C9.43177 11.63 11.6331 9.42929 11.6331 6.70964C11.6331 3.99 9.43177 1.78924 6.71141 1.78924C3.99105 1.78924 1.78971 3.99 1.78971 6.70964C1.78971 9.42929 3.99105 11.63 6.71141 11.63Z"
+                      fill="white"
+                      stroke-width="0">
+                    </path>
+                  </svg>
+                  <span class="a11y">search</span>
+                </a>
+                <!-- people icon -->
+                <a href="javascript:void(0)" role="button" title="log in">
+                  <svg
+                    class="stroke-current text-white"
+                    width="17"
+                    height="19"
+                    viewBox="0 0 17 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8.59488" cy="4.34" r="3.59" stroke-width="1.5"></circle>
+                    <path d="M16.19 17.3599C16.19 13.1653 12.7896 9.76489 8.595 9.76489C4.4004 9.76489 1 13.1653 1 17.3599" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+                  <span class="a11y">log in</span>
+                </a>
+                <!-- shop icon -->
+                <a href="/" title="shopping">
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 4.75C12 2.54086 10.2091 0.75 8 0.75C5.79086 0.75 4 2.54086 4 4.75"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round">
+                    </path>
+                    <mask
+                      id="mask0_44_9583"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="6"
+                      width="17"
+                      height="11">
+                      <path
+                        d="M1.60098 6.72534L3.20098 15.1319H12.801L14.401 6.72534H16.001V16.8132H0.000976562V6.72534H1.60098Z"
+                        fill="white">
+                      </path>
+                    </mask>
+                    <g mask="url(#mask0_44_9583)">
+                      <path
+                        d="M0.945068 7.56598L2.27867 15.9725H13.7235L15.0571 7.56598H0.945068Z"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linejoin="round">
+                      </path>
+                    </g>
+                  </svg>
+                  <span class="a11y">shopping</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Left menu section -->
+    <section id="left-menu">
+      <div class="l-shop menu" data-category="shop">
+        <div class="cover">
+          <div class="close-btn">
+            <a href="javascript:void(0)" class="cancle" role="button" title="close">
+              <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#333333" stroke-width="0.1"
+                  fill-rule="evenodd"
+                  fill="#333333"
+                  d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                </path>
+              </svg>
+              <span class="a11y">close</span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee subscriptions</a>
+              <div class="sub">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="close">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                    <span class="a11y">close</span>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">coffee subscriptions</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">new: craft instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">featured</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">spresso</a>e
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee</a>
+              <div class="sub" style="display : none">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="close">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                    <span class="a11y">close</span>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">all coffee</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">espresso</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee sets</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">decaf</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee complements</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">insatnt</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">brew tools</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">drinkware</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">COLLECTIBLES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="l-learn menu" data-category="learn">
+        <div class="cover">
+          <div class="close-btn">
+            <a href="javascript:void(0)" class="cancle" role="button" title="close">
+              <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#333333" stroke-width="0.1"
+                  fill-rule="evenodd"
+                  fill="#333333"
+                  d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                </path>
+              </svg>
+              <span class="a11y">close</span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee subscriptions</a>
+              <div class="sub">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="close">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                    <span class="a11y">close</span>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">coffee subscriptions</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">new: craft instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">featured</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">spresso</a>e
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">coffee</a>
+              <div class="sub">
+                <div class="close-btn">
+                  <a href="javascript:void(0)" class="cancle" role="button" title="close">
+                    <svg tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        stroke="#333333" stroke-width="0.1"
+                        fill-rule="evenodd"
+                        fill="#333333"
+                        d="M11.324 9.526l7.541-7.54.662-.662L18.204 0l-.663.662-7.54 7.54L2.458.662 1.797 0 .473 1.324l.662.662 7.541 7.54-8.014 8.015-.662.662 1.325 1.323.662-.661L10 10.85l8.013 8.015.662.661L20 18.203l-.662-.662z">
+                      </path>
+                    </svg>
+                    <span class="a11y">close</span>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">all coffee</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">blends</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">espresso</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">instant</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">single origin</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee sets</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">decaf</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">cold brew</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">coffee complements</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">insatnt</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">brew tools</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">drinkware</a>
+            </li>
+            <li>
+              <a class="sub-btn" href="javascript:void(0)" role="button">COLLECTIBLES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Main view section -->
+    <section>
+      <div class="view">
+        <figure>
+          <div></div>
+          <div></div>
+        </figure>
+        <div class="view__content">
+          <h1>Enjoy Free Shipping on Spring On-The-Go Staples</h1>
+          <div>
+            <a href="javascript:void(0)">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="progress">
+          <div>
+            <p>01</p>
+            <p>02</p>
+          </div>
+          <progress id="progress" value="0" min="0" max="100"></progress>
+        </div>
+      </div>
+    </section>
+    <!-- Category card section -->
+    <section>
+      <div class="category-card">
+        <div class="category-card-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop trabel mugs</span>
+                  <span>from the office to the outdoors</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/mug_shop_item.png" alt="mug">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop instant</span>
+                  <span>cafe-qualty lattes, anywhere</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/instant_shop_item.png" alt="instant coffee package">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop blends</span>
+                  <span>expertly crafted, uniquely delicous</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/blend_shop_item.png" alt="blend coffee package">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop single origin</span>
+                  <span>radiant coffees from across the world</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/single_origin_item.png" alt="single origin package">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop brew tools</span>
+                  <span>tools to brew like a barista</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/brew_tool_item.png" alt="brew tool">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="swiper-slide__title">
+                  <span>shop espresso</span>
+                  <span>from bright to bold</span>
+                </div>
+                <div class="swiper-slide__img">
+                  <img src="/public/images/espresso_item.png" alt="whole bean package for espresso">
+                </div>
+              </a>
+            </div>
+          </div>
+          <button type="button" class="swiper-btn-prev" title="See the previous slide">
+            <svg stroke-width="1.5" stroke="#fff" width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+              <path d="M27.3536 4.35356C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464468C23.9763 0.269206 23.6597 0.269206 23.4645 0.464468C23.2692 0.65973 23.2692 0.976313 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53554C23.6597 7.7308 23.9763 7.7308 24.1716 7.53554L27.3536 4.35356ZM-4.37114e-08 4.5L27 4.5L27 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"></path>
+            </svg>
+            <span class="a11y">See the previous slide</span>
+          </button>
+          <button type="button" class="swiper-btn-next" title="See the next slide">
+            <svg stroke-width="1.5" stroke="#fff" width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.3536 4.35356C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464468C23.9763 0.269206 23.6597 0.269206 23.4645 0.464468C23.2692 0.65973 23.2692 0.976313 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53554C23.6597 7.7308 23.9763 7.7308 24.1716 7.53554L27.3536 4.35356ZM-4.37114e-08 4.5L27 4.5L27 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"></path>
+            </svg>
+            <span class="a11y">See the next slide</span>
+          </button>
+        </div></div>
+    </section>
+    <!-- Subscription section -->
+    <section class="subscription">
+      <article class="subscription__fir_article">
+        <figure>
+          <img src="/public/images/subscription_DSK_M3.jpg" alt="coffee & coffee table">
+        </figure>
+        <div class="content">
+          <h2>In the Spirit of Adventure</h2>
+          <p>Subscribe to our Single Origin Assortment and travel the world through coffee. Our experts search the globe for unique flavor profiles. This subscription rotates through seasonal, hand-selected single origins. Subscribers also get free shipping.</p>
+          <a href="javascript:void(0)">SUBSCRIBE NOW</a>
+        </div>
+      </article>
+      <article class="subscription__sec_article">
+        <div class="content">
+          <div class="content__inner">
+            <h2>Blue Bottle Coffee Subscription</h2>
+            <p>
+              Follow your taste buds and find your favorite flavor profiles with one of our new coffee subscriptions.<br>
+            </p>
+            <dl>
+              <div>
+                <dt>
+                  <span aria-hidden="false">Radiant Assortment</span>
+                </dt>
+                <dd>
+                  <p>
+                    Get a rotating assortment of bright, fruit-forward coffees straight to your door.<br>
+                  </p>
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  <span aria-hidden="false">Comforting Assortment</span>
+                </dt>
+                <dd>
+                  <p>
+                    Get a rotating selection of deliciously bold, rich coffees straight to your door.<br>
+                  </p>
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  <span aria-hidden="false">Balanced Assortment</span>
+                </dt>
+                <dd>
+                  <p>
+                    Get a rotating selection of well-balanced coffees straight to your door.<br>
+                  </p>
+                </dd>
+              </div>
+            </dl>
+            <a href="javascript:void(0)">SHOP SUBSCRIPTIONS</a>
+          </div>
+        </div>
+        <figure>
+          <div>
+            <span>
+              <img
+                alt="Blue Bottle Coffee Subscription with bag of beans and a Chemex pour over"
+                src="/public/images/subscription_DSK_M5.jpg">
+            </span>
+          </div>
+        </figure>
+      </article>
+    </section>
+    <!-- Interior view section -->
+    <section class="interior-view">
+      <div aria-roledescription="carousel" aria-labelledby="blue-bottle-cafes-carousel-heading">
+        <div >
+          <h2 class="a11y">Blue Bottle Cafes</h2>
+        </div>
+        <div class="interior-view-inner">
+          <div class="interior-view-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" aria-label="1 of 3" aria-roledescription="slide">
+                <figure>
+                  <img alt="Blue bottle coffee cafe in wolf point" src="/public/images/silde_Yokohama_Minatomorai.jpg">
+                  <figcaption >
+                    <span aria-hidden="false">Yokohama, Japan</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide" aria-label="2 of 3" aria-roledescription="slide">
+                <figure>
+                  <img alt="Blue bottle coffee cafe in wolf point" src="/public/images/slide_Wolf_Point.jpg">
+                  <figcaption >
+                    <span aria-hidden="false">Wolf Point, Chicago</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide" aria-label="3 of 3" aria-roledescription="slide">
+                <figure>
+                  <img alt="JAKC, Jing’an Kerry Centre" src="/public/images/slide_JAKC_Chen_Hao.jpg">
+                  <figcaption >
+                    <span aria-hidden="false">JAKC, Jing’an Kerry Centre</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <button type="button" class="l-swiper-btn-prev" title="See the previous slide">
+              <svg stroke-width="1" stroke="#fff" width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                <path d="M27.3536 4.35356C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464468C23.9763 0.269206 23.6597 0.269206 23.4645 0.464468C23.2692 0.65973 23.2692 0.976313 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53554C23.6597 7.7308 23.9763 7.7308 24.1716 7.53554L27.3536 4.35356ZM-4.37114e-08 4.5L27 4.5L27 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"></path>
+              </svg>
+              <span class="a11y">See the previous slide</span>
+            </button>
+            <button type="button" class="l-swiper-btn-next" title="See the next slide">
+              <svg stroke-width="1" stroke="#fff" width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.3536 4.35356C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464468C23.9763 0.269206 23.6597 0.269206 23.4645 0.464468C23.2692 0.65973 23.2692 0.976313 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53554C23.6597 7.7308 23.9763 7.7308 24.1716 7.53554L27.3536 4.35356ZM-4.37114e-08 4.5L27 4.5L27 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"></path>
+              </svg>
+              <span class="a11y">See the next slide</span>
+            </button>
+          </div>
+          <div class="interior-view-swiper-indexes">
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
+          </div>
+        </div>
+      </div>
+      <h2>We design artful and engaging spaces to be paired with your favorite coffee.</h2>
+    </section>
+    <!-- our story section (About Section) -->
+    <section class="our-story">
+      <figure>
+        <div>
+          <span>
+            <img
+              alt="Blue Bottle coffee origin farm"
+              src="https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Site%20Launch%20HP/Blue_Bottle_coffee_origin.jpg">
+          </span>
+        </div>
+      </figure>
+      <div class="content">
+        <div class="inner">
+          <p>From seed to cup, we’ve gone to interminable lengths to realize coffee’s full potential. Come experience coffee as we do.</p>
+          <a href="javascript:void(0)">OUR STORY</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h2>BLUE BOTTLE COFFEE</h2>
+        <div class="top-inner">
+          <ul class="category">
+            <li class="category__item">
+              <div>
+                <h3>COMPANY</h3>
+                <ul class="subcategory">
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span >Our Brand</span>
+                    </a>
+                  </li>
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span >Our Coffee</span>
+                    </a>
+                  </li>
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span >Careers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="category__item">
+              <div>
+                <h3>LEARN</h3>
+                <ul class="subcategory">
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span>FAQs</span>
+                    </a>
+                  </li>
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span>Brew Guides</span>
+                    </a>
+                  </li>
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span>Virtual Classes</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="category__item">
+              <div>
+                <h3>MORE</h3>
+                <ul class="subcategory">
+                  <li class="subcategory__item">
+                    <a href="javascript:void(0)" target="_self" rel="noopener">
+                      <span >Contact Us</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="subscribe_form">
+            <form>
+              <label for="newsletterEmailInput">
+                <span >Subscribe and Stay Updated</span>
+              </label>
+              <p>Join our email newsletter for exclusive offers, Blue Bottle news, events, and first access to our most exciting releases. Plus, get complimentary shipping on your first purchase when you sign up.</p>
+              <div class="input-box">
+                <input type="email" id="newsletterEmailInput" class="border-0 border-white py-2 px-0 w-full text-white bg-black placeholder-white font-serif text-xs" autocomplete="email" inputmode="email" placeholder="enter your email address" value="">
+                <button type="submit" aria-label="sign up">
+                  <div>
+                    <svg width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(0deg)">
+                      <path transform="scale(1.5714285714285714 1)" d="M27.3536 4.35356C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464468C23.9763 0.269206 23.6597 0.269206 23.4645 0.464468C23.2692 0.65973 23.2692 0.976313 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53554C23.6597 7.7308 23.9763 7.7308 24.1716 7.53554L27.3536 4.35356ZM-4.37114e-08 4.5L27 4.5L27 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"></path>
+                    </svg>
+                    <span class="a11y">sign up</span>
+                  </div>
+                </button>
+              </div>
+            </form>
+            <a href="/us/eng/privacy" target="_self" rel="noopener">
+              <span >Privacy Policy &amp; Terms</span>
+            </a>
+            <ul class="icons">
+              <li>
+                <a href="https://www.facebook.com/bluebottlecoffee" rel="noreferrer" target="_blank">
+                  <div>
+                    <svg aria-labelledby="bbFacebook" fill="none" height="19" id="facebook-icon" viewBox="0 0 9 19" width="9" xmlns="http://www.w3.org/2000/svg">
+                      <title id="bbFacebook">Go to Blue Bottle Facebook</title>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.72072 6.19694V4.56934C5.72072 4.32435 5.73126 4.1352 5.75322 4.00099C5.7784 3.85949 5.83001 3.72431 5.9052 3.60287C5.99357 3.46619 6.12972 3.36947 6.28558 3.33266C6.46128 3.28402 6.69408 3.2588 6.98574 3.2588H8.5758V0H6.03434C4.56375 0 3.5078 0.357585 2.86651 1.07276C2.22433 1.78883 1.90368 2.84177 1.90368 4.23428V6.19784H0V9.45754H1.90368V18.9151H5.72072V9.45754H8.2613L8.59776 6.19694H5.72072Z" fill="white" fill-opacity="0.8"></path>
+                    </svg>
+                    <span class="a11y">Go to Blue Bottle Facebook</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/bluebottleroast" rel="noreferrer" target="_blank">
+                  <div>
+                    <svg aria-labelledby="bbTwitter" fill="none" height="14" id="twitter-icon" viewBox="0 0 18 14" width="18" xmlns="http://www.w3.org/2000/svg">
+                      <title id="bbTwitter">Go to Blue Bottle Twitter</title>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7371 1.98487C16.1866 1.57576 16.5225 1.06156 16.7134 0.490521C16.7677 0.326734 16.5831 0.185742 16.4288 0.272701C15.8628 0.595947 15.2527 0.838713 14.6168 0.993701C14.5417 1.01133 14.4635 1.01117 14.3885 0.993261C14.3135 0.975348 14.2439 0.940189 14.1856 0.890701C13.5039 0.314861 12.6332 -0.00133879 11.7329 4.2609e-06C11.3413 4.2609e-06 10.9463 0.0591027 10.5582 0.174767C9.96918 0.349031 9.43643 0.669998 9.01209 1.10627C8.58775 1.54254 8.28636 2.07916 8.13741 2.66365C8.02907 3.09274 7.99929 3.53722 8.04944 3.97648C8.05154 3.99441 8.04971 4.01258 8.04406 4.02976C8.03841 4.04694 8.02907 4.06275 8.01667 4.07611C8.00369 4.09015 7.98785 4.10139 7.97018 4.10909C7.95251 4.1168 7.93338 4.1208 7.91404 4.12085C5.26898 3.88446 2.89645 2.66619 1.21903 0.687234C1.19904 0.66389 1.17366 0.645546 1.14499 0.633723C1.11631 0.6219 1.08517 0.616938 1.05414 0.619249C1.02312 0.62156 0.993102 0.631077 0.966584 0.647011C0.940066 0.662945 0.91781 0.684838 0.90166 0.710873C0.573136 1.25344 0.399767 1.87253 0.399729 2.50324C0.399885 2.97778 0.497802 3.44741 0.687625 3.88405C0.877448 4.32069 1.15528 4.71536 1.5045 5.04447C1.20959 4.97758 0.925284 4.87194 0.659319 4.73041C0.630212 4.71461 0.597443 4.70641 0.564163 4.70658C0.530882 4.70676 0.498207 4.71532 0.469279 4.73143C0.440351 4.74754 0.416142 4.77066 0.398977 4.79857C0.381813 4.82649 0.372271 4.85825 0.371269 4.89082C0.352295 6.32691 1.22679 7.60512 2.53596 8.18007L2.45747 8.18091C2.25049 8.18091 2.0392 8.16149 1.83308 8.1235C1.80039 8.11684 1.76649 8.11866 1.73474 8.12879C1.70299 8.13892 1.6745 8.157 1.6521 8.18123C1.62969 8.20547 1.61415 8.23502 1.60702 8.26695C1.59989 8.29889 1.60141 8.33209 1.61144 8.36327C2.03661 9.6398 3.17932 10.5811 4.54713 10.7947C3.40957 11.528 2.07651 11.9168 0.714514 11.9126H0.285889C0.222755 11.9116 0.161119 11.9314 0.110795 11.9687C0.0604702 12.0061 0.0243508 12.0588 0.00818778 12.1186C-0.00678168 12.1785 -0.00111803 12.2416 0.0242998 12.2981C0.0497177 12.3546 0.0934685 12.4013 0.148763 12.4309C1.70679 13.3005 3.46949 13.7574 5.26294 13.7564C6.83428 13.7564 8.30385 13.4559 9.63199 12.8649C10.8495 12.3222 11.9383 11.5372 12.829 10.56C13.6744 9.63627 14.3381 8.56749 14.7867 7.40757C15.2222 6.28892 15.4525 5.09513 15.4525 3.95622V3.90219C15.4525 3.71898 15.5387 3.5476 15.6888 3.4294C16.2566 2.98617 16.7532 2.46194 17.1618 1.87427C17.2696 1.71892 17.0997 1.52474 16.9221 1.60073C16.5395 1.7637 16.1426 1.89227 15.7362 1.98487H15.7371Z" fill="white" fill-opacity="0.8"></path>
+                    </svg>
+                    <span class="a11y">Go to Blue Bottle Twitter</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/bluebottle" rel="noreferrer" target="_blank">
+                  <div>
+                    <svg aria-labelledby="bbInstagram" fill="none" height="17" id="instagram-icon" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
+                      <title id="bbInstagram">Go to Blue Bottle Instagram</title>
+                      <path d="M11.8111 0.00079392H4.50152C2.01893 0.00079392 0 1.984 0 4.42133V11.5999C0 14.0381 2.01893 16.0221 4.50152 16.0221H11.8111C14.2937 16.0221 16.3126 14.0373 16.3126 11.5999V4.42212C16.3126 1.9848 14.2937 0 11.8111 0V0.00079392ZM14.8653 11.6007C14.8653 13.2553 13.495 14.601 11.8111 14.601H4.50152C2.81762 14.601 1.44731 13.2553 1.44731 11.6007V4.42212C1.44731 2.7676 2.81762 1.42191 4.50152 1.42191H11.8111C13.495 1.42191 14.8653 2.7676 14.8653 4.42212V11.6007Z" fill="white" fill-opacity="0.8"></path>
+                      <path d="M7.8656 4.13488C5.54736 4.13488 3.6626 5.9863 3.6626 8.26326C3.6626 10.5394 5.54815 12.3916 7.8656 12.3916C10.1838 12.3916 12.0694 10.5394 12.0694 8.26326C12.0694 5.9863 10.1838 4.13488 7.8656 4.13488ZM7.8656 10.9689C6.34604 10.9689 5.10991 9.75503 5.10991 8.26247C5.10991 6.7699 6.34604 5.5552 7.8656 5.5552C9.38595 5.5552 10.6221 6.7699 10.6221 8.26247C10.6221 9.75503 9.38516 10.9697 7.8656 10.9697V10.9689ZM12.0472 2.67011C11.7677 2.67011 11.4938 2.78125 11.2969 2.97497C11.0984 3.16869 10.9849 3.43782 10.9849 3.71331C10.9849 3.98642 11.0992 4.25556 11.2969 4.45007C11.4979 4.64514 11.7671 4.75424 12.0472 4.75424C12.3273 4.75424 12.5964 4.64514 12.7974 4.45007C12.9951 4.25556 13.1078 3.98642 13.1078 3.71252C13.1078 3.43782 12.9951 3.16869 12.7974 2.97497C12.5964 2.77924 12.3269 2.66983 12.0464 2.67011H12.0472Z" fill="white" fill-opacity="0.8"></path>
+                    </svg>
+                    <span class="a11y">Go to Blue Bottle Instagram</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCyki4e6RG84BT_xzi4oYkRw" rel="noreferrer" target="_blank">
+                  <div>
+                    <svg aria-labelledby="bbYoutube" fill="none" height="16" id="youtube-icon" viewBox="0 0 22 16" width="22" xmlns="http://www.w3.org/2000/svg">
+                      <title id="bbYoutube">Go to Blue Bottle Youtube</title>
+                      <path d="M21.2092 2.36772C21.0857 1.90872 20.8438 1.49022 20.5077 1.15412C20.1716 0.818027 19.7531 0.576138 19.2941 0.452682C17.6047 0 10.8309 0 10.8309 0C10.8309 0 4.05702 0 2.36772 0.452682C1.90873 0.57615 1.49023 0.818043 1.15414 1.15414C0.818043 1.49023 0.57615 1.90873 0.452682 2.36772C0 4.05715 0 7.58165 0 7.58165C0 7.58165 0 11.1063 0.452682 12.7954C0.576138 13.2544 0.818027 13.6729 1.15412 14.009C1.49022 14.3451 1.90872 14.587 2.36772 14.7105C4.05702 15.1633 10.8309 15.1633 10.8309 15.1633C10.8309 15.1633 17.6047 15.1633 19.2941 14.7105C19.7531 14.587 20.1716 14.3452 20.5077 14.0091C20.8438 13.673 21.0857 13.2544 21.2092 12.7954C21.6617 11.1061 21.6617 7.58151 21.6617 7.58151C21.6617 7.58151 21.6617 4.05715 21.2092 2.36772Z" fill="white" fill-opacity="0.8"></path>
+                      <path d="M8.66602 10.8306V4.33205L14.2937 7.58133L8.66602 10.8306Z" fill="white"></path>
+                    </svg>
+                    <span class="a11y">Go to Blue Bottle Youtube</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="bottom-inner">
+          <ul class="bottom-inner__list">
+            <li>
+              <a href="/us/eng/terms-of-use" target="_self" rel="noopener">
+                <span >Terms of Use</span>
+              </a>
+            </li>
+            <li>
+              <a href="/us/eng/privacy" target="_self" rel="noopener">
+                <span >Privacy Policy</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self" rel="noopener">
+                <span >Do not sell or share my personal information</span>
+              </a>
+            </li>
+          </ul>
+          <span >© 2022 BLUE BOTTLE COFFEE Inc., All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

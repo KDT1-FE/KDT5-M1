@@ -1,0 +1,9 @@
+# Nodejs
+node_modules
+
+# Bundler
+.cache
+.parcel-cache
+
+# Build
+dist

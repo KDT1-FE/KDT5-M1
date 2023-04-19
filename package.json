@@ -1,0 +1,25 @@
+{
+  "name": "blue-bottle-layout",
+  "version": "1.0.0",
+  "description": "블루보틀 메인 페이지 레이아웃 클론",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.17.2",
+    "@html-eslint/parser": "^0.17.1",
+    "@parcel/transformer-sass": "^2.8.3",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "type": "module",
+  "author": "peacepiece7",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "swiper": "^9.1.1"
+  }
+}

@@ -1,0 +1,125 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 128px;
+  font-family: $font-sans;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  top: 32px;
+  .gnb-wrap {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 200;
+    background-color: transparent;
+    .gnb {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding: 0 3.75rem;
+      .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: 60px;
+        .l-menu {
+          display: flex;
+          align-items: center;
+          a {
+            display: inline-block;
+            margin-right: 1.75rem;
+          }
+        }
+        .logo {
+          text-align: center;
+          img,
+          svg {
+            width: 80px;
+            height: 60px;
+          }
+        }
+        .r-menu {
+          display: flex; // flex의 직계자식은 display : block
+          justify-content: end;
+          align-items: center;
+          .r-menu-cover {
+            display: flex;
+            justify-content: space-between;
+            min-width: 106px;
+          }
+          svg {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+    }
+  }
+  .gnb-wrap.gnb-light {
+    position: fixed;
+    animation: gnbFadeIn 0.2s;
+    background-color: $color-cream;
+    .l-menu a {
+      color: $font-black;
+    }
+    .logo path {
+      fill: $color-bluebottle;
+      stroke: $color-bluebottle;
+    }
+    .r-menu-cover a:first-child path {
+      fill: $font-black;
+    }
+    .r-menu-cover a:nth-child(2) svg {
+      stroke: $font-black;
+    }
+    .r-menu-cover a:last-child path {
+      stroke: $font-black;
+    }
+  }
+  .gnb-wrap.gnb-transparent {
+    animation: gnbFadeOut 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .gnb-wrap.fix {
+    position: fixed;
+    animation: none !important;
+    background-color: $color-cream;
+    .l-menu a {
+      color: $font-black;
+    }
+    .logo path {
+      fill: $color-bluebottle;
+      stroke: $color-bluebottle;
+    }
+    .r-menu-cover a:first-child path {
+      fill: $font-black;
+    }
+    .r-menu-cover a:nth-child(2) svg {
+      stroke: $font-black;
+    }
+    .r-menu-cover a:last-child path {
+      stroke: $font-black;
+    }
+  }
+}
+
+@keyframes gnbFadeIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes gnbFadeOut {
+  from {
+    position: fixed;
+    top: 0;
+  }
+  to {
+    position: sticky;
+    top: -100px;
+  }
+}
