@@ -1,0 +1,664 @@
+@import "_variables";
+@import "_mixins";
+
+// COMMON
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $black;
+  margin-top: 5px;
+  height: 3000px;
+}
+.inner {
+  max-width: 95vw;
+  margin: 0 auto;
+  position: relative;
+}
+.inner_narrow {
+  max-width: 94vw;
+  position: relative;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  position: relative;
+  margin: 0 auto 0;
+  height: 58px;
+  width: 140px;
+  @include button($black);
+  background-color: transparent;
+  border: 1px solid $black;
+  transition: 0.5s;
+  &:hover {
+    background-color: $black;
+    @include button($white);
+  }
+}
+
+// HEADER
+header {
+  background-color: $white;
+  opacity: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  .inner {
+    height: $navheight;
+    font-family: "Montserrat", sans-serif;
+    .nav {
+      display: flex;
+      .logo {
+        position: absolute;
+        margin: auto 0;
+        left: 0;
+        top: 29px;
+        font-size: 19px;
+        color: $black;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 28px;
+        .lang {
+          display: flex;
+          margin-right: 60px;
+          li {
+            a {
+              margin: 1px 8px;
+              font-size: 13px;
+              color: $black;
+              &:hover {
+                border-bottom: 1px solid $black;
+              }
+            }
+          }
+        }
+      }
+      .hamburger {
+        color: $black;
+        transform: scaleX(4);
+        font-weight: 300;
+      }
+    }
+  }
+}
+.header_white {
+  max-width: 95vw;
+  margin: 0 auto;
+  position: relative;
+  .nav_white {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    .logo {
+      position: absolute;
+      margin: auto 0;
+      left: 0;
+      top: 29px;
+      font-size: 19px;
+      color: $white;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 28px;
+      .lang {
+        display: flex;
+        margin-right: 60px;
+        li {
+          a {
+            margin: 1px 8px;
+            font-size: 13px;
+            color: $white;
+            &:hover {
+              border-bottom: 1px solid $white;
+            }
+          }
+        }
+      }
+    }
+    .hamburger {
+      color: $white;
+      transform: scaleX(4);
+      font-weight: 300;
+    }
+  }
+}
+// BIG BANNER
+.bigbanner {
+  background-image: url("https://hkd-microbiome.com/ko/wp-content/uploads/sites/3/2021/12/main-visual-02.jpg");
+  background-position: center;
+  height: 100vh;
+  box-sizing: border-box;
+  .inner {
+    background-size: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    color: $white;
+    .mainTitle {
+      font-size: 2.6rem;
+      font-weight: 700;
+      width: 20vw;
+      line-height: 1.4;
+      margin-top: 36vh;
+      margin-bottom: 30px;
+    }
+    .subTitle {
+      font-weight: 300;
+      width: 30vw;
+      line-height: 1.7;
+      letter-spacing: 1.1;
+      margin-bottom: 200px;
+    }
+    .dots {
+      width: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 690px;
+      color: $white;
+      border-radius: 30px;
+      border: none;
+      .material-icons {
+        font-size: 0.1rem;
+        transition: width 0.3s, height 0.3s, opacity 0.4s;
+        &:hover {
+          border-radius: 30px;
+          background-color: transparent;
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+}
+
+// CENTER GUIDE
+.center_intro {
+  margin: 180px 0 0 0;
+  height: $centerheight;
+  max-width: 100vw;
+  top: 0;
+  .center_title {
+    width: 18%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .center_main,
+    .arrow {
+      @include title($black);
+    }
+    .arrow {
+      transform: translate(20px, 5px);
+      transition: all 1s;
+    }
+    &:hover {
+      .arrow {
+        transform: translate(30px, 5px);
+      }
+    }
+    .center_sub {
+      @include subTitle($blackOpacity);
+    }
+  }
+  .center_image {
+    padding-left: 40px;
+    margin-top: 80px;
+    overflow: hidden;
+    .box {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: content-box;
+      width: 120%;
+      .image_odd {
+        width: 600px;
+        height: 800px;
+        display: flex;
+        margin-right: 40px;
+        flex-direction: column;
+        align-items: end;
+        border-bottom: 0.5px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          .image_name {
+            border-bottom: 1px solid $black;
+          }
+        }
+        img {
+          width: 100%;
+          transition: 0.5s;
+          object-fit: cover;
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        .image_name {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: $blackOpacity;
+        }
+      }
+      .image_even {
+        width: 600px;
+        height: 130px;
+        display: flex;
+        margin-right: 60px;
+        flex-direction: column;
+        align-items: end;
+        border-bottom: 0.5px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          .image_name {
+            border-bottom: 1px solid $black;
+          }
+        }
+        img {
+          width: 100%;
+          object-fit: cover;
+          transition: 0.5s;
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        .image_name {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: $blackOpacity;
+        }
+      }
+    }
+  }
+}
+
+// VR GUIDE
+.vrTour {
+  background-color: $lightGrey;
+  height: 100vh;
+  padding: 160px 35px 160px 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  .vrTour_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .vrTour_main {
+      @include titleCenter($black);
+      z-index: 1;
+    }
+    .vr_button {
+      z-index: 1;
+      width: 190px;
+    }
+    .vrTour_sub {
+      @include subTitleCenter($blackOpacity);
+      margin-bottom: 30px;
+      z-index: 1;
+    }
+  }
+  .illust-pic {
+    width: 100vw;
+    height: 100%;
+    background-image: url("https://i.postimg.cc/fW9XBrbG/2023-04-04-7-58-55.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    position: absolute;
+    // top: 150;
+    bottom: -20vh;
+  }
+}
+
+// HERITAGE
+.Heritage {
+  position: relative;
+  height: 240vh;
+  width: 100vw;
+  background-image: url("https://hkd-microbiome.com/ko/wp-content/themes/lghmc/images/main/main-rnd-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .Heritage_inner {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    .Heritage_main {
+      padding-top: 25vh;
+      div {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        &:first-child {
+          margin-bottom: 80vh;
+        }
+        &:nth-child(2) {
+          margin-bottom: 55vh;
+        }
+        &:last-child {
+          margin-top: 55vh;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .map_icon {
+      transform: scale(0.7, 0.7);
+      position: absolute;
+      top: 37vh;
+    }
+    .Heritage_icons {
+      transform: scale(0.9, 0.9);
+      position: absolute;
+      bottom: 12vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 50rem;
+    }
+  }
+}
+
+//RESEARCH
+.research {
+  position: relative;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    .left_list {
+      position: absolute;
+      padding-left: 6vw;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      .research_list {
+        @include subTitle($white);
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s;
+        &:hover {
+          border-bottom: 1px solid $white;
+          &::before {
+            content: "→ ";
+          }
+        }
+        &:first-child {
+          @include title($white);
+          border-bottom: none;
+          &::before {
+            content: "";
+          }
+        }
+      }
+    }
+    .research_img {
+      height: 100vh;
+      width: 50vw;
+      background-image: url("https://i.postimg.cc/kX0SXFyY/researchimg0128.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .right {
+    background-color: $beige;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-bottom: 20px;
+    }
+    .research_info {
+      @include titleMideum($black);
+    }
+    .reserach_text {
+      @include subTitleCenter($black);
+      margin-bottom: 30px;
+      width: 50%;
+    }
+  }
+}
+
+// INGREDIENTS
+.ingredients {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  .inner_narrow {
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .in_title {
+      margin-bottom: 10vh;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $black;
+      text-align: center;
+    }
+    .ingredient {
+      width: 89vw;
+      margin-bottom: 9vh;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          z-index: 1;
+          color: $white;
+          font-size: 1.1rem;
+          position: absolute;
+          top: center;
+          left: center;
+          text-align: center;
+          writing-mode: vertical-lr;
+          transition: 0.3s;
+        }
+        img {
+          height: 34vh;
+          object-fit: cover;
+          filter: grayscale(70%);
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+        &:hover {
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+// PRODUCT
+.products {
+  height: 160vh;
+  width: 100vw;
+  background-color: $lightGrey;
+  background-color: $lightGrey;
+  padding-top: 25vh;
+  .inner {
+    .product_title {
+      display: flex;
+      width: 20%;
+      flex-direction: column;
+      justify-content: space-between;
+      .product_main,
+      .arrow {
+        @include title($black);
+        &:hover {
+          .arrow {
+            transform: translate(30px, 5px);
+          }
+        }
+      }
+      .arrow {
+        transform: translate(20px, 5px);
+        transition: all 1s;
+      }
+      .product_sub {
+        @include subTitle($blackOpacity);
+      }
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      .product__mission {
+        width: 40%;
+        height: 100%;
+        margin-top: 25vh;
+        .product_img {
+          margin-bottom: 40px;
+          height: 595px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            transition: 1s;
+            margin-right: 10px;
+            transform: scale(0.81, 0.81);
+            &:hover {
+              transform: scale(0.83, 0.83);
+            }
+          }
+        }
+      }
+      .product__sum {
+        width: 40%;
+        height: 100%;
+        .product_img {
+          margin-bottom: 40px;
+          height: 595px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            transition: 1s;
+            margin-right: 10px;
+            transform: scale(0.81, 0.81);
+            &:hover {
+              transform: scale(0.83, 0.83);
+            }
+          }
+        }
+      }
+      .product_name {
+        @include titleMideum($black);
+      }
+      .product_text {
+        @include subTitleCenter($black);
+        text-align: left;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  padding-top: 18vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2c2a29;
+  box-sizing: border-box;
+  .inner {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    h2 {
+      color: $white;
+      font-size: 3.2rem;
+    }
+    .footer__menu {
+      margin-top: 4vh;
+      margin-bottom: 20vh;
+      display: flex;
+      flex-direction: column;
+      a {
+        color: $white;
+        width: 25vw;
+        font-size: 1.1rem;
+        border-bottom: 0.1px solid $white;
+        line-height: 4;
+        &:hover {
+          &::before {
+            content: "→ ";
+          }
+        }
+      }
+    }
+    .material-symbols-outlined {
+      position: absolute;
+      padding: 3px;
+      right: 0;
+      bottom: 10vh;
+      color: $white;
+      font-size: 3rem;
+      z-index: 2;
+      transition: 1s;
+      &:hover {
+        transform: translate(0, -30px);
+      }
+      &::before {
+        content: "";
+      }
+    }
+    .footer_info {
+      bottom: 0;
+      font-weight: 400;
+      color: $white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      a {
+        margin-left: 15px;
+        padding: 5px 0 0 0;
+        color: $white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 1;
+        transition: 0.5s;
+        &:hover {
+          border-bottom: 0.5px solid $white;
+        }
+      }
+    }
+  }
+}
