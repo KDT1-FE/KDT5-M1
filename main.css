@@ -1,0 +1,261 @@
+
+#number_1 {
+    /* gitpadding-bottom:  100px; */
+    background: url(https://www.kovo.co.kr/images/intro/bg_pointro_2223_2.jpg) center top no-repeat;
+  }
+  .frist {
+    box-sizing: border-box;
+    height: 599px;
+    padding-top: 175px;
+  }
+  .frist .dodram {
+    height: 300px;
+    text-align: center;
+  }
+  .frist .rink {
+    z-index: 10;
+   margin-top: 20px;
+   text-align: center;
+   font-size: 0px;
+  }
+  .frist .rink a{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    height: 56px;
+  }
+  .frist .rink a.lefticon {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: large;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0px 10px;
+  /* background: url(https://www.kovo.co.kr/images/intro/btn_home.png) */
+  }
+  .frist .rink a.lefticon span {
+    color: #fff;
+    position: absolute;
+    height: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .frist .rink a.righticon {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: large;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0px 10px;
+  }
+  .frist .rink a.righticon span {
+    color: #fff;
+    position: absolute;
+    height: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .Matchupday {
+    position: relative;
+    background: #fff;
+  }
+  .Matchupday .title {
+    padding: 102px 0 66px 0;
+    text-align: center;
+  }
+  .Matchupday .title .start {
+      font-size: 50px;
+      font-weight: 2000px;
+  }
+  .Matchupday .title .mid {
+      font-size: 50px;
+      color: rgb(196, 196, 196);
+      line-height: 10px;
+  }
+  .Matchupday .matchup {
+    margin: 0 auto;
+    width: 836px;
+    padding-bottom: 104px;
+    overflow: hidden;
+  
+    display: flex;
+    justify-content:space-around
+  }
+  .Matchupday .matchup .gameboy {
+    width: 357px;
+    position: relative;
+  }
+  .Matchupday .matchup .gameboy h3 {
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-align: center;
+  
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+  }
+  .matchup .gameboy .match {
+   display: flex;
+   margin-top: 25px;
+   width: 100%;
+   justify-content: space-around;
+  }
+  .matchup .gameboy .team1 p {
+    text-align: center;
+  }
+  .matchup .gameboy .match .vs{
+    align-self: center;
+    font-size: 20px;
+    color: blue;
+   }
+  .matchup .gameboy .team2 p {
+    text-align: center;
+  }
+  .Matchupday .matchup .gameboy table{
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 25px;
+  
+  }
+  .Matchupday .matchup .gameboy table tr{
+  }
+  .Matchupday .matchup .gameboy table th{
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .Matchupday .matchup .gameboy table td{
+    border: 1px solid gray;
+    text-align: center;
+  }
+  .Matchupday .matchup .gamegirl{
+    width: 357px;
+    position: relative;
+  }
+  .Matchupday .matchup .gamegirl h3 {
+    border: 1px solid rgb(141, 7, 7);
+    background-color: rgb(141, 7, 7);
+    color: #fff;
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-align: center;
+  
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .matchup .gamegirl .match {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .matchup .gamegirl .match .team1 p {
+    text-align: center;
+  }
+  .matchup .gamegirl .match .vs {
+    align-self: center;
+  }
+  .matchup .gamegirl .match .team2 p {
+    text-align: center;
+  }
+  .Matchupday .matchup .gamegirl table {
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .Matchupday .matchup .gamegirl table th {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .Matchupday .matchup .gamegirl table td {
+    border: 1px solid gray;
+    text-align: center  ;
+  }
+  .second .tvinfor {
+    background: gray;
+    text-align: center;
+    line-height: 144px;
+    font-size: 17px;
+    font-weight: 400px;
+    color: #fff;
+  }
+  .second {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  footer {
+    position: relative;
+  }
+  footer .top1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 90px;
+  }
+  footer .top1 .teamname {
+    text-align: center;
+    line-height: 50px;
+    color: gray;
+  }
+  footer .top2 {
+    font-size: 75%;
+    text-align: center;
+    color: gray;
+  }
+  .bottom {
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    margin: 50px 0 20px 0;
+  }
+  .bottom .bottom1 {
+    border: 30px solid rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+  }
+  .bottom .bottom1 a.Blink span {
+    color: white;
+    font-size: small;
+  }
+  .bottom .bottom1 a.Alink span {
+   color: gray;
+   font-size: small; 
+  }
+  .bottom .bottom1 a {
+    color: gray;
+  }
+  .bottom .bottom2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    padding-top: 30px;
+    background-color: rgb(17, 17, 17);
+  }
+  .bottom .bottom2 {
+    text-align: center;
+  }
+  .bottom .bottom2 .address {
+    text-align: center;
+    color: gray;
+    font-size: small;
+    padding: 25px;
+  }
+  .bottom .bottom2 .logo {
+    line-height: 150px;
+  }
