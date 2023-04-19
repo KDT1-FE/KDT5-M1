@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트위터</title>
+  <!-- 구글 머터리얼 아이콘 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- 구글 폰트  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <!-- 리셋 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+      <div class="inner-top">
+        <div class="logo">
+          <div class="menu-container">
+              <a href="/" class="select-shadow">
+                <img src="./images/twitter_icon.png" alt="TWITTER ICON" class="icon image"/>
+              </a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">home</div>
+              <h2>홈</h2>
+            </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">tag</div>
+              <h2>탐색하기</h2>
+            </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">notifications</div>
+              <h2>알림</h2>
+            </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">mail</div>
+              <h2>쪽지</h2>
+            </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">turned_in</div>
+              <h2>북마크</h2>
+            </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+                <div class="material-icons">person</div>
+               <h2>프로필</h2>
+              </div>
+          </div>
+          <div class="menu-container">
+            <div class="select-shadow">
+              <div class="material-icons">more_horiz</div>
+              <h2>더보기</h2>
+            </div>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="btn">
+          <h5>트윗하기</h5>
+        </a>  
+        
+      </div>
+
+      <div class="inner-bottom">
+        <div class="menu-container">
+          <div class="profile select-shadow">
+            <div class="name-card">
+              <div class="profile-image">
+                <img src="/images/default_profile.png" alt="PROFILE" />
+              </div>
+              <div class="card">
+                <h5 class="name-full">
+                  임승이
+                </h5>
+                <h5 class="name-id">
+                  @idey
+                </h5>  
+              </div>
+            </div>
+            <div class="material-icons">more_horiz</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    
+  </header>
+
+
+
+  <section>
+    <!-- 섹션 -->
+    <div class="inner">
+
+      <div class="main-section">
+        <div class="main-menu">
+          <a href="/">
+            <div class="home menu-box">홈</div>
+          </a>
+          <div class="menu">
+            <div class="menu-box">
+              <div class="menu-text">추천</div>
+            </div>
+            <div class="menu-box">
+              <div class="menu-text">팔로우 중</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweets-section">
+          <div class="menu-back"></div>
+          <div class="insert">
+            <div class="profile-image">
+              <img src="/images/default_profile.png" alt="PROFILE"/>
+            </div>
+            <div class="insert-menu">
+              <input type="text" placeholder="무슨 일이 일어나고 있나요?"/>
+              <div class="insert-menu__bottom">
+                <div class="icons">
+                  <div class="select-shadow">
+                    <span class="material-icons">image</span>
+                  </div>
+                  <div class="select-shadow">
+                    <span class="material-icons">gif_box</span>
+                  </div>
+                  <div class="select-shadow">
+                    <span class="material-icons">mood</span>
+                  </div>
+                  <div class="select-shadow">
+                    <span class="material-icons">date_range</span>
+                  </div>
+                  <div class="select-shadow">
+                    <span class="material-icons">place</span>
+                  </div>
+                </div>
+                <button class="btn">
+                  <h5>트윗하기</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tweets">
+            <div class="tweet">
+              <div class="profile-image">
+                <img src="/images/NCT_profile.jpg" alt="Lesserafim PROFILE" />
+              </div>
+              <div class="tweet_inside">
+                <div class="name-card">
+                  <div class="card">
+                    <h5 class="name-full info">
+                      NCT DREAM 
+                    </h5>
+                    <h5 class="info">
+                      @@NCTsmtown_DREAM ·  
+                    </h5>
+                    <h5 class="info">
+                      4h
+                    </h5>
+                  </div>
+                  <span class="material-icons">more_horiz</span>
+                </div>
+                <div class="tweet__inside">
+                  <span>
+                    시즈니이이이 <br>
+                    오늘 미주에서 첫번째 공연 재밌게 잘 마무리했어요!!! <br>
+                    뉴어크 시즈니들의 많은 호응과 에너지로 재밌게 미주 첫 공연 잘 마무리 한거같아요!! 뉴어크 시즈니이이이!!! 고마워요💚<br>
+                    Fullsun<br>
+                    <br>
+                    #NCTDREAM #HAECHAN <br>
+                    #THEDREAMSHOW2 #NEWARK <br>
+                    #NCTDREAM_THEDREAMSHOW2_in_US <br>
+                  </span>
+                  <div class="pic_container_indiv">
+                    <div class="pic_container">
+                      <img src="./images/tweets/NCT1.jpeg" alt="nctdream_photo">
+                    </div>
+                  </div>
+                  <div class="tweet__inside-icons">
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">sms</span>
+                      <span class="number">850</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">repeat</span>
+                      <span class="number">22.6만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">favorite_border</span>
+                      <span class="number">51.3만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">signal_cellular_alt</span>
+                      <span class="number">596.3만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">ios_share</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tweet">
+              <div class="profile-image">
+                <img src="/images/NJ_profile.jpg" alt="Lesserafim PROFILE" />
+              </div>
+              <div class="tweet_inside">
+                <div class="name-card">
+                  <div class="card">
+                    <h5 class="name-full info">
+                      NewJeans 
+                    </h5>
+                    <h5 class="info">
+                      @NewJeans_ADOR ·  
+                    </h5>
+                    <h5 class="info">
+                      23h
+                    </h5>
+                  </div>
+                  <span class="material-icons">more_horiz</span>
+                </div>
+                <div class="tweet__inside">
+                  <span>
+                    [Music🎵]<br>
+                    Hi Bunnies, you can now listen to 'Zero' on Girl Krush playlist <br>
+                    @Spotify<br>
+                    <br>
+                    <br>
+                   🔗https://open.spotify.com/playlist/37i9dQZF1DXbSWYCNwaARB?si=6df16644e2484107 <br>
+                    <br>
+                   #NewJeans #뉴진스
+                  </span>
+                  <div class="pic_container_indiv">
+                    <div class="pic_container">
+                      <img src="./images/tweets/NJ1.jpeg" alt="NewJeans Pic">
+                    </div>
+                  </div>
+                  <div class="tweet__inside-icons">
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">sms</span>
+                      <span class="number">41</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">repeat</span>
+                      <span class="number">1,954</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">favorite_border</span>
+                      <span class="number">16.2만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">signal_cellular_alt</span>
+                      <span class="number">454만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">ios_share</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tweet">
+              <div class="profile-image">
+                <img src="/images/LESSERAFIM_profile.jpg" alt="Lesserafim PROFILE" />
+              </div>
+              <div class="tweet_inside">
+                <div class="name-card">
+                  <div class="card">
+                    <h5 class="name-full info">
+                      르세라핌 
+                    </h5>
+                    <h5 class="info">
+                      @IM_LESSERAFIM ·  
+                    </h5>
+                    <h5 class="info">
+                      3월 25일
+                    </h5>
+                  </div>
+                  <span class="material-icons">more_horiz</span>
+                </div>
+                <div class="tweet__inside">
+                  <span>
+                    윤진언니랑 데이트😙 <br>
+                    어머! 우리잖아!! 👀 <br>
+                    매장에서도 사이좋게 마주보고 있네ㅋㅋㅋㅋㅋ <br>
+                    #LE_SSERAFIM #KAZUHA<br>
+                    #ルセラフィム #カズハ
+                  </span>
+                  <div class="pic_container--four">
+                    <div class="pic_container__indiv--four">
+                      <img src="./images/tweets/T1_P1.jpeg" alt="lesserafim_photo1">
+                    </div>
+                    <div class="pic_container__indiv--four">
+                      <img src="./images/tweets/T1_P2.jpeg" alt="lesserafim_photo2">
+                    </div>
+                    <div class="pic_container__indiv--four">
+                      <img src="./images/tweets/T1_P3.jpeg" alt="lesserafim_photo3">
+                    </div>
+                    <div class="pic_container__indiv--four">
+                      <img src="./images/tweets/T1_P4.jpeg" alt="lesserafim_photo4">
+                    </div>
+                  </div>
+                  <div class="tweet__inside-icons">
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">sms</span>
+                      <span class="number">566</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">repeat</span>
+                      <span class="number">1.5만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">favorite_border</span>
+                      <span class="number">5.4만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">signal_cellular_alt</span>
+                      <span class="number">125.4만</span>
+                    </div>
+                    <div class="tweet__inside-icon small_text">
+                      <span class="material-icons">ios_share</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="trending">
+        <div class="searching-box">
+          <div class="searching">
+            <div class="searching__icon">
+              <div class="material-icons">search</div>
+            </div>
+            <input type="text" placeholder="트위터 검색" />
+          </div>  
+        </div>
+        <div class="menu-back"></div>
+        <div class="trending_container">
+          <div class="trending_container__head trending-box">
+            <h3>대한민국의 트렌드</h3>
+          </div>
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">1 · K-POP · 실시간 트렌드</p>
+                  <h4>#LikeCrazyNo1Hot100</h4>
+                  <p class="small_text">779,468 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">2 · K-POP · 실시간 트렌드</p>
+                  <h4>#JiminNo1Hot100</h4>
+                  <p class="small_text">531,503 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">3 · 엔터테인먼트 · 실시간 트렌드</p>
+                  <h4>스파이더맨</h4>
+                  <p class="small_text">9,712 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">4 · 엔터테인먼트 · 실시간 트렌드</p>
+                  <h4>슬램덩크</h4>
+                  <p class="small_text">1,400 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">5 · 엔터테인먼트 · 실시간 트렌드</p>
+                  <h4>스뉴유</h4>
+                  <p class="small_text">2,314 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">6 · 실시간 트렌드</p>
+                  <h4>패스트캠퍼스</h4>
+                  <p class="small_text">7,312 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">7 · 실시간 트렌드</p>
+                  <h4>고양이</h4>
+                  <p class="small_text">13,864 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">8 · K-POP · 실시간 트렌드</p>
+                  <h4>기리보이</h4>
+                  <p class="small_text">9,712 트윗</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box__trend trending-box">
+                  <p class="small_text">9 · K-POP · 실시간 트렌드</p>
+                  <h4>#PLAVE_ASTERUM</h4>
+                  <p class="small_text">18,938 트윗</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a href="javascript:void(0)">
+            <div class="trending-box trending-box__more">더 보기</div>
+          </a>
+        </div>
+        <div class="follow trending_container">
+          <div class="trending-box">
+            <h3>팔로우 추천</h3>
+          </div>
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box follow_reco">
+                  <div class="name-card">
+                    <div class="profile-image">
+                      <img src="/images/SVT_profile.jpg" alt="PROFILE" />
+                    </div>
+                    <div class="card">
+                      <h5 class="name-full">
+                        세븐틴(SEVENTEEN)
+                      </h5>
+                      <h5 class="name-id">
+                        @pledis_17
+                      </h5>  
+                    </div>
+                  </div>
+                  <button class="btn">팔로우</button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box follow_reco">
+                  <div class="name-card">
+                    <div class="profile-image">
+                      <img src="/images/IVE_profile.jpg" alt="PROFILE" />
+                    </div>
+                    <div class="card">
+                      <h5 class="name-full">
+                        IVE OFFICIAL
+                      </h5>
+                      <h5 class="name-id">
+                        @IVEstarship
+                      </h5>  
+                    </div>
+                  </div>
+                  <button class="btn">팔로우</button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="trending-box follow_reco">
+                  <div class="name-card">
+                    <div class="profile-image">
+                      <img src="/images/AESPA_profile.jpg" alt="PROFILE" />
+                    </div>
+                    <div class="card">
+                      <h5 class="name-full">
+                        aespa
+                      </h5>
+                      <h5 class="name-id">
+                        @aespa_official
+                      </h5>  
+                    </div>
+                  </div>
+                  <button class="btn">팔로우</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <a href="javascript:void(0)">
+            <div class="trending-box trending-box__more">더 보기</div>
+          </a>
+        </div>
+
+
+        <footer>
+          <div class="footer_href">
+            <a href="https://twitter.com/ko/tos" class="small_text">이용약관</a>
+          </div>
+          <div class="footer_href">
+            <a href="https://twitter.com/ko/privacy" class="small_text">개인정보 처리방침</a>
+          </div>
+          <div class="footer_href">
+            <a href="https://help.twitter.com/ko/rules-and-policies/twitter-cookies" class="small_text">쿠키정책</a>
+          </div>
+          <div class="footer_href">
+            <a href="https://help.twitter.com/ko/resources/accessibility" class="small_text">접근성</a>
+          </div>
+          <div class="footer_href">
+            <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo" class="small_text">광고정보</a>
+          </div>
+          <div class="footer_href">
+            <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo" class="small_text">더보기</a>
+            <span class="material-icons">more_horiz</span>
+          </div>
+          <p class="small_text">© 2023 Twitter, Inc.</p>
+        </footer>
+
+      </div>
+      
+    </div>
+  </section>
+</body>
+</html>
