@@ -1,0 +1,31 @@
+{
+  "name": "kdt5-m1",
+  "minifySvg": "false",
+  "version": "1.0.0",
+  "description": "원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.  \r 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.   \r 과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!",
+  "homepage": "https://hahahaday12.github.io/KDT5-M1",
+  "main": "index.js",
+ 
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDT1-FE/KDT5-M1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KDT1-FE/KDT5-M1/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.60.0"
+  }
+}
