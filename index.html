@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오 Clone</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.kakaocorp.com/page/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/content.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/modal.css" />
+  </head>
+  <body>
+    <noscript>자바스크립트를 켜주세요!</noscript>
+    <header>
+      <div class="header-content">
+        <h1 class="header-logo"><a href="."></a></h1>
+        <nav>
+          <ul id="gnb">
+            <li>
+              카카오
+              <div class="kakao-menu sub">
+                <span>카카오 문화</span>
+                <span>공동체</span>
+                <span>히스토리</span>
+              </div>
+            </li>
+            <li>뉴스</li>
+            <li>
+              기술과 서비스
+              <div class="tech sub">
+                <span>기술</span>
+                <span>서비스</span>
+              </div>
+            </li>
+            <li>
+              약속과 책임
+              <div class="promises sub">
+                <span>ESG</span>
+                <span>카카오의 다짐</span>
+                <span>소셜임팩트</span>
+                <span>디지털 권리</span>
+                <span>AI 윤리</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right-menu-pc">
+          <div class="header-icon"><i class="bi bi-search"></i></div>
+          <div class="header-icon"><i class="bi bi-globe"></i></div>
+          <div class="header-icon"><i class="bi bi-moon"></i></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="content-date">
+        <h1>
+          <div class="date-icon"></div>
+          오늘의 카카오
+        </h1>
+        <h1>4월 5일 수요일 소식입니다</h1>
+      </div>
+      <div class="content-container">
+        <div class="content-item">
+          <div class="item-card" id="left-box">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp"
+                  alt=""
+                />
+                <span class="text-category">보도자료</span>
+                <span class="text-date">2023.03.31</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  카카오, '신이어마켓'과 카카오톡 선물하기 <br />
+                  '만우절 프로모션' 진행
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#카카오커머스</span>
+                  <span class="text-keyword">#커머스CIC</span>
+                  <span class="text-keyword">#카카오톡 선물하기</span>
+                  <span class="text-keyword">#선물하기</span>
+                  <span class="text-keyword">#프로모션</span>
+                </div>
+                <span class="thumb"><!--image--></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-item right-item">
+          <div class="item-card first-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp"
+                  alt=""
+                />
+                <span class="text-category">보도자료</span>
+                <span class="text-date">2023.03.30</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  카카오, 윤석 사외이사 <br />
+                  이사회 의장 선임
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#이사회</span>
+                  <span class="text-keyword">#의장</span>
+                  <span class="text-keyword">#윤석</span>
+                  <span class="text-keyword">#사외이사</span>
+                </div>
+                <span class="thumb"><!--image--></span>
+              </div>
+            </div>
+          </div>
+          <div class="item-card second-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://www.kakaocorp.com/page/ico_stock.png"
+                  alt=""
+                />
+                <span class="text-category">주가정보</span>
+              </span>
+              <div class="card-content">
+                <div class="num-container">
+                  <strong class="num-title"> 65,000 </strong>
+                  <span class="info-down">▼ 200</span>
+                </div>
+                <div class="info-card">2023.04.05 19:44PM</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-card third-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp"
+                  alt=""
+                />
+                <span class="text-category">보도자료</span>
+                <span class="text-date">2023.03.31</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  카카오, 카카오톡 ‘프로필 <br />
+                  이모티콘 스티커’ 기능 도입
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#프로필</span>
+                  <span class="text-keyword">#이모티콘</span>
+                  <span class="text-keyword">#카카오톡</span>
+                </div>
+                <span class="thumb"><!--image--></span>
+              </div>
+            </div>
+          </div>
+          <div class="item-card fourth-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp"
+                  alt=""
+                />
+                <span class="text-category">보도자료</span>
+                <span class="text-date">2023.03.31</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  카카오, 카카오톡 ‘쇼핑탭’ 새 단장
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#프로필</span>
+                  <span class="text-keyword">#이모티콘</span>
+                  <span class="text-keyword">#카카오톡</span>
+                </div>
+                <span class="thumb"><!--image--></span>
+              </div>
+            </div>
+          </div>
+          <div class="item-card fifth-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://www.kakaocorp.com/page/ico_responsible.png"
+                  alt=""
+                />
+                <span class="text-category">약속과 책임</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  카카오는 당신과 함께 더 나은 <br />
+                  세상을 만듭니다.
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#약속과책임</span>
+                  <span class="text-keyword">#esg</span>
+                  <span class="text-keyword">#소셜임팩트</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-card sixth-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/2ab63ca2018700001.png?type=thumb&opt=C72x72.fwebp"
+                  alt=""
+                />
+                <span class="text-category">스토리</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  우리 모두, 저마다의 <br />
+                  Story
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#브런치스토리</span>
+                  <span class="text-keyword">#스토리</span>
+                </div>
+                <span class="thumb"><!--image--></span>
+              </div>
+            </div>
+          </div>
+          <div class="item-card seventh-card">
+            <div class="wrap-cont">
+              <span class="info">
+                <img
+                  src="https://www.kakaocorp.com/page/ico_responsible.png"
+                  alt=""
+                />
+                <span class="text-category">약속과 책임</span>
+              </span>
+              <div class="card-content">
+                <strong class="card-title">
+                  ESG보고서, <br />
+                  카카오의 약속과 책임
+                </strong>
+                <div class="info-card">
+                  <span class="text-keyword">#2021년성과</span>
+                  <span class="text-keyword">#ESG보고서</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="culture-container">
+        <strong>기술과 사람으로 더 나은 세상을 만듭니다.</strong>
+        <span>카카오문화 바로가기→</span>
+        <div class="culture-image"></div>
+      </div>
+      <div class="sns-content">
+        <h1>카카오의 다양한 소식을 구독해보세요.</h1>
+        <div class="sns-items">
+          <span class="kakao"></span>
+          <span class="youtube"></span>
+          <span class="instagram"></span>
+          <span class="facebook"></span>
+          <span class="linkedin"></span>
+        </div>
+      </div>
+      <div class="etc-container">
+        <div class="etc-item">
+          <strong>
+            사람과 기술로 일상을 돕는 카카오 <br />
+            서비스
+          </strong>
+          <span>서비스 바로가기 →</span>
+          <img
+            src="https://www.kakaocorp.com/page/bg_home_service.png"
+            alt=""
+          />
+        </div>
+        <div class="etc-item">
+          <strong>
+            세상만사에 관심이 많다면, 당신은 <br />
+            이미 카카오 크루
+          </strong>
+          <span>인재영입 바로가기 →</span>
+          <img
+            src="https://www.kakaocorp.com/page/bg_home_recruit.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <button class="more-button">카카오 소식 모아보기</button>
+      <span class="top-button">↑</span>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-kakao footer-menu">
+          <h1>카카오</h1>
+          <span>카카오 문화</span>
+          <span>공동체</span>
+          <span>히스토리</span>
+        </div>
+        <div class="footer-news footer-menu">
+          <h1>뉴스</h1>
+        </div>
+        <div class="footer-tech footer-menu">
+          <h1>기술과 서비스</h1>
+          <span>기술</span>
+          <span>서비스</span>
+        </div>
+        <div class="footer-tech footer-menu">
+          <h1>약속과 책임</h1>
+          <span>ESG</span>
+          <span>카카오의 다짐</span>
+          <span>소셜임팩트</span>
+          <span>디지털 권리</span>
+          <span>AI 윤리</span>
+        </div>
+        <div class="footer-invest footer-menu">
+          <h1>투자정보</h1>
+          <span>기업지배구조</span>
+          <span>주가정보</span>
+          <span>재무정보</span>
+          <span>IR행사</span>
+          <span>공시정보</span>
+          <span>공고</span>
+        </div>
+        <div class="footer-etc">
+          <div class="footer-service footer-menu">
+            <h1>고객센터</h1>
+            <span>카카오 고객센터</span>
+            <span>Daum 고객센터</span>
+          </div>
+          <div class="footer-recruit footer-menu">
+            <h1>인재영입</h1>
+          </div>
+          <div class="footer-account footer-menu">
+            <h1>카카오계정</h1>
+          </div>
+        </div>
+      </div>
+      <div class="footer-under">
+        <div class="footer-terms">
+          <span>이용약관</span>
+          <span>위치기반서비스이용약관</span>
+          <span>개인정보처리방침</span>
+          <span>운영정책</span>
+          <span>청소년보호정책</span>
+          <span>브랜드보호정책</span>
+          <span>권리침해신고안내</span>
+          <span>공지사항</span>
+          <span>사이버윤리실</span>
+          <span>Contact Us</span>
+        </div>
+        <span class="site">
+          관련사이트
+          <span>+</span>
+        </span>
+      </div>
+      <div class="copyright">
+        <small>© Kakao Corp. All rights reserved.</small>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div id="open">
+      <span class="kakao-link-icon"></span>
+      링크
+    </div>
+    <div id="modal-wrapper">
+      <div id="modal">
+        <div id="close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="kakao-image"></div>
+        <h2>카카오</h2>
+        <a class="modal-under-box" href="https://www.kakaocorp.com/page/">
+          바로가기
+        </a>
+      </div>
+    </div>
+    <script src="src/js/header.js"></script>
+    <script src="src/js/modal.js"></script>
+    <script src="src/js/content.js"></script>
+  </body>
+</html>

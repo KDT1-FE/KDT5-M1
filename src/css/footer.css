@@ -1,0 +1,101 @@
+footer {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer small {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    color: #888;
+    align-self: flex-start; }
+
+.footer-content {
+  max-width: 1296px;
+  width: 1296px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .footer-menu h1 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    position: relative;
+    cursor: pointer; }
+    .footer-menu h1:hover::before {
+      position: absolute;
+      top: 5px;
+      left: -16px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ffcd00;
+      vertical-align: top;
+      content: ""; }
+  .footer-menu span {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: #888;
+    cursor: pointer; }
+    .footer-menu span:hover {
+      color: #000; }
+
+.footer-etc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .footer-etc .footer-recruit {
+    margin-top: 18px; }
+  .footer-etc .footer-account {
+    margin-top: 8px; }
+
+.footer-under {
+  max-width: 1296px;
+  width: 1296px;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-under .footer-terms {
+    display: flex; }
+    .footer-under .footer-terms span {
+      font-size: 12px;
+      color: #888;
+      cursor: pointer; }
+      .footer-under .footer-terms span:first-child {
+        margin: 0; }
+      .footer-under .footer-terms span:nth-child(2), .footer-under .footer-terms span:nth-child(3) {
+        color: #000;
+        font-weight: 700;
+        margin-left: 24px; }
+      .footer-under .footer-terms span:nth-child(4), .footer-under .footer-terms span:nth-child(5), .footer-under .footer-terms span:nth-child(6), .footer-under .footer-terms span:nth-child(7), .footer-under .footer-terms span:nth-child(8), .footer-under .footer-terms span:nth-child(9), .footer-under .footer-terms span:last-child {
+        margin-left: 24px; }
+
+.site {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border-radius: 24px;
+  font-size: 12px;
+  padding: 0 20px;
+  line-height: 40px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site span {
+    font-size: 20px;
+    font-weight: 300; }
+
+.copyright {
+  max-width: 1296px;
+  width: 1296px;
+  margin: 16px auto;
+  padding: 16px 0; }
