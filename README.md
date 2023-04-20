@@ -1,45 +1,67 @@
-# 👀 자신이 원하는 사이트 레이아웃 클론
+# 💳 뱅크샐러드 클론코딩
 
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.  
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.   
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+### [배포 완료된 클론 사이트](https://banksalad-clonecoding.netlify.app/)
 
-## 과제 수행 및 제출 방법
+### [실제 Banksalad 사이트](https://www.banksalad.com/)
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-1. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, `git branch KDT0_ParkYoungWoong`)
-1. 자신의 본명 브랜치에서 과제를 수행합니다.
-1. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(`main` 브랜치에 푸시하지 않도록 꼭 주의하세요, `git push origin KDT0_ParkYoungWoong`)
-1. 저장소에서 `main` 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, `main` <== `KDT0_ParkYoungWoong`)
+<br>
+<br>
 
-- `main` 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+# 📂 파일 구조
 
-## 필수 요구사항
+```
+KDT5-M1
+  index.html
+  favicon.ico
+  README.md
+  images
+  js
+    main.js
+  css
+    index.css
+```
 
-- [ ] 과제에 대한 설명을 포함한 `README.md` 파일을 제공하세요!
-- [ ] 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- [ ] 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요! 
-- [ ] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+<br>
+<br>
 
-## 선택 요구사항
+# 👓 과제 진행 방식
 
-- [ ] `<header>`, `<section>` 등 시멘틱 태그를 최대한 활용해보세요.
-- [ ] 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- [ ] 부분적으로 BEM 방법론을 도입해보세요.
-- [ ] JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-- [ ] SCSS 등의 CSS 전처리도구를 도입해보세요.
-- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+1. 전체 페이지를 Nav부터 Footer까지 총 9개의 Section으로 구분
+2. 구분한 9개의 section을 위에서부터 아래로 작업
+3. 과제의 본질에 충실하기 위해 최대한 HTML&CSS로만 작업
+4. JS 사용은 Swiper, Button Event에 사용
+5. 최종 작업 후 코드 간결화 작업
 
-## 손쉬운 이미지 추출 방법
+<br>
+<br>
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+# ❗️ 섹션별 특이사항
 
-1. 원하는 사이트 접속
-1. Image Downloader 확장 프로그램 실행
-1. 다운로드 원하는 이미지 선택
-1. 서브 폴더 이름(Save to subfolder) 명시
-1. 다운로드!
+## nav
+
+- position: fixed로 상단에 고정
+- 두가지 레이아웃으로 구분하여 코드의 중복을 피함
+
+## rankingSection
+
+- SwiperJS로 vertical swiper 구현
+- CSS hover와 JS mouseover로 카드 목록 구현, autoplay stop
+
+## bannerSection
+
+- SwiperJS로 horizontal swiper 구현
+- button으로 banner 이동 구현
+
+## pickedSection
+
+- button에 따라 JS 배열에 저장해놓은 데이터를 뿌림
+- 해당 container 클릭 시 외부 링크로 연결
+  <br>
+  <br>
+
+# 🔥 셀프 피드백
+
+1. CSS Flex, Grid의 활용을 충분히 못했고, 레거시 코드의 참조가 잦았다.
+2. CSS, JS를 Section별 모듈화하지 못하였다.
+3. CSS 전처리도구 활용능력이 부족하여 시도에 실패했다.
+4. 리팩토링에 충분한 시간을 할당하지 못했다.
