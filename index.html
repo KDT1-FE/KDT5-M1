@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>토스</title>
+
+  <!-- OPEN GRAPH PROTOCOL -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="토스" />
+  <meta property="og:title" content="토스" />
+  <meta property="og:description" content="금융의 모든 것, 토스에서 쉽고 간편하게" />
+  <meta property="og:image" content="./images/newtoss-og.jpeg" />
+  <meta property="og:url" content="https://toss.im/" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="토스" />
+  <meta property="twitter:title" content="토스" />
+  <meta property="twitter:description" content="금융의 모든 것, 토스에서 쉽고 간편하게" />
+  <meta property="twitter:image" content="./images/newtoss-og" />
+  <meta property="twitter:url" content="https://toss.im/" />
+
+  <link rel="icon" href="./favicon.png" />
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Reset.css & CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+
+  <!-- LODASH.JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- SCROLL MAGIC -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <script defer src="./JS/main.js"></script>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+
+      <!-- LOGO -->
+      <a href="/" class="logo">
+        <img src="./images/Toss_Logo.png" alt="토스" />
+      </a>
+
+      <!-- MENU -->
+      <div class="main-menu">
+        <ul class="menu">
+          <li>
+            <a href="https://toss.im/team/" target="_blank">회사 소개</a>
+          </li>
+          <li>
+            <a href="https://support.toss.im/" target="_blank">고객센터</a>
+          </li>
+          <li>
+            <a href="https://support.toss.im/faq" target="_blank">자주 묻는 질문</a>
+          </li>
+          <li>
+            <a href="https://toss.im/tosscert" target="_blank">토스인증서</a>
+          </li>
+          <li>
+            <a href="https://toss.im/career" target="_blank">채용</a>
+          </li>
+          <li class="language">
+            <a href="javascript:void(0)">KOR</a>
+          </li>
+          <li class="lastmenu">
+            <a href="javascript:void(0)" style="color: #bdbebf;">ENG</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- SECTION 1 메인 -->
+  <section class="application">
+    <div class="inner">
+
+      <div class="new-main">
+        <img src="./images/new_main.png" alt="NEW MAIN">
+        <div class="gradient"></div>
+      </div>
+
+      <div class="text">
+        <h2>금융의 모든 것<br>토스에서 쉽고 간편하게</h2>
+      </div>
+
+      <div class="app-store">
+        <div class="apple">
+          <img src="./images/applekorea.png" alt="Apple Korea">
+          <span>App Store</span>
+        </div>
+        <div class="android">
+          <img src="./images/googleplay.png" alt="Google Play">
+          <span>Google Play</span>
+        </div>
+      </div>
+      
+      <span class="material-symbols-outlined floating">
+        arrow_forward_ios
+      </span>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 2 메인 하단 문구 -->
+  <section class="section2">
+    <div class="inner">
+
+      <div class="text">
+        <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.<br>
+          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,<br>
+          토스와 함께라면 당신의 일상이 새로워질 거예요.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 3 홈,소비 -->
+  <section class="section3 scroll-spy">
+    <div class="inner">
+
+      <div class="home">
+
+        <div class="text-group back-to-position to-up delay-0">
+          <h4>홈 · 소비</h4>
+          <h2>내 돈 관리,<br>지출부터 일정까지<br>똑똑하게</h2>
+        </div>
+
+        <div class="consumption back-to-position to-up delay-1">
+          <img src="./images/section1_1_home_01.png" alt="계좌,소비" class="home-img1" />
+          <img src="./images/iPhone12_Clay_Shadow.png" alt="" class="iphone1" />
+        </div>
+
+        <div class="this-month back-to-position to-up delay-2">
+          <img src="./images/section1_1_home_02.png" alt="내 소비" class="home-img2" />
+          <img src="./images/iPhone12_Clay_Shadow.png" alt="" class="iphone2" />
+        </div>
+
+        <div class="text back-to-position to-up delay-3">
+          <p>
+            토스에 계좌와 카드를 연결해 보세요.<br>
+            계좌 잔액, 대출·투자 내역은 기본,<br>
+            일자별 소비와 수입까지 한 번에 볼 수 있어요.
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 4 송금 -->
+  <section class="section4 scroll-spy">
+    <div class="inner">
+
+      <div class="payment">
+
+        <div class="title back-to-position to-up delay-0">
+            <h4>송금</h4>
+            <h2>간편하고 안전하게<br>수수료는 평생 무료로,<br>이런 송금 써보셨나요?</h2>
+        </div>
+
+        <div class="free">
+          <div class="text-group back-to-position to-up delay-2">
+            <h4>평생 무료 송금</h4>
+            <h2>토스 평생 무료송금으로<br>모두의 금융에 자유를</h2>
+            <p>
+              누구에게 보내든 은행 상관 없이,<br>
+              이제 토스와 함께 수수료 걱정 없이 송금하세요.
+            </p>
+          </div>
+
+          <div class="image back-to-position to-up delay-3">
+            <img src="./images/section1_2_01.png" alt="평생 무료 송금" />
+          </div>
+        </div>
+
+        <div class="fraud">
+          <div class="image back-to-position to-up delay-3">
+            <img src="./images/section1_2_02.png" alt="사기계좌 조회" />
+          </div>
+          <div class="text-group back-to-position to-up delay-2">
+            <h4>사기계좌 조회</h4>
+            <h2>송금 전 사기 내역 조회로<br>피해를 미리 방지할 수 있어요</h2>
+            <p>송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
+              상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
+              안전하게 송금할 수 있어요.
+            </p>
+          </div>
+        </div>
+
+        <div class="auto">
+          <div class="text-group back-to-position to-up delay-2">
+            <h4>자동이체 예약</h4>
+            <h2>은행 점검 시간,<br>기다릴 필요 없어요</h2>
+            <p>
+              은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>
+              점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
+            </p>
+          </div>
+          <div class="image back-to-position to-up delay-3">
+            <img src="./images/section1_2_03.png" alt="자동이체 예약" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 5 대출 -->
+  <section class="loan scroll-spy">
+    <div class="inner">
+
+      <div class="text-group">
+
+        <div class="text-group1 back-to-position to-up delay-0">
+          <h4>대출</h4>
+          <h2>여러 은행의 조건을<br>1분 만에<br>확인해보세요</h2>
+        </div>
+
+        <div class="text-group2">
+          <p class="back-to-position to-up delay-4">한도는 높게,</p><br>
+          <p class="back-to-position to-up delay-5">금리는 <span class="lower">낮게,</span></p><br>
+          <p class="back-to-position to-up delay-6">부담은 <span class="little">적게.</span></p>
+        </div>
+
+        <div class="text-group3 back-to-position to-up delay-2">
+          <p>
+            앉은 자리에서 여러 은행의 한도와 금리를 비교하고<br>
+            내게 꼭 맞는 대출을 찾아보세요.<br>
+            신용, 비상금, 대환, 주택담보대출 모두 가능해요.
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="image-group back-to-position to-up delay-1">
+        <img src="./images/section1_3_loan_01.png" alt="대출 조회" class="loan-check" />
+        <img src="./images/iPhone12_Clay_Shadow.png" alt="" class="iphone"/>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 6 신용 -->
+  <section class="credit scroll-spy">
+    <div class="inner">
+
+      <div class="text-group back-to-position to-up delay-0">
+        <h4>신용</h4>
+        <h2>금융 생활의 첫 걸음,<br>신용점수를 미리<br>무료로 관리하세요</h2>
+      </div>
+
+      <div class ="image-group back-to-position to-up delay-2">
+        <div class="my">
+          <img src="./images/icon-credit-grade-check-2.png" alt="내 신용점수" />
+          <div>
+            <span>내 신용점수</span>
+            <p>
+              언제 어디서든, 원할 때 간편하게<br>
+              KCB, NICE 신용점수를 한 곳에서 확인할 수 있어요.
+            </p>
+          </div>
+        </div>
+
+        <div class="grade">
+          <img src="./images/icon-credit-grade-up-2.png" alt="신용점수 올리기" />
+          <div>
+            <span>신용점수 올리기</span>
+            <p>
+              통신비, 일반 납부내역 등의 서류를<br>
+              토스에서 바로 제출해 신용점수를 올릴 수 있어요.
+            </p>
+          </div>
+        </div>
+
+        <div class="alarm">
+          <img src="./images/icon-alarm-3.png" alt="신용관리 알림" />
+          <div>
+            <span>신용관리 알림</span>
+            <p>
+              신용점수에 변동이 생기면 토스가 알람을 보내드려요.<br>
+              나의 신용점수가 바뀔 때마다 바로 확인하세요.
+            </p>
+          </div>
+        </div>
+
+        <div class="tip">
+          <img src="./images/icon-bulb-2.png" alt="신용관리 팁">
+          <div>
+            <span>신용관리 팁</span>
+            <p>
+              신용점수 관리가 막막하다면?<br>
+              신용관리 팁 콘텐츠를 한번 읽어보세요.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 7 투자 -->
+  <section class="invest scroll-spy">
+    <div class="inner">
+
+      <div class="title back-to-position to-up delay-0">
+        <h4>투자</h4>
+        <h2>투자,<br>모두가 할 수 있도록</h2>
+      </div>
+
+      <div class="text-group1 back-to-position to-up delay-1">
+        <p>
+          이해하기 쉬운 용어<br>
+          설명이 필요 없는<br>
+          직관적인 화면 구성
+        </p>
+      </div>
+
+      <div class="text-group2 back-to-position to-up delay-2">
+        <p>
+          송금처럼 쉬운 구매 경험<br>
+          그리고 투자 판단에<br>
+          도움을 주는 콘텐츠까지
+        </p>
+      </div>
+
+      <div class="text-group3 back-to-position to-up delay-3">
+        <p>
+          별도 앱 설치 없이 토스에서 바로,<br>
+          토스증권으로 나만의 투자를 시작해 보세요.
+      </div>
+
+      <div class="image-group">
+
+        <div class="stock">
+          <img src="./images/section1_5_stock_01.png" alt="토스증권" class="stock" />
+        </div>
+
+        <div class="stocks">
+          <img src="./images/section1_5_stock_06.png" alt="새로운 계약 소식" />
+          <img src="./images/section1_5_stock_08.png" alt="매출성장률 Top100" />
+          <img src="./images/section1_5_stock_07.png" alt="관심 Top100" />
+          <img src="./images/section1_5_stock_05.png" alt="거래량 Top100" />
+          <img src="./images/section1_5_stock_02.png" alt="구매 Top100" />
+          <img src="./images/section1_5_stock_04.png" alt="영업이익률 Top100" />
+          <img src="./images/section1_5_stock_03.png" alt="수익률 Top100" />
+        </div>
+
+        <div class="iphone">
+          <img src="./images/iPhone12_Clay_Shadow.png" alt="" />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+
+      <div>
+        <ul class="category">
+
+          <li class="service">
+            <h4>서비스</h4>
+            <ul>
+              <li><a href="https://toss.im/notice/">공지사항</a></li>
+              <li><a href="https://support.toss.im/faq/">자주 묻는 질문</a></li>
+              <li><a href="https://toss.im/cert/">공동인증서 관리</a></li>
+              <li><a href="https://support.toss.im/suspend/">계정 일시잠금</a></li>
+              <li><a href="https://support.toss.im/">고객센터</a></li>
+              <li><a href="https://brand.toss.im/">브랜드 리소스센터</a></li>
+              <li><a href="https://privacy.toss.im/">토스의 개인정보 보호</a></li>
+            </ul>
+          </li>
+
+          <li class="company">
+            <h4>회사</h4>
+            <ul>
+              <li><a href="https://toss.im/team/">회사 소개</a></li>
+              <li><a href="https://www.tosspayments.com/">토스페이먼츠</a></li>
+              <li><a href="https://tossinsu.com/">토스인슈어런스</a></li>
+              <li><a href="https://tossinvest.com/">토스증권</a></li>
+              <li><a href="https://tosscx.com/">토스씨엑스</a></li>
+              <li><a href="https://www.tossbank.com/">토스뱅크</a></li>
+              <li><a href="https://tossplace.com/?referrer=toss_recruit_footer">토스플레이스</a></li>
+              <li><a href="https://toss.im/career/">채용</a></li>
+              <li><a href="https://blog.toss.im/">블로그</a></li>
+              <li><a href="https://toss.im/announcement/">공고</a></li>
+            </ul>
+          </li>
+
+          <li class="ask">
+            <h4>문의</h4>
+            <ul>
+              <li><a href="mailto:partnership@toss.im">사업 제휴</a></li>
+              <li><a href="mailto:adsbiz.team@toss.im">광고 문의</a></li>
+              <li><a href="https://toss.im/tosscert/">인증 사업 문의</a></li>
+              <li><a href="mailto:support@toss.im">마케팅·PR</a></li>
+              <li><a href="mailto:ir@toss.im">IR</a></li>
+            </ul>
+          </li>
+
+          <li class="customer">
+            <h4>고객센터</h4>
+            <ul>
+              <li><a href="tel:1599-4905">전화: 1599-4905(시간 연중무휴)</a></li>
+              <li><a href="mailto:support@toss.im">이메일(고객전용): support@toss.im</a></li>
+              <li><a href="mailto:safe@toss.im">이메일(외부기관전용): safe@toss.im</a></li>
+              <li><a href="https://support.toss.im/customer-complaint">민원 접수</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="address">
+          <h4>㈜비바리퍼블리카</h4>
+          <p>
+            사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+            호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a
+              href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208801280">사업자정보확인</a><br>
+            06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+            고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)
+          </p>
+        </div>
+
+        <div class="terms">
+          <ul>
+            <li><a href="https://toss.im/terms">서비스 이용약관</a></li>
+            <li><a href="https://toss.im/docs/500">통합 금융정보 서비스 약관</a></li>
+            <li><a href="https://toss.im/docs/11567">마이데이터 서비스 이용약관</a></li>
+            <li><a href="https://static-docs.toss.im/privacy/safety">이용자의 권리 및 유의사항</a></li>
+            <li><a href="https://toss.im/privacy" class="important">개인정보 처리방침</a></li>
+            <li><a href="https://toss.im/docs/11185" class="important">채용팀 개인정보 처리방침</a></li>
+            <li><a href="https://toss.im/docs/11175">영상정보처리기기 운영관리 방침</a></li>
+            <li><a href="https://toss.im/agreement/locationInfo">위치기반서비스 이용약관</a></li>
+            <li><a href="https://toss.im/docs/10290">가맹점 고지사항</a></li>
+            <li><a href="https://toss.im/tosscert/cps">토스 전자서명인증업무준칙</a></li>
+            <li><a href="https://toss.im/docs/49">토스 전자인증서비스 약관</a></li>
+            <li><a href="https://toss.im/financial-consumer-protection">금융소비자보호</a></li>
+          </ul>
+        </div>
+
+        <div class="sns">
+          <a href="https://www.facebook.com/toss.revolution"><img src="./images/icn-facebook.svg" alt="토스 페이스북"></a>
+          <a href="https://blog.toss.im/"><img src="/images/icn-blog.svg" alt="토스 블로그"></a>
+          <a href="https://post.naver.com/tossblog"><img src="./images/icn-naver.svg" alt="토스 네이버포스트"></a>
+          <a href="https://twitter.com/toss__official"><img src="./images/icn-twitter.svg" alt="토스 트위터"></a>
+          <a href="https://www.instagram.com/toss.im/"><img src="./images/icn-instagram.svg" alt="토스 인스타그램"></a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
