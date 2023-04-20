@@ -1,0 +1,113 @@
+/* COMMON(공통) */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+/*HEADER*/
+header{
+  width: auto;
+  height: 50px;
+  background-color: white;
+  border-bottom: 10px solid #fff;
+}
+header .inner {
+  position: relative;
+  margin: 0 auto;
+}
+header #logo{
+  position: absolute;
+  padding: 0 20px;
+}
+header #logo img{
+  width: 200px;
+  max-width: 100%;
+  display: block;
+  padding: 12px;
+}
+header #logo2{
+  position: absolute;
+  right: 0;
+  padding: 0 30px;
+}
+header #logo2 img{
+  width: 50px;
+  height: auto;
+  padding: 5px;
+}
+.container {
+  z-index: -3;
+ position: fixed;
+}
+.container #logo3 {
+  position: absolute;
+  left: 900px;
+  padding: 40px 40px;
+}
+.context{
+  padding: 100px 0px 0px 50px;
+  padding: 100px;
+}
+.context h1{
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.context p{
+  font-size: 15px;
+  line-height: 1.8;
+}
+ul {
+  padding: 50px 10px 10px 10px;
+}
+ul li{
+  width: calc(24% - 32px);
+  margin: 0 20px;
+  margin-top: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+ul .li1:hover{
+  background-color: rgb(174, 188, 243);
+  z-index: 1;
+}
+ul .li2:hover{
+  background-color: rgb(152, 199, 152);
+  z-index: 1;
+}
+ul .li3:hover{
+  background-color: rgb(238, 124, 17);
+  z-index: 1;
+}
+ul .li4:hover{
+  background-color: rgb(214, 133, 40);
+  z-index: 1;
+}
+ul li h3{
+  padding: 10px;
+  font-size: 24px;
+  margin: 0 0 0 25px;
+}
+ul li img{
+  border-radius:20px;
+  width: 380px;
+  height: 300px;
+  padding: 0;
+  margin-left: 25px;
+}
+footer {
+  display: block;
+  margin-right: auto;
+  height: 50px;
+  margin: 50px 0 0 50px;
+}
