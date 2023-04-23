@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\slide_pattern.png":[["slide_pattern.03be192e.png","images/slide_pattern.png"],"images/slide_pattern.png"],"./images\\banner_bg.png":[["banner_bg.16a5abfb.png","images/banner_bg.png"],"images/banner_bg.png"],"./images\\circle_bg.png":[["circle_bg.492d4b59.png","images/circle_bg.png"],"images/circle_bg.png"],"./images\\circle_hover_bg.png":[["circle_hover_bg.e76f963f.png","images/circle_hover_bg.png"],"images/circle_hover_bg.png"],"./images\\main_icon1.png":[["main_icon1.37b07732.png","images/main_icon1.png"],"images/main_icon1.png"],"./images\\main_icon2.png":[["main_icon2.008243bf.png","images/main_icon2.png"],"images/main_icon2.png"],"./images\\main_icon3.png":[["main_icon3.2a493f2a.png","images/main_icon3.png"],"images/main_icon3.png"],"./images\\main_detail_icon.png":[["main_detail_icon.228fe459.png","images/main_detail_icon.png"],"images/main_detail_icon.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./images\\slide_pattern.png":[["slide_pattern.03be192e.png","images/slide_pattern.png"],"images/slide_pattern.png"],"./images\\banner_bg.png":[["banner_bg.16a5abfb.png","images/banner_bg.png"],"images/banner_bg.png"],"./images\\circle_bg.png":[["circle_bg.492d4b59.png","images/circle_bg.png"],"images/circle_bg.png"],"./images\\circle_hover_bg.png":[["circle_hover_bg.e76f963f.png","images/circle_hover_bg.png"],"images/circle_hover_bg.png"],"./images\\main_icon1_hover.png":[["main_icon1_hover.7c85f88c.png","images/main_icon1_hover.png"],"images/main_icon1_hover.png"],"./images\\main_icon2_hover.png":[["main_icon2_hover.f5dcb41d.png","images/main_icon2_hover.png"],"images/main_icon2_hover.png"],"./images\\main_icon3_hover.png":[["main_icon3_hover.29f421bd.png","images/main_icon3_hover.png"],"images/main_icon3_hover.png"],"./images\\main_icon1.png":[["main_icon1.37b07732.png","images/main_icon1.png"],"images/main_icon1.png"],"./images\\main_icon2.png":[["main_icon2.008243bf.png","images/main_icon2.png"],"images/main_icon2.png"],"./images\\main_icon3.png":[["main_icon3.2a493f2a.png","images/main_icon3.png"],"images/main_icon3.png"],"./images\\main_detail_icon.png":[["main_detail_icon.228fe459.png","images/main_detail_icon.png"],"images/main_detail_icon.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55693" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65262" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

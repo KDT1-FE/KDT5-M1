@@ -187,6 +187,15 @@ main .container .main__info .inner .info__service ul .service__img:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
+main .container .main__info .inner .info__service ul .service__img:hover .main_icon1 {
+  background-image: url(/main_icon1_hover.7c85f88c.png);
+}
+main .container .main__info .inner .info__service ul .service__img:hover .main_icon2 {
+  background-image: url(/main_icon2_hover.f5dcb41d.png);
+}
+main .container .main__info .inner .info__service ul .service__img:hover .main_icon3 {
+  background-image: url(/main_icon3_hover.29f421bd.png);
+}
 main .container .main__info .inner .info__service ul .service__img .icon {
   width: 96px;
   height: 96px;
@@ -204,8 +213,8 @@ main .container .main__info .inner .info__service ul .service__img .main_icon3 {
 }
 main .container .main__info .inner .info__service ul .service__name {
   position: relative;
-  top: 5px;
-  right: -8px;
+  top: 8px;
+  right: -10px;
 }
 main .container .main__info .inner .info__service ul .service__name strong {
   font-size: 13px;
@@ -256,6 +265,14 @@ main .container .main__notice .inner ul li a {
 main .container .main__notice .inner span.contents__title {
   font-size: 13px;
   color: #333;
+}
+main .container .main__notice .inner span.contents__title--ellipsis {
+  width: 310px;
+  font-size: 13px;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main .container .main__notice .inner span.contents__date {
   position: relative;

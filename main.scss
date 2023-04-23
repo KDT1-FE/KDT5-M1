@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Nanum Barun Gothic', 'Malgun Gothic', sans-serif;
+  font-family: "Nanum Barun Gothic", "Malgun Gothic", sans-serif;
   font-size: 1em;
   color: #333;
   line-height: 120%;
@@ -22,6 +22,13 @@ a {
   width: 980px;
   margin: 0 auto;
   position: relative;
+}
+
+// Mixin
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 // HEADER
@@ -46,11 +53,11 @@ header {
         position: relative;
         right: -31px;
 
-        >li {
+        > li {
           position: relative;
 
           &:hover {
-            >a {
+            > a {
               color: #3cb149;
             }
 
@@ -59,7 +66,7 @@ header {
             }
           }
 
-          >a {
+          > a {
             display: block;
             padding: 33px 27px;
             font-size: 18px;
@@ -77,7 +84,7 @@ header {
             z-index: 9;
 
             &:hover {
-              .menu__item>a {
+              .menu__item > a {
                 color: #3cb149;
               }
             }
@@ -196,7 +203,7 @@ main {
           .intro__description {
             p {
               font-size: 12px;
-              // 22px / 12 = 1.833333
+              // 22px / 12px = 1.833333
               line-height: 1.8333333;
             }
           }
@@ -222,9 +229,23 @@ main {
               background-position: center;
 
               &:hover {
-                background-image: url(./images/circle_hover_bg.png);
+                background-image: 
+                  // liner-gradient(#fff, #fff),
+                  url(./images/circle_hover_bg.png);
                 background-repeat: no-repeat;
                 background-position: center;
+
+                .main_icon1 {
+                  background-image: url(./images/main_icon1_hover.png);
+                }
+
+                .main_icon2 {
+                  background-image: url(./images/main_icon2_hover.png);
+                }
+
+                .main_icon3 {
+                  background-image: url(./images/main_icon3_hover.png);
+                }
               }
 
               .icon {
@@ -249,8 +270,8 @@ main {
 
             .service__name {
               position: relative;
-              top: 5px;
-              right: -8px;
+              top: 8px;
+              right: -10px;
 
               strong {
                 font-size: 13px;
@@ -275,54 +296,62 @@ main {
         display: flex;
         justify-content: space-between;
 
-          h3 {
-            font-size: 22px;
-            font-weight: 700;
+        h3 {
+          font-size: 22px;
+          font-weight: 700;
 
-            &::before {
-              content:"";
-              display: block;
-              width: 27px;
-              border: 1px solid #3cb148;
-              margin-bottom: 16px;
-            }
-          }
-
-          .detail_view {
-            display: inline-block;
-            position: relative;
+          &::before {
+            content: "";
+            display: block;
             width: 27px;
-            height: 27px;
-            top: -25px;
-            left: 360px;
-            background-image: url(./images/main_detail_icon.png);
-            background-repeat: no-repeat;
+            border: 1px solid #3cb148;
+            margin-bottom: 16px;
           }
+        }
 
-          ul {
-            li {
-              margin-bottom: 15px;
-              a {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-              }
+        .detail_view {
+          display: inline-block;
+          position: relative;
+          width: 27px;
+          height: 27px;
+          top: -25px;
+          left: 360px;
+          background-image: url(./images/main_detail_icon.png);
+          background-repeat: no-repeat;
+        }
+
+        ul {
+          li {
+            margin-bottom: 15px;
+
+            a {
+              display: flex;
+              justify-content: space-between;
+              position: relative;
             }
           }
-  
-          span {
-            &.contents__title {
+        }
+
+        span {
+          &.contents__title {
+            font-size: 13px;
+            color: #333;
+
+            &--ellipsis {
+              width: 310px;
               font-size: 13px;
               color: #333;
-            }
-  
-            &.contents__date {
-              position: relative;
-              left: 16px;
-              font-size: 13px;
-              color: #b3b3b3;
+              @include ellipsis;
             }
           }
+
+          &.contents__date {
+            position: relative;
+            left: 16px;
+            font-size: 13px;
+            color: #b3b3b3;
+          }
+        }
 
         .notice-list {
           span {
@@ -332,7 +361,7 @@ main {
           }
         }
 
-        .news-list  {
+        .news-list {
           position: relative;
           right: 35px;
         }
