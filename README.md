@@ -5,7 +5,7 @@
 원본페이지 : [월간 공진단](https://webzine.kotpa.org/vol54?mod=document&uid=3919l)
 
 
-클론코딩 페이지 : [leesiwoo 클론 코딩 페이지](https://cuconveniencestore.github.io/gongjindan_leesiwoo/)
+클론코딩 페이지 : [leesiwoo 클론 코딩 페이지](https://stately-meerkat-5fd972.netlify.app/)
 
 
 
