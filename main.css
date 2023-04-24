@@ -16,12 +16,14 @@ a:hover{
 nav{
   height: 80px;
   background-color: black;
-  display: flex;
   justify-content: space-around;
+  display: grid;
   align-items: center;
 }
 
 .nav-item{
+  justify-content: space-around;
+  display: grid;
   padding: 28px 17px;
   font-weight: 700;
 }
@@ -52,7 +54,7 @@ footer{
   color: black;
 }
 
-.headline-sec{
+.headline-sub{
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 24px;
@@ -95,23 +97,23 @@ footer{
   justify-content: space-between;
   height: 346px;
 }
-.first-box {
+.footer-box {
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
-.second-box {
+.icon-box {
   width: 40%;
   display: flex;
   justify-content: flex-end;
 }
-.footer-menu-item {
+.footer-item {
   padding-bottom: 15px;
   padding-top: 3px;
   font-size: 16px;
   text-align: left;
 }
-.column {
+.footer-column {
   display: flex;
   flex-direction: column;
   padding: 0 15px;
@@ -123,7 +125,7 @@ footer{
   font-size: 12px;
   text-align: left;
 }
-.icon-box {
+.icons {
   width: 54px;
   height: 54px;
   background-color: #222322;
@@ -139,20 +141,20 @@ footer{
 .icon:hover {
   color: #2de26d;
 }
-.first-line {
+.left-line {
   color: #919496;
   display: flex;
   justify-content: flex-end;
   font-size: 12px;
   margin-right: 24px;
 }
-.second-line {
+.right-line {
   color: #919496;
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
 }
-.second-line-item {
+.right-item {
   margin-right: 24px;
   color: #919496;
   font-size: 12px;
