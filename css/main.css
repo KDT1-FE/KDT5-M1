@@ -1,0 +1,793 @@
+/* COMMON */
+/* CSS 변수 선언 */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #666;
+  --color-lightgray: #eee;
+  --color-background: #fafafa;
+  --color-main: #fede22;
+  --header-height: 80px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner.inner--coulmn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Product */
+.product-container {
+  background-color: var(--color-white);
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.product {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 0 10px; /* 전체적으로 우측으로 쏠림 */
+  box-sizing: border-box;
+}
+
+.product__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product .product__infos.product__infos-right {
+  margin-left: 90px;
+}
+
+.product__infos h3.title {
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.product__infos p.description {
+  color: var(--color-gray);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 24px 0 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  background-color: #f6f6f6;
+  color: var(--color-black);
+  font-size: 16px;
+  height: 56px;
+  width: 258px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn::after {
+  content: '';
+  margin-left: 5px;
+  width: 6px;
+  height: 9px;
+  background-image: url(../images/ico_arrow.png);
+  background-size: 100%;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+header > .inner {
+  height: var(--header-height);
+}
+
+header ul.nav-items {
+  width: 100%;
+  display: flex;
+}
+
+header ul.nav-items > li {
+  height: var(--header-height);
+  box-sizing: border-box;
+  position: relative;
+}
+
+header ul.nav-items > li a {
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+header ul.nav-items li.logo {
+  flex-grow: 1;
+}
+header ul.nav-items li.logo a {
+  height: var(--header-height);
+}
+header ul.nav-items li.logo a img {
+  width: 116px;
+  height: 20px;
+}
+
+/* nav */
+header ul.nav-items li.nav-item,
+header ul.nav-items li.nav-btn {
+  padding: 0 10px;
+  margin: 0 10px;
+  min-width: 80px;
+}
+
+header ul.nav-items li.nav-item:hover {
+  border-bottom: 2px solid var(--color-black);
+}
+
+header ul.nav-items li.nav-item > a {
+  height: var(--header-height);
+}
+
+header ul.nav-items li a.nav-title {
+  font-size: 15px;
+  color: var(--color-black);
+}
+
+/* 서류제출하기 */
+header ul.nav-items li.nav-btn {
+  display: flex;
+  align-items: center;
+}
+
+header ul.nav-items li.nav-btn > a {
+  padding: 0 20px;
+  border-radius: 22px;
+  background-color: var(--color-main);
+  font-size: 14px;
+  color: var(--color-black);
+  line-height: 44px;
+  cursor: pointer;
+}
+
+header ul.nav-items li.nav-btn > a:hover {
+  text-decoration: none;
+}
+
+/* lang */
+header ul.nav-items li.nav-icon .material-icons {
+  color: var(--color-black);
+  font-size: 20px;
+  margin: 30px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+header ul.nav-items li.nav-icon:hover .material-icons {
+  opacity: 0.5;
+}
+
+/* sub-menu */
+header li.nav-item .nav-item__contents {
+  position: fixed;
+  left: 0;
+  top: 81px;
+  width: 100%;
+  padding: 60px 0 36px;
+  background-color: var(--color-white);
+  display: none;
+}
+/* nav hover */
+header .nav-item:hover .nav-item__contents {
+  display: block;
+}
+
+header .contents__menu > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header .contents__menu > ul > li {
+  display: flex;
+  justify-content: center;
+}
+
+header .contents__menu > ul > li ul li {
+  text-align: center;
+}
+
+header .contents__menu > ul > li ul li a {
+  color: #444;
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+header .contents__menu > ul > li ul li a:hover {
+  text-decoration: underline;
+}
+
+header .contents__menu > ul > li ul li:first-child a {
+  color: var(--color-black);
+  font-size: 17px;
+}
+
+header .contents__menu > ul > li ul li:last-child a {
+  margin-bottom: 0;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 884px;
+  position: relative;
+  background-color: var(--color-white);
+}
+
+.hero .background-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+  background-color: #ffef6b;
+}
+
+.hero > .inner {
+  width: 1200px;
+  height: 884px;
+}
+
+.hero .hero-background {
+  max-width: 1200px;
+  height: 884px;
+  background-image: url('https://www.kakaobank.com/static/images/web/renewal/main-bg3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 135px;
+  left: 90px;
+  color: var(--color-black);
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 90px;
+  line-height: 1.9;
+}
+
+.hero p.description1 {
+  top: 290px;
+}
+
+.hero p.description2 {
+  top: 365px;
+}
+
+.hero .store-buttons {
+  position: absolute;
+  top: 480px;
+  left: 90px;
+  display: flex;
+  gap: 12px;
+}
+
+.hero .store-buttons a.store-btn {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  width: 178px;
+  height: 56px;
+  line-height: 56px;
+  color: var(--color-black);
+  font-size: 16px;
+  box-sizing: border-box;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero .store-buttons .icon {
+  background-image: url('../images/sprite-icons.png');
+  width: 24px;
+  height: 24px;
+}
+
+.hero .playstore > .icon {
+  background-position: -341px -292px;
+}
+
+.hero .appstore > .icon {
+  background-position: -371px -292px;
+}
+
+/* Account */
+.account .product__image {
+  width: 473px;
+  height: 678px;
+}
+
+/* Savings */
+.savings .product__image {
+  width: 409px;
+  height: 722px;
+  margin-left: 40px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+.savings .product__image.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.savings .product__infos .sub-image {
+  margin-top: 62px;
+  width: 440px;
+}
+
+.savings .btn-group .btn {
+  width: 158px;
+}
+
+/* Group-Account */
+.group-account .product__image {
+  width: 459px;
+  height: 607px;
+}
+
+/* Challenge */
+.challenge .product__image {
+  width: 492px;
+  height: 408px;
+  margin-left: 120px;
+}
+
+/* Global */
+.global {
+  margin-bottom: 0;
+}
+
+.map {
+  background-image: url('../images/home_map.png');
+  background-position: -15% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  width: 100%;
+  height: 750px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.global .product__image {
+  width: 408px;
+  height: 715px;
+  margin-right: 40px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+.global .product__image.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* DayNight */
+.day-night {
+  width: 100%;
+  background-color: #559cde;
+  position: relative;
+  overflow: hidden;
+}
+
+.day-night .sky {
+  width: 100%;
+  height: 0px;
+  background-color: #333b58;
+  position: absolute;
+  bottom: 0;
+  transition: height 1s;
+  transition-delay: 0.3s;
+}
+
+.day-night .sky.show {
+  height: 930px;
+}
+
+.day-night .moon-group {
+  position: absolute;
+  top: 200px;
+  right: -30px;
+}
+
+.moon-group .moon,
+.moon-group .moon.show,
+.moon-group .moon__shadow,
+.moon-group .moon__shadow.show {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.moon-group .moon {
+  background-color: #fede22;
+  transition: background-color 0.5s;
+  transition-delay: 0.5s;
+}
+
+.moon-group .moon.show {
+  background-color: var(--color-white);
+}
+
+.moon-group .moon__shadow {
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  opacity: 0;
+  background-color: #559cde;
+  transition: transform 2s ease 1.2s, background-color 0.1s ease-in 0.6s, opacity 0.1s 1s;
+}
+
+.moon-group .moon__shadow.show {
+  opacity: 1;
+  background-color: #333b58;
+  transform: translate(70px, 70px);
+}
+
+.day-night .inner {
+  height: 930px;
+  justify-content: space-between;
+}
+
+.day-night .product__image {
+  width: 429px;
+  height: 563px;
+}
+
+.day-night .product__infos {
+  align-items: center;
+  z-index: 1;
+}
+
+.day-night h3.title {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-top: 160px;
+}
+
+.day-night p.description {
+  color: var(--color-white);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 24px 0 30px;
+}
+
+.day-night .btn {
+  background-color: rgba(0, 0, 0, 0.09);
+  color: var(--color-white);
+  font-size: 16px;
+  height: 52px;
+  width: 166px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-night .btn::after {
+  content: '';
+  margin-left: 5px;
+  width: 6px;
+  height: 9px;
+  background-image: url(../images/ico_arrow_w.png);
+  background-size: 100%;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.card h3.title {
+  margin-top: 150px;
+}
+
+.card .inner {
+  height: 1062px;
+  overflow: hidden;
+}
+
+.card .product__infos {
+  align-items: center;
+}
+
+.card h3.title {
+  text-align: center;
+}
+
+.swiper {
+  margin-top: 100px;
+  width: 700px;
+  height: 441px;
+  transform: translate(-12px, 0);
+}
+
+.card .swiper-slide img {
+  width: 280px;
+  height: 441px;
+}
+
+.swiper-slide {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  z-index: 9;
+}
+
+.swiper-prev,
+.swiper-next {
+  width: 100px;
+  height: 100px;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  top: 650px;
+  z-index: 1;
+}
+
+.swiper-prev {
+  left: 80px;
+  background-image: url('https://www.kakaobank.com/static/images/web/img-left.png');
+  background-repeat: no-repeat;
+}
+
+.swiper-next {
+  right: 50px;
+  background-image: url('https://www.kakaobank.com/static/images/web/img-right.png');
+  background-repeat: no-repeat;
+}
+
+/* Tecnology */
+.technology {
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.technology .inner {
+  height: 945px;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+.technology h1 {
+  margin-top: 160px;
+  font-size: 40px;
+  color: var(--color-black);
+  text-align: center;
+  font-weight: 700;
+}
+
+.technology .line {
+  width: 100px;
+  height: 2px;
+  margin: 50px auto 140px;
+  background-color: var(--color-black);
+}
+
+.technology .infos {
+  height: 484.5;
+}
+
+.technology .bg-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-lightgray);
+  position: absolute;
+  top: 390px;
+}
+
+.technology img {
+  width: 1020px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.technology ul.text-group {
+  display: flex;
+}
+
+.technology ul.text-group li {
+  width: 255px;
+  height: 210px;
+}
+
+.technology ul.text-group li h2 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 45px 0 17px;
+}
+
+.technology ul.text-group li p {
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Footer */
+footer {
+  height: 201px;
+  background-color: var(--color-lightgray);
+}
+
+footer ul.menu {
+  padding: 20px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul.menu li::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  margin: 8px 15px 0;
+  background-color: #d8d8d8;
+}
+
+footer ul.menu li:last-child::after {
+  content: '';
+  display: none;
+}
+
+footer ul.menu li a {
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-gray);
+}
+
+footer ul.menu li a.black {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 12px;
+  color: #888;
+  padding-bottom: 6px;
+}
+
+footer p > span {
+  color: var(--color-black);
+}
+
+footer .links {
+  padding: 12px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .links .links__web {
+  display: flex;
+  gap: 20px;
+}
+
+footer .links .links__web a {
+  color: var(--color-gray);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .web-accessibility {
+  width: 48px;
+  height: 32px;
+}
+
+footer .web-trust {
+  width: 42px;
+  height: 41px;
+}
+
+footer .links .links__sns {
+  display: flex;
+  gap: 8px;
+}
+
+footer .links__sns a.facebook {
+  background-position: -0px -90px;
+}
+footer .links__sns a.instagram {
+  background-position: -191px -138px;
+}
+footer .links__sns a.youtube {
+  background-position: -90px -90px;
+}
+footer .links__sns a.brunch {
+  background-position: -217px -138px;
+}
+footer a.bg-icon {
+  background-image: url('../images/ico_sns.png');
+  background-size: 290px 170px; /* 원래 사이즈의 절반 */
+  text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  padding: 2px 0;
+}
