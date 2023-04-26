@@ -17,7 +17,7 @@ button {
   position: relative;
 }
 
-.swiper__all-btn {
+.swiper__allBtn {
   display: flex;
   justify-content: space-around;
   align-items: center;
