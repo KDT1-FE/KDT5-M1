@@ -41,13 +41,11 @@ function chartSwitch(event) {
     movieSchedule.classList.remove("chart-strong");
     movieSwiper[1].classList.add("btn-switch");
     movieSwiper[0].classList.remove("btn-switch");
-    console.log("무비차트");
   } else if (eventTarget === movieSchedule) {
     eventTarget.classList.add("chart-strong");
     movieChart.classList.remove("chart-strong");
     movieSwiper[0].classList.add("btn-switch");
     movieSwiper[1].classList.remove("btn-switch");
-    console.log("상영예정작");
   }
 }
 movieChart.addEventListener("click", chartSwitch);
